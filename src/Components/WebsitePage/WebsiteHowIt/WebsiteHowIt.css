@@ -47,7 +47,7 @@
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -139,6 +139,9 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .websiteHowItWrapper {
     /* border: solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 }

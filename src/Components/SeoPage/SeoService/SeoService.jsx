@@ -18,7 +18,7 @@ const SeoService = () => {
           classNameIco="howItWorksIco"
           no="01"
           num="howItWorksNo1"
-          para="For effective lead generation, you need a functional website. We provide responsive website design in Bangalore, ensuring fast load times and  optimized traffic for quality leads."
+          para="Users are more likely to choose one of the top five choices available by a search engine while looking for a service or product online. SEO services in Bangalore help you rank higher in search results and gain greater online visibility, increasing the chances that potential customers will visit your site and convert."
         />
         <WebsiteHowItCard
           icon={faTrafficLight}
@@ -26,7 +26,7 @@ const SeoService = () => {
           idIco="howItWorksIcoColor"
           no="02"
           num="howItWorksNo2"
-          para="For effective lead generation, you need a functional website. We provide responsive website design in Bangalore, ensuring fast load times and  optimized traffic for quality leads."
+          para="SEO enhances organic search engine traffic, which boosts the number of daily visits to your page. Because the more relevant people that visit your site, the more probable you are to offer to them, you will see an increase in sales immediately."
         />
         <WebsiteHowItCard
           icon={faHandshake}
@@ -34,7 +34,7 @@ const SeoService = () => {
           classNameIco="howItWorksIco"
           no="03"
           num="howItWorksNo1"
-          para="For effective lead generation, you need a functional website. We provide responsive website design in Bangalore, ensuring fast load times and  optimized traffic for quality leads."
+          para="The higher you rank on search engines like Google, the better your SEO score is. The improved visibility from higher Google ranks is great to each brand, the trust you develop with potential clients is a secondary advantages."
         />
         <WebsiteHowItCard
           icon={faLineChart}
@@ -42,7 +42,7 @@ const SeoService = () => {
           idIco="howItWorksIcoColor"
           no="04"
           num="howItWorksNo2"
-          para="For effective lead generation, you need a functional website. We provide responsive website design in Bangalore, ensuring fast load times and  optimized traffic for quality leads."
+          para="The importance of SEO in the development of your brand cannot be overstated. A well-optimized website has a higher chance of attracting new visitors and increasing sales. Our SEO services in Bangalore share your brand across other social platforms like Facebook or Instagram."
         />
       </div>
     </div>
