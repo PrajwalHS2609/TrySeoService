@@ -10,12 +10,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import WebsiteBenefitsCard1 from "../../WebsitePage/WebsiteBenefits/WebsiteBenefitsCard1";
 import WebsiteBenefitsCard2 from "../../WebsitePage/WebsiteBenefits/WebsiteBenefitsCard2";
+import security from "./../../../Img/PaymentPage/Security.png";
+import fees from "./../../../Img/PaymentPage/Transaction-Fees.png";
+import integration from "./../../../Img/PaymentPage/Pyament-Integration.png";
+import payment from "./../../../Img/PaymentPage/Pyament-Options.png";
+import customer from "./../../../Img/PaymentPage/Customer-Support.png";
+import scalability from "./../../../Img/PaymentPage/Scalability.png";
+
 const PaymentFactor = () => {
   return (
     <div className="websiteBenefits" id="WebsiteBenefits">
       <PaymentFactorHead />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/Open.png"
+        img={security}
         alt="Security"
         icon={faShieldHalved}
         head="Security"
@@ -23,7 +30,7 @@ const PaymentFactor = () => {
         number="01"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/lisheng-chang-M2524ncJQ40-unsplash-1024x683.jpg"
+        img={fees}
         alt="Transaction Fees"
         icon={faCreditCard}
         head="Transaction Fees"
@@ -32,7 +39,7 @@ const PaymentFactor = () => {
         number="02"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/charanjeet-dhiman-mHusyBu4bxM-unsplash-1024x683.jpg"
+        img={integration}
         alt="Ease of Integration"
         icon={faEarthAmerica}
         head="Ease of Integration"
@@ -40,7 +47,7 @@ const PaymentFactor = () => {
         number="03"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={payment}
         alt="Payment Options"
         icon={faIndianRupeeSign}
         head="Payment Options"
@@ -48,7 +55,7 @@ const PaymentFactor = () => {
         number="04"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/fakhri-labib-ZhBGD4vykCU-unsplash-1024x683.jpg"
+        img={customer}
         alt="Customer Support"
         icon={faHeadphonesSimple}
         head="Customer Support"
@@ -56,7 +63,7 @@ const PaymentFactor = () => {
         number="05"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={scalability}
         alt="Scalability"
         icon={faChartBar}
         head="Scalability"

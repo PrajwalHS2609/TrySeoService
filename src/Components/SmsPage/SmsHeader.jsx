@@ -14,7 +14,7 @@ const SmsHeader = () => {
       </div>
       <div className="homeCover">
         <div className="homeCoverContent1">
-          <BreadCrumb txt="SMA & WhatsApp" />
+          <BreadCrumb txt="SMS & WhatsApp" />
           <h1>
             <span>SMS & What'sApp Marketing</span> Services in Bangalore
           </h1>

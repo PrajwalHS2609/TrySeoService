@@ -13,12 +13,14 @@ import ContentPage from "./Components/ContentPage/ContentPage";
 import PaymentPage from "./Components/PaymentPage/PaymentPage";
 import EmailPage from "./Components/EmailPage/EmailPage";
 import SmsPage from "./Components/SmsPage/SmsPage";
+import ScrollTo from "./Components/ScrollTo/ScrollTo";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
+        <ScrollTo/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route

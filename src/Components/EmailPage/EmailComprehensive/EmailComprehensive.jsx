@@ -10,12 +10,19 @@ import {
   faMobileScreen,
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
+import crafting from "./../../../Img/EmailPage/Crafting.png"
+import effective from "./../../../Img/EmailPage/Effective.png"
+import segmentation from "./../../../Img/EmailPage/Segmentation.png"
+import engaging from "./../../../Img/EmailPage/Engaging.png"
+import responsive from "./../../../Img/EmailPage/Responsive-Designs.png"
+import optimizing from "./../../../Img/EmailPage/Optimizing.png"
+
 const EmailComprehensive = () => {
   return (
     <div className="websiteBenefits" id="WebsiteBenefits">
       <EmailComprehensiveHead />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/Open.png"
+        img={crafting}
         alt="Crafting Personalized Campaigns"
         icon={faPeopleArrows}
         head="Crafting Personalized Campaigns"
@@ -23,7 +30,7 @@ const EmailComprehensive = () => {
         number="01"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/lisheng-chang-M2524ncJQ40-unsplash-1024x683.jpg"
+        img={effective}
         alt="Effective Lead Nurturing"
         icon={faEnvelope}
         head="Effective Lead Nurturing"
@@ -32,7 +39,7 @@ const EmailComprehensive = () => {
         number="02"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/charanjeet-dhiman-mHusyBu4bxM-unsplash-1024x683.jpg"
+        img={segmentation}
         alt="Segmentation for Precision"
         icon={faEarthAmerica}
         head="Segmentation for Precision"
@@ -40,7 +47,7 @@ const EmailComprehensive = () => {
         number="03"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={engaging}
         alt="Engaging Content Creation"
         icon={faBullhorn}
         head="Engaging Content Creation"
@@ -48,7 +55,7 @@ const EmailComprehensive = () => {
         number="04"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/fakhri-labib-ZhBGD4vykCU-unsplash-1024x683.jpg"
+        img={responsive}
         alt="Responsive Designs"
         icon={faMobileScreen}
         head="Responsive Designs"
@@ -56,7 +63,7 @@ const EmailComprehensive = () => {
         number="05"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={optimizing}
         alt="Optimizing Open Rates and Conversions"
         icon={faDownload}
         head="Optimizing Open Rates and Conversions"

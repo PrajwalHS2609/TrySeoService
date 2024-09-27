@@ -9,6 +9,7 @@ import HomeWorking from "./HomeWorking/HomeWorking";
 import HomeWhatWe from "./HomeWhatWe/HomeWhatWe";
 import HomePricing from "./HomePricing/HomePricing";
 import HomeFaq from "./HomeFaq/HomeFaq";
+import HomeFocused from "./HomeFocused/HomeFocused";
 const HomePage = () => {
   return (
     <div className="homePageContainer">
@@ -18,6 +19,7 @@ const HomePage = () => {
      <HomeMarquee/>
      <HomeWorking/>
      <HomeWhatWe/>
+     <HomeFocused/>
      <HomePricing/>
      <HomeTestimonial/>
      <HomeFaq/>

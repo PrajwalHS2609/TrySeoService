@@ -1,6 +1,11 @@
 import React from "react";
 import WebsiteBenefitsCard1 from "../../WebsitePage/WebsiteBenefits/WebsiteBenefitsCard1";
 import WebsiteBenefitsCard2 from "../../WebsitePage/WebsiteBenefits/WebsiteBenefitsCard2";
+import traffic from "./../../../Img/SeoPage/Traffic.jpg";
+import investment from "./../../../Img/SeoPage/Investment.jpg";
+import cost from "./../../../Img/SeoPage/Cost.jpg";
+import usability from "./../../../Img/SeoPage/Usability.jpg";
+import brand from "./../../../Img/SeoPage/Brand.jpg";
 
 import {
   faMagnifyingGlass,
@@ -15,7 +20,7 @@ const SeoBenefits = () => {
     <div className="websiteBenefits" id="WebsiteBenefits">
       <SeoBenefitsHead />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/Open.png"
+        img={traffic}
         alt="Increased Traffic"
         icon={faMagnifyingGlass}
         head="Increased Traffic"
@@ -23,7 +28,7 @@ const SeoBenefits = () => {
         number="01"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/lisheng-chang-M2524ncJQ40-unsplash-1024x683.jpg"
+        img={investment}
         alt="Return on Investment"
         icon={faHandshake}
         head="Return on Investment"
@@ -32,7 +37,7 @@ const SeoBenefits = () => {
         number="02"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/charanjeet-dhiman-mHusyBu4bxM-unsplash-1024x683.jpg"
+        img={cost}
         alt="Cost-effectiveness"
         icon={faEarthAmerica}
         head="Cost-effectiveness"
@@ -40,7 +45,7 @@ const SeoBenefits = () => {
         number="03"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={usability}
         alt="Increased site usability"
         icon={faRectangleAd}
         head="Increased site usability"
@@ -48,7 +53,7 @@ const SeoBenefits = () => {
         number="04"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/fakhri-labib-ZhBGD4vykCU-unsplash-1024x683.jpg"
+        img={brand}
         alt="Brand Awareness"
         icon={faChartBar}
         head="Brand Awareness"

@@ -2,6 +2,12 @@ import React from "react";
 import GoogleAdsBenefitsHead from "./GoogleAdsBenefitsHead";
 import WebsiteBenefitsCard1 from "../../WebsitePage/WebsiteBenefits/WebsiteBenefitsCard1";
 import WebsiteBenefitsCard2 from "../../WebsitePage/WebsiteBenefits/WebsiteBenefitsCard2";
+import boostBrand from "./../../../Img/Google/boostbrand.jpg";
+import gmail from "./../../../Img/Google/gmailinbox.jpg";
+import reconnect from "./../../../Img/Google/reconnect.jpg";
+import remarketing from "./../../../Img/Google/remarketing.jpg";
+import measure from "./../../../Img/Google/measure.jpg";
+
 import {
   faPeopleArrows,
   faEnvelope,
@@ -14,7 +20,7 @@ const GoogleAdsBenefits = () => {
     <div className="websiteBenefits" id="WebsiteBenefits">
       <GoogleAdsBenefitsHead />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/Open.png"
+        img={boostBrand}
         alt="Boost Brand Awareness"
         icon={faPeopleArrows}
         head="Boost Brand Awareness"
@@ -22,7 +28,7 @@ const GoogleAdsBenefits = () => {
         number="01"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/lisheng-chang-M2524ncJQ40-unsplash-1024x683.jpg"
+        img={gmail}
         alt="Reach Greater Client through their Gmail Inbox"
         icon={faEnvelope}
         head="Reach Greater Client through their Gmail Inbox"
@@ -30,7 +36,7 @@ const GoogleAdsBenefits = () => {
         number="02"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/charanjeet-dhiman-mHusyBu4bxM-unsplash-1024x683.jpg"
+        img={reconnect}
         alt="Reconnect with Site Visitors of your Website"
         icon={faEarthAmerica}
         head="Reconnect with Site Visitors of your Website"
@@ -38,7 +44,7 @@ const GoogleAdsBenefits = () => {
         number="03"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={remarketing}
         alt="Remarketing on the Show Network"
         icon={faBullhorn}
         head="Remarketing on the Show Network"
@@ -46,7 +52,7 @@ const GoogleAdsBenefits = () => {
         number="04"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/fakhri-labib-ZhBGD4vykCU-unsplash-1024x683.jpg"
+        img={measure}
         alt="Measure your overall performance Consistently"
         icon={faChartBar}
         head="Measure your overall performance Consistently"

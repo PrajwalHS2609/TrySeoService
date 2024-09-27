@@ -9,12 +9,18 @@ import {
   faLocationArrow,
 } from "@fortawesome/free-solid-svg-icons";
 import ContentBenefitsHeader from "./ContentBenefitsHeader";
+import search from "./../../../Img/ContentPage/Search.jpg";
+import boostSales from "./../../../Img/ContentPage/BoostSales.jpg";
+import voice from "./../../../Img/ContentPage/Voice.jpg";
+import conversation from "./../../../Img/ContentPage/Conversation.jpg";
+import audiences from "./../../../Img/ContentPage/Audience.jpg";
+
 const ContentBenefits = () => {
   return (
     <div className="websiteBenefits" id="WebsiteBenefits">
       <ContentBenefitsHeader />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/Open.png"
+        img={search}
         alt="Increases Search Engine Optimization (SEO)"
         icon={faMagnifyingGlass}
         head="Increases Search Engine Optimization (SEO)"
@@ -22,7 +28,7 @@ const ContentBenefits = () => {
         number="01"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/lisheng-chang-M2524ncJQ40-unsplash-1024x683.jpg"
+        img={boostSales}
         alt="Boost in Sales"
         icon={faHandshake}
         head="Boost in Sales"
@@ -30,7 +36,7 @@ const ContentBenefits = () => {
         number="02"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/charanjeet-dhiman-mHusyBu4bxM-unsplash-1024x683.jpg"
+        img={voice}
         alt="A Voice for your Brand"
         icon={faMicrophone}
         head="A Voice for your Brand"
@@ -38,7 +44,7 @@ const ContentBenefits = () => {
         number="03"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={conversation}
         alt="Boost Conversation Rates"
         icon={faPhone}
         head="Boost Conversation Rates"
@@ -46,7 +52,7 @@ const ContentBenefits = () => {
         number="04"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/fakhri-labib-ZhBGD4vykCU-unsplash-1024x683.jpg"
+        img={audiences}
         alt="Reach New Audiences"
         icon={faLocationArrow}
         head="Reach New Audiences"

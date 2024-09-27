@@ -3,6 +3,15 @@ import "./WebsiteBenefits.css";
 import WebsiteBenefitsHeader from "./WebsiteBenefitsHeader";
 import WebsiteBenefitsCard1 from "./WebsiteBenefitsCard1";
 import WebsiteBenefitsCard2 from "./WebsiteBenefitsCard2";
+import online from "./../../../Img/WebsitePage/online.png";
+import market from "./../../../Img/WebsitePage/market.jpg";
+import customer from "./../../../Img/WebsitePage/customer.jpg";
+import assist from "./../../../Img/WebsitePage/Assist.jpg";
+import impression from "./../../../Img/WebsitePage/impression.jpg";
+import revenue from "./../../../Img/WebsitePage/Revenue.jpg";
+import enhance from "./../../../Img/WebsitePage/Enhances.jpg";
+import bandId from "./../../../Img/WebsitePage/BandId.jpg";
+
 import {
   faClock,
   faHandshake,
@@ -19,15 +28,14 @@ const WebsiteBenefits = () => {
     <div className="websiteBenefits" id="WebsiteBenefits">
       <WebsiteBenefitsHeader />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/Open.png"
-        alt="Online Presence 24/7"
+        img={online}
         icon={faClock}
         head="Online Presence 24/7"
         para="If you have a website, customers can find you at any time and from any location. Even after business hours, your website continues to attract and keep new clients. It provides convenience to the user because they can obtain the information they require from the comfort of their own home."
         number="01"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/lisheng-chang-M2524ncJQ40-unsplash-1024x683.jpg"
+        img={market}
         alt="Market Expansion"
         icon={faHandshake}
         head="Market Expansion"
@@ -35,7 +43,7 @@ const WebsiteBenefits = () => {
         number="02"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/charanjeet-dhiman-mHusyBu4bxM-unsplash-1024x683.jpg"
+        img={customer}
         alt="Online Customer Service"
         icon={faHeadphonesSimple}
         head="Online Customer Service"
@@ -43,7 +51,7 @@ const WebsiteBenefits = () => {
         number="03"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={assist}
         alt="Assists Keep Up with Competitors"
         icon={faChartLine}
         head="Assists Keep Up with Competitors"
@@ -51,7 +59,7 @@ const WebsiteBenefits = () => {
         number="04"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/fakhri-labib-ZhBGD4vykCU-unsplash-1024x683.jpg"
+        img={impression}
         alt="Provides a Better First Impression"
         icon={faFaceSmile}
         head="Provides a Better First Impression"
@@ -59,7 +67,7 @@ const WebsiteBenefits = () => {
         number="05"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/viacheslav-bublyk-6WXbPWhT8c8-unsplash-1024x683.jpg"
+        img={revenue}
         alt="Boosts Revenue"
         icon={faIndianRupeeSign}
         head="Boosts Revenue"
@@ -67,7 +75,7 @@ const WebsiteBenefits = () => {
         number="06"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/joshua-golde-qIu77BsFdds-unsplash-1024x576.jpg"
+        img={enhance}
         alt="Enhances Search Rankings"
         icon={faAddressBook}
         head="Enhances Search Rankings"
@@ -75,7 +83,7 @@ const WebsiteBenefits = () => {
         number="07"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/bruno-7kpVcsYBzdI-unsplash-1024x683.jpg"
+        img={bandId}
         alt="Establishes Consistent Brand Identity"
         icon={faTurnUp}
         head="Establishes Consistent Brand Identity"

@@ -39,17 +39,17 @@
   position: absolute;
   width: 60%;
   border-radius: 100%;
-  top: 70px;
+  top: 100px;
 }
 /* -----------------------------homeWorkingCard-------------------- */
 .homeWorkingCard {
   /* border: solid red; */
-  width: 300px;
+  width: 300px;height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 10px;
   position: static;
   z-index: 1;
@@ -97,6 +97,7 @@
 .homeWorkingCard2 > h3 {
   color: white;
   text-align: center;
+  font-size: 25px;
 }
 .homeWorkingCard2 > p {
   color: white;
@@ -104,12 +105,13 @@
   text-align: justify;
 }
 
-.homeWorkingCard1 > img {
-  width: 60px;
+.homeWorkingCardIco {
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
+  color: white;
 }
 #colorOrange {
   background: linear-gradient(

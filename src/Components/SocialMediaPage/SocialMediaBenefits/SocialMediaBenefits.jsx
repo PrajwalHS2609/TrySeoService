@@ -11,12 +11,21 @@ import {
   faEarthAmerica,
 } from "@fortawesome/free-solid-svg-icons";
 import SocialMediaBenefitsHead from "./SocialMediaBenefitsHead";
+import brandAware from "./../../../Img/SocialMediaPage/awareness.png";
+import marketing from "./../../../Img/SocialMediaPage/marketing.png";
+import costEffect from "./../../../Img/SocialMediaPage/cost.png";
+import engagement from "./../../../Img/SocialMediaPage/engagement.png";
+import generation from "./../../../Img/SocialMediaPage/generation.png";
+import measurable from "./../../../Img/SocialMediaPage/measurable.png";
+import global from "./../../../Img/SocialMediaPage/global.png";
+
+
 const SocialMediaBenefits = () => {
   return (
     <div className="websiteBenefits" id="WebsiteBenefits">
       <SocialMediaBenefitsHead />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/Open.png"
+        img={brandAware}
         alt="Increased Brand Awareness"
         icon={faPeopleArrows}
         head="Increased Brand Awareness"
@@ -24,7 +33,7 @@ const SocialMediaBenefits = () => {
         number="01"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/lisheng-chang-M2524ncJQ40-unsplash-1024x683.jpg"
+        img={marketing}
         alt="Targeted Marketing"
         icon={faHashtag}
         head="Targeted Marketing"
@@ -32,7 +41,7 @@ const SocialMediaBenefits = () => {
         number="02"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/charanjeet-dhiman-mHusyBu4bxM-unsplash-1024x683.jpg"
+        img={costEffect}
         alt="Cost-Effective"
         icon={faIndianRupeeSign}
         head="Cost-Effective"
@@ -40,7 +49,7 @@ const SocialMediaBenefits = () => {
         number="03"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/indira-tjokorda-Y-VYK0SDLxs-unsplash-1024x683.jpg"
+        img={engagement}
         alt="Engagement and Interaction"
         icon={faThumbsUp}
         head="Engagement and Interaction"
@@ -48,7 +57,7 @@ const SocialMediaBenefits = () => {
         number="04"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/02/fakhri-labib-ZhBGD4vykCU-unsplash-1024x683.jpg"
+        img={generation}
         alt="Lead Generation"
         icon={faPhoneVolume}
         head="Lead Generation"
@@ -56,18 +65,18 @@ const SocialMediaBenefits = () => {
         number="05"
       />
       <WebsiteBenefitsCard2
-        img="https://tryseoservices.com/wp-content/uploads/2023/10/social-media-Analytics.png"
-        alt="Engagement and Interaction"
+        img={measurable}
+        alt="Measurable Results"
         icon={faPieChart}
-        head="Engagement and Interaction"
+        head="Measurable Results"
         para="Social media marketing provides detailed analytics, enabling businesses to measure the performance of their campaigns and adjust strategies accordingly."
         number="06"
       />
       <WebsiteBenefitsCard1
-        img="https://tryseoservices.com/wp-content/uploads/2023/10/social-media-Global-Marketing.png"
-        alt="Lead Generation"
+        img={global}
+        alt="Global Reach"
         icon={faEarthAmerica}
-        head="Lead Generation"
+        head="Global Reach"
         para="Social media has a global reach, allowing small businesses to expand their customer base beyond their immediate locality."
         number="07"
       />
