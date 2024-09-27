@@ -1,0 +1,205 @@
+.footerContainer {
+  /* border: solid red; */
+  padding: 20px;
+  background-color: #000229;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+.footerWrapper1 {
+  /* border: solid white; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+.footerWrapper2 {
+  /* border: solid white; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+}
+.footerService .active {
+  color: var(--customColor); /* Color when active */
+}
+.footerBio {
+  /* border: solid blue; */
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerBioImg {
+  /* border: solid gold; */
+  width: 200px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.footerBioImg > a > img {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.4);
+}
+.footerBio > p {
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+}
+.footerBio > a > button {
+  border: none;
+  padding: 10px;
+  background-color: var(--customColor);
+  color: white;
+  border-radius: 30px;
+}
+.footerBio > a > button:hover {
+  background: radial-gradient(
+    465px at -15.1% -25%,
+    rgb(11, 18, 236) 0%,
+    rgb(67, 166, 238) 49%,
+    rgb(126, 203, 244) 90.2%
+  );
+}
+/* --------------------footerCopy----------------------------- */
+.footerCopy > p {
+  font-size: 20px;
+  color: white;
+}
+/* ---------------footerService-------------------------- */
+.footerService {
+  /* border: solid yellow; */
+  width: 300px;
+}
+.footerService > h4 {
+  color: var(--customColor);
+}
+.footerService > li {
+  font-size: 20px;
+  list-style: none;
+  padding: 15px;
+  text-align: start;
+}
+.footerService > li > a {
+  color: white;
+  text-decoration: none;
+}
+/* ------------------------footerAddress--------------------- */
+.footerAddress {
+  width: 400px;
+}
+.footerAddress > h4 {
+  color: var(--customColor);
+}
+.footerAddress > li {
+  font-size: 20px;
+  list-style: none;
+  padding: 15px;
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footerAddress > li > p {
+  color: white;
+}
+.footerAddress > li > p > a {
+  color: white;
+  text-decoration: none;
+}
+.footerAdd {
+  font-size: 25px;
+  color: var(--customColor);
+}
+/* ------------------------footerLine------------------ */
+.footerLine {
+  border: 2px solid rgba(128, 128, 128, 0.526);
+  width: 70%;
+  border-radius: 100%;
+}
+/* ------------------footerSocial------------------ */
+.footerSocial {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+.footerSocial > li {
+  /* border: solid white; */
+  list-style: none;
+  padding: 10px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: 300ms ease-in-out;
+  &:hover {
+    background-color: var(--customColor);
+  }
+}
+.footerSocialIco {
+  font-size: 30px;
+  color: #000229;
+  transition: 300ms ease-in-out;
+}
+
+.footerSocial > li:hover .footerSocialIco {
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footerWrapper1 {
+    /* border: solid white; */
+    flex-direction: column;
+  }
+  .footerWrapper2 {
+    /* border: solid white; */
+    flex-direction: column-reverse;gap: 20px
+    ;
+  }
+  .footerBio {
+    /* border: solid blue; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footerAddress {
+    width: 100%;
+  }
+  .footerCopy {
+    width: 100%;
+    text-align: center;
+  }
+  .footerService {
+    /* border: solid yellow; */
+    width: 100%;
+  }
+  .footerSocial {
+    /* border: solid red; */
+    width: 100%;
+  }
+  .footerSocial > li {
+    /* border: solid white; */
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,90 @@
+.websiteWhy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.websiteWhyHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.websiteWhyHead > h6 {
+  color: var(--customColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+}
+.websiteWhyHead > h6::before {
+  content: "•";
+  font-size: 20px;
+  color: var(--customColor);
+}
+.websiteWhyHead > h6::after {
+  content: "•";
+  font-size: 20px;
+  color: rgb(0, 174, 255);
+}
+.websiteWhyHead > h2 {
+  font-size: 50px;
+  text-align: center;
+  width: 70%;
+}
+.websiteWhyHead > p {
+  text-align: justify;
+  font-size: 20px;
+  color: grey;
+  padding: 20px;
+  width: 70%;
+}
+
+/* ---------------WebsiteWhyMain---------------------- */
+.WebsiteWhyMainAcc {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.websiteWhyAcc {
+  width: 60% !important;
+}
+/* Default style when the accordion is collapsed */
+.accordion-button.collapsed {
+  background-color: #f8f9fa;
+  color: var(--customColor);
+  border: none;
+  outline: none;
+}
+
+.WebsiteWhyMainAcc .accordion-button:not(.collapsed) {
+  background-color: var(--customColor) !important;
+  color: white !important;
+}
+
+/* Optionally, you can add transitions for smooth color change */
+.accordion-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion-body > p {
+  font-size: 20px;
+  text-align: justify;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .accordion {
+    width: 100%;
+  }
+  .websiteWhyHead > h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 90%;
+  }
+}

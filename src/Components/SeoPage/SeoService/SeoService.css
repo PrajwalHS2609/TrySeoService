@@ -1,0 +1,38 @@
+.seoServiceHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.seoServiceHead > h6 {
+  color: var(--customColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+}
+.seoServiceHead > h6::before {
+  content: "•";
+  font-size: 20px;
+  color: var(--customColor);
+}
+.seoServiceHead > h6::after {
+  content: "•";
+  font-size: 20px;
+  color: rgb(0, 174, 255);
+}
+.seoServiceHead > h2 {
+  font-size: 50px;
+}
+.seoServiceHead > p {
+  color: rgb(102, 102, 102);
+  text-align: justify;
+  width: 80%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .seoServiceHead > h2 {
+    font-size: 40px;
+  }
+}

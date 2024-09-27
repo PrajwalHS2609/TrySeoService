@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Mingzat&display=swap");
+
+.homeContainer {
+  /* border: solid red; */
+  height: 800px;
+  width: 100%;
+  /* background-color: blue; */
+  position: relative;
+  background-color: #fefefe;
+  overflow: hidden;
+}
+.homeCover {
+  /* border: solid; */
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.412); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.blob {
+  /* border: solid red; */
+  position: absolute;
+  right: -50px;
+  z-index: 1;
+  transform: scale(2);
+}
+
+.homeCoverContent1 {
+  /* border: solid red; */
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  margin-top: 30px;
+}
+.homeCoverContent1 > h6 {
+  border: 1px solid black;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -30px;
+  left: 10px;
+  padding: 10px;
+}
+.homeCoverContent1 > h6 > li {
+  position: absolute;
+  font-size: 30px;
+  list-style: square;
+}
+#list1 {
+  top: -20px;
+  left: -5px;
+  color: var(--customColor);
+}
+#list2 {
+  bottom: -20px;
+  left: -5px;
+  color: red;
+}
+#list3 {
+  bottom: -20px;
+  right: -35px;
+  color: blue;
+}
+#list4 {
+  top: -20px;
+  right: -35px;
+  color: lightblue;
+}
+.homeCoverContent2 {
+  /* border: solid yellowgreen; */
+  width: fit-content;
+  padding: 10px;
+  height: 500px;
+}
+.homeCoverContent2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.homeCoverContent1 > h1 {
+  font-size: 60px;
+  text-align: start;
+}
+.homeCoverContent1 > h1 > span {
+  color: var(--customColor);
+  font-size: 60px;
+}
+.homeCoverContent1 > p {
+  color: grey;
+  font-size: 18px;
+}
+.homeCoverContent1 > a {
+  text-decoration: none;
+}
+.homeCoverContent1 > a > button {
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--customColor);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.homeCoverContent1 > a > button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: radial-gradient(
+    465px at -15.1% -25%,
+    rgb(11, 18, 236) 0%,
+    rgb(67, 166, 238) 49%,
+    rgb(126, 203, 244) 90.2%
+  );
+  transition: 300ms ease-in-out;
+}
+.homeCoverContent1 > a > button:hover::after {
+  width: 100%;
+}
+.homeCoverContent1 > a > button > h4 {
+  font-family: "Archivo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: static;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.homeArrow {
+  /* border: solid green; */
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  position: static;
+  z-index: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeContainer {
+    /* border: solid red; */
+    height: 950px;
+  }
+  .homeCover {
+    /* border: solid; */
+
+    gap: 10px;
+  }
+  .blob {
+    display: flex;
+    transform: scale(1);
+    right: -50px;
+    top: -50px;
+  }
+  .homeCover {
+    /* border: solid; */
+    flex-direction: column-reverse;
+  }
+  .homeCoverContent1 {
+    /* border: solid red; */
+    width: 100%;
+  }
+  .homeCoverContent2 {
+    /* border: solid yellowgreen; */
+    width: fit-content;
+    padding: 10px;
+    height: 100%;
+    margin-top: 100px;
+  }
+  .homeCoverContent1 > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .homeCoverContent1 > h1 > span {
+    color: var(--customColor);
+    font-size: 40px;
+  }
+  .homeCoverContent1 > p {
+    color: grey;
+    font-size: 18px;
+    text-align: justify;
+  }
+}

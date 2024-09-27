@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --customColor: #fd8643;
+  --customWhite: rgb(243, 243, 243);
+}
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Mingzat&display=swap");
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button {
+  font-family: "Archivo", sans-serif;
+}
+.App {
+  background-color: var(--customWhite);
+}

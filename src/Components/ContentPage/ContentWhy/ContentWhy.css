@@ -1,0 +1,64 @@
+.contentWhyHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contentWhyHead > h6 {
+    color: var(--customColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .contentWhyHead > h6::before {
+    content: "•";
+    font-size: 20px;
+    color: var(--customColor);
+  }
+  .contentWhyHead > h6::after {
+    content: "•";
+    font-size: 20px;
+    color: rgb(0, 174, 255);
+  }
+  .contentWhyHead > h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .contentWhyHead > h2 > span {
+    color: var(--customColor);
+  }
+  .contentWhyHead > p {
+    font-size: 20px;
+    text-align: justify;
+    color: grey;
+    padding: 20px;
+    width: 80%;
+  }
+  .contentWhyHead > p > a {
+    text-decoration: none;
+    color: var(--customColor);
+    font-size: 20px;
+  }
+  .contentWhyHead > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contentWhyHead > ul > li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 20px;
+    width: 80%;
+    color: grey;
+  }
+  .googleAds {
+    color: var(--customColor);
+  }
+  

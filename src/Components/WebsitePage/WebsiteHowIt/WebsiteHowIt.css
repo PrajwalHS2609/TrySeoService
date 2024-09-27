@@ -1,0 +1,144 @@
+.websiteHowIt {
+  /* border: solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.websiteHowItHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.websiteHowItHeader > h6 {
+  color: var(--customColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+}
+.websiteHowItHeader > h6::before {
+  content: "•";
+  font-size: 20px;
+  color: var(--customColor);
+}
+.websiteHowItHeader > h6::after {
+  content: "•";
+  font-size: 20px;
+  color: rgb(0, 174, 255);
+}
+.websiteHowItHeader > h2 {
+  font-size: 50px;
+  text-align: center;
+}
+.websiteHowItHeader > p {
+  text-align: center;
+  font-size: 20px;
+  width: 90%;
+}
+.websiteHowItWrapper {
+  /* border: solid blue; */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* -------------websiteHowItCard------------------ */
+.websiteHowItCard {
+  /* border: solid red; */
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding: 30px;
+}
+.websiteHowItCardImg {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+  background: linear-gradient(to right, rgba(136, 136, 136, 0.625), white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transition: 300ms ease-in-out;
+}
+.websiteHowItCard:hover .websiteHowItCardImg {
+  transform: rotate(30deg);
+}
+.howItWorksIco {
+  color: var(--customColor);
+  transition: 300ms ease-in-out;
+}
+.websiteHowItCard:hover .howItWorksIco {
+  transform: rotate(-30deg);
+}
+.websiteHowItCard:hover #howItWorksIcoColor {
+  transform: rotate(-30deg);
+}
+.howItWorksNo1 {
+  /* border: solid blue; */
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  right: 90px;
+  border-radius: 100%;
+  background-color: var(--customColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.howItWorksNo2 {
+  /* border: solid blue; */
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  right: 90px;
+  border-radius: 100%;
+  background: #2261ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#howItWorksNo > h6 {
+  margin-top: 5px;
+  color: white;
+}
+#howItWorksIcoColor {
+  color: #2261ec;
+  transition: 300ms ease-in-out;
+}
+.websiteHowItCard > p {
+  text-align: justify;
+  font-size: 18px;
+}
+.websiteHowItCard > h3 {
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .websiteHowItWrapper {
+    /* border: solid blue; */
+    flex-direction: column;
+  }
+}

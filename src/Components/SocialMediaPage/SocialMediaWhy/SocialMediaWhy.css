@@ -1,0 +1,70 @@
+.socialMediaWhyHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.socialMediaWhyHead > h6 {
+  color: var(--customColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+}
+.socialMediaWhyHead > h6::before {
+  content: "•";
+  font-size: 20px;
+  color: var(--customColor);
+}
+.socialMediaWhyHead > h6::after {
+  content: "•";
+  font-size: 20px;
+  color: rgb(0, 174, 255);
+}
+.socialMediaWhyHead > h2 {
+  font-size: 50px;
+  width: 80%;
+  text-align: center;
+}
+.socialMediaWhyHead > h2 > span {
+  color: var(--customColor);
+}
+.socialMediaWhyHead > p {
+  color: rgb(102, 102, 102);
+  text-align: justify;
+  width: 80%;
+  font-size: 20px;
+}
+.socialMediaWhyHead > h4 {
+  color: var(--customColor);
+  width: 80%;
+  text-align: start;
+}
+.socialMediaWhyHead > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.socialMediaWhyHead > ul > li {
+  color: grey;
+  list-style-type: none;
+  font-size: 20px;
+  width: 80%;
+  margin: 10px;
+}
+.socialMediaWhyHead > ul > li > span {
+  color: var(--customColor);
+  font-weight: bold;
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+  .socialMediaWhyHead > h2 {
+    font-size: 40px;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+
+  }
+}

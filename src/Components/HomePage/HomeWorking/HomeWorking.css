@@ -1,0 +1,170 @@
+.homeWorking {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #000229;
+}
+.homeWorkingHead {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeWorkingHead > h2 {
+  font-size: 50px;
+  color: white;
+}
+.homeWorkingHead > p {
+  font-size: 18px;
+  color: var(--customColor);
+}
+/* --------------------------homeWorkingMain------------------- */
+.homeWorkingMain {
+  /* border: solid white; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.homeWorkingMainLine {
+  border: solid rgba(128, 128, 128, 0.344);
+  position: absolute;
+  width: 60%;
+  border-radius: 100%;
+  top: 70px;
+}
+/* -----------------------------homeWorkingCard-------------------- */
+.homeWorkingCard {
+  /* border: solid red; */
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  position: static;
+  z-index: 1;
+}
+.homeWorkingCard1 {
+  /* border: solid yellow; */
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeWorkingCardItem {
+  border: 1px solid var(--customColor);
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  transform-origin: 65px;
+  animation: rotateItem 5s linear infinite;
+  margin-left: -115px;
+}
+@keyframes rotateItem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.homeWorkingCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeWorkingCard2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeWorkingCard2 > h3 {
+  color: white;
+  text-align: center;
+}
+.homeWorkingCard2 > p {
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.homeWorkingCard1 > img {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+#colorOrange {
+  background: linear-gradient(
+    110.1deg,
+    rgb(241, 115, 30) 18.9%,
+    rgb(231, 29, 54) 90.7%
+  );
+}
+#colorBlue {
+  background: linear-gradient(
+    89deg,
+    rgb(21, 74, 189) 0.1%,
+    rgb(26, 138, 211) 51.5%,
+    rgb(72, 177, 234) 100.2%
+  );
+}
+.homeWorkingCard3 {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeWorkingSteps {
+  border-radius: 20px;
+  width: 100px;
+  height: 50px; /* Add height if necessary */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fd8643; /* Optional background color */
+}
+
+.homeWorkingSteps > h5 {
+  color: white;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  text-align: center; /* Optional, ensures the text is centered within the h5 */
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .homeWorkingHead > h2 {
+    font-size: 40px;
+    color: white;
+  }
+  .homeWorkingMain {
+    /* border: solid white; */
+    flex-direction: column;
+    gap: 20px;
+  }
+  .homeWorkingMainLine {
+    border: solid rgba(128, 128, 128, 0.344);
+    position: absolute;
+    width: 60%;
+    border-radius: 100%;
+    top: 70px;
+    display: none;
+  }
+}
