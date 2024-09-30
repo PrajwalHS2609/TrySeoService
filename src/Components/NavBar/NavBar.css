@@ -41,7 +41,7 @@
   height: 100%;
   overflow: hidden;
 }
-.logoContainer > img {
+.logoContainer > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -151,7 +151,7 @@
   padding: 20px;
 }
 .respDropDown > li > a {
-    border: solid blue;
+  border: solid blue;
   width: 100%;
   display: flex;
   justify-content: space-between;
