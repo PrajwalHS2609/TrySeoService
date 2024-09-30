@@ -14,6 +14,7 @@ import PaymentPage from "./Components/PaymentPage/PaymentPage";
 import EmailPage from "./Components/EmailPage/EmailPage";
 import SmsPage from "./Components/SmsPage/SmsPage";
 import ScrollTo from "./Components/ScrollTo/ScrollTo";
+import WhatsApp from "./Components/WhatsApp/WhatsApp";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
           />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
+        <WhatsApp/>
         <Footer />
       </BrowserRouter>
     </div>
