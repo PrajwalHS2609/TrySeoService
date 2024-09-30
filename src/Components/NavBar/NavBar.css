@@ -143,19 +143,20 @@
 .respDropDown {
   /* border: solid red; */
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
 }
 .respDropDown > li > a {
-  border: solid blue;
+  /* border: solid blue; */
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
   text-decoration: none;
   color: black;
 }
