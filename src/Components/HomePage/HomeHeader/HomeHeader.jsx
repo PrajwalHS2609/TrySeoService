@@ -2,8 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import BlobAnim from './../BlobAnim';
-import "./HomeHeader.css"
+import BlobAnim from "./../BlobAnim";
+import "./HomeHeader.css";
+import headerImg from "./../../../Img/homeHeaderImg.png";
 const HomeHeader = () => {
   return (
     <div className="homeContainer">
@@ -38,10 +39,7 @@ const HomeHeader = () => {
           </Link>
         </div>
         <div className="homeCoverContent2">
-          <img
-            src="https://seoland.themeht.com/wp-content/uploads/2024/04/01-1.png"
-            alt=""
-          />
+          <img src={headerImg} alt="headerImg" loading="lazy" />
         </div>
       </div>
     </div>

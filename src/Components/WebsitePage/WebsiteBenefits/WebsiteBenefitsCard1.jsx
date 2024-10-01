@@ -6,7 +6,7 @@ const WebsiteBenefitsCard1 = (props) => {
   return (
     <div className="websiteBenefitsCard">
       <div className="websiteBenefitsCard-Content1">
-        <img src={props.img} alt={props.alt} />
+        <img src={props.img} alt={props.alt} loading="lazy" />
       </div>
       <div className="websiteBenefitsCard-Content2">
         <div className="websiteBenefitsCard-Content2Img">

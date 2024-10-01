@@ -1,5 +1,4 @@
 import React from 'react'
-import GoogleBusiness from './GoogleBusiness'
 import SeoPricingHead from './SeoPricingHead'
 import SeoPricingMain from './SeoPricingMain'
 

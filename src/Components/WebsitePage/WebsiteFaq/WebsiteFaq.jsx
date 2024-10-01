@@ -17,6 +17,7 @@ const WebsiteFaq = () => {
         <img
           src="https://seoland.themeht.com/wp-content/uploads/2024/04/03-2.jpg"
           alt=""
+          loading="lazy"
         />
       </div>
     </div>

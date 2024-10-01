@@ -3,7 +3,6 @@ import GoogleAdsHeader from "./GoogleAdsHeader";
 import GoogleAdsBenefits from "./GoogleAdsBenefits/GoogleAdsBenefits";
 import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
-import HomeFaq from "../HomePage/HomeFaq/HomeFaq";
 import GoogleAdsService from "./GoogleAdsService/GoogleAdsService";
 import GoogleAdsPricing from "./GoogleAdsPricing/GoogleAdsPricing";
 import GoogleAdsFaq from "./GoogleAdsFaq/GoogleAdsFaq";
