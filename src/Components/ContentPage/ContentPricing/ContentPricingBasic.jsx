@@ -1,21 +1,20 @@
 import React from "react";
-import tick from "./../../../Img/tick.png";
+import tick from "./../../../Img/whiteTick.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-const ContentPricingSeo = () => {
+import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
+const ContentPricingBasic = () => {
   return (
-    <div className="basicPlan">
+    <div className="premiumPlanCard">
       {/* <div className="premiumTag">
-        <h5>Popular</h5>
-      </div> */}
-      <h3>SEO Content</h3>
+    <h5>Popular</h5>
+  </div> */}
+      <h3>Content</h3>
       <li>
         <img src={tick} alt="tick" /> 100% Unique Content
       </li>
       <li>
-        <img src={tick} alt="tick" />
-        Min - 500 Words
+        <img src={tick} alt="tick" /> Min - 500 Words
       </li>
       <li>
         <img src={tick} alt="tick" />
@@ -31,25 +30,22 @@ const ContentPricingSeo = () => {
       </li>
       <li>
         <img src={tick} alt="tick" />
-        Keyword Research
-      </li>
-      <li>
-        <img src={tick} alt="tick" />
         Catchy Headings
       </li>
       <li>
-        <img src={tick} alt="tick" />1 Time Revision
-      </li>
-      <li>
-        <img src={tick} alt="tick" /> Deliver in Word Doc, PDF & TXT File
+        <img src={tick} alt="tick" />
+        Deliver in Word Doc, PDF & TXT File
       </li>
       <li>
         <img src={tick} alt="tick" /> Call & WhatsApp Support
       </li>
       <h2>
-        0.50 / <span>word</span>{" "}
+      <FontAwesomeIcon
+          icon={faIndianRupeeSign}
+          className="pricingIcon"
+        ></FontAwesomeIcon>  0.40 / <span>word</span>{" "}
       </h2>
-      <div className="basicBtn">
+      <div className="premiumBtn">
         <Link to={"/"}>
           <button>
             Choose Plan{" "}
@@ -64,4 +60,4 @@ const ContentPricingSeo = () => {
   );
 };
 
-export default ContentPricingSeo;
+export default ContentPricingBasic;

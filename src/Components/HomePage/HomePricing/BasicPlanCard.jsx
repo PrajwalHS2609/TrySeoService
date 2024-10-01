@@ -3,7 +3,7 @@ import "./HomePricing.css";
 import tick from "./../../../Img/tick.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 const BasicPlanCard = () => {
   return (
     <div className="basicPlan">
@@ -45,7 +45,10 @@ const BasicPlanCard = () => {
         <img src={tick} alt="tick" /> Chat Integration
       </li>
       <h2>
-        15000/ <span>only</span>{" "}
+      <FontAwesomeIcon
+          icon={faIndianRupeeSign}
+          className="pricingIcon"
+        ></FontAwesomeIcon> 15000/ <span>only</span>{" "}
       </h2>
       <div className="basicBtn" >
         <Link to={"/"}>

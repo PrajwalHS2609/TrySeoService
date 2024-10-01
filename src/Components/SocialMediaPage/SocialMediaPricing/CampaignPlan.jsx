@@ -2,7 +2,7 @@ import React from "react";
 import tick from "./../../../Img/whiteTick.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 const CampaignPlan = () => {
   return (
     <div className="premiumPlanCard">
@@ -49,7 +49,10 @@ const CampaignPlan = () => {
         <img src={tick} alt="tick" /> Marketing Consultation
       </li>
       <h2>
-        15000 / <span>only</span>{" "}
+      <FontAwesomeIcon
+          icon={faIndianRupeeSign}
+          className="pricingIcon"
+        ></FontAwesomeIcon>  15000 / <span>only</span>{" "}
       </h2>
       <div className="premiumBtn">
         <Link to={"/"}>

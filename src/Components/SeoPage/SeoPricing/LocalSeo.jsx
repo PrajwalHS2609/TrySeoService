@@ -2,7 +2,7 @@ import React from "react";
 import tick from "./../../../Img/tick.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 const LocalSeo = () => {
   return (
     <div className="basicPlan" id="">
@@ -77,7 +77,10 @@ const LocalSeo = () => {
         Call & What's App Support
       </li>
       <h2>
-        10000 / <span>monthly</span>{" "}
+      <FontAwesomeIcon
+          icon={faIndianRupeeSign}
+          className="pricingIcon"
+        ></FontAwesomeIcon>  10000 / <span>monthly</span>{" "}
       </h2>
       <div className="basicBtn">
         <Link to={"/"}>

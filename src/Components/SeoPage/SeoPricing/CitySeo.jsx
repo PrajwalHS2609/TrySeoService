@@ -2,14 +2,14 @@ import React from "react";
 import tick from "./../../../Img/whiteTick.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 const CitySeo = () => {
   return (
     <div className="premiumPlanCard">
       {/* <div className="premiumTag">
         <h5>Popular</h5>
       </div> */}
-      <h3>Local SEO</h3>
+      <h3>City SEO</h3>
       <li>
         <img src={tick} alt="tick" />
         Website SEO Analysis
@@ -84,6 +84,10 @@ const CitySeo = () => {
         Call & What's App Support
       </li>
       <h2>
+        <FontAwesomeIcon
+          icon={faIndianRupeeSign}
+          className="pricingIcon"
+        ></FontAwesomeIcon>{" "}
         15000 / <span>monthly</span>{" "}
       </h2>
       <div className="premiumBtn">

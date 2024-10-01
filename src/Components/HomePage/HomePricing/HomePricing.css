@@ -221,6 +221,9 @@
   color: white;
   font-size: 20px;
 }
+.pricingIcon{
+  font-size: 30px;
+}
 /* -----------------EcommercePlanCard--------------- */
 #EcommercePlanCard {
   margin-bottom: 300px;

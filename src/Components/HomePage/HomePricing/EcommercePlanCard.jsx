@@ -3,7 +3,7 @@ import "./HomePricing.css";
 import tick from "./../../../Img/tick.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 const EcommercePlanCard = () => {
   return (
     <div className="basicPlan" id="EcommercePlanCard">
@@ -51,7 +51,10 @@ const EcommercePlanCard = () => {
         <img src={tick} alt="tick" /> Chat/Whats App Integration
       </li>
       <h2>
-        50000/ <span>only</span>{" "}
+      <FontAwesomeIcon
+          icon={faIndianRupeeSign}
+          className="pricingIcon"
+        ></FontAwesomeIcon>  50000/ <span>only</span>{" "}
       </h2>
       <div className="basicBtn">
         <Link to={"/"}>

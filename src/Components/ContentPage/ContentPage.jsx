@@ -5,7 +5,7 @@ import ContentPageWhy from "./ContentWhy/ContentWhy";
 import ContentReason from "./ContentReason/ContentReason";
 import WebsiteClient from "./../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "./../HomePage/HomeTestimonial/HomeTestimonial";
-import ContentPricing from "./ContentWriting/ContentPricing";
+import ContentPricing from "./ContentPricing/ContentPricing";
 import "./ContentPage.css";
 import ContentFaq from "./ContentFaq/ContentFaq";
 const ContentPage = () => {
