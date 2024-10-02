@@ -1,0 +1,28 @@
+.quote {
+  /* border: solid red; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  background: var(--customGradient);
+  border-radius: 20px;
+}
+.quote > p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+.quote > p > span {
+  color: white;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+}
+.quote > img {
+  width: 100px;
+  height: auto;
+}

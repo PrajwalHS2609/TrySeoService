@@ -15,13 +15,23 @@ import EmailPage from "./Components/EmailPage/EmailPage";
 import SmsPage from "./Components/SmsPage/SmsPage";
 import ScrollTo from "./Components/ScrollTo/ScrollTo";
 import WhatsApp from "./Components/WhatsApp/WhatsApp";
+import BlogPage from "./Components/BlogPage/BlogPage";
+import ExploreSEO from "./Components/BlogPage/BlogInnerPages/ExploreSEO/ExploreSEO";
+import LocalSEOSecrets from "./Components/BlogPage/BlogInnerPages/LocalSEOSecrets/LocalSEOSecrets";
+import ImpOfPageSeo from "./Components/BlogPage/BlogInnerPages/ImpOnPageSeo/ImpOnPageSeo";
+import TechnicalSeoGuide from "./Components/BlogPage/BlogInnerPages/TechnicalSeoGuide/TechnicalSeoGuide";
+import SeoAttestationBoost from "./Components/BlogPage/BlogInnerPages/SeoAttestationBoost/SeoAttestationBoost";
+import GoogleAdsPower from "./Components/BlogPage/BlogInnerPages/GoogleAdsPower/GoogleAdsPower";
+import SeoServiceTours from "./Components/BlogPage/BlogInnerPages/SeoServiceTours/SeoServiceTours";
+import WhatIsSeo from "./Components/BlogPage/BlogInnerPages/WhatIsSeo/WhatIsSeo";
+import TransformingForeign from "./Components/BlogPage/BlogInnerPages/TransformingForeign/TransformingForeign";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <ScrollTo/>
+        <ScrollTo />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route
@@ -54,8 +64,46 @@ function App() {
             element={<SmsPage />}
           />
           <Route path="/contact-us" element={<ContactUs />} />
+          {/* ----------------------------BLOG PAGE---------------------------------*/}
+          <Route path="/blog" element={<BlogPage />} />
+          <Route
+            path="/explore-seo-strategies-for-optimizing-ecommerce-stores"
+            element={<ExploreSEO />}
+          />
+          <Route
+            path="/local-seo-secrets-get-ahead-in-your-hometown"
+            element={<LocalSEOSecrets />}
+          />
+          <Route
+            path="/importance-of-on-page-seo-optimization-for-website"
+            element={<ImpOfPageSeo />}
+          />
+          <Route
+            path="/the-comprehensive-technical-seo-guide"
+            element={<TechnicalSeoGuide />}
+          />
+          <Route
+            path="/how-seo-services-can-boost-attestation-service-providers-in-bangalore"
+            element={<SeoAttestationBoost />}
+          />
+          <Route
+            path="/power-of-google-ads-why-its-essential-for-your-business"
+            element={<GoogleAdsPower />}
+          />
+          <Route
+            path="/exploring-the-top-seo-services-to-boost-tours-and-travel-service-providers-in-bangalore"
+            element={<SeoServiceTours />}
+          />
+          <Route
+            path="/what-is-on-page-seo-why-it-is-important-for-every-websites"
+            element={<WhatIsSeo />}
+          />
+          <Route
+            path="/transforming-foreign-language-school-of-bangalore"
+            element={<TransformingForeign />}
+          />
         </Routes>
-        <WhatsApp/>
+        <WhatsApp />
         <Footer />
       </BrowserRouter>
     </div>

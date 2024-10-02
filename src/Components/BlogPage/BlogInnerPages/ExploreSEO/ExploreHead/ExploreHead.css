@@ -1,0 +1,91 @@
+.exploreHead {
+    /* border: solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+  }
+  .exploreHead > h1 {
+    color: var(--customColor);
+    width: 100%;
+    text-align: center;
+  }
+  .exploreHead > h2 {
+    color: var(--customColor);
+    text-align: start;
+    width: 100%;
+    font-size: 25px;
+  }
+  .exploreHead > h3 {
+    color: var(--customColor);
+    text-align: start;
+    width: 100%;
+    font-size: 25px;
+  }
+  .exploreHead > h4 {
+    color: var(--customColor);
+    text-align: start;
+    width: 100%;
+    font-size: 25px;
+  }
+  .exploreHead > h5 {
+    color: var(--customColor);
+    text-align: start;
+    width: 100%;
+    font-size: 25px;
+  }
+  
+  .exploreHead > ul > li {
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  .exploreHead > ul > li > h6 {
+    font-size: 20px;
+    text-align: justify;
+    color: var(--customColor);
+  }
+  .exploreHead > ul > li > a {
+    text-decoration: none;
+    color: var(--customColor);
+  }
+  
+  .exploreHead > ul > li > span {
+    color: var(--customColor);
+    font-weight: bold;
+  }
+  .exploreHead > p {
+    text-align: justify;
+    font-size: 20px;
+  }
+  .exploreHead > p > a {
+    color: var(--customColor);
+    text-decoration: none;
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .exploreHead > h1 {
+      font-size: 25px;
+      text-align: center;
+    }
+    .exploreHead > h2 {
+      text-align: center;
+      font-size: 20px;
+    }
+    .exploreHead > h3 {
+      text-align: center;
+      font-size: 20px;
+    }
+    .exploreHead > h4 {
+      text-align: center;
+      font-size: 20px;
+    }
+    .exploreHead > h5 {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  

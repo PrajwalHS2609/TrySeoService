@@ -7,6 +7,7 @@
 :root {
   --customColor: #fd8643;
   --customWhite: rgb(243, 243, 243);
+  --customGradient: linear-gradient(91.9deg, rgb(75, 207, 250) 6.3%, rgb(25, 159, 249) 98.9%);
 }
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Mingzat&display=swap");
 a,

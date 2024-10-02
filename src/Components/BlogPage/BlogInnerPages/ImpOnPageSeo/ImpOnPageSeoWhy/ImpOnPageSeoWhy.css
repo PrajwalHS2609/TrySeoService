@@ -1,0 +1,83 @@
+.impOnPageSeoWhy {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 50px;
+}
+.impOnPageSeoWhy > h5 {
+  font-size: 25px;
+  color: var(--customColor);
+  text-align: start;
+  width: 100%;
+}
+.impOnPageSeoWhy > p {
+  font-size: 20px;
+  width: 100%;
+  text-align: justify;
+}
+.impOnPageSeoWhy > p > a {
+  color: var(--customColor);
+  text-decoration: none;
+}
+.impOnPageSeoWhy > ul > li > p > a {
+  text-decoration: none;
+  color: var(--customColor);
+}
+.impOnPageSeoWhy > ul > li {
+  list-style: none;
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+.impOnPageSeoWhy > ul > li > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--customColor);
+  text-align: start;
+}
+.impOnPageSeoWhy > ul > li > span > img {
+  width: 20px;
+  height: 20px;
+}
+.impOnPageSeoWhy > ul > li > ul > li {
+  list-style: none;
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+.impOnPageSeoWhy > ul > li > ul > li>span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--customColor);
+  text-align: start;
+}
+.impOnPageSeoWhy > ul > li > ul > li > span > img {
+  width: 15px;
+  height: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .impOnPageSeoWhy {
+    /* border: solid red; */
+    padding: 5px;
+  }
+}
