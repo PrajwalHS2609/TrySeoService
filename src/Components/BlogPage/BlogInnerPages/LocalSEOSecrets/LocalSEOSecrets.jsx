@@ -1,19 +1,16 @@
 import React from "react";
 import LocalSEOSecretsHead from "./LocalSEOSecretsHead";
 import Quote from "./Quote/Quote";
-import BlogHeader from "../../BlogHeader";
 import LocalSeoChapter from "./LocalSeoChapter";
+import ExploreSEOHeader from "../ExploreSEO/ExploreSEOHeader";
 
 const LocalSEOSecrets = () => {
   return (
     <div className="homePageContainer">
-      <BlogHeader
-        head="Local SEO Secrets: Get Ahead in Your Hometown"
-        txt="Blog"
-      />
+      <ExploreSEOHeader head="Blog" txt="Blog" />
       <LocalSEOSecretsHead />
       <Quote />
-      <LocalSeoChapter/>
+      <LocalSeoChapter />
     </div>
   );
 };

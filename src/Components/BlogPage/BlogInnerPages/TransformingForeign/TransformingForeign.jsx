@@ -1,16 +1,16 @@
 import React from "react";
-import BlogHeader from "../../BlogHeader";
 import TransformingForeignHead from "./TransformingForeignHead";
 import TransformingForeignEnumerate from "./TransformingForeignEnumerate";
 import TransformingForeignKey from "./TransformingForeignKey";
+import ExploreSEOHeader from "../ExploreSEO/ExploreSEOHeader";
 
 const TransformingForeign = () => {
   return (
     <div className="homePageContainer">
-      <BlogHeader txt="Blog" />
-      <TransformingForeignHead />
+      <ExploreSEOHeader head="Blog" txt="Blog" />
+       <TransformingForeignHead />
       <TransformingForeignEnumerate />
-      <TransformingForeignKey/>
+      <TransformingForeignKey />
     </div>
   );
 };

@@ -1,16 +1,16 @@
-import React from 'react'
-import BlogHeader from '../../BlogHeader'
-import ExploreHead from './ExploreHead/ExploreHead'
-import ExploreSeoOptimize from './ExploreSeoOptimize/ExploreSeoOptimize'
+import React from "react";
+import ExploreHead from "./ExploreHead/ExploreHead";
+import ExploreSeoOptimize from "./ExploreSeoOptimize/ExploreSeoOptimize";
+import ExploreSEOHeader from "./ExploreSEOHeader";
 
 const ExploreSEO = () => {
   return (
-    <div className='homePageContainer'>
-      <BlogHeader head="Explore SEO Strategies for Optimizing eCommerce Stores" txt="Blog" />
+    <div className="homePageContainer">
+      <ExploreSEOHeader head="Blog" txt="Blog" />
       <ExploreHead />
-      <ExploreSeoOptimize/>
+      <ExploreSeoOptimize />
     </div>
-  )
-}
+  );
+};
 
-export default ExploreSEO
+export default ExploreSEO;

@@ -30,6 +30,8 @@
 .breadCrumb > h6 > span {
   color: var(--customColor);
 }
+.breadCrumb > h6 > span > a {
+  color: var(--customColor);
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  
 }

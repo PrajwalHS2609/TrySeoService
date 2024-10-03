@@ -15,7 +15,10 @@ const InnerBreadCrumbs = (props) => {
           ></FontAwesomeIcon>
           Home
         </Link>{" "}
-        /<span>{props.txt}</span>/<span>{props.innerTxt}</span>
+        /
+        <span>
+          <Link to="/blog">{props.txt}</Link>
+        </span>
       </h6>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
-import BreadCrumb from "../../../BreadCrumb/BreadCrumb";
 import BlobAnim from "../../../HomePage/BlobAnim";
+import InnerBreadCrumbs from "../../../BreadCrumb/InnerBreadCrumbs";
 
 const ExploreSEOHeader = (props) => {
   return (
@@ -9,7 +9,7 @@ const ExploreSEOHeader = (props) => {
         <BlobAnim />
       </div>
       <h2>{props.head}</h2>
-      <BreadCrumb txt={props.txt} />
+      <InnerBreadCrumbs txt={props.txt} />
     </div>
   );
 };

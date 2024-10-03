@@ -1,19 +1,16 @@
 import React from "react";
-import BlogHeader from "../../BlogHeader";
 import GoogleAdsPowerHead from "./GoogleAdsPowerHead";
 import GoogleAdsPowerReason from "./GoogleAdsPowerReason";
 import GoogleAdsPowerUnlocking from "./GoogleAdsPowerUnlocking";
+import ExploreSEOHeader from './../ExploreSEO/ExploreSEOHeader';
 
 const GoogleAdsPower = () => {
   return (
     <div className="homePageContainer">
-      <BlogHeader
-        head="Power of Google Ads: Why It’s Essential for Your Business"
-        txt="Blog"
-      />
-      <GoogleAdsPowerHead/>
-      <GoogleAdsPowerReason/>
-      <GoogleAdsPowerUnlocking/>
+      <ExploreSEOHeader head="Blog" txt="Blog" />
+      <GoogleAdsPowerHead />
+      <GoogleAdsPowerReason />
+      <GoogleAdsPowerUnlocking />
     </div>
   );
 };
