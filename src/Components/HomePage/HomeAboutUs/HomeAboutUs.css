@@ -170,3 +170,45 @@
     width: 100%;
   }
 }
+@media screen and (min-width:768px) and (max-width:979px) {
+  .homeAboutUs {
+    /* border: solid red; */
+    flex-direction: column;
+    gap: 20px;
+  }
+  .homeAboutUsContent1 {
+    /* border: solid green; */
+    width: 100%;
+  }
+  .homeAboutUsContent1 > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+
+  }
+  .blobContain {
+    /* border: solid blue; */
+    display: none;
+    visibility: hidden;
+  }
+  .homeAboutUsContent2 {
+    /* border: solid brown; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    gap: 30px;
+  }
+  .homeAboutUsHeader > h2 {
+    font-size: 40px;
+  }
+  .homeAboutUsCard{
+    width:fit-content;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .homeAboutUsCard {
+    /* border: solid blue; */
+    width: 60%;
+  }
+}

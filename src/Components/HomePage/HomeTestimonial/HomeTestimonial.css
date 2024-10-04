@@ -156,3 +156,41 @@
     text-align: justify;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .homeTestimonialHeader {
+    /* border: solid red; */
+    width: 100%;
+  }
+  .homeTestimonialHeader > h2 {
+    font-size: 40px;
+  }
+  .testimonialContainer {
+    /* border: solid brown; */
+    height: 100%;
+    width: 80%;
+    /* background-color: red; */
+  }
+  .homeTestimonialCarousel {
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+    .carousel-item {
+      /* border: solid green; */
+      height: 450px;
+      width: 600px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  .carousel-caption p {
+    /* border: solid; */
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    text-align: justify;
+  }
+}

@@ -45,6 +45,14 @@ const FooterService = () => {
           Social Media Marketing
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/blog"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Blog{" "}
+        </NavLink>
+      </li>
     </div>
   );
 };

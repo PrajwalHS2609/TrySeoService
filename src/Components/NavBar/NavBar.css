@@ -295,3 +295,35 @@
     display: block;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .navbarContainer1 {
+    /* border: solid red; */
+    position: sticky;
+    top: 0px;
+  }
+  .menuContainerList {
+    display: none;
+  }
+  .logoContainer {
+    /* border: solid green; */
+    width: 100px;
+  }
+  .navbarContent {
+    /* border: solid brown; */
+    border-radius: 0px;
+  }
+  .respMenuBar {
+    /* border: solid red; */
+    display: block;
+    margin-left: 400px;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .menuContainer {
+    /* border: solid blue; */
+    width: 80%;
+  }
+  .menuContainerList > li {
+    text-align: center;
+  }
+}
