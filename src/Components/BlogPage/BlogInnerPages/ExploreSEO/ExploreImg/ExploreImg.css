@@ -1,0 +1,10 @@
+.exploreImg {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exploreImg > img {
+  width: 80%;
+}
