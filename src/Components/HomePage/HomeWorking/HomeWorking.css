@@ -171,7 +171,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 980px) {
   .homeWorkingHead > h2 {
     font-size: 40px;
     color: white;
@@ -180,6 +180,26 @@
     /* border: solid white; */
     flex-direction: column;
     gap: 20px;
+  }
+  .homeWorkingMainLine {
+    border: solid rgba(128, 128, 128, 0.344);
+    position: absolute;
+    width: 60%;
+    border-radius: 100%;
+    top: 70px;
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .homeWorkingHead > h2 {
+    font-size: 40px;
+    color: white;
+  }
+  .homeWorkingMain {
+    /* border: solid white; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
   }
   .homeWorkingMainLine {
     border: solid rgba(128, 128, 128, 0.344);

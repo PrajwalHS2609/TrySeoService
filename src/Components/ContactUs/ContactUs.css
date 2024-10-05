@@ -9,7 +9,7 @@
   gap: 20px;
   overflow: hidden;
   position: relative;
-  background-color: #F5F8FE;
+  background-color: #f5f8fe;
 }
 .contactBlob {
   /* border: solid blue; */
@@ -20,6 +20,8 @@
 }
 .contactUsHeader > h2 {
   font-size: 50px;
+  position: static;
+  z-index: 3;
 }
 .contactUsWrapper {
   /* border: solid green; */

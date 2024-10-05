@@ -187,3 +187,40 @@
     padding: 0;
   }
 }
+@media screen and (min-width:769px) and (max-width:990px) {
+  .websiteBenefitsHeader > h2 {
+    font-size: 40px;
+  }
+  .websiteBenefitsCard {
+    /* border: solid red; */
+    flex-direction: column;
+  }
+  .websiteBenefitsCard-Content1 {
+    /* border: solid blue; */
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .websiteBenefitsCard-Content2 {
+    /* border: solid black; */
+    width: 100%;
+    height: 100%;
+  }
+  .websiteBenefitsCard2 {
+    /* border: solid red; */
+    flex-direction: column;
+  }
+  .websiteBenefitsCard2-Content3 {
+    /* border: solid; */
+    top: 420px;
+    left: 170px;
+    padding: 0;
+  }
+  .websiteBenefitsCard1-Content3 {
+    /* border: solid; */
+    top: 420px;
+    left: 170px;
+    padding: 0;
+  }
+}

@@ -245,3 +245,45 @@
     height: 40px;
   }
 }
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .footerWrapper1 {
+    /* border: solid white; */
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footerWrapper2 {
+    /* border: solid white; */
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .footerBio {
+    /* border: solid blue; */
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footerAddress {
+    width: 50%;
+  }
+  .footerCopy {
+    width: 100%;
+    text-align: center;
+  }
+  .footerService {
+    /* border: solid yellow; */
+    width: 100%;
+  }
+  .footerSocial {
+    /* border: solid red; */
+    width: 100%;
+  }
+  .footerSocial > li {
+    /* border: solid white; */
+    width: 40px;
+    height: 40px;
+  }
+}

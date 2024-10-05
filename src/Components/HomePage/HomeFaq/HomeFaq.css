@@ -134,3 +134,43 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeFaq {
+    /* border: solid red; */
+    flex-direction: column-reverse;
+  }
+  .homeFaqBlob {
+    display: none;
+  }
+  .homeFaqContent2 > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .homeFaqContent1 {
+    width: 100%;
+  }
+  .homeFaqContent2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .homeFaq {
+    /* border: solid red; */
+    flex-direction: column-reverse;
+  }
+  .homeFaqBlob {
+    display: none;
+  }
+  .homeFaqContent2 > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .homeFaqContent1 {
+    width: 100%;
+  }
+  .homeFaqContent2 {
+    width: 100%;
+  }
+}
