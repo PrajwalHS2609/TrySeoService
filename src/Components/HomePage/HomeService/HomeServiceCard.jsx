@@ -7,7 +7,7 @@ const HomeServiceCard = (props) => {
   return (
     <div className="homeServiceCard">
       <div className="homeServiceCardContent1">
-        <img src={props.img} alt={props.alt} />
+        <img src={props.img} alt={props.alt} loading="lazy"/>
       </div>
       <div className="homeServiceCardContent2">
         <h5>{props.head1}</h5>
@@ -17,7 +17,7 @@ const HomeServiceCard = (props) => {
         <p>{props.para}</p>
       </div>
       <div className="homeServiceCardContent4">
-        <Link to={"/"}>
+        <Link to={props.link}>
           {" "}
           <button>
             {" "}

@@ -17,7 +17,7 @@ const HomeTestimonialCarousel = () => {
         <Carousel.Item>
           <Carousel.Caption>
             <p>
-              Yesseoservices is a reputed name in the Digital Marketing
+              TrySeoService is a reputed name in the Digital Marketing
               industry. They have the proper knowledge and technical expertise.
               We got positive results on our company’s website within the
               prescribed time and budget. Thanks for their quick and efficient
@@ -30,7 +30,7 @@ const HomeTestimonialCarousel = () => {
         <Carousel.Item>
           <Carousel.Caption>
             <p>
-              I would say, Yesseoservices is one of the top Digital Marketing
+              I would say, TrySeoService is one of the top Digital Marketing
               companies in Bangalore offering, quality services at competitive
               pricing. It's been 3 years with them. And we are satisfied with
               their work and coordination. Highly Recommended!!
@@ -42,10 +42,10 @@ const HomeTestimonialCarousel = () => {
         <Carousel.Item>
           <Carousel.Caption>
             <p>
-              Choosing Yesseoservices was my best decision. Their team
+              Choosing TrySeoService was my best decision. Their team
               discovered and shortlisted keywords for my business, and most of
               the keywords began ranking on the top page of Google within 3–4
-              months. Yesseoservices is to be commended for generating
+              months. TrySeoService is to be commended for generating
               additional revenue for me via Google. Your SEO services are
               outstanding!!
             </p>
@@ -56,9 +56,9 @@ const HomeTestimonialCarousel = () => {
         <Carousel.Item>
           <Carousel.Caption>
             <p>
-              Yesseoservices is one of the greatest solutions for generating a
+              TrySeoService is one of the greatest solutions for generating a
               high return on investment for my business at a low cost across all
-              Digital Media Platforms. For more than a year, the Yesseoservices
+              Digital Media Platforms. For more than a year, the TrySeoService
               team managed our PPC advertising and content marketing. We are
               really pleased with the return on investment and the results. They
               are quick to incorporate suggestions and strive to offer more than

@@ -8,6 +8,7 @@ import {
   faChevronDown,
   faX,
 } from "@fortawesome/free-solid-svg-icons";
+
 const Menu = () => {
   let [drop, setDrop] = useState(false);
   let dropRefHome = useRef();
@@ -141,6 +142,7 @@ const Menu = () => {
           </NavLink>
         </li>
       </div>
+      {/* ---------------------------respMenu------------------------------ */}
       <div className="respMenuBar">
         <img src={menuBar} alt="menuBar" onClick={showSideBar} />
       </div>

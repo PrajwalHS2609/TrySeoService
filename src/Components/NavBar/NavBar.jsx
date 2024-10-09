@@ -13,7 +13,7 @@ const NavBar = () => {
       setScroll(false);
     }
   };
-  window.addEventListener("scroll", changeColor);
+    window.addEventListener("scroll", changeColor);
 
   return (
     <nav className={scroll ? "navbarContainer" : "navbarContainer1"}>
