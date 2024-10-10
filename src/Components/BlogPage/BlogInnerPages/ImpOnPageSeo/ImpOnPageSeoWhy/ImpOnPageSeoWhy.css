@@ -41,7 +41,7 @@
 }
 .impOnPageSeoWhy > ul > li > span {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   color: var(--customColor);

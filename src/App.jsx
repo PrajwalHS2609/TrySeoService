@@ -25,6 +25,7 @@ import GoogleAdsPower from "./Components/BlogPage/BlogInnerPages/GoogleAdsPower/
 import SeoServiceTours from "./Components/BlogPage/BlogInnerPages/SeoServiceTours/SeoServiceTours";
 import WhatIsSeo from "./Components/BlogPage/BlogInnerPages/WhatIsSeo/WhatIsSeo";
 import TransformingForeign from "./Components/BlogPage/BlogInnerPages/TransformingForeign/TransformingForeign";
+import LongTailKeywords from "./Components/BlogPage/BlogInnerPages/LongTailKeywords/LongTailKeywords";
 
 function App() {
   return (
@@ -101,6 +102,10 @@ function App() {
           <Route
             path="/transforming-foreign-language-school-of-bangalore"
             element={<TransformingForeign />}
+          />
+          <Route
+            path="/the-power-of-long-tail-keywords-how-to-find-and-use-them"
+            element={<LongTailKeywords />}
           />
         </Routes>
         <WhatsApp />

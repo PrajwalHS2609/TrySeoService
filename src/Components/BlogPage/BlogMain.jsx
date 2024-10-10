@@ -10,6 +10,7 @@ import topSeo from "./../../Img/Blog/BlogMain/ExploringTopSeo.png";
 import whatIs from "./../../Img/Blog/BlogMain/What is On-Page SEO_ Why it is important for every websites.png";
 import transform from "./../../Img/Blog/BlogMain/Transforming Foreign Language School of Bangalore.png";
 import howSeo from "./../../Img/Blog/BlogMain/How SEO Services Can Boost Attestation Service Providers in Bangalore.png";
+import LongTailKeywords from "./../../Img/Blog/BlogMain/Long-Tail Keywords.png";
 
 const BlogMain = () => {
   return (
@@ -76,6 +77,13 @@ const BlogMain = () => {
         head="How SEO Services Can Boost Attestation Service Providers in Bangalore"
         para="In today’s digital age, establishing a strong online presence is essential..."
         link="/how-seo-services-can-boost-attestation-service-providers-in-bangalore"
+      />
+      <BlogCard
+        img={LongTailKeywords}
+        alt="LongTailKeywords"
+        head="The Power of Long-Tail Keywords: How to Find and Use Them"
+        para="In the world of Search Engine Optimization (SEO), keywords are the foundation of any successful..."
+        link="/the-power-of-long-tail-keywords-how-to-find-and-use-them"
       />
     </div>
   );
