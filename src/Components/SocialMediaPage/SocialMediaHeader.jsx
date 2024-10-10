@@ -16,7 +16,7 @@ const SocialMediaHeader = () => {
         <div className="homeCoverContent1">
           <BreadCrumb txt="Social Media " />
           <h1>
-            <span> Social Media Marketing </span>Services in Bangalore?
+            <span> Social Media Marketing </span>Services in Bangalore
           </h1>
           <p>
             In the ever-evolving digital landscape, social media has emerged as

@@ -33,7 +33,7 @@ const WebsiteWhyMain = () => {
             </p>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="3">
+        <Accordion.Item eventKey="2">
           <Accordion.Header>
             <h5>Optimized Traffic</h5>
           </Accordion.Header>
@@ -45,7 +45,7 @@ const WebsiteWhyMain = () => {
             </p>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="4">
+        <Accordion.Item eventKey="3">
           <Accordion.Header>
             <h5> Cost-effectiveness</h5>
           </Accordion.Header>

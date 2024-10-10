@@ -14,7 +14,7 @@ const HomeHeader = () => {
       <div className="homeCover">
         <div className="homeCoverContent1">
           <h6>
-            Welcome To
+          Hire Us Now!
             <li id="list1"></li>
             <li id="list2"></li>
             <li id="list3"></li>

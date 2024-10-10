@@ -95,16 +95,13 @@ const Menu = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/other-services"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
+          <span className={({ isActive }) => (isActive ? "active" : "")}>
             Other Services
             <FontAwesomeIcon
               icon={faChevronDown}
               className="menuNavDropIcon"
             ></FontAwesomeIcon>
-          </NavLink>
+          </span>
           <div className="dropDown" ref={dropRef}>
             <li>
               <NavLink

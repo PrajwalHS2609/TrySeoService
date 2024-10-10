@@ -17,7 +17,7 @@ const SeoHeader = () => {
         <div className="homeCoverContent1">
           <BreadCrumb txt="SEO" />
           <h1>
-            <span> SEO </span>Services in Bangalore?
+            <span> SEO </span>Services in Bangalore
           </h1>
           <p>
             Our SEO experts have great innovative, responsive, and analytical

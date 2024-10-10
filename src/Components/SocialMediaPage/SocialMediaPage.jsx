@@ -8,19 +8,33 @@ import SocialMediaPricing from "./SocialMediaPricing/SocialMediaPricing";
 import SocialMediaWhyHead from "./SocialMediaWhy/SocialMediaWhyHead";
 import SocialMediaChoose from "./SocialMediaChoose";
 import SocialMediaFaq from "./SocialMediaFaq/SocialMediaFaq";
-import HomeMarquee from './../HomePage/HomeMarquee/HomeMarquee';
+import HomeMarquee from "./../HomePage/HomeMarquee/HomeMarquee";
+import { Helmet } from "react-helmet-async";
 const SocialMediaPage = () => {
   return (
     <div className="socialMediaPage">
+      <Helmet>
+        <title>
+          Social Media Marketing Services in Bangalore for Small Business
+        </title>
+        <meta
+          name="description"
+          content="Social Media Marketing Services in Bangalore For High Quality Traffic, Qualified Leads, Online Sales, Maximum Reach, & Search Ranking."
+        />
+        <link
+          rel="canonical"
+          href="https://tryseoservices.com/social-media-marketing-services-in-bangalore"
+        />
+      </Helmet>
       <SocialMediaHeader />
       <SocialMediaWhyHead />
-      <HomeMarquee/>
+      <HomeMarquee />
       <SocialMediaBenefits />
-      <SocialMediaChoose/>
+      <SocialMediaChoose />
       <WebsiteClient />
       <HomeTestimonial />
       <SocialMediaPricing />
-      <SocialMediaFaq/>
+      <SocialMediaFaq />
     </div>
   );
 };

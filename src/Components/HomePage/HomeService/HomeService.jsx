@@ -15,7 +15,7 @@ const HomeService = () => {
         <HomeServiceCard
           img={seoMag}
           alt="seoMag"
-          link="/social-media-marketing-services-in-bangalore"
+          link="/seo-services-in-bangalore"
           head1="Google & Bing"
           head2="SEO"
           para="In today's digital environment, SEO ensures increased conversions and aids in the growth of your company. Your company can rank on the first page of the SERP if you use the appropriate SEO tactics."

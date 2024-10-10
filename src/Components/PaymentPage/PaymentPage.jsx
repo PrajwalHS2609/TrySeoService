@@ -8,10 +8,21 @@ import WebsiteClient from "./../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "./../HomePage/HomeTestimonial/HomeTestimonial";
 import PaymentFactor from "./PaymentFactor/PaymentFactor";
 import PaymentFaq from "./PaymentFaq/PaymentFaq";
+import { Helmet } from "react-helmet-async";
 
 const PaymentPage = () => {
   return (
     <div className="homePageContainer">
+      <Helmet>
+        <title>
+          Payment Gateway Services in Bangalore for Small Business & Ecommerce{" "}
+        </title>
+        <meta
+          name="description"
+          content="Payment Gateway Services in Bangalore for Small Business & Ecommerce. Our solutions are tailored to meet your business needs, ensuring secure and seamless transactions."
+        />
+        <link rel="canonical" href="https://tryseoservices.com/payment-gateway-service-in-bangalore" />
+      </Helmet>
       <PaymentHeader />
       <PaymentService />
       <PaymentWhy />
