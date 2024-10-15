@@ -81,11 +81,13 @@
   width: fit-content;
   padding: 10px;
   height: 500px;
+  margin-right: 20px;
 }
 .homeCoverContent2 > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transform: scale(1.17);
 }
 
 .homeCoverContent1 > h1 {
@@ -186,6 +188,8 @@
     padding: 10px;
     height: 100%;
     margin-top: 100px;
+    margin-right: 0px;
+
   }
   .homeCoverContent1 > h1 {
     font-size: 40px;
@@ -204,6 +208,7 @@
     width: 90%;
     height: 100%;
     object-fit: contain;
+    transform: scale(1);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
@@ -224,7 +229,8 @@
   }
   .homeCover {
     /* border: solid; */
-    flex-direction: row}
+    flex-direction: row;
+  }
   .homeCoverContent1 {
     /* border: solid red; */
     width: 100%;
@@ -235,6 +241,8 @@
     padding: 10px;
     height: 100%;
     margin-top: 100px;
+    margin-right: 0px;
+
   }
   .homeCoverContent1 > h1 {
     font-size: 40px;
@@ -253,7 +261,6 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transform: scale(1);
   }
-  
-
 }

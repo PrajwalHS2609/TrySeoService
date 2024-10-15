@@ -4,7 +4,7 @@ import SocialMediaPricingMain from './SocialMediaPricingMain'
 
 const SocialMediaPricing = () => {
   return (
-    <div>
+    <div id='pricing'>
     <SocialMediaPricingHead/>
     <SocialMediaPricingMain/>
     </div>

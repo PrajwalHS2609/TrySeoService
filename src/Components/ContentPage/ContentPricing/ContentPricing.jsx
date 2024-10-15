@@ -4,7 +4,7 @@ import ContentPricingMain from './ContentPricingMain'
 
 const ContentPricing = () => {
   return (
-    <div>
+    <div id='pricing'>
       <ContentPricingHead/>
       <ContentPricingMain/>
     </div>

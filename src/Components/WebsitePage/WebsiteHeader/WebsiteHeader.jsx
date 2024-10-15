@@ -22,7 +22,7 @@ const WebsiteHeader = () => {
             For High Quality Traffic, Qualified Leads, Online Sales, Maximum
             Reach, & Search Ranking.
           </p>
-          <NavHashLink to="#Packages">
+          <NavHashLink to="#pricing">
             <button>
               <h4> Package</h4>
               <FontAwesomeIcon

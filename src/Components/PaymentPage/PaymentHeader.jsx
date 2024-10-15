@@ -1,10 +1,10 @@
 import React from "react";
-import { NavHashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import websiteBanner from "./../../Img/WebsitePage/websiteBanner.png";
+import paymentBanner from "./../../Img/PaymentPage/paymentBanner.png";
 import BlobAnim from "../HomePage/BlobAnim";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+import { Link } from "react-router-dom";
 const PaymentHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
@@ -23,18 +23,18 @@ const PaymentHeader = () => {
             your business needs, ensuring secure and seamless transactions.
             Trust us for a smooth payment experience.
           </p>
-          <NavHashLink to="#Packages">
+          <Link to={"/contact-us"}>
             <button>
-              <h4> Package</h4>
+              <h4> Contact Us</h4>
               <FontAwesomeIcon
                 icon={faArrowRight}
                 className="homeArrow"
               ></FontAwesomeIcon>
             </button>
-          </NavHashLink>
+          </Link>
         </div>
         <div className="homeCoverContent2">
-          <img src={websiteBanner} alt="websiteBanner" loading="lazy" />
+          <img src={paymentBanner} alt="paymentBanner" loading="lazy" />
         </div>
       </div>
     </div>

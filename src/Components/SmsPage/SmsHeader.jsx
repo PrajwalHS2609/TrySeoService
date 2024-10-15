@@ -1,10 +1,10 @@
 import React from "react";
-import { NavHashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import BlobAnim from "../HomePage/BlobAnim";
-import websiteBanner from "./../../Img/WebsitePage/websiteBanner.png";
+import whatsappBanner from "./../../Img/WhatsApp/whatsAppBanner.png";
+import { Link } from "react-router-dom";
 
 const SmsHeader = () => {
   return (
@@ -27,18 +27,18 @@ const SmsHeader = () => {
             are transforming the way businesses engage, inform, and drive growth
             in this vibrant tech hub.
           </p>
-          <NavHashLink to="#Packages">
+          <Link to={"/contact-us"}>
             <button>
-              <h4> Package</h4>
+              <h4> Contact Us</h4>
               <FontAwesomeIcon
                 icon={faArrowRight}
                 className="homeArrow"
               ></FontAwesomeIcon>
             </button>
-          </NavHashLink>
+          </Link>
         </div>
         <div className="homeCoverContent2">
-          <img src={websiteBanner} alt="websiteBanner" loading="lazy" />
+          <img src={whatsappBanner} alt="whatsappBanner" loading="lazy" />
         </div>
       </div>
     </div>

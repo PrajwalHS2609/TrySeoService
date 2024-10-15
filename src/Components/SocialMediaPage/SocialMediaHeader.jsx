@@ -1,5 +1,5 @@
 import React from "react";
-import websiteBanner from "./../../Img/WebsitePage/websiteBanner.png";
+import socialBanner from "./../../Img/SocialMediaPage/socialMediBanner.png";
 import BlobAnim from "../HomePage/BlobAnim";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { NavHashLink } from "react-router-hash-link";
@@ -27,7 +27,7 @@ const SocialMediaHeader = () => {
             trusted partner for navigating the dynamic world of social media
             marketing.
           </p>
-          <NavHashLink to="#Packages">
+          <NavHashLink to="#pricing">
             <button>
               <h4> Package</h4>
               <FontAwesomeIcon
@@ -38,7 +38,7 @@ const SocialMediaHeader = () => {
           </NavHashLink>
         </div>
         <div className="homeCoverContent2">
-          <img src={websiteBanner} alt="websiteBanner" loading="lazy" />
+          <img src={socialBanner} alt="socialBanner" loading="lazy" />
         </div>
       </div>
     </div>

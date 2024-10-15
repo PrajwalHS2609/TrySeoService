@@ -5,7 +5,7 @@ import BreadCrumb from "../../BreadCrumb/BreadCrumb";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavHashLink } from "react-router-hash-link";
-import websiteBanner from "./../../../Img/WebsitePage/websiteBanner.png";
+import seoBanner from "./../../../Img/SeoPage/seoBanner.png";
 
 const SeoHeader = () => {
   return (
@@ -24,7 +24,7 @@ const SeoHeader = () => {
             skills that are all required to develop that one large plan that
             provides results-based performance marketing solutions
           </p>
-          <NavHashLink to="#Packages">
+          <NavHashLink to="#pricing" smooth>
             <button>
               <h4> Package</h4>
               <FontAwesomeIcon
@@ -35,7 +35,7 @@ const SeoHeader = () => {
           </NavHashLink>
         </div>
         <div className="homeCoverContent2">
-          <img src={websiteBanner} alt="websiteBanner" loading="lazy" />
+          <img src={seoBanner} alt="seoBanner" loading="lazy" />
         </div>
       </div>
     </div>

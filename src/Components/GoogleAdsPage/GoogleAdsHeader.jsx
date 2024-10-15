@@ -4,7 +4,7 @@ import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { NavHashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import websiteBanner from "./../../Img/WebsitePage/websiteBanner.png";
+import adsBanner from "./../../Img/Google/AdsBanner.png";
 const GoogleAdsHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
@@ -24,7 +24,7 @@ const GoogleAdsHeader = () => {
             process, an increasing number of businesses are opting to invest in
             Google Ads.
           </p>
-          <NavHashLink to="#Packages">
+          <NavHashLink to="#pricing">
             <button>
               <h4> Package</h4>
               <FontAwesomeIcon
@@ -35,7 +35,7 @@ const GoogleAdsHeader = () => {
           </NavHashLink>
         </div>
         <div className="homeCoverContent2">
-          <img src={websiteBanner} alt="websiteBanner" loading="lazy" />
+          <img src={adsBanner} alt="adsBanner" loading="lazy" />
         </div>
       </div>
     </div>

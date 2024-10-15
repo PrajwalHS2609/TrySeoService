@@ -2,7 +2,7 @@ import React from "react";
 import BlobAnim from "../HomePage/BlobAnim";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { NavHashLink } from "react-router-hash-link";
-import websiteBanner from "./../../Img/WebsitePage/websiteBanner.png";
+import contentBanner from "./../../Img/ContentPage/contentBanner.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const ContentPageHeader = () => {
@@ -23,7 +23,7 @@ const ContentPageHeader = () => {
             as it is the only factor that contributes to the development of a
             strong online persona on search engines.
           </p>
-          <NavHashLink to="#Packages">
+          <NavHashLink to="#pricing">
             <button>
               <h4> Package</h4>
               <FontAwesomeIcon
@@ -34,7 +34,7 @@ const ContentPageHeader = () => {
           </NavHashLink>
         </div>
         <div className="homeCoverContent2">
-          <img src={websiteBanner} alt="websiteBanner" loading="lazy" />
+          <img src={contentBanner} alt="contentBanner" loading="lazy" />
         </div>
       </div>
     </div>

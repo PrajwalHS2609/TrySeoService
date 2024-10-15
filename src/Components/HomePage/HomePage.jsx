@@ -7,7 +7,6 @@ import HomeMarquee from "./HomeMarquee/HomeMarquee";
 import HomeTestimonial from "./HomeTestimonial/HomeTestimonial";
 import HomeWorking from "./HomeWorking/HomeWorking";
 import HomeWhatWe from "./HomeWhatWe/HomeWhatWe";
-import HomePricing from "./HomePricing/HomePricing";
 import HomeFaq from "./HomeFaq/HomeFaq";
 import HomeFocused from "./HomeFocused/HomeFocused";
 import { Helmet } from "react-helmet-async";
@@ -31,7 +30,6 @@ const HomePage = () => {
       <HomeWorking />
       <HomeWhatWe />
       <HomeFocused />
-      <HomePricing />
       <HomeTestimonial />
       <HomeFaq />
     </div>

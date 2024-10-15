@@ -4,7 +4,7 @@ import GoogleAdsPricingMain from './GoogleAdsPricingMain'
 
 const GoogleAdsPricing = () => {
   return (
-    <div>
+    <div id='pricing'>
 <GoogleAdsPricingHead/>
 <GoogleAdsPricingMain/>
     </div>
