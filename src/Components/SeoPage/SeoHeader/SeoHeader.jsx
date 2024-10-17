@@ -1,5 +1,4 @@
 import React from "react";
-import "./SeoHeader.css";
 import seoVid from "./../../../Img/Vid/SEO-banner.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";

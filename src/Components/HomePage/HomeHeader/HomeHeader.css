@@ -14,7 +14,7 @@
   /* flex-direction: column; */
 }
 .homeCover {
-  /* border: solid; */
+  /* border: solid green; */
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -80,7 +80,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: sc;
 }
 
 .homeCoverContent1 > h1 {
@@ -95,6 +94,7 @@
 .homeCoverContent1 > p {
   color: white;
   font-size: 18px;
+  text-align: justify;
 }
 .homeCoverContent1 > a {
   text-decoration: none;
@@ -215,107 +215,48 @@
   object-fit: contain;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .homeContainer {
-    /* border: solid red; */
-    height: 900px;
-  }
-  .homeCover {
-    /* border: solid; */
-
-    gap: 10px;
-  }
-  .blob {
-    display: flex;
-    right: -50px;
-    top: -80px;
-    width: 100%;
-  }
   .blob > video {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    display: none;
   }
-  .homeCover {
-    /* border: solid; */
-    flex-direction: column-reverse;
-  }
-  .homeCoverContent1 {
-    /* border: solid red; */
-    width: 100%;
-  }
-  .homeCoverContent2 {
-    /* border: solid yellowgreen; */
-    width: fit-content;
-    padding: 10px;
-    height: 100%;
-    margin-top: 100px;
-  }
-  .homeCoverContent1 > h1 {
-    font-size: 40px;
-    text-align: center;
-  }
-  .homeCoverContent1 > h1 > span {
-    color: var(--customColor);
-    font-size: 40px;
-  }
-  .homeCoverContent1 > p {
-    color: grey;
-    font-size: 18px;
-    text-align: justify;
-  }
-  .homeCoverContent2 > img {
-    width: 90%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 979px) {
   .homeContainer {
     /* border: solid red; */
-    height: 600px;
-  }
-  .homeCover {
-    /* border: solid; */
-
-    gap: 10px;
-  }
-  .blob {
-    display: flex;
-    transform: scale(1.2);
-    right: -150px;
-    top: -30px;
-  }
-  .homeCover {
-    /* border: solid; */
-    flex-direction: row;
+    height: 900px;
+    width: 100%;
   }
   .homeCoverContent1 {
     /* border: solid red; */
     width: 100%;
   }
-  .homeCoverContent2 {
-    /* border: solid yellowgreen; */
-    width: fit-content;
-    padding: 10px;
+  .homeCover {
+    /* border: solid green; */
+    width: 100%;
     height: 100%;
-    margin-top: 100px;
+    gap: 10px;
+    flex-direction: column-reverse;
+    background-color: rgb(255, 255, 255);
+  }
+  .homeCoverContent1 > h6 {
+    border: 1px solid black;
+    color: black;
   }
   .homeCoverContent1 > h1 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
+    color: black;
   }
   .homeCoverContent1 > h1 > span {
-    color: var(--customColor);
-    font-size: 40px;
+    font-size: 35px;
   }
   .homeCoverContent1 > p {
     color: grey;
     font-size: 18px;
-    text-align: justify;
   }
-  .homeCoverContent2 > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  .homeCoverBtnCover {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
   }
 }
