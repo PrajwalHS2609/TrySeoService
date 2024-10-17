@@ -1,22 +1,20 @@
 import React from "react";
-import BlobAnim from "../HomePage/BlobAnim";
-import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import emailBanner from "./../../Img/EmailPage/emailBanner.png";
 import { Link } from "react-router-dom";
+import emailVid from "./../../Img/Vid/SEOEmailMarketing.mp4";
 
 const EmailPageHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
-        <BlobAnim />
+        <video src={emailVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">
         <div className="homeCoverContent1">
-          <BreadCrumb txt="Google Ads" />
           <h1>
-            <span>Email Marketing </span>Services in Bangalore
+            We <span>Deliver Your Message</span>, Right on Time{" "}
           </h1>
           <p>
             In today’s digital age, businesses in Bangalore are continually

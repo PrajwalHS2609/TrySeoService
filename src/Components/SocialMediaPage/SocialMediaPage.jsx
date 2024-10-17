@@ -10,6 +10,7 @@ import SocialMediaChoose from "./SocialMediaChoose";
 import SocialMediaFaq from "./SocialMediaFaq/SocialMediaFaq";
 import HomeMarquee from "./../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 const SocialMediaPage = () => {
   return (
     <div className="socialMediaPage">
@@ -27,6 +28,7 @@ const SocialMediaPage = () => {
         />
       </Helmet>
       <SocialMediaHeader />
+      <BreadCrumb txt="Social Media " />
       <SocialMediaWhyHead />
       <HomeMarquee />
       <SocialMediaBenefits />

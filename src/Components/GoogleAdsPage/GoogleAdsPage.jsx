@@ -8,6 +8,7 @@ import GoogleAdsPricing from "./GoogleAdsPricing/GoogleAdsPricing";
 import GoogleAdsFaq from "./GoogleAdsFaq/GoogleAdsFaq";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 
 const GoogleAdsPage = () => {
   return (
@@ -24,6 +25,7 @@ const GoogleAdsPage = () => {
         />
       </Helmet>
       <GoogleAdsHeader />
+      <BreadCrumb txt="Google Ads" />
       <GoogleAdsService />
       <HomeMarquee />
       <GoogleAdsBenefits />

@@ -2,14 +2,16 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import BlobAnim from "./../BlobAnim";
 import "./HomeHeader.css";
 import headerImg from "./../../../Img/homeHeaderImg.png";
+import homeVid from "./../../../Img/Vid/Banners - home.mp4";
+import { NavHashLink } from "react-router-hash-link";
+
 const HomeHeader = () => {
   return (
     <div className="homeContainer">
       <div className="blob">
-        <BlobAnim />
+        <video src={homeVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">
         <div className="homeCoverContent1">
@@ -28,15 +30,27 @@ const HomeHeader = () => {
             For High Quality Traffic, Qualified Leads, Online Sales, Maximum
             Reach, & Search Ranking.
           </p>
-          <Link to={"/"}>
-            <button>
-              <h4> Get Started</h4>
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="homeArrow"
-              ></FontAwesomeIcon>
-            </button>
-          </Link>
+          <div className="homeCoverBtnCover">
+            {" "}
+            <NavHashLink to="#pricing">
+              <button>
+                <h4> Get Started</h4>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="homeArrow"
+                ></FontAwesomeIcon>
+              </button>
+            </NavHashLink>
+            <Link to={"/contact-us"}>
+              <button>
+                <h4> Contact Us</h4>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="homeArrow"
+                ></FontAwesomeIcon>
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="homeCoverContent2">
           <img src={headerImg} alt="headerImg" loading="lazy" />

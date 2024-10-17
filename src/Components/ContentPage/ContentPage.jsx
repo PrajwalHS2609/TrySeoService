@@ -9,6 +9,7 @@ import ContentPricing from "./ContentPricing/ContentPricing";
 import "./ContentPage.css";
 import ContentFaq from "./ContentFaq/ContentFaq";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 const ContentPage = () => {
   return (
     <div className="contentPage">
@@ -24,6 +25,7 @@ const ContentPage = () => {
         />
       </Helmet>
       <ContentPageHeader />
+      <BreadCrumb txt="Content Writing" />
       <ContentPageWhy />
       <ContentBenefits />
       <ContentReason />

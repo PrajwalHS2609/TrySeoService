@@ -1,36 +1,54 @@
 import React from "react";
 import "./WebsiteHeader.css";
-import BlobAnim from "../../HomePage/BlobAnim";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import websiteBanner from "./../../../Img/WebsitePage/websiteBanner.png";
 import { NavHashLink } from "react-router-hash-link";
-import BreadCrumb from "../../BreadCrumb/BreadCrumb";
+import websiteVid from "./../../../Img/Vid/SEOWebsiteDesign.mp4";
+import { Link } from "react-router-dom";
+
 const WebsiteHeader = () => {
   return (
     <div className="homeContainer" id="websiteHeader">
       <div className="blob">
-        <BlobAnim />
+        <video
+          style={{ transform: "scaleX(-1)" }}
+          src={websiteVid}
+          autoPlay
+          muted
+          loop
+        ></video>{" "}
       </div>
       <div className="homeCover">
         <div className="homeCoverContent1">
-          <BreadCrumb txt="Website" />
           <h1>
-            <span> Website Designing</span> services in Bangalore
+            We Craft Your <span>Digital</span> Presence
           </h1>
           <p>
             For High Quality Traffic, Qualified Leads, Online Sales, Maximum
             Reach, & Search Ranking.
           </p>
-          <NavHashLink to="#pricing">
-            <button>
-              <h4> Package</h4>
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="homeArrow"
-              ></FontAwesomeIcon>
-            </button>
-          </NavHashLink>
+          <div className="homeCoverBtnCover">
+            {" "}
+            <NavHashLink to="#pricing">
+              <button>
+                <h4> Package</h4>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="homeArrow"
+                ></FontAwesomeIcon>
+              </button>
+            </NavHashLink>
+            <Link to={"/contact-us"}>
+              <button>
+                <h4> Contact Us</h4>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="homeArrow"
+                ></FontAwesomeIcon>
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="homeCoverContent2">
           <img src={websiteBanner} alt="" loading="lazy" />

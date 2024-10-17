@@ -1,22 +1,21 @@
 import React from "react";
 import socialBanner from "./../../Img/SocialMediaPage/socialMediBanner.png";
-import BlobAnim from "../HomePage/BlobAnim";
-import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { NavHashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import socialVid from "./../../Img/Vid/SEOSocialMedia.mp4";
 
 const SocialMediaHeader = () => {
   return (
     <div className="homeContainer" id="socialMediaHeader">
       <div className="blob">
-        <BlobAnim />
+        <video src={socialVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">
         <div className="homeCoverContent1">
-          <BreadCrumb txt="Social Media " />
           <h1>
-            <span> Social Media Marketing </span>Services in Bangalore
+            We Boost Your <span>Brand Visibility</span>{" "}
           </h1>
           <p>
             In the ever-evolving digital landscape, social media has emerged as
@@ -27,15 +26,27 @@ const SocialMediaHeader = () => {
             trusted partner for navigating the dynamic world of social media
             marketing.
           </p>
-          <NavHashLink to="#pricing">
-            <button>
-              <h4> Package</h4>
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="homeArrow"
-              ></FontAwesomeIcon>
-            </button>
-          </NavHashLink>
+          <div className="homeCoverBtnCover">
+            {" "}
+            <NavHashLink to="#pricing">
+              <button>
+                <h4> Package</h4>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="homeArrow"
+                ></FontAwesomeIcon>
+              </button>
+            </NavHashLink>
+            <Link to={"/contact-us"}>
+              <button>
+                <h4> Contact Us</h4>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="homeArrow"
+                ></FontAwesomeIcon>
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="homeCoverContent2">
           <img src={socialBanner} alt="socialBanner" loading="lazy" />

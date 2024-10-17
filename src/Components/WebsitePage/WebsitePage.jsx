@@ -10,6 +10,7 @@ import WebsiteClient from "./WebsiteClient/WebsiteClient";
 import WebsiteWhy from "./WebsiteWhy/WebsiteWhy";
 import WebsiteFaq from "./WebsiteFaq/WebsiteFaq";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 const WebsitePage = () => {
   return (
     <div className="websitePage">
@@ -27,6 +28,7 @@ const WebsitePage = () => {
         />
       </Helmet>
       <WebsiteHeader />
+      <BreadCrumb txt="Website" />
       <WebsiteHowIt />
       <HomeMarquee />
       <WebsiteBenefits />

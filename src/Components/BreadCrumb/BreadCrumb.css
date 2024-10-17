@@ -1,9 +1,10 @@
 .breadCrumb {
   /* border: solid red; */
-  width: fit-content;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 20px;
 }
 .breadCrumb > h6 {
   display: flex;

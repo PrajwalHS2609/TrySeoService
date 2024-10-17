@@ -1,5 +1,4 @@
 import React from "react";
-import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import BlobAnim from './../HomePage/BlobAnim';
 
 const ContactUsHeader = () => {
@@ -9,7 +8,6 @@ const ContactUsHeader = () => {
             <BlobAnim/>
         </div>
       <h2>Contact Us</h2>
-      <BreadCrumb txt="Contact Us" />
     </div>
   );
 };

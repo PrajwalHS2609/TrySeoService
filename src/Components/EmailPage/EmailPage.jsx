@@ -6,6 +6,7 @@ import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 import EmailFaq from "./EmailFaq/EmailFaq";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 
 const EmailPage = () => {
   return (
@@ -22,6 +23,7 @@ const EmailPage = () => {
         />
       </Helmet>
       <EmailPageHeader />
+      <BreadCrumb txt="Email" />
       <EmailWhy />
       <EmailComprehensive />
       <WebsiteClient />

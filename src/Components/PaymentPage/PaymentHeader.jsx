@@ -2,21 +2,19 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import paymentBanner from "./../../Img/PaymentPage/paymentBanner.png";
-import BlobAnim from "../HomePage/BlobAnim";
-import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { Link } from "react-router-dom";
+import paymentVid from "./../../Img/Vid/SEOPaymentGateway.mp4";
+
 const PaymentHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
-        <BlobAnim />
+        <video src={paymentVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">
         <div className="homeCoverContent1">
-          <BreadCrumb txt="Google Ads" />
           <h1>
-            Are you looking for the <span>Payment Gateway</span> Services in
-            Bangalore?{" "}
+            We Simplify Your <span>Payments</span>
           </h1>
           <p>
             Look no further! Our payment gateway solutions are tailored to meet

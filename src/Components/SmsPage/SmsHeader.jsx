@@ -1,22 +1,20 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import BreadCrumb from "../BreadCrumb/BreadCrumb";
-import BlobAnim from "../HomePage/BlobAnim";
 import whatsappBanner from "./../../Img/WhatsApp/whatsAppBanner.png";
 import { Link } from "react-router-dom";
+import whatsAppVid from "./../../Img/Vid/SEOwhatsapp.mp4";
 
 const SmsHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
-        <BlobAnim />
+        <video src={whatsAppVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">
         <div className="homeCoverContent1">
-          <BreadCrumb txt="SMS & WhatsApp" />
           <h1>
-            <span>SMS & What'sApp Marketing</span> Services in Bangalore
+            We <span>Bring You Closer</span> to Your Customers{" "}
           </h1>
           <p>
             In the bustling city of Bangalore, where innovation and technology

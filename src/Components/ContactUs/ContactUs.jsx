@@ -5,6 +5,7 @@ import ContactUsAddress from "./ContactUsAddress";
 import ContactUsMap from "./ContactUsMap";
 import ContactUsForm from "./ContactUsForm";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 const ContactUs = () => {
   return (
     <div>
@@ -17,6 +18,8 @@ const ContactUs = () => {
         <link rel="canonical" href="https://tryseoservices.com/contact-us" />
       </Helmet>
       <ContactUsHeader />
+      <BreadCrumb txt="Contact Us" />
+
       <div className="contactUsWrapper">
         <div className="contactUsContent1">
           <ContactUsAddress />

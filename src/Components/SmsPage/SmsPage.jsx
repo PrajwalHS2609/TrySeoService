@@ -7,6 +7,7 @@ import SmsService from "./SmsService/SmsService";
 import SmsChoose from "./SmsChoose";
 import SmsFaq from "./SmsFaq/SmsFaq";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 
 const SmsPage = () => {
   return (
@@ -25,6 +26,7 @@ const SmsPage = () => {
         />
       </Helmet>
       <SmsHeader />
+      <BreadCrumb txt="SMS & WhatsApp" />
       <SmsWhy />
       <SmsService />
       <SmsChoose />
