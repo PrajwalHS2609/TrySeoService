@@ -2,58 +2,46 @@ import React from "react";
 import "./WebsiteHeader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import websiteBanner from "./../../../Img/WebsitePage/websiteBanner.png";
 import { NavHashLink } from "react-router-hash-link";
 import websiteVid from "./../../../Img/Vid/SEOWebsiteDesign.mp4";
 import { Link } from "react-router-dom";
-import BlobAnim from "../../HomePage/BlobAnim";
 
 const WebsiteHeader = () => {
   return (
     <div className="homeContainer" id="websiteHeader">
       <div className="blob">
-        <BlobAnim />
-        <video
-          style={{ transform: "scaleX(-1)" }}
-          src={websiteVid}
-          autoPlay
-          muted
-          loop
-        ></video>{" "}
-      </div>
-      <div className="homeCover">
-        <div className="homeCoverContent1">
-          <h1>
-            We Craft Your <span>Digital</span> Presence
-          </h1>
-          <p>
-            For High Quality Traffic, Qualified Leads, Online Sales, Maximum
-            Reach, & Search Ranking.
-          </p>
-          <div className="homeCoverBtnCover">
-            {" "}
-            <NavHashLink to="#pricing">
-              <button>
-                <h4> Package</h4>
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="homeArrow"
-                ></FontAwesomeIcon>
-              </button>
-            </NavHashLink>
-            <Link to={"/contact-us"}>
-              <button>
-                <h4> Contact Us</h4>
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="homeArrow"
-                ></FontAwesomeIcon>
-              </button>
-            </Link>
+        <video src={websiteVid} autoPlay muted loop></video>{" "}
+        <div className="homeCover">
+          <div className="homeCoverContent1">
+            <h1>
+              We Craft Your <span>Digital</span> Presence
+            </h1>
+            <p>
+              For High Quality Traffic, Qualified Leads, Online Sales, Maximum
+              Reach, & Search Ranking.
+            </p>
+            <div className="homeCoverBtnCover">
+              {" "}
+              <NavHashLink to="#pricing">
+                <button>
+                  <h4> Package</h4>
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="homeArrow"
+                  ></FontAwesomeIcon>
+                </button>
+              </NavHashLink>
+              <Link to={"/contact-us"}>
+                <button>
+                  <h4> Contact Us</h4>
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="homeArrow"
+                  ></FontAwesomeIcon>
+                </button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className="homeCoverContent2">
-          <img src={websiteBanner} alt="" loading="lazy" />
         </div>
       </div>
     </div>

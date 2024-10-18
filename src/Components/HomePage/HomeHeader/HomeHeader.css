@@ -6,7 +6,6 @@
   width: 100%;
   /* background-color: blue; */
   position: relative;
-  background-color: #fefefe;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -21,9 +20,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.412);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 100px;
+  padding: 30px;
+  top: 0;
+  right: 0;
 }
 
 .homeCoverContent1 {
@@ -69,17 +70,6 @@
   top: -20px;
   right: -35px;
   color: lightblue;
-}
-.homeCoverContent2 {
-  /* border: solid yellowgreen; */
-  width: fit-content;
-  padding: 10px;
-  height: 500px;
-}
-.homeCoverContent2 > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 .homeCoverContent1 > h1 {
@@ -211,19 +201,21 @@
 .blob > video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .blob > video {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: none;
   }
   .homeContainer {
     /* border: solid red; */
-    height: 900px;
+    height: 800px;
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .homeCoverContent1 {
     /* border: solid red; */
@@ -236,6 +228,7 @@
     gap: 10px;
     flex-direction: column-reverse;
     background-color: rgba(255, 255, 255, 0.197);
+    position: static;
   }
   .homeCoverContent1 > h6 {
     border: 1px solid black;

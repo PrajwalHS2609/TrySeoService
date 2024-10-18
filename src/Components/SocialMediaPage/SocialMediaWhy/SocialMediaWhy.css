@@ -61,8 +61,8 @@
 }
 @media screen and (min-width:320px) and (max-width:768px) {
   .socialMediaWhyHead > h2 {
-    font-size: 40px;
-    width: 90%;
+    font-size: 35px;
+    width: 100%;
     text-align: center;
     padding: 10px;
 
