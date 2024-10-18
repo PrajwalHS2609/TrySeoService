@@ -5,11 +5,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import adsBanner from "./../../Img/Google/AdsBanner.png";
 import googleVid from "./../../Img/Vid/SEOGoogleAds.mp4";
 import { Link } from "react-router-dom";
+import BlobAnim from "../HomePage/BlobAnim";
 
 const GoogleAdsHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
+      <BlobAnim />
         <video src={googleVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">

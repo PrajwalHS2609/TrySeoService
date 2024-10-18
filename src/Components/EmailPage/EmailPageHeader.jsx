@@ -4,11 +4,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import emailBanner from "./../../Img/EmailPage/emailBanner.png";
 import { Link } from "react-router-dom";
 import emailVid from "./../../Img/Vid/SEOEmailMarketing.mp4";
+import BlobAnim from './../HomePage/BlobAnim';
 
 const EmailPageHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
+      <BlobAnim />
         <video src={emailVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">

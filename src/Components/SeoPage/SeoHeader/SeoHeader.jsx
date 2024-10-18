@@ -5,11 +5,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavHashLink } from "react-router-hash-link";
 import seoBanner from "./../../../Img/SeoPage/seoBanner.png";
 import { Link } from "react-router-dom";
+import BlobAnim from "../../HomePage/BlobAnim";
 
 const SeoHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
+      <BlobAnim />
         <video src={seoVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">

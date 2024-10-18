@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import contentVid from "./../../Img/Vid/SEOContentWriting.mp4";
 import { Link } from "react-router-dom";
+import BlobAnim from './../HomePage/BlobAnim';
 
 const ContentPageHeader = () => {
   return (
     <div className="homeContainer" id="contentHeader">
       <div className="blob">
+        <BlobAnim />
         <video src={contentVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">

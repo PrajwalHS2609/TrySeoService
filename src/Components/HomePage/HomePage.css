@@ -4,11 +4,17 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+  /* border: solid red; */
 }
 .blobContainer {
   font-family: sans-serif;
   text-align: center;
   width: 500px;
+  display: none;
+  position: absolute;
+  top: -500px;
+  right: 0;
 }
 
 .top {
@@ -172,4 +178,13 @@
   height: 156px;
   bottom: -16px;
   animation-delay: 14s;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homePageContainer {
+    position: relative;
+  }
+  .blobContainer {
+    display: block;
+
+  }
 }

@@ -4,11 +4,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import whatsappBanner from "./../../Img/WhatsApp/whatsAppBanner.png";
 import { Link } from "react-router-dom";
 import whatsAppVid from "./../../Img/Vid/SEOwhatsapp.mp4";
+import BlobAnim from "../HomePage/BlobAnim";
 
 const SmsHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
+      <BlobAnim />
         <video src={whatsAppVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">

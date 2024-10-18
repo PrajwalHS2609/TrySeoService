@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import socialVid from "./../../Img/Vid/SEOSocialMedia.mp4";
+import BlobAnim from "../HomePage/BlobAnim";
 
 const SocialMediaHeader = () => {
   return (
     <div className="homeContainer" id="socialMediaHeader">
       <div className="blob">
+      <BlobAnim />
         <video src={socialVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">

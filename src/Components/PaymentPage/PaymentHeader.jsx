@@ -4,11 +4,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import paymentBanner from "./../../Img/PaymentPage/paymentBanner.png";
 import { Link } from "react-router-dom";
 import paymentVid from "./../../Img/Vid/SEOPaymentGateway.mp4";
+import BlobAnim from "../HomePage/BlobAnim";
 
 const PaymentHeader = () => {
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
+        <BlobAnim />
         <video src={paymentVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">

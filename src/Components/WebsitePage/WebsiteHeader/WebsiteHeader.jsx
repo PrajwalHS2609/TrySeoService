@@ -6,11 +6,13 @@ import websiteBanner from "./../../../Img/WebsitePage/websiteBanner.png";
 import { NavHashLink } from "react-router-hash-link";
 import websiteVid from "./../../../Img/Vid/SEOWebsiteDesign.mp4";
 import { Link } from "react-router-dom";
+import BlobAnim from "../../HomePage/BlobAnim";
 
 const WebsiteHeader = () => {
   return (
     <div className="homeContainer" id="websiteHeader">
       <div className="blob">
+        <BlobAnim />
         <video
           style={{ transform: "scaleX(-1)" }}
           src={websiteVid}

@@ -6,11 +6,13 @@ import "./HomeHeader.css";
 import headerImg from "./../../../Img/homeHeaderImg.png";
 import homeVid from "./../../../Img/Vid/Banners - home.mp4";
 import { NavHashLink } from "react-router-hash-link";
+import BlobAnim from "../BlobAnim";
 
 const HomeHeader = () => {
   return (
     <div className="homeContainer">
       <div className="blob">
+        <BlobAnim/>
         <video src={homeVid} autoPlay muted loop></video>{" "}
       </div>
       <div className="homeCover">
