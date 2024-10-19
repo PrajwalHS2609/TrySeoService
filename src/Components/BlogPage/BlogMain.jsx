@@ -85,6 +85,13 @@ const BlogMain = () => {
         para="In the world of Search Engine Optimization (SEO), keywords are the foundation of any successful..."
         link="/the-power-of-long-tail-keywords-how-to-find-and-use-them"
       />
+      <BlogCard
+        img={LongTailKeywords}
+        alt="Top10Reasons"
+        head="Top 10 Reasons Why Every Business Needs an SEO Audit"
+        para="In today's digital age, the success of any business relies heavily on its online presence. Search Engine Optimization (SEO) plays..."
+        link="/top-10-reasons-why-every-business-needs-an-seo-audit"
+      />
     </div>
   );
 };

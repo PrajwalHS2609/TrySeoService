@@ -1,5 +1,4 @@
-import React from "react";
-import HomeHeader from "./HomeHeader/HomeHeader";
+import React, { Suspense } from "react";
 import "./HomePage.css";
 import HomeService from "./HomeService/HomeService";
 import HomeAboutUs from "./HomeAboutUs/HomeAboutUs";
@@ -10,6 +9,8 @@ import HomeWhatWe from "./HomeWhatWe/HomeWhatWe";
 import HomeFaq from "./HomeFaq/HomeFaq";
 import HomeFocused from "./HomeFocused/HomeFocused";
 import { Helmet } from "react-helmet-async";
+const HomeHeader = React.lazy(() => import("./HomeHeader/HomeHeader"));
+
 const HomePage = () => {
   return (
     <div className="homePageContainer">
@@ -23,7 +24,9 @@ const HomePage = () => {
         />
         <link rel="canonical" href="https://tryseoservices.com/" />
       </Helmet>
-      <HomeHeader />
+      <Suspense fallback={<p>Loading....</p>}>
+        <HomeHeader />
+      </Suspense>
       <HomeService />
       <HomeAboutUs />
       <HomeMarquee />
