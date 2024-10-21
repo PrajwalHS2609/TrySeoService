@@ -8,10 +8,8 @@ const ContentLoader = () => {
       width="100%"
       height={400}
       viewBox="0 0 1000 400"
-      // backgroundColor="#f3f3f3"
-      // foregroundColor="#ecebeb"
-      backgroundColor="#FF0000"
-      foregroundColor="#FF0000"
+      backgroundColor="#f3f3f3"
+      foregroundColor="#ecebeb"
     >
       {/* Example of a single card */}
       <rect x="20" y="20" rx="10" ry="10" width="240" height="240" />

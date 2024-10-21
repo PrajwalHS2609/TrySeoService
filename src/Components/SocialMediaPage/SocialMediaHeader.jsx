@@ -1,5 +1,4 @@
 import React from "react";
-import socialBanner from "./../../Img/SocialMediaPage/socialMediBanner.png";
 import { NavHashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";

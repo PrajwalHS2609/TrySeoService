@@ -27,6 +27,10 @@ import WhatIsSeo from "./Components/BlogPage/BlogInnerPages/WhatIsSeo/WhatIsSeo"
 import TransformingForeign from "./Components/BlogPage/BlogInnerPages/TransformingForeign/TransformingForeign";
 import LongTailKeywords from "./Components/BlogPage/BlogInnerPages/LongTailKeywords/LongTailKeywords";
 import { HelmetProvider } from "react-helmet-async";
+import TopTenReasons from "./Components/BlogPage/BlogInnerPages/TopTenReasons/TopTenReasons";
+import OnPageSeo from "./Components/SeoPage/OnPageSeo/OnPageSeo";
+import WebsiteSmall from "./Components/WebsitePage/WebsiteSmall/WebsiteSmall";
+import LocalSeo from "./Components/SeoPage/LocalSeo/LocalSeo";
 
 function App() {
   return (
@@ -100,6 +104,7 @@ function App() {
             <Route
               path="/what-is-on-page-seo-why-it-is-important-for-every-websites"
               element={<WhatIsSeo />}
+
             />
             <Route
               path="/transforming-foreign-language-school-of-bangalore"
@@ -109,6 +114,25 @@ function App() {
               path="/the-power-of-long-tail-keywords-how-to-find-and-use-them"
               element={<LongTailKeywords />}
             />
+            <Route
+              path="/top-10-reasons-why-every-business-needs-an-seo-audit"
+              element={<TopTenReasons />}
+            />
+            {/* --------------------------------/Blog------------------------ */}
+            {/* ------------------------------------servicePage----------------------------- */}
+            <Route
+              path="/on-page-seo-services-in-bangalore"
+              element={<OnPageSeo />}
+            />
+            <Route
+              path="/local-seo-services-in-bangalore"
+              element={<LocalSeo />}
+            />
+            <Route
+              path="/website-design-in-bangalore-at-rs-10000"
+              element={<WebsiteSmall />}
+            />
+            {/* ----------------------------------------/servicePage---------------------------- */}
           </Routes>
           <WhatsApp />
           <Footer />

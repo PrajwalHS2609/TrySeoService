@@ -1,5 +1,4 @@
-import React from "react";
-import ContentPageHeader from "./ContentPageHeader";
+import React, { Suspense } from "react";
 import ContentBenefits from "./ContentBenefits/ContentBenefits";
 import ContentPageWhy from "./ContentWhy/ContentWhy";
 import ContentReason from "./ContentReason/ContentReason";
@@ -10,6 +9,8 @@ import "./ContentPage.css";
 import ContentFaq from "./ContentFaq/ContentFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+const ContentPageHeader = React.lazy(() => import("./ContentPageHeader"));
+
 const ContentPage = () => {
   return (
     <div className="contentPage">
@@ -24,7 +25,9 @@ const ContentPage = () => {
           href="https://tryseoservices.com/content-writing-service-in-bangalore"
         />
       </Helmet>
-      <ContentPageHeader />
+      <Suspense fallback={<p>Loading....</p>}>
+        <ContentPageHeader />
+      </Suspense>
       <BreadCrumb txt="Content Writing" />
       <ContentPageWhy />
       <ContentBenefits />

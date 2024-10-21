@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import contentVid from "./../../Img/Vid/SEOContentWriting.mp4";
 import { Link } from "react-router-dom";
+import ContentLoader from "react-content-loader";
 
 const ContentPageHeader = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+  if (loading) {
+    return <ContentLoader />; // Show the loader while loading
+  }
   return (
     <div className="homeContainer" id="contentHeader">
       <div className="blob">
