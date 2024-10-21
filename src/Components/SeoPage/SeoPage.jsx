@@ -9,6 +9,7 @@ import SeoReasons from "./SeoReasons/SeoReasons";
 import WebsiteFaq from "../WebsitePage/WebsiteFaq/WebsiteFaq";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
+import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
 const SeoPage = () => {
   return (
     <div className="seoPage">
@@ -24,6 +25,7 @@ const SeoPage = () => {
         />
       </Helmet>
       <SeoHeader />
+      {/* <HomeHeader/> */}
       <SeoService />
       <HomeMarquee />
       <SeoBenefits />
