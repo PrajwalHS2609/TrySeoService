@@ -5,7 +5,9 @@ import OnPageSeoWhy from "./OnPageSeoWhy/OnPageSeoWhy";
 import OnPageSeoKey from "./OnPageSeoKey/OnPageSeoKey";
 import OnPageSeoBenefits from "./OnPageSeoBenefits";
 import SeoHeader from "../SeoHeader/SeoHeader";
-import HomeHeader from "../../HomePage/HomeHeader/HomeHeader";
+import SeoPricing from "../SeoPricing/SeoPricing";
+import WebsiteFaq from "../../WebsitePage/WebsiteFaq/WebsiteFaq";
+import WebsiteClient from "../../WebsitePage/WebsiteClient/WebsiteClient";
 
 const OnPageSeo = () => {
   return (
@@ -29,6 +31,9 @@ const OnPageSeo = () => {
       <OnPageSeoWhy />
       <OnPageSeoKey />
       <OnPageSeoBenefits />
+      <SeoPricing />
+      <WebsiteFaq />
+      <WebsiteClient />
     </div>
   );
 };

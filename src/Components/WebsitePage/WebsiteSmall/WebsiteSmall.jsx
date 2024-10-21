@@ -8,6 +8,10 @@ import { Helmet } from "react-helmet-async";
 import WebsiteSmallWhy from "./WebsiteSmallWhy";
 import WebsiteSmallBenefits from "./WebsiteSmallBenefits";
 import WebsiteSmallHead from "./WebsiteSmallHead";
+import HomePricing from "../../HomePage/HomePricing/HomePricing";
+import HomeTestimonial from "../../HomePage/HomeTestimonial/HomeTestimonial";
+import WebsiteFaq from "../WebsiteFaq/WebsiteFaq";
+import WebsiteClient from "../WebsiteClient/WebsiteClient";
 
 const WebsiteSmall = () => {
   return (
@@ -33,6 +37,10 @@ const WebsiteSmall = () => {
       <WebsiteSmallWho />
       <WebsiteSmallWhat />
       <WebsiteSmallHow />
+      <HomePricing />
+      <HomeTestimonial />
+      <WebsiteFaq />
+      <WebsiteClient />
     </div>
   );
 };

@@ -5,6 +5,9 @@ import LocalSeoHead from "./LocalSeoHead";
 import LocalSeoWhy from "./LocalSeoWhy";
 import LocalSeoKey from "./LocalSeoKey";
 import LocalSeoBenefits from "./LocalSeoBenefits";
+import SeoPricing from "../SeoPricing/SeoPricing";
+import WebsiteFaq from "../../WebsitePage/WebsiteFaq/WebsiteFaq";
+import WebsiteClient from "../../WebsitePage/WebsiteClient/WebsiteClient";
 
 const LocalSeo = () => {
   return (
@@ -28,6 +31,9 @@ const LocalSeo = () => {
       <LocalSeoWhy />
       <LocalSeoKey />
       <LocalSeoBenefits />
+      <SeoPricing />
+      <WebsiteFaq />
+      <WebsiteClient />
     </div>
   );
 };
