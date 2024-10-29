@@ -1,5 +1,4 @@
-import React from "react";
-import SmsHeader from "./SmsHeader";
+import React, { Suspense } from "react";
 import SmsWhy from "./SmsWhy";
 import WebsiteClient from "./../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "./../HomePage/HomeTestimonial/HomeTestimonial";
@@ -8,6 +7,7 @@ import SmsChoose from "./SmsChoose";
 import SmsFaq from "./SmsFaq/SmsFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+const SmsHeader = React.lazy(() => import("./SmsHeader"));
 
 const SmsPage = () => {
   return (
@@ -25,7 +25,9 @@ const SmsPage = () => {
           href="https://tryseoservices.com/sms-and-whatsapp-marketing-services-in-bangalore"
         />
       </Helmet>
-      <SmsHeader />
+      <Suspense fallback={<p>Loading....</p>}>
+        <SmsHeader />
+      </Suspense>{" "}
       <BreadCrumb txt="SMS & WhatsApp" />
       <SmsWhy />
       <SmsService />

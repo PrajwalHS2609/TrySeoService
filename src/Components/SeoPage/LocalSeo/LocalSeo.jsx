@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import SeoHeader from "../SeoHeader/SeoHeader";
+import SeoHeader from "../SeoHeader";
 import LocalSeoHead from "./LocalSeoHead";
 import LocalSeoWhy from "./LocalSeoWhy";
 import LocalSeoKey from "./LocalSeoKey";

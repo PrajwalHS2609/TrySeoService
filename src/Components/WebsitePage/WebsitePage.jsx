@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./WebsitePage.css";
-import WebsiteHeader from "./WebsiteHeader/WebsiteHeader";
 import HomeTestimonial from "./../HomePage/HomeTestimonial/HomeTestimonial";
 import HomePricing from "./../HomePage/HomePricing/HomePricing";
 import WebsiteHowIt from "./WebsiteHowIt/WebsiteHowIt";
@@ -11,6 +10,8 @@ import WebsiteWhy from "./WebsiteWhy/WebsiteWhy";
 import WebsiteFaq from "./WebsiteFaq/WebsiteFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+const WebsiteHeader = React.lazy(() => import("./WebsiteHeader/WebsiteHeader"));
+
 const WebsitePage = () => {
   return (
     <div className="websitePage">
@@ -27,7 +28,10 @@ const WebsitePage = () => {
           href="https://tryseoservices.com/website-designing-services-in-bangalore"
         />
       </Helmet>
-      <WebsiteHeader />
+      <Suspense fallback={<p>Loading....</p>}>
+        <WebsiteHeader />
+      </Suspense>
+
       <BreadCrumb txt="Website" />
       <WebsiteHowIt />
       <HomeMarquee />

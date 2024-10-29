@@ -140,8 +140,8 @@
 }
 .homeCoverBtnCover > a > button {
   border: none;
-  padding: 10px;
-  border-radius: 30px;
+  padding: 5px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,6 +150,7 @@
   color: white;
   position: relative;
   overflow: hidden;
+  font-size: 18px;
 }
 
 .homeCoverBtnCover > a > button::after {
@@ -170,7 +171,7 @@
 }
 .homeCoverBtnCover > a > button > h4 {
   font-family: "Archivo", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   position: static;
   z-index: 1;

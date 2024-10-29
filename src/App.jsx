@@ -31,6 +31,7 @@ import TopTenReasons from "./Components/BlogPage/BlogInnerPages/TopTenReasons/To
 import OnPageSeo from "./Components/SeoPage/OnPageSeo/OnPageSeo";
 import WebsiteSmall from "./Components/WebsitePage/WebsiteSmall/WebsiteSmall";
 import LocalSeo from "./Components/SeoPage/LocalSeo/LocalSeo";
+import GooglePositioning from "./Components/BlogPage/BlogInnerPages/GooglePositioning/GooglePositioning";
 
 function App() {
   return (
@@ -104,7 +105,6 @@ function App() {
             <Route
               path="/what-is-on-page-seo-why-it-is-important-for-every-websites"
               element={<WhatIsSeo />}
-
             />
             <Route
               path="/transforming-foreign-language-school-of-bangalore"
@@ -117,6 +117,10 @@ function App() {
             <Route
               path="/top-10-reasons-why-every-business-needs-an-seo-audit"
               element={<TopTenReasons />}
+            />
+            <Route
+              path="/google-search-engine-positioning-understanding-it-and-boosting-your-rankings"
+              element={<GooglePositioning />}
             />
             {/* --------------------------------/Blog------------------------ */}
             {/* ------------------------------------servicePage----------------------------- */}

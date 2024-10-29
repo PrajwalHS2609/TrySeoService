@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./SocialMediaPage.css";
-import SocialMediaHeader from "./SocialMediaHeader";
 import SocialMediaBenefits from "./SocialMediaBenefits/SocialMediaBenefits";
 import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
@@ -11,6 +10,8 @@ import SocialMediaFaq from "./SocialMediaFaq/SocialMediaFaq";
 import HomeMarquee from "./../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+const SocialMediaHeader = React.lazy(() => import("./SocialMediaHeader"));
+
 const SocialMediaPage = () => {
   return (
     <div className="socialMediaPage">
@@ -27,7 +28,9 @@ const SocialMediaPage = () => {
           href="https://tryseoservices.com/social-media-marketing-services-in-bangalore"
         />
       </Helmet>
-      <SocialMediaHeader />
+      <Suspense fallback={<p>Loading....</p>}>
+        <SocialMediaHeader />
+      </Suspense>{" "}
       <BreadCrumb txt="Social Media " />
       <SocialMediaWhyHead />
       <HomeMarquee />

@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./SeoPage.css";
-import SeoHeader from "./SeoHeader/SeoHeader";
 import SeoService from "./SeoService/SeoService";
 import SeoBenefits from "./SeoBenefits/SeoBenefits";
 import SeoPricing from "./SeoPricing/SeoPricing";
@@ -9,7 +8,9 @@ import SeoReasons from "./SeoReasons/SeoReasons";
 import WebsiteFaq from "../WebsitePage/WebsiteFaq/WebsiteFaq";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
-import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
+const SeoHeader = React.lazy(() => import("./SeoHeader"));
+
+// import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
 const SeoPage = () => {
   return (
     <div className="seoPage">
@@ -24,8 +25,9 @@ const SeoPage = () => {
           href="https://tryseoservices.com/seo-services-in-bangalore"
         />
       </Helmet>
-      <SeoHeader />
-      {/* <HomeHeader/> */}
+      <Suspense fallback={<p>Loading....</p>}>
+        <SeoHeader />
+      </Suspense>
       <SeoService />
       <HomeMarquee />
       <SeoBenefits />

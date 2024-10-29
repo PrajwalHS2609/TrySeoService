@@ -1,13 +1,13 @@
 import React from "react";
-import seoVid from "./../../../Img/Vid/SEO-banner.mp4";
+import seoVid from "./../../Img/Vid/SEO-banner.mp4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { NavHashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-
+import "./../HomePage/HomeHeader/HomeHeader.css";
 const SeoHeader = () => {
   return (
-    <div className="homeContainer" id="seoHeader">
+    <div className="homeContainer">
       <div className="blob">
         <video src={seoVid} autoPlay muted loop></video>{" "}
         <div className="homeCover">

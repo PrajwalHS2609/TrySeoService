@@ -6,8 +6,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30px ;
-  padding: 50px !important;
+  gap: 30px;
+  padding: 20px !important;
+  padding-left: 50px !important;
 }
 .exploreSeoOptimizing > h1 {
   color: var(--customColor);

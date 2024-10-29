@@ -11,6 +11,8 @@ import whatIs from "./../../Img/Blog/BlogMain/What is On-Page SEO_ Why it is imp
 import transform from "./../../Img/Blog/BlogMain/Transforming Foreign Language School of Bangalore.png";
 import howSeo from "./../../Img/Blog/BlogMain/How SEO Services Can Boost Attestation Service Providers in Bangalore.png";
 import LongTailKeywords from "./../../Img/Blog/BlogMain/Long-Tail Keywords.png";
+import Top10Reasons from "./../../Img/Blog/BlogMain/Top 10 Reasons Why Every Business Needs an SEO Audit.png";
+import googlePositioning from "./../../Img/Blog/BlogMain/The Essential Guide to Boosting Your Google Search Engine Positioning.png";
 
 const BlogMain = () => {
   return (
@@ -86,11 +88,18 @@ const BlogMain = () => {
         link="/the-power-of-long-tail-keywords-how-to-find-and-use-them"
       />
       <BlogCard
-        img={LongTailKeywords}
+        img={Top10Reasons}
         alt="Top10Reasons"
         head="Top 10 Reasons Why Every Business Needs an SEO Audit"
         para="In today's digital age, the success of any business relies heavily on its online presence. Search Engine Optimization (SEO) plays..."
         link="/top-10-reasons-why-every-business-needs-an-seo-audit"
+      />
+      <BlogCard
+        img={googlePositioning}
+        alt="Google Search Engine Positioning"
+        head="The Essential Guide to Boosting Your Google Search Engine Positioning"
+        para="After spending countless hours crafting your website and optimizing its content..."
+        link="/google-search-engine-positioning-understanding-it-and-boosting-your-rankings"
       />
     </div>
   );

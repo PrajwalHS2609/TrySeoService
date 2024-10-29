@@ -1,5 +1,4 @@
-import React from "react";
-import PaymentHeader from "./PaymentHeader";
+import React, { Suspense } from "react";
 import PaymentService from "./PaymentService";
 import PaymentWhy from "./PaymentWhy";
 import PaymentKey from "./PaymentKey";
@@ -10,6 +9,7 @@ import PaymentFactor from "./PaymentFactor/PaymentFactor";
 import PaymentFaq from "./PaymentFaq/PaymentFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+const PaymentHeader = React.lazy(() => import("./PaymentHeader"));
 
 const PaymentPage = () => {
   return (
@@ -27,7 +27,9 @@ const PaymentPage = () => {
           href="https://tryseoservices.com/payment-gateway-service-in-bangalore"
         />
       </Helmet>
-      <PaymentHeader />
+      <Suspense fallback={<p>Loading....</p>}>
+        <PaymentHeader />
+      </Suspense>
       <BreadCrumb txt="Payment Gateway" />
       <PaymentService />
       <PaymentWhy />

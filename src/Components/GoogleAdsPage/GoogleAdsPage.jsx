@@ -1,5 +1,4 @@
-import React from "react";
-import GoogleAdsHeader from "./GoogleAdsHeader";
+import React, { Suspense } from "react";
 import GoogleAdsBenefits from "./GoogleAdsBenefits/GoogleAdsBenefits";
 import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
@@ -9,6 +8,7 @@ import GoogleAdsFaq from "./GoogleAdsFaq/GoogleAdsFaq";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+const GoogleAdsHeader = React.lazy(() => import("./GoogleAdsHeader"));
 
 const GoogleAdsPage = () => {
   return (
@@ -24,7 +24,9 @@ const GoogleAdsPage = () => {
           href="https://tryseoservices.com/google-ads-service-in-bangalore"
         />
       </Helmet>
-      <GoogleAdsHeader />
+      <Suspense fallback={<p>Loading....</p>}>
+        <GoogleAdsHeader />
+      </Suspense>
       <BreadCrumb txt="Google Ads" />
       <GoogleAdsService />
       <HomeMarquee />

@@ -4,7 +4,7 @@ import OnPageSeoHead from "./OnPageSeoHead/OnPageSeoHead";
 import OnPageSeoWhy from "./OnPageSeoWhy/OnPageSeoWhy";
 import OnPageSeoKey from "./OnPageSeoKey/OnPageSeoKey";
 import OnPageSeoBenefits from "./OnPageSeoBenefits";
-import SeoHeader from "../SeoHeader/SeoHeader";
+import SeoHeader from "../SeoHeader";
 import SeoPricing from "../SeoPricing/SeoPricing";
 import WebsiteFaq from "../../WebsitePage/WebsiteFaq/WebsiteFaq";
 import WebsiteClient from "../../WebsitePage/WebsiteClient/WebsiteClient";
