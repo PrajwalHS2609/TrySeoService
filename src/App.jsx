@@ -32,7 +32,12 @@ import OnPageSeo from "./Components/SeoPage/OnPageSeo/OnPageSeo";
 import WebsiteSmall from "./Components/WebsitePage/WebsiteSmall/WebsiteSmall";
 import LocalSeo from "./Components/SeoPage/LocalSeo/LocalSeo";
 import GooglePositioning from "./Components/BlogPage/BlogInnerPages/GooglePositioning/GooglePositioning";
-
+import SeoInHyderabad from "./Components/SeoPage/SeoInHyderabad/SeoInHyderabad";
+import SeoInMysore from "./Components/SeoPage/SeoInMysore/SeoInMysore";
+import SeoInPune from "./Components/SeoPage/SeoInPune/SeoInPune";
+import SeoChennai from "./Components/SeoPage/SeoChennai/SeoChennai";
+import SeoInCoimbatore from './Components/SeoPage/SeoInCoimbatore/SeoInCoimbatore';
+import SeoInMangalore from './Components/SeoPage/SeoInMangalore/SeoInMangalore';
 function App() {
   return (
     <HelmetProvider>
@@ -105,6 +110,8 @@ function App() {
             <Route
               path="/what-is-on-page-seo-why-it-is-important-for-every-websites"
               element={<WhatIsSeo />}
+
+
             />
             <Route
               path="/transforming-foreign-language-school-of-bangalore"
@@ -136,6 +143,22 @@ function App() {
               path="/website-design-in-bangalore-at-rs-10000"
               element={<WebsiteSmall />}
             />
+            <Route
+              path="/seo-services-in-hyderabad"
+              element={<SeoInHyderabad />}
+            />
+            <Route path="/seo-services-in-mysore" element={<SeoInMysore />} />
+            <Route
+              path="/seo-services-in-mangalore"
+              element={<SeoInMangalore />}
+            />
+            <Route
+              path="/seo-services-in-coimbatore"
+              element={<SeoInCoimbatore />}
+            />
+            <Route path="/seo-services-in-chennai" element={<SeoChennai />} />
+            <Route path="/seo-services-in-pune" element={<SeoInPune />} />
+
             {/* ----------------------------------------/servicePage---------------------------- */}
           </Routes>
           <WhatsApp />

@@ -5,9 +5,12 @@ const LocalSeoKey = () => {
     <div className="onPageSeoKey">
       <h3>Key Components of Our Local SEO Services</h3>
       <p>
-        At TrySEOServices.com, our <a href="https://tryseoservices.com/local-seo-services-in-bangalore  ">Local SEO Services in Bangalore</a> are designed
-        to help your business achieve maximum visibility and engagement. Here
-        are some key components of our local SEO strategy:
+        At TrySEOServices.com, our{" "}
+        <a href="https://tryseoservices.com/local-seo-services-in-bangalore  ">
+          Local SEO Services in Bangalore
+        </a>{" "}
+        are designed to help your business achieve maximum visibility and
+        engagement. Here are some key components of our local SEO strategy:
       </p>
       <li>
         <h6>1. Google My Business Optimization</h6>
