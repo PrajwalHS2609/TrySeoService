@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./Global.css";
-import NavBar from "./Components/NavBar/NavBar";
 import HomePage from "./Components/HomePage/HomePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Components/Footer/Footer";
@@ -38,12 +37,13 @@ import SeoInPune from "./Components/SeoPage/SeoInPune/SeoInPune";
 import SeoChennai from "./Components/SeoPage/SeoChennai/SeoChennai";
 import SeoInCoimbatore from './Components/SeoPage/SeoInCoimbatore/SeoInCoimbatore';
 import SeoInMangalore from './Components/SeoPage/SeoInMangalore/SeoInMangalore';
+import MainLayout from "./Components/MainLayout/MainLayout";
 function App() {
   return (
     <HelmetProvider>
       <div className="App">
         <BrowserRouter>
-          <NavBar />
+          <MainLayout/>
           <ScrollTo />
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -160,6 +160,8 @@ function App() {
             <Route path="/seo-services-in-pune" element={<SeoInPune />} />
 
             {/* ----------------------------------------/servicePage---------------------------- */}
+
+            
           </Routes>
           <WhatsApp />
           <Footer />

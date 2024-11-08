@@ -8,6 +8,7 @@ import SeoReasons from "./SeoReasons/SeoReasons";
 import WebsiteFaq from "../WebsitePage/WebsiteFaq/WebsiteFaq";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 const SeoHeader = React.lazy(() => import("./SeoHeader"));
 
 // import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
@@ -28,6 +29,7 @@ const SeoPage = () => {
       <Suspense fallback={<p>Loading....</p>}>
         <SeoHeader />
       </Suspense>
+      <BreadCrumb txt="SEO" />
       <SeoService />
       <HomeMarquee />
       <SeoBenefits />

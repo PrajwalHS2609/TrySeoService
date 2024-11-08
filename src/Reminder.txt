@@ -1,2 +1,1 @@
 make all imgs lazy loading
-make breadcrumb to come below header
