@@ -8,7 +8,7 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-const footerSocialIco = () => {
+const FooterSocial = () => {
   return (
     <div className="footerSocial">
       <li>
@@ -65,4 +65,4 @@ const footerSocialIco = () => {
   );
 };
 
-export default footerSocialIco;
+export default FooterSocial;

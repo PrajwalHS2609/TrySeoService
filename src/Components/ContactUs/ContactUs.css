@@ -208,3 +208,23 @@
     width: 100%;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .contactBlob {
+    /* border: solid blue; */
+    right: -300px;
+    top: -300px;
+    transform: scale(1);
+  }
+  .contactUsWrapper {
+    /* border: solid green; */
+    flex-direction: column;
+  }
+  .contactUsContent1 {
+    /* border: solid brown; */
+    width: 100%;
+  }
+  .contactUsContent2 {
+    /* border: solid black; */
+    width: 100%;
+  }
+}
