@@ -4,7 +4,7 @@ const Lp1IndustryCard = (props) => {
   return (
     <div className="lp1IndustryCard">
       <img
-        src="http://obour.themezinho.net/wp-content/uploads/2020/07/case08.jpg"
+        src="http://obour.themezinho.net/wp-content/uploads/2020/07/case09.jpg"
         alt=""
       />
       <div className="lp1IndustryCardCover">
