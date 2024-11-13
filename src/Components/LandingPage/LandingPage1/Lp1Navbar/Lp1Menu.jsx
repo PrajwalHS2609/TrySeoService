@@ -135,7 +135,7 @@ const Lp1Menu = () => {
             <li className="">
               <NavHashLink
                 id="menuNavLink"
-                to="#services"
+                to="#service"
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
