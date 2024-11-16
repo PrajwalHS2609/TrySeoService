@@ -31,7 +31,7 @@ const Lp1Header = () => {
         />
       </div>
       <div className="lp1Performance-Container">
-        <Lp1Performance/>
+        <Lp1Performance />
       </div>
     </div>
   );
