@@ -4,7 +4,7 @@ const Lp1IndustryCard = (props) => {
   return (
     <div className="lp1IndustryCard">
       <img
-        src="https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?t=st=1731753435~exp=1731757035~hmac=22cbf076b6a57a688e7fd1d8e6478f78a1b851414a26a2a0392dfa0e09c10b53&w=360"
+        src="https://img.freepik.com/free-photo/plant-picture-clean-room-equipment-stainless-steel-machines_645730-704.jpg?t=st=1731754138~exp=1731757738~hmac=64fca3b0e33b82cf655413663846ec8754b79b1946f999809e8172d6fd24730b&w=360"
         alt=""
         loading="lazy"
       />
