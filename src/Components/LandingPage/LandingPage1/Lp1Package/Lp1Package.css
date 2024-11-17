@@ -122,11 +122,12 @@
 }
 .lpPackageReadMore-Btn > button {
   padding: 5px;
-  background-color: var(--customColor);
+color: var(--customColor);
   border-radius: 10px;
-  color: white;
   font-size: 18px;
   border: none;
+  background-color: white;
+  font-weight: 500;
 }
 .dropMoreContent {
   list-style: none;
