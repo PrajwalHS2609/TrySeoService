@@ -199,6 +199,7 @@
     /* border: solid green; */
     flex-direction: column;
   }
+
   .contactUsContent1 {
     /* border: solid brown; */
     width: 100%;
@@ -206,6 +207,24 @@
   .contactUsContent2 {
     /* border: solid black; */
     width: 100%;
+  }
+  .firstLayer {
+    /* border: solid ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .firstLayer>input{
+    /* border: solid ; */
+    width: 100%;
+  }
+  .thirdLayer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 990px) {
@@ -225,6 +244,14 @@
   }
   .contactUsContent2 {
     /* border: solid black; */
+    width: 100%;
+  }
+  .firstLayer {
+    /* border: solid ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
 }

@@ -15,7 +15,7 @@
     /* border: solid red; */
     height: 70%;
     width: 50%;
-    background-color: var(--customWhite);
+    background:var(--customGradient) ;
     border-radius: 20px;
     padding: 10px;
   }
