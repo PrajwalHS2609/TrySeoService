@@ -2,6 +2,10 @@ import React from "react";
 import "./Lp1Header.css";
 import { Link } from "react-router-dom";
 const Lp1Performance = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   return (
     <div className="lp1Performance">
       <img
@@ -18,7 +22,7 @@ const Lp1Performance = () => {
       </div>
       <Link to={"/"}>
         {" "}
-        <button>Book A Call</button>
+        <button onClick={handlePopUp}>Book A Call</button>
       </Link>
     </div>
   );

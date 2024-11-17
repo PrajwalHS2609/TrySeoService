@@ -1,6 +1,5 @@
 import React from "react";
 import "./Lp1Header.css";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import Lp1Performance from "./Lp1Performance";
@@ -16,13 +15,13 @@ const Lp1Header = () => {
           Reach, & Search Ranking.
         </p>
         <button>
-          <Link to="/">
+          <a href="tel:6360226773">
             <FontAwesomeIcon
               icon={faChevronCircleRight}
               className="lpHeaderIcon"
             ></FontAwesomeIcon>
             Call Us Today!{" "}
-          </Link>
+          </a>
         </button>
       </div>
       <div className="lp1HeaderContent">

@@ -9,7 +9,7 @@ import {
 const SeoAuditPg = () => {
   return (
     <div className="nestedPages1">
-      <h2>Complete Site Speed Optimization Services</h2>
+      <h2>Complete SEO Optimization Services</h2>
       <p>
         Unlock your business's potential with premium tool: boost SEO, discover
         winning keywords, and outsmart competitors with data-driven strategies!
