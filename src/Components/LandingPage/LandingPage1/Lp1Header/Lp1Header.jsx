@@ -9,10 +9,10 @@ const Lp1Header = () => {
     <div className="lp1Header" id="Header">
       <div className="lp1HeaderContent">
         <h6>WELCOME TO TRYSEOSERVICE</h6>
-        <h2>Insights from Our Digital Marketing Experts</h2>
+        <h2>We Boost Your Healthcare Reach with Expert SEO Services!</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at enim
-          imperdiet, rhoncus turpis eu, tincidunt nisl.
+          For High Quality Traffic, Qualified Leads, Online Sales, Maximum
+          Reach, & Search Ranking.
         </p>
         <button>
           <Link to="/">
@@ -20,7 +20,7 @@ const Lp1Header = () => {
               icon={faChevronCircleRight}
               className="lpHeaderIcon"
             ></FontAwesomeIcon>
-            Learn More
+            Call Us Today!{" "}
           </Link>
         </button>
       </div>

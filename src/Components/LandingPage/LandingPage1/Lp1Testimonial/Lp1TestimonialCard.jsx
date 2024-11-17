@@ -1,20 +1,18 @@
 import React from "react";
 import "./Lp1Testimonial.css";
-const Lp1TestimonialCard = () => {
+const Lp1TestimonialCard = (props) => {
   return (
     <div className="lp1TestimonialCard">
-      <img
-        src="https://themexriver.com/wp/gesto/wp-content/uploads/2023/10/gto-t3-img-2.png"
-        alt=""
-      />
+      <img src={props.img} alt={props.img} />
       <div className="lp1TestimonialCardCover">
-       <div className="lp1TestimonialCardCover-Content"> <h3>Our SEO toolbox</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
-          veritatis? Nesciunt labore veritatis dolorem. Laborum omnis placeat
-          explicabo deserunt magnam asperiores doloribus ab nemo, aspernatur
-          aliquid molestias ducimus, eaque molestiae?
-        </p></div>
+        <div className="lp1TestimonialCardCover-Content">
+          {" "}
+          <p>{props.para}</p>
+          <span>
+            <h5>{props.client}</h5>
+            <p> {props.designation}</p>{" "}
+          </span>
+        </div>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@
 }
 .lp1HeaderContent > h2 {
   color: white;
-  font-size: 76px;
+  font-size: 60px;
 }
 .lp1HeaderContent > p {
   color: rgb(171, 171, 171);
@@ -110,7 +110,7 @@
   color: rgb(0, 174, 255);
 }
 .lp1PerformanceContent > h3 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .lp1Performance > a {
   text-decoration: none;

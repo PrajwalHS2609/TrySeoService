@@ -57,7 +57,7 @@
 .lp1TestimonialCard > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 .lp1TestimonialCardCover {
   /* border: solid green; */
@@ -87,7 +87,7 @@
 }
 .lp1TestimonialCardCover-Content > p {
   text-align: justify;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
 }
 .lp1TestimonialCard:hover .lp1TestimonialCardCover {
@@ -99,6 +99,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.lp1TestimonialCardCover-Content > span {
+  width: 100%;
+  color: var(--customGradient);
+}
+.lp1TestimonialCardCover-Content > span > h5 {
+  font-weight: bold;
+}
+.lp1TestimonialCardCover-Content > span > p {
+  font-weight: bold;
+  color: white;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .lp1TestimonialCard {
@@ -118,6 +129,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fd874396;
+
+  }
+  .lp1TestimonialCard > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
   .lp1TestimonialCardCover-Content {
     width: 100%;
@@ -129,5 +147,10 @@
   .lp1TestimonialHead > h2 {
     font-size: 40px;
     text-align: center;
+  }
+  .lp1TestimonialCardCover-Content > p {
+    text-align: justify;
+    font-size: 18px;
+    color: white;
   }
 }

@@ -21,13 +21,24 @@ import ExploreSEO from "./Components/BlogPage/BlogInnerPages/ExploreSEO/ExploreS
 
 import { HelmetProvider } from "react-helmet-async";
 import LandingPage1 from "./Components/LandingPage/LandingPage1/LandingPage1";
-import NestedPages1 from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/NestedPages1";
+import SeoAuditPg from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/SeoAuditPg";
+import CompetitorAnalysis from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/CompetitorAnalysis";
+import ContentMarketing from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/ContentMarketing";
+import KeywordResearch from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/KeywordResearch";
+import SeoReporting from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/SeoReporting";
 
 function MainApp() {
   const location = useLocation();
 
   // Define the paths where you want to hide the NavBar
-  const hideNavbarPaths = ["/lp", "/lp/nested-page1","/lp/nested-page2"]; // Add more paths as needed
+  const hideNavbarPaths = [
+    "/lp",
+    "/lp/seo-audit",
+    "/lp/keyword-research",
+    "/lp/content-marketing",
+    "/lp/competitor-analysis",
+    "/lp/seo-reporting",
+  ]; // Add more paths as needed
 
   return (
     <div className="App">
@@ -71,9 +82,16 @@ function MainApp() {
           element={<ExploreSEO />}
         />
         <Route path="/lp" element={<LandingPage1 />}>
-          <Route path="/lp" element={<NestedPages1 />} />
-          <Route path="/lp/nested-page1" element={<NestedPages1 />} />
-          <Route path="/lp/nested-page2" element={<NestedPages1 />} />
+          <Route path="/lp" element={<SeoAuditPg />} />
+          <Route path="/lp/seo-audit" element={<SeoAuditPg />} />
+
+          <Route path="/lp/keyword-research" element={<KeywordResearch />} />
+          <Route path="/lp/content-marketing" element={<ContentMarketing />} />
+          <Route
+            path="/lp/competitor-analysis"
+            element={<CompetitorAnalysis />}
+          />
+          <Route path="/lp/seo-reporting" element={<SeoReporting />} />
         </Route>
       </Routes>
       <WhatsApp />

@@ -7,7 +7,7 @@ const Lp1ServiceNavbar = () => {
     <div className="lp1ServiceNavbar">
       <li>
         <NavLink
-          to={"/lp/nested-page1"}
+          to={"/lp/seo-audit"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           {" "}
@@ -16,7 +16,7 @@ const Lp1ServiceNavbar = () => {
       </li>
       <li>
         <NavLink
-          to={"/lp/nested-page2"}
+          to={"/lp/keyword-research"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           {" "}
@@ -25,7 +25,7 @@ const Lp1ServiceNavbar = () => {
       </li>
       <li>
         <NavLink
-          to={"/lp/nested-page3"}
+          to={"/lp/content-marketing"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           {" "}
@@ -34,7 +34,7 @@ const Lp1ServiceNavbar = () => {
       </li>
       <li>
         <NavLink
-          to={"/lp/nested-page4"}
+          to={"/lp/competitor-analysis"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           {" "}
@@ -43,7 +43,7 @@ const Lp1ServiceNavbar = () => {
       </li>
       <li>
         <NavLink
-          to={"/lp/nested-page5"}
+          to={"/lp/seo-reporting"}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           {" "}

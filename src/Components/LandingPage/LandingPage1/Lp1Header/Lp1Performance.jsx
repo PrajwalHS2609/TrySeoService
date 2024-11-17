@@ -10,12 +10,15 @@ const Lp1Performance = () => {
       />
       <div className="lp1PerformanceContent">
         <h6>WITH SEO OPTIMIZATION</h6>
-        <h3>Putting our focus On Changing the Way of Web & Mobile UX.</h3>
+        <h3>
+          Proven strategies to boost your business with enhanced SEO, smart
+          keyword ideas, and competitor analysis.
+        </h3>
         <p></p>
       </div>
       <Link to={"/"}>
         {" "}
-        <button>Learn More</button>
+        <button>Book A Call</button>
       </Link>
     </div>
   );

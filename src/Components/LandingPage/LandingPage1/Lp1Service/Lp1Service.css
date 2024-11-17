@@ -1,5 +1,5 @@
 .lp1Service {
-  width: 100%;
+  width: 90%;
   height: 650px;
   /* border: solid red; */
   display: flex;
@@ -42,7 +42,7 @@
   height: 200px;
   position: absolute;
   background-color: white;
-  padding: 5px;
+  padding: 10px;
   border-radius: 100%;
   right: 0;
   top: 100px;
@@ -118,6 +118,13 @@
 .nestedPages1 > p {
   font-size: 20px;
   text-align: justify;
+}
+.nestedPages1 > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
 }
 .nestedPages1 > ul > li {
   list-style: none;
