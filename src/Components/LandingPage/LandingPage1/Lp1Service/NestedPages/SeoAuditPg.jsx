@@ -21,7 +21,7 @@ const SeoAuditPg = () => {
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>
           <div className="nestedPgContent">
-            <h4>Architecture</h4>
+            <h4>Website Architecture</h4>
           </div>
         </li>
         <li>

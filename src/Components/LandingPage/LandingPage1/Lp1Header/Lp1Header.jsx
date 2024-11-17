@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import Lp1Performance from "./Lp1Performance";
+import bannerImg from "./../../../../Img/Lp/Banner Image/bannerImg.png";
 const Lp1Header = () => {
   return (
     <div className="lp1Header" id="Header">
@@ -25,10 +26,7 @@ const Lp1Header = () => {
         </button>
       </div>
       <div className="lp1HeaderContent">
-        <img
-          src="https://kfkit.rometheme.pro/beevo/wp-content/uploads/sites/79/2024/01/man-hipster-face-copyspace-fashion-smile-young-han-5UNZ7KN.png"
-          alt=""
-        />
+        <img src={bannerImg} alt="bannerImg" />
       </div>
       <div className="lp1Performance-Container">
         <Lp1Performance />

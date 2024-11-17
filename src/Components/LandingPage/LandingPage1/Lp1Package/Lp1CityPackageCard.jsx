@@ -16,6 +16,10 @@ const Lp1CityPackageCard = () => {
       switchRef.current.style.display = "none";
     }
   };
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   return (
     <div className="lp1PackageCard">
       <div className="lp1PackageCardCover">
@@ -136,7 +140,7 @@ const Lp1CityPackageCard = () => {
         <div className="lp1PackageCardCover-btn">
           {" "}
           <Link to={"/"}>
-            <button>Choose Plan</button>
+            <button onClick={handlePopUp}>Choose Plan</button>
           </Link>
         </div>
       </div>

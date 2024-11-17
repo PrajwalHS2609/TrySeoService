@@ -1,0 +1,77 @@
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.512);
+    overflow: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .popUpContainer {
+    /* border: solid red; */
+    height: 70%;
+    width: 50%;
+    background-color: var(--customWhite);
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .popUpContent {
+    /* border: solid; */
+    width: 100%;
+    position: relative;
+    height: 50px;
+  }
+  .popUpContent:nth-child(2) {
+    /* border: solid green; */
+    height: 90%;
+  }
+  .popupIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    color: var(--customColor);
+    background-color: var(--customColor2);
+    border-radius: 100%;
+  }
+  .popUpForm {
+    /* border: solid blue; */
+    height: 100%;
+  }
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .popUpContainer {
+      /* border: solid red; */
+      height: 80%;
+      width: 400px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 0px;
+      transform: scale(0.9);
+      margin-bottom: 20px;
+    }
+    .popUpContent {
+      /* border: solid; */
+      width: 100%;
+      position: relative;
+      height: 50px;
+    }
+    .popupIcon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      padding: 10px;
+      color: var(--customColor);
+      background-color: var(--customColor2);
+      border-radius: 100%;
+    }
+  }
+  

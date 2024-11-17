@@ -20,7 +20,7 @@ const SeoReporting = () => {
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>
           <div className="nestedPgContent">
-            <h4>Traffic</h4>
+            <h4>Website Traffic</h4>
           </div>
         </li>
         <li>
