@@ -113,11 +113,14 @@
 .nestedPages1 > h2 {
   font-size: 50px;
   font-weight: bold;
-  width: 80%;
+  width: 100%;
+  text-align: center;
 }
 .nestedPages1 > p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
+  color: grey;
+
 }
 .nestedPages1 > ul {
   display: flex;

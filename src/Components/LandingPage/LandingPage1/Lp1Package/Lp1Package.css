@@ -30,6 +30,7 @@
 }
 .lp1PackageHead > h2 {
   font-size: 50px;
+  width: 100%;
 }
 .lp1PackageMain {
   /* border: solid blue; */

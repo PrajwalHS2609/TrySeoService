@@ -9,7 +9,6 @@ import Lp1Package from './Lp1Package/Lp1Package'
 import Lp1Service from './Lp1Service/Lp1Service'
 import Lp1ContactUs from './Lp1ContactUs/Lp1ContactUs'
 import Lp1Footer from './Lp1Footer/Lp1Footer'
-import WebsiteClient from './../../WebsitePage/WebsiteClient/WebsiteClient';
 import PopUp from '../../PopUp/PopUp'
 const LandingPage1 = () => {
   return (
@@ -21,7 +20,6 @@ const LandingPage1 = () => {
       <Lp1Industry/>
       <Lp1Testimonial/>
       <Lp1Package/>
-      <WebsiteClient/>
       <Lp1ContactUs/>
       <PopUp/>
       <Lp1Footer/>
