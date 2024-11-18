@@ -44,14 +44,15 @@
 }
 .lp1PackageCard {
   /* border: solid; */
+  border-bottom: solid 5px red;
   width: 400px;
   height: 100%;
   border-radius: 15px;
   box-shadow: 0 0 5px grey;
   position: relative;
-  background-image: url("./../../../../Img//Lp/lpPackageBg.png");
+  /* background-image: url("./../../../../Img//Lp/lpPackageBg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .lp1PackageCardCover {
@@ -123,7 +124,7 @@
 }
 .lpPackageReadMore-Btn > button {
   padding: 5px;
-color: var(--customColor);
+  color: var(--customColor);
   border-radius: 10px;
   font-size: 18px;
   border: none;
@@ -192,6 +193,39 @@ color: var(--customColor);
 }
 .lp1PackageCardCover-btn > a > button:hover::after {
   width: 100%;
+}
+#localSeoPackage {
+  background-color: var(--customColor);
+  overflow: hidden;
+  border-bottom: solid 5px rgb(25, 159, 249) ;
+}
+#localSeoPackage > .lp1PackageCardCover {
+  color: white;
+}
+#localSeoPackage > .lp1PackageCardCover > .lp1PackageCardCover-price {
+  background: var(--customGradient);
+}
+#localSeoPackage
+  > .lp1PackageCardCover
+  > .lp1PackageCardCover-btn
+  > a
+  > button {
+  background-color: black;
+}
+.lpPackagepopular {
+  background: var(--customGradient);
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  position: absolute;
+  right: -80px;
+  top: -20px;
+  transform: rotate(45deg);
+}
+.lpPackagepopular > h4 {
+  color: white;
+  margin-left: 40px;
+  margin-top: 50px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .lp1Package {

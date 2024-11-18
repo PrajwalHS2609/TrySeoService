@@ -1,21 +1,10 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./Lp1Package.css";
 import { Link } from "react-router-dom";
 import check from "./../../../../Img/check-mark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 const Lp1GooglePackageCard = (props) => {
-  let [drop, setDrop] = useState(false);
-  let switchRef = useRef();
-  const handleReadMore = () => {
-    if (!drop) {
-      setDrop(true);
-      switchRef.current.style.display = "flex";
-    } else {
-      setDrop(false);
-      switchRef.current.style.display = "none";
-    }
-  };
   const handlePopUp = (e) => {
     e.preventDefault();
     document.querySelector(".popup").style.display = "flex";
@@ -45,38 +34,30 @@ const Lp1GooglePackageCard = (props) => {
             <img src={check} alt="check" />
             Posts
           </li>
-          <div className="dropMoreContent" ref={switchRef}>
-            <li>
-              {" "}
-              <img src={check} alt="check" />
-              Images & Videos
-            </li>
-            <li>
-              {" "}
-              <img src={check} alt="check" />
-              Product & Services
-            </li>
-            <li>
-              {" "}
-              <img src={check} alt="check" />
-              Reputation Management
-            </li>
-            <li>
-              {" "}
-              <img src={check} alt="check" />Q & A
-            </li>
-            <li>
-              {" "}
-              <img src={check} alt="check" />
-              Monthly Performance Report
-            </li>
-          </div>
-          <div className="lpPackageReadMore-Btn">
+          <li>
             {" "}
-            <button onClick={handleReadMore}>
-              Load {drop ? "Less" : "More"}
-            </button>
-          </div>
+            <img src={check} alt="check" />
+            Images & Videos
+          </li>
+          <li>
+            {" "}
+            <img src={check} alt="check" />
+            Product & Services
+          </li>
+          <li>
+            {" "}
+            <img src={check} alt="check" />
+            Reputation Management
+          </li>
+          <li>
+            {" "}
+            <img src={check} alt="check" />Q & A
+          </li>
+          <li>
+            {" "}
+            <img src={check} alt="check" />
+            Monthly Performance Report
+          </li>
         </ul>
         <div className="lp1PackageCardCover-btn">
           {" "}

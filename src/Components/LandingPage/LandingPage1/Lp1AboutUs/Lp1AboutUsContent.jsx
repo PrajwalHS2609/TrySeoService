@@ -1,5 +1,6 @@
 import React from "react";
 import "./Lp1AboutUs.css";
+import Lp1Why from "../Lp1Why/Lp1Why";
 const Lp1AboutUsContent = () => {
   return (
     <div className="lp1AboutUsContent">
@@ -13,24 +14,7 @@ const Lp1AboutUsContent = () => {
         is our mission!
       </p>
       <div className="lp1AboutUsContentList">
-        <li>
-          <img
-            src="https://kfkit.rometheme.pro/beevo/wp-content/uploads/sites/79/2024/01/Icon-1.png"
-            alt=""
-          />{" "}
-          <div className="lp1AboutUsContentList-Content">
-            <h4>Proven Track Record</h4>
-          </div>
-        </li>
-        <li>
-          <img
-            src="https://kfkit.rometheme.pro/beevo/wp-content/uploads/sites/79/2024/01/Icon-2.png"
-            alt=""
-          />{" "}
-          <div className="lp1AboutUsContentList-Content">
-            <h4>Tailored Strategies</h4>
-          </div>
-        </li>
+        <Lp1Why />
       </div>
     </div>
   );

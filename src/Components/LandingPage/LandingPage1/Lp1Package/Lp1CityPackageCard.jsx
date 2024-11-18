@@ -1,21 +1,11 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./Lp1Package.css";
 import { Link } from "react-router-dom";
 import check from "./../../../../Img/check-mark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
 const Lp1CityPackageCard = () => {
-  let [drop, setDrop] = useState(false);
-  let switchRef = useRef();
-  const handleReadMore = () => {
-    if (!drop) {
-      setDrop(true);
-      switchRef.current.style.display = "flex";
-    } else {
-      setDrop(false);
-      switchRef.current.style.display = "none";
-    }
-  };
+
   const handlePopUp = (e) => {
     e.preventDefault();
     document.querySelector(".popup").style.display = "flex";
@@ -48,7 +38,6 @@ const Lp1CityPackageCard = () => {
             <img src={check} alt="check" />
             Title Optimization
           </li>
-          <div className="dropMoreContent" ref={switchRef}>
             <li>
               {" "}
               <img src={check} alt="check" />
@@ -129,13 +118,6 @@ const Lp1CityPackageCard = () => {
               <img src={check} alt="check" />
               Call & What's App Support
             </li>
-          </div>
-          <div className="lpPackageReadMore-Btn">
-            {" "}
-            <button onClick={handleReadMore}>
-              Load {drop ? "Less" : "More"}
-            </button>
-          </div>
         </ul>
         <div className="lp1PackageCardCover-btn">
           {" "}

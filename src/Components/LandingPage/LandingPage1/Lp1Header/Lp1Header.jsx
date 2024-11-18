@@ -9,7 +9,9 @@ const Lp1Header = () => {
     <div className="lp1Header" id="Header">
       <div className="lp1HeaderContent">
         <h6>WELCOME TO TRYSEOSERVICE</h6>
-        <h2>We Boost Your Healthcare Reach with Expert SEO Services!</h2>
+        <h2>
+          We Boost Your Healthcare Reach with Expert <span> SEO Services</span>!
+        </h2>
         <p>
           For High Quality Traffic, Qualified Leads, Online Sales, Maximum
           Reach, & Search Ranking.
