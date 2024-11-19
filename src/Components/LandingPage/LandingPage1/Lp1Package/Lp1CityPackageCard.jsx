@@ -18,7 +18,7 @@ const Lp1CityPackageCard = () => {
             icon={faIndianRupeeSign}
             className="lp1PackageCardIco"
           ></FontAwesomeIcon>
-          15000 /<small>month only</small>
+          15000 <small>monthly</small>
         </div>
         <ul>
           <li>

@@ -6,7 +6,7 @@ const Lp1ContactUs = () => {
   return (
     <div className="lp1ContactUs" id="contact-us">
       <div className="lp1ContactUs-Content">
-        <img src={contactUs} alt="" />
+        <img src={contactUs} alt="" loading="lazy"/>
       </div>
       <div className="lp1ContactUs-Content">
         <ContactUsForm />

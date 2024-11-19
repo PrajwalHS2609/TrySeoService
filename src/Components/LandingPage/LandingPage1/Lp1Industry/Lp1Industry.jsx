@@ -20,21 +20,25 @@ const Lp1Industry = () => {
       <div className="lp1IndustryCover">
         <Lp1IndustryCard
           img={clinic}
+          alt="clinic"
           head="Clinic"
           para="Enhance your clinic’s visibility and attract patients with tailored SEO strategies. Let’s grow your practice online!"
         />
         <Lp1IndustryCard
           img={hospital}
+          alt="hospital"
           head="Hospital"
           para="Elevate your hospital's visibility with tailored SEO, ensuring patients find and trust your services effortlessly."
         />
         <Lp1IndustryCard
           img={diagnostics}
+          alt="diagnostics"
           head="Diagnostic"
           para="Boost your diagnostic center’s visibility with tailored SEO to attract patients and optimize local search. Let’s expand your reach!"
         />
         <Lp1IndustryCard
           img={petClinic}
+          alt="petClinic"
           head="Pets Clinic"
           para="Increase your pet clinic’s visibility with customized SEO strategies. Attract pet owners, optimize local searches, and grow your online presence effectively!"
         />

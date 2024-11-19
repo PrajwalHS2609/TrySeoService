@@ -18,7 +18,7 @@ const Lp1GooglePackageCard = (props) => {
             icon={faIndianRupeeSign}
             className="lp1PackageCardIco"
           ></FontAwesomeIcon>
-          5000 /<small>month only</small>
+          5000 <small>monthly</small>
         </div>
         <ul>
           <li>

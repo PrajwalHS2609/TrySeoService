@@ -3,7 +3,7 @@ import "./Lp1Industry.css";
 const Lp1IndustryCard = (props) => {
   return (
     <div className="lp1IndustryCard">
-      <img src={props.img} alt="" loading="lazy" />
+      <img src={props.img} alt={props.alt} loading="lazy" />
       <div className="lp1IndustryCardCover">
         <div className="lp1IndustryCardCover-Content">
           <h4>{props.head}</h4>

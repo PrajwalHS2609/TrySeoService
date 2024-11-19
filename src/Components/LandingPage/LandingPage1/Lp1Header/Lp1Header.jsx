@@ -27,7 +27,7 @@ const Lp1Header = () => {
         </button>
       </div>
       <div className="lp1HeaderContent">
-        <img src={bannerImg} alt="bannerImg" />
+        <img src={bannerImg} alt="bannerImg" loading="lazy" />
       </div>
       <div className="lp1Performance-Container">
         <Lp1Performance />

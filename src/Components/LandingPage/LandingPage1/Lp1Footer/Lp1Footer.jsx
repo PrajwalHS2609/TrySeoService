@@ -1,12 +1,9 @@
 import React from "react";
-import FooterCopy from "../../../Footer/BelowFooter/FooterCopy";
-import FooterSocial from "./../../../Footer/BelowFooter/FooterSocial";
-import "./Lp1Footer.css"
+import "./Lp1Footer.css";
 const Lp1Footer = () => {
   return (
-    <div className="footerWrapper2" id="lp1Footer">
-      <FooterCopy />
-      <FooterSocial/>
+    <div className="lp1Footer">
+      <p>© 2023 TrySEOServices.Com All Rights Reserved.</p>
     </div>
   );
 };

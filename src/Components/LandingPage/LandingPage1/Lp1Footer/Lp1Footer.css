@@ -1,3 +1,13 @@
-#lp1Footer {
+.lp1Footer {
   background-color: #000229;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50px;
+  width: 100%;
+  padding: 0px;
+}
+.lp1Footer > p {
+  color: white;
+  font-size: 20px;
 }

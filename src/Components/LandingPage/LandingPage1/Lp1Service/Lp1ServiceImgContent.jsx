@@ -8,8 +8,8 @@ import servImg2 from "./../../../../Img/Lp/lpService/serviceImg2.png";
 const Lp1ServiceImgContent = () => {
   return (
     <div className="lp1ServiceImgContent">
-      <img src={servImg1} alt="servImg1" />
-      <img src={servImg2} alt="servImg2" />
+      <img src={servImg1} alt="servImg1" loading="lazy"/>
+      <img src={servImg2} alt="servImg2" loading="lazy"/>
       <img src={Guarantee} alt="" />
       <Lp1ServiceNavbar />
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Lp1Header.css";
 import { Link } from "react-router-dom";
+import performanceImg from "./../../../../Img/Lp/performance.png";
 const Lp1Performance = () => {
   const handlePopUp = (e) => {
     e.preventDefault();
@@ -8,10 +9,7 @@ const Lp1Performance = () => {
   };
   return (
     <div className="lp1Performance">
-      <img
-        src="https://themexriver.com/wp/gesto/wp-content/uploads/2023/10/gto-h3-f-img-1.png"
-        alt=""
-      />
+      <img src={performanceImg} alt="performanceImg" loading="lazy" />
       <div className="lp1PerformanceContent">
         <h6>WITH SEO OPTIMIZATION</h6>
         <h3>
