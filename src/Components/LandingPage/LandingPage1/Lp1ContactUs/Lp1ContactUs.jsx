@@ -1,7 +1,7 @@
 import React from "react";
 import "./Lp1ContactUs.css";
 import ContactUsForm from "../../../ContactUs/ContactUsForm";
-import contactUs from "./../../../../Img/contactUs.png";
+import contactUs from "./../../../../Img/Lp/lpContactUs.png";
 const Lp1ContactUs = () => {
   return (
     <div className="lp1ContactUs" id="contact-us">

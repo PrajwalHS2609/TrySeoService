@@ -18,8 +18,9 @@
   align-items: center;
 }
 .lp1ContactUs-Content > img {
-  width: 200px;
-  height: 200px;
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .lp1ContactUs {
