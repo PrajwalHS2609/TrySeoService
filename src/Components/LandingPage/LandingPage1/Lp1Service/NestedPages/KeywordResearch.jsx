@@ -1,8 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLightbulb,
-  faClock,
+  faTrafficLight,
+faLightbulb,  
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 const KeywordResearch = () => {
@@ -16,7 +16,7 @@ const KeywordResearch = () => {
       <ul>
         <li>
           <FontAwesomeIcon
-            icon={faLightbulb}
+            icon={faTrafficLight}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>
           <div className="nestedPgContent">
@@ -25,7 +25,7 @@ const KeywordResearch = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faClock}
+            icon={faLightbulb}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">

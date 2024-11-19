@@ -2,9 +2,9 @@ import React from "react";
 import "./../Lp1Service.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLightbulb,
-  faClock,
-  faChartLine,
+  faNetworkWired,
+  faUser,
+  faLink
 } from "@fortawesome/free-solid-svg-icons";
 const SeoAuditPg = () => {
   return (
@@ -17,7 +17,7 @@ const SeoAuditPg = () => {
       <ul>
         <li>
           <FontAwesomeIcon
-            icon={faLightbulb}
+            icon={faNetworkWired}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>
           <div className="nestedPgContent">
@@ -26,7 +26,7 @@ const SeoAuditPg = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faClock}
+            icon={faUser}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">
@@ -35,7 +35,7 @@ const SeoAuditPg = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faChartLine}
+            icon={faLink}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">

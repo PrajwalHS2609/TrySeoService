@@ -1,9 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLightbulb,
-  faClock,
-  faChartLine,
+  faChartBar,
+  faIdCard,
+  faIdBadge,
+
 } from "@fortawesome/free-solid-svg-icons";
 const CompetitorAnalysis = () => {
   return (
@@ -16,7 +17,7 @@ const CompetitorAnalysis = () => {
       <ul>
         <li>
           <FontAwesomeIcon
-            icon={faLightbulb}
+            icon={faChartBar}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>
           <div className="nestedPgContent">
@@ -25,7 +26,7 @@ const CompetitorAnalysis = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faClock}
+            icon={faIdCard}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">
@@ -34,7 +35,7 @@ const CompetitorAnalysis = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faChartLine}
+            icon={faIdBadge}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">

@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLightbulb,
+  faLink,
   faClock,
-  faChartLine,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 const ContentMarketing = () => {
   return (
@@ -16,7 +16,7 @@ const ContentMarketing = () => {
       <ul>
         <li>
           <FontAwesomeIcon
-            icon={faLightbulb}
+            icon={faLink}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>
           <div className="nestedPgContent">
@@ -34,7 +34,7 @@ const ContentMarketing = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faChartLine}
+            icon={faUsers}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">

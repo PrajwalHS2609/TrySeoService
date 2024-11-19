@@ -164,3 +164,25 @@
     display: block;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .navbarContainer1 {
+    /* border: solid red; */
+    position: sticky;
+    top: 0px;
+  }
+  .lp1MenuContainerList {
+    display: none;
+  }
+  .logoContainer {
+    /* border: solid green; */
+    width: 100px;
+  }
+  .navbarContent {
+    /* border: solid brown; */
+    border-radius: 0px;
+  }
+  .respMenuBar {
+    /* border: solid red; */
+    display: block;
+  }
+}

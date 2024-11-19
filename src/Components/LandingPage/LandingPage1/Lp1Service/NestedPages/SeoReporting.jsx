@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLightbulb,
-  faClock,
+  faTrafficLight,
   faChartLine,
+  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 const SeoReporting = () => {
   return (
@@ -16,7 +16,7 @@ const SeoReporting = () => {
       <ul>
         <li>
           <FontAwesomeIcon
-            icon={faLightbulb}
+            icon={faTrafficLight}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>
           <div className="nestedPgContent">
@@ -25,7 +25,7 @@ const SeoReporting = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faClock}
+            icon={faChartLine}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">
@@ -34,7 +34,7 @@ const SeoReporting = () => {
         </li>
         <li>
           <FontAwesomeIcon
-            icon={faChartLine}
+            icon={faLink}
             className="lp1ServiceIcon"
           ></FontAwesomeIcon>{" "}
           <div className="nestedPgContent">
