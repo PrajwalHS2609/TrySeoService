@@ -30,7 +30,6 @@ import SeoReporting from "./Components/LandingPage/LandingPage1/Lp1Service/Neste
 function MainApp() {
   const location = useLocation();
 
-  // Define the paths where you want to hide the NavBar
   const hideNavbarPaths = [
     "/lp",
     "/lp/seo-audit",
@@ -38,7 +37,7 @@ function MainApp() {
     "/lp/content-marketing",
     "/lp/competitor-analysis",
     "/lp/seo-reporting",
-  ]; // Add more paths as needed
+  ];
 
   return (
     <div className="App">
