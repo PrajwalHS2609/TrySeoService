@@ -77,6 +77,15 @@ const PopUpForm = () => {
           {" "}
           <button type="submit">Send Message</button>
         </div>
+        <div className="privacy">
+          {" "}
+          <input type="checkbox" name="check" id="check" required checked />I
+          give my consent to TrySEOServices.Com's Digital Marketing team to
+          reach out to me with updates and notifications through Email, SMS,
+          WhatsApp, and Voice Calls, in accordance with their Privacy Policy.
+          This authorization supersedes any registration under
+          DNC/NDNC guidelines.
+        </div>
       </form>
     </div>
   );
