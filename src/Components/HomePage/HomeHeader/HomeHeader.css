@@ -192,7 +192,11 @@
   position: static;
   z-index: 1;
 }
-.blob{
+.blob {
+  /* border: solid red; */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .blob > video {
   /* border: solid red; */
@@ -208,7 +212,7 @@
     object-fit: contain;
   }
   .homeContainer {
-    /* border: solid red; */
+    border: solid red;
     height: 800px;
     width: 100%;
     display: flex;
