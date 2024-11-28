@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import googleVid from "./../../Img/Vid/SEOGoogleAds.mp4";
 import { Link } from "react-router-dom";
+import "./../HomePage/HomeHeader/HomeHeader.css";
 
 const GoogleAdsHeader = () => {
   return (
