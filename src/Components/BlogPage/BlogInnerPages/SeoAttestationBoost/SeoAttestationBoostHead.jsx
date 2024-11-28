@@ -1,6 +1,7 @@
 import React from "react";
 
-const SeoAttestationBoostHead = () => {
+const 
+SeoAttestationBoostHead = () => {
   return (
     <div className="exploreHead">
       <h1>
