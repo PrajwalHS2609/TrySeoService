@@ -6,6 +6,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import HomeAboutUsWrapper from "./HomeAboutUsWrapper";
 import HomeAboutUsHeader from "./HomeAboutUsHeader";
+import homeAboutUs from "./../../../Img/homePgImgs/homeAboutUs.jpg"
 const HomeAboutUs = () => {
   return (
     <div className="homeAboutUs">
@@ -14,8 +15,8 @@ const HomeAboutUs = () => {
           <BlobAnim />
         </div>
         <img
-          src="https://seoland.themeht.com/wp-content/uploads/2024/04/01-2.jpg"
-          alt=""
+          src={homeAboutUs}
+          alt="homeAboutUs"
         />
       </div>
       <div className="homeAboutUsContent2">

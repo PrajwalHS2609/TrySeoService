@@ -94,7 +94,7 @@
 .basicBtn > a {
   text-decoration: none;
 }
-.basicBtn > a > button {
+.basicBtn > button {
   border: none;
   padding: 10px;
   border-radius: 30px;
@@ -108,7 +108,7 @@
   overflow: hidden;
   z-index: 1;
 }
-.basicBtn > a > button::after {
+.basicBtn > button::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -122,7 +122,7 @@
   transition: 300ms ease-in-out;
   z-index: -1;
 }
-.basicBtn > a > button:hover::after {
+.basicBtn > button:hover::after {
   width: 100%;
 }
 /* -----------------------PremiumPlanCard-------------------- */
@@ -172,7 +172,7 @@
 .premiumBtn > a {
   text-decoration: none;
 }
-.premiumBtn > a > button {
+.premiumBtn > button {
   border: none;
   padding: 10px;
   border-radius: 30px;
@@ -186,7 +186,7 @@
   overflow: hidden;
   z-index: 1;
 }
-.premiumBtn > a > button::after {
+.premiumBtn > button::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -200,7 +200,7 @@
   transition: 300ms ease-in-out;
   z-index: -1;
 }
-.premiumBtn > a > button:hover::after {
+.premiumBtn > button:hover::after {
   width: 100%;
 }
 .premiumTag {
@@ -221,7 +221,7 @@
   color: white;
   font-size: 20px;
 }
-.pricingIcon{
+.pricingIcon {
   font-size: 30px;
 }
 /* -----------------EcommercePlanCard--------------- */

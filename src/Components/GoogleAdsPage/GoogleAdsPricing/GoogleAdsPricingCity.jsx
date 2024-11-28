@@ -1,9 +1,15 @@
 import React from "react";
 import tick from "./../../../Img/tick.png";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faIndianRupeeSign,
+} from "@fortawesome/free-solid-svg-icons";
 const GoogleAdsPricingCity = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   return (
     <div className="basicPlan">
       {/* <div className="premiumTag">
@@ -58,21 +64,20 @@ const GoogleAdsPricingCity = () => {
         <img src={tick} alt="tick" /> Call & What's App Support
       </li>{" "}
       <h2>
-      <FontAwesomeIcon
+        <FontAwesomeIcon
           icon={faIndianRupeeSign}
           className="pricingIcon"
-        ></FontAwesomeIcon>  20000 / <span>monthly</span>{" "}
+        ></FontAwesomeIcon>{" "}
+        20000 / <span>monthly</span>{" "}
       </h2>
       <div className="basicBtn">
-        <Link to={"/"}>
-          <button>
-            Choose Plan{" "}
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="homeArrow"
-            ></FontAwesomeIcon>
-          </button>
-        </Link>
+        <button onClick={handlePopUp}>
+          Choose Plan{" "}
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            className="homeArrow"
+          ></FontAwesomeIcon>
+        </button>
       </div>
     </div>
   );

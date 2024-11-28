@@ -3,6 +3,7 @@ import "./HomeFaq.css";
 import HomeFaqHead from "./HomeFaqHead";
 import BlobAnim from "../BlobAnim";
 import HomeFaqAcc from "./HomeFaqAcc";
+import homeFaq from "./../../../Img/homePgImgs/homeFaq.jpg"
 const HomeFaq = () => {
   return (
     <div className="homeFaq">
@@ -15,8 +16,9 @@ const HomeFaq = () => {
           <BlobAnim />
         </div>
         <img
-          src="https://seoland.themeht.com/wp-content/uploads/2024/04/03-2.jpg"
-          alt=""
+          src={homeFaq}
+          alt="homeFaq"
+          loading="lazy"
         />
       </div>
     </div>

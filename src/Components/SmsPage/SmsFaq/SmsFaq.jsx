@@ -2,6 +2,7 @@ import React from "react";
 import SmsFaqAcc from "./SmsFaqAcc";
 import HomeFaqHead from "../../HomePage/HomeFaq/HomeFaqHead";
 import BlobAnim from "../../HomePage/BlobAnim";
+import homeFaq from "./../../../Img/homePgImgs/homeFaq.jpg";
 
 const SmsFaq = () => {
   return (
@@ -14,10 +15,7 @@ const SmsFaq = () => {
         <div className="homeFaqBlob">
           <BlobAnim />
         </div>
-        <img
-          src="https://seoland.themeht.com/wp-content/uploads/2024/04/03-2.jpg"
-          alt=""
-        />
+        <img src={homeFaq} alt="homeFaq" loading="lazy" />
       </div>
     </div>
   );

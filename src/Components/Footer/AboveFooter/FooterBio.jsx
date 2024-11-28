@@ -15,7 +15,7 @@ const FooterBio = () => {
         whatever you like with the TrySeoService, TrySeoService is the creative,
         modern WordPress Theme suitable for Your Business Marketing.
       </p>
-      <Link to={"/"}>
+      <Link to={"/contact-us"}>
         {" "}
         <button>Contact Us Now</button>
       </Link>

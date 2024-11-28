@@ -26,6 +26,7 @@ import CompetitorAnalysis from "./Components/LandingPage/LandingPage1/Lp1Service
 import ContentMarketing from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/ContentMarketing";
 import KeywordResearch from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/KeywordResearch";
 import SeoReporting from "./Components/LandingPage/LandingPage1/Lp1Service/NestedPages/SeoReporting";
+import PopUp from "./Components/PopUp/PopUp";
 
 function MainApp() {
   const location = useLocation();
@@ -75,11 +76,14 @@ function MainApp() {
           path="/sms-and-whatsapp-marketing-services-in-bangalore"
           element={<SmsPage />}
         />
+        {/* ------------------------Blog----------------------------------- */}
         <Route path="/blog" element={<BlogPage />} />
         <Route
           path="/explore-seo-strategies-for-optimizing-ecommerce-stores"
           element={<ExploreSEO />}
         />
+        {/* ------------------------/Blog----------------------------------- */}
+
         <Route path="/lp" element={<LandingPage1 />}>
           <Route path="/lp" element={<SeoAuditPg />} />
           <Route path="/lp/seo-audit" element={<SeoAuditPg />} />
@@ -93,6 +97,7 @@ function MainApp() {
           <Route path="/lp/seo-reporting" element={<SeoReporting />} />
         </Route>
       </Routes>
+      <PopUp />
       <WhatsApp />
       {!hideNavbarPaths.includes(location.pathname) && <Footer />}
     </div>

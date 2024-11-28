@@ -1,9 +1,15 @@
 import React from "react";
 import tick from "./../../../Img/whiteTick.png";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faIndianRupeeSign,
+} from "@fortawesome/free-solid-svg-icons";
 const CitySeo = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   return (
     <div className="premiumPlanCard">
       {/* <div className="premiumTag">
@@ -91,15 +97,13 @@ const CitySeo = () => {
         15000 / <span>monthly</span>{" "}
       </h2>
       <div className="premiumBtn">
-        <Link to={"/"}>
-          <button>
+        <button onClick={handlePopUp}>
             Choose Plan{" "}
             <FontAwesomeIcon
               icon={faArrowRight}
               className="homeArrow"
             ></FontAwesomeIcon>
           </button>
-        </Link>
       </div>
     </div>
   );

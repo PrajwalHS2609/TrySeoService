@@ -63,7 +63,7 @@
   z-index: 1;
 }
 .homeFaqBlob {
-  /* border: solid blue; */
+  border: solid blue;
   position: absolute;
   width: fit-content;
   transform: scale(1.5);

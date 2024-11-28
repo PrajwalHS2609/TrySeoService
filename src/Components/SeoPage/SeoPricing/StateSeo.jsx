@@ -1,9 +1,15 @@
 import React from "react";
 import tick from "./../../../Img/tick.png";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faIndianRupeeSign,
+} from "@fortawesome/free-solid-svg-icons";
 const StateSeo = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   return (
     <div className="basicPlan" id="">
       <h3>State SEO</h3>
@@ -92,15 +98,13 @@ const StateSeo = () => {
         25000 / <span>monthly</span>{" "}
       </h2>
       <div className="basicBtn">
-        <Link to={"/"}>
-          <button>
-            Choose Plan{" "}
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="homeArrow"
-            ></FontAwesomeIcon>
-          </button>
-        </Link>
+        <button onClick={handlePopUp}>
+          Choose Plan{" "}
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            className="homeArrow"
+          ></FontAwesomeIcon>
+        </button>
       </div>
     </div>
   );

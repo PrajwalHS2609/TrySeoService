@@ -7,7 +7,7 @@ const FooterService = () => {
       <h4>Services</h4>
       <li>
         <NavLink
-          to="/seo-service-in-bangalore"
+          to="/seo-services-in-bangalore"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           SEO
@@ -39,7 +39,7 @@ const FooterService = () => {
       </li>
       <li>
         <NavLink
-          to="/social-media-marketing-service-in-bangalore"
+          to="/social-media-marketing-services-in-bangalore"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Social Media Marketing

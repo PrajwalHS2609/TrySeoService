@@ -1,10 +1,16 @@
 import React from "react";
 import "./HomePricing.css";
 import tick from "./../../../Img/tick.png";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight,faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faIndianRupeeSign,
+} from "@fortawesome/free-solid-svg-icons";
 const EcommercePlanCard = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   return (
     <div className="basicPlan" id="EcommercePlanCard">
       <h3>e-Commerce</h3>
@@ -51,21 +57,20 @@ const EcommercePlanCard = () => {
         <img src={tick} alt="tick" /> Chat/Whats App Integration
       </li>
       <h2>
-      <FontAwesomeIcon
+        <FontAwesomeIcon
           icon={faIndianRupeeSign}
           className="pricingIcon"
-        ></FontAwesomeIcon>  50000/ <span>only</span>{" "}
+        ></FontAwesomeIcon>{" "}
+        50000/ <span>only</span>{" "}
       </h2>
       <div className="basicBtn">
-        <Link to={"/"}>
-          <button>
-            Choose Plan{" "}
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="homeArrow"
-            ></FontAwesomeIcon>
-          </button>
-        </Link>
+        <button onClick={handlePopUp}>
+          Choose Plan{" "}
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            className="homeArrow"
+          ></FontAwesomeIcon>
+        </button>
       </div>
     </div>
   );

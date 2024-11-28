@@ -2,20 +2,18 @@ import React from "react";
 import "./HomeWhatWe.css";
 import BlobAnim from "../BlobAnim";
 import HomeWhatWeHeader from "./HomeWhatWeHeader";
+import homeWhatWe from "./../../../Img/homePgImgs/homeWhatWeDo.jpg";
 const HomeWhatWe = () => {
   return (
     <div className="homeWhatWeContainer">
       <div className="homeWhatWeContent1">
-        <HomeWhatWeHeader/>
+        <HomeWhatWeHeader />
       </div>
       <div className="homeWhatWeContent2">
-      <div className="blobContain">
+        <div className="blobContain">
           <BlobAnim />
         </div>
-        <img
-          src="https://seoland.themeht.com/wp-content/uploads/2024/04/03-2.jpg"
-          alt=""
-        />
+        <img src={homeWhatWe} alt="homeWhatWe" />
       </div>
     </div>
   );
