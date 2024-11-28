@@ -4,7 +4,7 @@ import Accordion from "react-bootstrap/Accordion";
 const ContentReasonMain = () => {
   return (
     <div className="WebsiteWhyMainAcc">
-      <Accordion>
+      <Accordion className="websiteWhyAcc">
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             <h5>Search Engine Rankings</h5>

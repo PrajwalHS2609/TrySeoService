@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 const PaymentReasonMain = () => {
   return (
     <div className="WebsiteWhyMainAcc">
-      <Accordion>
+      <Accordion className="websiteWhyAcc">
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             <h5>Global Reach</h5>
