@@ -1,2 +1,3 @@
 make all imgs lazy loading
 make get started  btn to call now
+change the outer design of btn
