@@ -26,7 +26,7 @@ const Menu = () => {
     const sideBar2 = document.querySelector(".innerRespMenu");
 
     // sideBar.style.display = "none";
-    sideBar.style.transform = "translateX(100%)";
+      sideBar.style.transform = "translateX(100%)";
     sideBar2.style.display = "flex";
     sideBar2.style.transform = "translateX(100%)";
   };

@@ -36,7 +36,6 @@ import TransformingForeign from "./Components/BlogPage/BlogInnerPages/Transformi
 import TopTenReasons from "./Components/BlogPage/BlogInnerPages/TopTenReasons/TopTenReasons";
 import SeoServiceTours from "./Components/BlogPage/BlogInnerPages/SeoServiceTours/SeoServiceTours";
 import SeoAttestationBoost from "./Components/BlogPage/BlogInnerPages/SeoAttestationBoost/SeoAttestationBoost";
-import SnowFall from "./Components/Christmas/SnowFall/SnowFall";
 function MainApp() {
   const location = useLocation();
 
@@ -53,7 +52,6 @@ function MainApp() {
     <div className="App">
       {!hideNavbarPaths.includes(location.pathname) && <NavBar />}
       {!hideNavbarPaths.includes(location.pathname) && <ScrollTo />}
-      <SnowFall/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact-us" element={<ContactUs />} />
