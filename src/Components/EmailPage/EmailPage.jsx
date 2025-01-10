@@ -1,7 +1,6 @@
 import React, { Suspense } from "react";
 import EmailWhy from "./EmailWhy";
 import EmailComprehensive from "./EmailComprehensive/EmailComprehensive";
-import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 import EmailFaq from "./EmailFaq/EmailFaq";
 import { Helmet } from "react-helmet-async";
@@ -28,7 +27,6 @@ const EmailPage = () => {
       <BreadCrumb txt="Email" />
       <EmailWhy />
       <EmailComprehensive />
-      <WebsiteClient />
       <HomeTestimonial />
       <EmailFaq />
     </div>

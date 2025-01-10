@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import GoogleAdsBenefits from "./GoogleAdsBenefits/GoogleAdsBenefits";
-import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 import GoogleAdsService from "./GoogleAdsService/GoogleAdsService";
 import GoogleAdsPricing from "./GoogleAdsPricing/GoogleAdsPricing";
@@ -31,7 +30,6 @@ const GoogleAdsPage = () => {
       <GoogleAdsService />
       <HomeMarquee />
       <GoogleAdsBenefits />
-      <WebsiteClient />
       <HomeTestimonial />
       <GoogleAdsPricing />
       <GoogleAdsFaq />

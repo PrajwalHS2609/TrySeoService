@@ -3,12 +3,12 @@ import "./SeoPage.css";
 import SeoService from "./SeoService/SeoService";
 import SeoBenefits from "./SeoBenefits/SeoBenefits";
 import SeoPricing from "./SeoPricing/SeoPricing";
-import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import SeoReasons from "./SeoReasons/SeoReasons";
 import WebsiteFaq from "../WebsitePage/WebsiteFaq/WebsiteFaq";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 const SeoHeader = React.lazy(() => import("./SeoHeader"));
 
 // import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
@@ -34,9 +34,9 @@ const SeoPage = () => {
       <HomeMarquee />
       <SeoBenefits />
       <SeoReasons />
+      <HomeTestimonial />
       <SeoPricing />
       <WebsiteFaq />
-      <WebsiteClient />
     </div>
   );
 };

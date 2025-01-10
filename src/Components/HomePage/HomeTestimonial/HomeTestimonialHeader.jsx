@@ -3,8 +3,10 @@ import "./HomeTestimonial.css";
 const HomeTestimonialHeader = () => {
   return (
     <div className="homeTestimonialHeader">
-      <h6>TESTIMONIAL</h6>
-      <h2>See Feedback Why Customers Love Working With Us</h2>
+      <h6>CLIENT</h6>
+      <h2>
+        <span>Success Stories:</span> Our Clients, Our Pride​
+      </h2>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import React, { Suspense } from "react";
 import "./SocialMediaPage.css";
 import SocialMediaBenefits from "./SocialMediaBenefits/SocialMediaBenefits";
-import WebsiteClient from "../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
 import SocialMediaPricing from "./SocialMediaPricing/SocialMediaPricing";
 import SocialMediaWhyHead from "./SocialMediaWhy/SocialMediaWhyHead";
@@ -36,7 +35,6 @@ const SocialMediaPage = () => {
       <HomeMarquee />
       <SocialMediaBenefits />
       <SocialMediaChoose />
-      <WebsiteClient />
       <HomeTestimonial />
       <SocialMediaPricing />
       <SocialMediaFaq />

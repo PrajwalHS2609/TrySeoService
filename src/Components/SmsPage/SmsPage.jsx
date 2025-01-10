@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import SmsWhy from "./SmsWhy";
-import WebsiteClient from "./../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "./../HomePage/HomeTestimonial/HomeTestimonial";
 import SmsService from "./SmsService/SmsService";
 import SmsChoose from "./SmsChoose";
@@ -32,7 +31,6 @@ const SmsPage = () => {
       <SmsWhy />
       <SmsService />
       <SmsChoose />
-      <WebsiteClient />
       <HomeTestimonial />
       <SmsFaq />{" "}
     </div>

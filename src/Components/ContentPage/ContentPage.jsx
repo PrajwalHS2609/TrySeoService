@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import ContentBenefits from "./ContentBenefits/ContentBenefits";
 import ContentPageWhy from "./ContentWhy/ContentWhy";
 import ContentReason from "./ContentReason/ContentReason";
-import WebsiteClient from "./../WebsitePage/WebsiteClient/WebsiteClient";
 import HomeTestimonial from "./../HomePage/HomeTestimonial/HomeTestimonial";
 import ContentPricing from "./ContentPricing/ContentPricing";
 import "./ContentPage.css";
@@ -32,7 +31,6 @@ const ContentPage = () => {
       <ContentPageWhy />
       <ContentBenefits />
       <ContentReason />
-      <WebsiteClient />
       <HomeTestimonial />
       <ContentPricing />
       <ContentFaq />

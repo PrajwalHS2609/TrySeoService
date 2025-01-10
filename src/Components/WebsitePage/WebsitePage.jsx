@@ -5,7 +5,6 @@ import HomePricing from "./../HomePage/HomePricing/HomePricing";
 import WebsiteHowIt from "./WebsiteHowIt/WebsiteHowIt";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import WebsiteBenefits from "./WebsiteBenefits/WebsiteBenefits";
-import WebsiteClient from "./WebsiteClient/WebsiteClient";
 import WebsiteWhy from "./WebsiteWhy/WebsiteWhy";
 import WebsiteFaq from "./WebsiteFaq/WebsiteFaq";
 import { Helmet } from "react-helmet-async";
@@ -40,7 +39,6 @@ const WebsitePage = () => {
       <HomePricing />
       <HomeTestimonial />
       <WebsiteFaq />
-      <WebsiteClient />
     </div>
   );
 };
