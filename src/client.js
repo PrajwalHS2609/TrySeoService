@@ -5,6 +5,6 @@ import { createClient } from "@sanity/client";
   projectId: "4oh569ed",
   dataset: "production",
   apiVersion: "2024-01-01",
-  useCdn: true,
+  useCdn: false,
 });
 export default client;
