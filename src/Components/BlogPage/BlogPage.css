@@ -89,11 +89,26 @@
 .blogBtn > a > button:hover::after {
   width: 100%;
 }
+.blogWrapper {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.blog-wrapper1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    .blogCard {
-        /* border: solid blue; */
-       min-width: 300px;
-        margin: 40px;
-   
-      }
+  .blogCard {
+    /* border: solid blue; */
+    min-width: 300px;
+    margin: 40px;
+  }
 }
