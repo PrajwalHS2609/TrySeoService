@@ -7,6 +7,7 @@ import BlogSideBar from "./../BlogPage/BlogSideBar/BlogSideBar";
 import "./../BlogPage/BlogSideBar/BlogSideBar.css";
 import "./SlugPage.css";
 import SlugHeader from "./SlugHeader";
+import BlogAuthor from "../BlogPage/BlogAuthor/BlogAuthor";
 function isValidBlocks(blocks) {
   return (
     Array.isArray(blocks) &&
@@ -109,9 +110,12 @@ export default function SlugPage() {
               />
             )}
             <div className="exploreSeoOptimizing">
-              <h1>{blogPost.title}</h1>
+              <h1>{blogPost.title}</h1> 
               {isValidBlocks(blogPost.body) ? (
-                <PortableText value={blogPost.body} />
+                 <>
+                  <PortableText value={blogPost.body} />
+                  <BlogAuthor/>
+                 </>
               ) : (
                 <p>No valid content to display.</p>
               )}
@@ -133,7 +137,11 @@ export default function SlugPage() {
                 className="blog__image rounded-t"
               />
             )} */}
-            <SlugHeader headTitle={servicePage.title} />
+            <SlugHeader
+              headTitle={servicePage.title}
+              img={servicePage.mainImage.asset.url}
+              alt={servicePage.title}
+            />
           </div>
           <div className="exploreSeoOptimizing">
             {/* <h1>{servicePage.title}</h1> */}

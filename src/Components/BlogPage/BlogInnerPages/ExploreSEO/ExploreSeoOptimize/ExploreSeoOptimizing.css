@@ -75,6 +75,11 @@
   width: 100%;
   padding: 30px;
 }
+.exploreSeoOptimizing > h4 {
+  color: var(--customColor);
+  text-align: start;
+  width: 100%;
+}
 .exploreSeoOptimizing > h5 {
   font-size: 25px;
   color: var(--customColor);
@@ -97,6 +102,10 @@
   text-decoration: none;
   color: var(--customColor);
 }
+.exploreSeoOptimizing > ul > li > strong {
+  color: var(--customColor);
+}
+
 .exploreSeoOptimizing > li > ul > li {
   list-style: none;
   font-size: 20px;

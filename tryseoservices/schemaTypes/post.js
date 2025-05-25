@@ -27,11 +27,23 @@ export default defineType({
         hotspot: true,
       },
     }),
+
+    {
+      name: 'url',
+      title: 'URL',
+      type: 'url',
+    },
     // ✅ Description field added here
     defineField({
       name: 'description',
       title: 'Description',
       type: 'text',
+    }),
+    defineField({
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: [{type: 'author'}],
     }),
     defineField({
       name: 'body',

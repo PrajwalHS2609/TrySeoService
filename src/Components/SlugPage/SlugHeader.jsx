@@ -3,7 +3,10 @@ import "./SlugPage.css";
 const SlugHeader = (props) => {
   return (
     <div className="slugHeader-container">
-      <h1>{props.headTitle}</h1>
+      <img src={props.img} alt={props.alt} />
+     <div className="slugHeader-cover">
+       <h1>{props.headTitle}</h1>
+     </div>
     </div>
   );
 };
