@@ -38,8 +38,13 @@ export default function SlugPage() {
             mainImage{
               asset->{_id,url},
               alt
-            }
+            },
+              source {
+    text,
+    url
+  }
           },
+
           "serviceCategory": *[_type == "ServiceCategory" && slug.current == $slug][0]{
             title,
             mainImage {
@@ -110,12 +115,24 @@ export default function SlugPage() {
               />
             )}
             <div className="exploreSeoOptimizing">
-              <h1>{blogPost.title}</h1> 
+              <h1>{blogPost.title}</h1>
               {isValidBlocks(blogPost.body) ? (
-                 <>
+                <>
                   <PortableText value={blogPost.body} />
-                  <BlogAuthor/>
-                 </>
+                  {blogPost.source?.url && blogPost.source?.text && (
+                    <p className="source-link">
+                      Source:{" "}
+                      <a
+                        href={blogPost.source.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {blogPost.source.text}
+                      </a>
+                    </p>
+                  )}
+                  <BlogAuthor />
+                </>
               ) : (
                 <p>No valid content to display.</p>
               )}
