@@ -15,6 +15,7 @@ import arra from "./../../../Img/clients/Arrasuites.png";
 import mm from "./../../../Img/clients/MM.png";
 import scent from "./../../../Img/clients/Scent.png";
 import buildurspace from "./../../../Img/clients/BuildUrSpace.png";
+import twirl from "./../../../Img/clients/twirl.jpg";
 
 const WebsiteClientMain = () => {
   const responsive = {
@@ -132,6 +133,11 @@ const WebsiteClientMain = () => {
           <div>
             <div className="item">
               <img src={buildurspace} alt="buildurspace" loading="lazy" />
+            </div>
+          </div>
+           <div>
+            <div className="item">
+              <img src={twirl} alt="twirl" loading="lazy" />
             </div>
           </div>
         </Carousel>
