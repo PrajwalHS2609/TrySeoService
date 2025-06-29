@@ -9,7 +9,7 @@ export default function BlogPost() {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "post"] {
+        `*[_type == "post"] [0...2]{
         _id,
         title,
         slug,

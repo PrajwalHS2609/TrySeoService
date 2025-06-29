@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import  client  from "../../../client";
 
 export default function Blog() {
-  const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     client

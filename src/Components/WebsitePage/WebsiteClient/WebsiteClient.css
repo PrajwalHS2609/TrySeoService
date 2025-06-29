@@ -36,16 +36,16 @@
 }
 /* ---------------------WebsiteClientMain----------------------------- */
 .websiteClientMain {
-  /* border: solid red; */
+  border: solid red;
   width: 100%;
-  height: 100%;
+  height: 100%; 
   padding: 10px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 .websiteClientMainContent {
-  /* border: solid blue; */
+  border: solid blue;
   width: 70%;
   height: 300px;
   display: flex;
