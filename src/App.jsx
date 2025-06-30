@@ -37,6 +37,7 @@ import TopTenReasons from "./Components/BlogPage/BlogInnerPages/TopTenReasons/To
 import SeoServiceTours from "./Components/BlogPage/BlogInnerPages/SeoServiceTours/SeoServiceTours";
 import SeoAttestationBoost from "./Components/BlogPage/BlogInnerPages/SeoAttestationBoost/SeoAttestationBoost";
 import SlugPage from "./Components/SlugPage/SlugPage";
+import CategoryPage from "./Components/BlogPage/Category";
 function MainApp() {
   const location = useLocation();
 
@@ -136,6 +137,7 @@ function MainApp() {
           element={<GooglePositioning />}
         />
         <Route path="/:slug" element={<SlugPage />} />
+        <Route path="/category/:category" element={<CategoryPage />} />
 
         {/* ------------------------/Blog----------------------------------- */}
 

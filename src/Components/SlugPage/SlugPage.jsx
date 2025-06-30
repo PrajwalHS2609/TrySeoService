@@ -1,13 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { PortableText } from "@portabletext/react";
-import { Helmet } from "react-helmet-async";
-import client from "../../client";
-import BlogSideBar from "./../BlogPage/BlogSideBar/BlogSideBar";
-import "./../BlogPage/BlogSideBar/BlogSideBar.css";
 import "./SlugPage.css";
+import client from "../../client";
 import SlugHeader from "./SlugHeader";
-import BlogAuthor from "../BlogPage/BlogAuthor/BlogAuthor";
+import imageUrlBuilder from "@sanity/image-url";
+import BlogSideBar from './../BlogPage/BlogSideBar/BlogSideBar';
+import { Helmet } from "react-helmet-async";
+import BlogAuthor from './../BlogPage/BlogAuthor/BlogAuthor';
+
+// ✅ Build image URLs
+const builder = imageUrlBuilder(client);
+function urlFor(source) {
+  return builder.image(source);
+}
+
+// ✅ PortableText components (handles image blocks!)
+const portableComponents = {
+  types: {
+    image: ({ value }) => {
+      return (
+        <img
+          src={urlFor(value).width(800).url()}
+          alt={value.alt || ""}
+          style={{ maxWidth: "100%", height: "auto", margin: "1rem 0" }}
+        />
+      );
+    },
+  },
+};
+
 function isValidBlocks(blocks) {
   return (
     Array.isArray(blocks) &&
@@ -28,7 +50,6 @@ export default function SlugPage() {
 
     setIsLoading(true);
 
-    // Main fetch query for both post and serviceCategory
     client
       .fetch(
         `{
@@ -39,10 +60,10 @@ export default function SlugPage() {
               asset->{_id,url},
               alt
             },
-              source {
-    text,
-    url
-  }
+            source {
+              text,
+              url
+            }
           },
 
           "serviceCategory": *[_type == "ServiceCategory" && slug.current == $slug][0]{
@@ -69,26 +90,6 @@ export default function SlugPage() {
         console.error("Sanity fetch error:", err);
         setIsLoading(false);
       });
-  }, [slug]);
-
-  // Separate test for serviceCategory to debug mainImage specifically
-  useEffect(() => {
-    if (!slug) return;
-    client
-      .fetch(
-        `*[_type == "ServiceCategory" && slug.current == $slug][0]{
-          title,
-          mainImage {
-            asset->{_id, url},
-            alt
-          }
-        }`,
-        { slug }
-      )
-      .then((data) => {
-        console.log("Debug ServiceCategory fetch:", data);
-      })
-      .catch(console.error);
   }, [slug]);
 
   if (isLoading) return <h1>Loading...</h1>;
@@ -118,7 +119,10 @@ export default function SlugPage() {
               <h1>{blogPost.title}</h1>
               {isValidBlocks(blogPost.body) ? (
                 <>
-                  <PortableText value={blogPost.body} />
+                  <PortableText
+                    value={blogPost.body}
+                    components={portableComponents}
+                  />
                   {blogPost.source?.url && blogPost.source?.text && (
                     <p className="source-link">
                       Source:{" "}
@@ -131,7 +135,7 @@ export default function SlugPage() {
                       </a>
                     </p>
                   )}
-                  <BlogAuthor />
+                  <BlogAuthor/>
                 </>
               ) : (
                 <p>No valid content to display.</p>
@@ -146,27 +150,26 @@ export default function SlugPage() {
 
       {servicePage && (
         <div className="slugService-container">
-          <div className="slugService-imgContainer">
-            {/* {servicePage.mainImage?.asset?.url && (
-              <img
-                src={servicePage.mainImage.asset.url}
-                alt={servicePage.mainImage.alt || servicePage.title}
-                className="blog__image rounded-t"
-              />
-            )} */}
+          {servicePage.mainImage?.asset?.url && (
             <SlugHeader
-              headTitle={servicePage.title}
               img={servicePage.mainImage.asset.url}
-              alt={servicePage.title}
+              head={servicePage.title}
             />
-          </div>
+          )}
           <div className="exploreSeoOptimizing">
-            {/* <h1>{servicePage.title}</h1> */}
+            <h1>{servicePage.title}</h1>
             {isValidBlocks(servicePage.body1) && (
-              <PortableText value={servicePage.body1} />
+              <PortableText
+                value={servicePage.body1}
+                components={portableComponents}
+              />
             )}
+
             {isValidBlocks(servicePage.body2) && (
-              <PortableText value={servicePage.body2} />
+              <PortableText
+                value={servicePage.body2}
+                components={portableComponents}
+              />
             )}
           </div>
         </div>

@@ -33,29 +33,23 @@ export default defineType({
       title: 'Description',
       type: 'text',
     }),
-    defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: [{type: 'author'}],
-    }),
-    defineField({
-      name: 'source',
-      title: 'Source',
-      type: 'object',
-      fields: [
-        {
-          name: 'text',
-          title: 'Link Text',
-          type: 'string',
-        },
-        {
-          name: 'url',
-          title: 'URL',
-          type: 'url',
-        },
-      ],
-    }),
+    // defineField({
+    //   name: 'source',
+    //   title: 'Source',
+    //   type: 'object',
+    //   fields: [
+    //     {
+    //       name: 'text',
+    //       title: 'Link Text',
+    //       type: 'string',
+    //     },
+    //     {
+    //       name: 'url',
+    //       title: 'URL',
+    //       type: 'url',
+    //     },
+    //   ],
+    // }),
     defineField({
       name: 'body',
       title: 'Body',
@@ -70,6 +64,15 @@ export default defineType({
       name: 'metaDescription',
       title: 'Meta Description',
       type: 'text',
+    }),
+    defineField({
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'blogCategory'}]}],
+      options: {
+        layout: 'tags', // Shows them as tags in Studio
+      },
     }),
   ],
 })
