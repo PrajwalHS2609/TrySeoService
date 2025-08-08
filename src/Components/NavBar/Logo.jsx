@@ -3,7 +3,7 @@ import "./NavBar.css";
 import TSS from "./../../Img/TSS.png";
 import { Link } from "react-router-dom";
 const Logo = () => {
-  const countryCode =    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+  const countryCode = localStorage.getItem("preferredCountry")?.toLowerCase() || "";
 
   return (
     <div className="logoContainer">

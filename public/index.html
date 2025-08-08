@@ -35,7 +35,11 @@
         try {
           const res = await fetch("https://ipapi.co/json/");
           const data = await res.json();
-          const countryCode = mockCountry || data.country_code;
+
+          let countryCode = mockCountry || data.country_code;
+
+          // Normalize GB to UK
+          if (countryCode === "GB") countryCode = "UK";
 
           const redirectMap = {
             IN: "https://tryseoservices.com/in",
@@ -48,7 +52,7 @@
             JP: "https://tryseoservices.com/jp",
           };
 
-          // Save detected country for later use
+          // Save for later use
           localStorage.setItem("preferredCountry", countryCode);
 
           const target = redirectMap[countryCode];
