@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./NavBar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import menuBar from "./../../Img/menu.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -26,7 +26,7 @@ const Menu = () => {
     const sideBar2 = document.querySelector(".innerRespMenu");
 
     // sideBar.style.display = "none";
-      sideBar.style.transform = "translateX(100%)";
+    sideBar.style.transform = "translateX(100%)";
     sideBar2.style.display = "flex";
     sideBar2.style.transform = "translateX(100%)";
   };
@@ -43,12 +43,28 @@ const Menu = () => {
       console.log("up");
     }
   };
+  const location = useLocation();
+
+  // Get region from current path: /in/... or /us/...
+  const supportedCountries = [
+    "/in",
+    "/us",
+    "/ca",
+    "/uk",
+    "/au",
+    "/de",
+    "/fr",
+    "/jp",
+  ];
+  const currentPath = location.pathname.toLowerCase();
+  const basePath =    supportedCountries.find((path) => currentPath.startsWith(path)) || "/";
+
   return (
     <div className="menuContainer">
       <div className="menuContainerList">
         <li>
           <NavLink
-            to="/"
+            to={basePath}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Home
@@ -155,7 +171,7 @@ const Menu = () => {
             <li className="">
               <NavLink
                 id="menuNavLink"
-                to={"/"}
+                to={basePath}
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
