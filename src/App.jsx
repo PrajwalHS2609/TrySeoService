@@ -56,6 +56,8 @@ function MainApp() {
       {!hideNavbarPaths.includes(location.pathname) && <ScrollTo />}
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/in" element={<HomePage />} />
+        <Route path="/us" element={<HomePage />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route
           path="/website-designing-services-in-bangalore"
