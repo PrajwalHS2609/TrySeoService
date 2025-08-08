@@ -6,8 +6,9 @@ const Logo = () => {
   const location = useLocation();
 
   // Get region from current path: /in/... or /us/...
-  const basePath = location.pathname.startsWith("/us") ? "/us" : "/in";
-
+  const supportedCountries = ["/in", "/us", "/ca", "/uk", "/au", "/de", "/fr", "/jp"];
+  const currentPath = location.pathname.toLowerCase();
+  const basePath = supportedCountries.find(path => currentPath.startsWith(path)) || "/";
   return (
     <div className="logoContainer">
       <Link to={basePath}>

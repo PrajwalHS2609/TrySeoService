@@ -59,8 +59,12 @@ function MainApp() {
         <Route path="/in" element={<HomePage />} />
         <Route path="/us" element={<HomePage />} />
         <Route path="/uk" element={<HomePage />} />
-        <Route path="/ca" element={<HomePage />} />{" "}
+        <Route path="/ca" element={<HomePage />} />
         <Route path="/au" element={<HomePage />} />
+        <Route path="/de" element={<HomePage />} />
+        <Route path="/fr" element={<HomePage />} />
+        <Route path="/jp" element={<HomePage />} />
+
         <Route path="/contact-us" element={<ContactUs />} />
         <Route
           path="/website-designing-services-in-bangalore"
