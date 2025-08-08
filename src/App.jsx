@@ -58,6 +58,9 @@ function MainApp() {
         <Route path="/" element={<HomePage />} />
         <Route path="/in" element={<HomePage />} />
         <Route path="/us" element={<HomePage />} />
+        <Route path="/uk" element={<HomePage />} />
+        <Route path="/ca" element={<HomePage />} />{" "}
+        <Route path="/au" element={<HomePage />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route
           path="/website-designing-services-in-bangalore"
@@ -140,9 +143,7 @@ function MainApp() {
         />
         <Route path="/:slug" element={<SlugPage />} />
         <Route path="/category/:category" element={<CategoryPage />} />
-
         {/* ------------------------/Blog----------------------------------- */}
-
         <Route path="/lp" element={<LandingPage1 />}>
           <Route path="/lp" element={<SeoAuditPg />} />
           <Route path="/lp/seo-audit" element={<SeoAuditPg />} />
