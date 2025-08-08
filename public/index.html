@@ -25,34 +25,41 @@
 
       gtag("config", "G-6YB819D36Q");
     </script>
-    
- <!-- 🌍 Country-based redirect script -->
-  <script>
-    (async function () {
-      const params = new URLSearchParams(window.location.search);
-      const mockCountry = params.get('country')?.toUpperCase();
 
-      try {
-        const res = await fetch('https://ipapi.co/json/');
-        const data = await res.json();
-        const countryCode = mockCountry || data.country_code;
+    <!-- 🌍 Country-based redirect script -->
+    <script>
+      (async function () {
+        const params = new URLSearchParams(window.location.search);
+        const mockCountry = params.get("country")?.toUpperCase();
 
-        const redirectMap = {
-          IN: 'https://tryseoservices.com/in',
-          US: 'https://tryseoservices.com/us',
-        };
+        try {
+          const res = await fetch("https://ipapi.co/json/");
+          const data = await res.json();
+          const countryCode = mockCountry || data.country_code;
 
-        const target = redirectMap[countryCode];
+          const redirectMap = {
+            IN: "https://tryseoservices.com/in",
+            US: "https://tryseoservices.com/us",
+            CA: "https://tryseoservices.com/ca", // Canada
+            GB: "https://tryseoservices.com/uk", // United Kingdom
+            AU: "https://tryseoservices.com/au", // Australia
+            // Add more country codes here
+          };
 
-        if (target && (window.location.pathname === '/' || window.location.pathname === '/index.html')) {
-          window.location.replace(target);
+          const target = redirectMap[countryCode];
+
+          if (
+            target &&
+            (window.location.pathname === "/" ||
+              window.location.pathname === "/index.html")
+          ) {
+            window.location.replace(target);
+          }
+        } catch (err) {
+          console.error("Geo redirect failed:", err);
         }
-      } catch (err) {
-        console.error('Geo redirect failed:', err);
-      }
-    })();
-  </script>
-
+      })();
+    </script>
 
     <link rel="icon" href="./images/faviconPerfect.png" />
     <title>TrySeoService</title>
