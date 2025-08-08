@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./NavBar.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import menuBar from "./../../Img/menu.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -43,28 +43,15 @@ const Menu = () => {
       console.log("up");
     }
   };
-  const location = useLocation();
-
-  // Get region from current path: /in/... or /us/...
-  const supportedCountries = [
-    "/in",
-    "/us",
-    "/ca",
-    "/uk",
-    "/au",
-    "/de",
-    "/fr",
-    "/jp",
-  ];
-  const currentPath = location.pathname.toLowerCase();
-  const basePath =    supportedCountries.find((path) => currentPath.startsWith(path)) || "/";
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
 
   return (
     <div className="menuContainer">
       <div className="menuContainerList">
         <li>
           <NavLink
-            to={basePath}
+            to={`/${countryCode}`}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Home
@@ -171,7 +158,7 @@ const Menu = () => {
             <li className="">
               <NavLink
                 id="menuNavLink"
-                to={basePath}
+                to={`/${countryCode}`}
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >

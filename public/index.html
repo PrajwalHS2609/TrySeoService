@@ -40,15 +40,16 @@
           const redirectMap = {
             IN: "https://tryseoservices.com/in",
             US: "https://tryseoservices.com/us",
-            CA: "https://tryseoservices.com/ca", // Canada
-            GB: "https://tryseoservices.com/uk", // United Kingdom
-            AU: "https://tryseoservices.com/au", // Australia
-            DE: "https://tryseoservices.com/de", // Germany
-            FR: "https://tryseoservices.com/au", // France
-            JP: "https://tryseoservices.com/au", // Japan
-
-            // Add more country codes here
+            CA: "https://tryseoservices.com/ca",
+            UK: "https://tryseoservices.com/uk",
+            AU: "https://tryseoservices.com/au",
+            DE: "https://tryseoservices.com/de",
+            FR: "https://tryseoservices.com/fr",
+            JP: "https://tryseoservices.com/jp",
           };
+
+          // Save detected country for later use
+          localStorage.setItem("preferredCountry", countryCode);
 
           const target = redirectMap[countryCode];
 
