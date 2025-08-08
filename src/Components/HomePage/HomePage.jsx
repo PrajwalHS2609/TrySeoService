@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet-async";
 const HomeHeader = React.lazy(() => import("./HomeHeader/HomeHeader"));
 
 const HomePage = () => {
+  
   return (
     <div className="homePageContainer">
       <Helmet>

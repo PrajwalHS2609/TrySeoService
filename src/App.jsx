@@ -55,99 +55,95 @@ function MainApp() {
       {!hideNavbarPaths.includes(location.pathname) && <NavBar />}
       {!hideNavbarPaths.includes(location.pathname) && <ScrollTo />}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/in" element={<HomePage />} />
-        <Route path="/us" element={<HomePage />} />
-        <Route path="/uk" element={<HomePage />} />
-        <Route path="/ca" element={<HomePage />} />
-        <Route path="/au" element={<HomePage />} />
-        <Route path="/de" element={<HomePage />} />
-        <Route path="/fr" element={<HomePage />} />
-        <Route path="/jp" element={<HomePage />} />
+        {/* Country-prefixed routes */}
+        <Route path="/:countryCode">
+          <Route index element={<HomePage />} />
+          <Route path="contact-us" element={<ContactUs />} />
+          <Route
+            path="website-designing-services-in-bangalore"
+            element={<WebsitePage />}
+          />
+          <Route path="seo-services-in-bangalore" element={<SeoPage />} />
+          <Route
+            path="google-ads-service-in-bangalore"
+            element={<GoogleAdsPage />}
+          />
+          <Route
+            path="social-media-marketing-services-in-bangalore"
+            element={<SocialMediaPage />}
+          />
+          <Route
+            path="content-writing-service-in-bangalore"
+            element={<ContentPage />}
+          />
+          <Route
+            path="payment-gateway-service-in-bangalore"
+            element={<PaymentPage />}
+          />
+          <Route
+            path="email-marketing-service-in-bangalore"
+            element={<EmailPage />}
+          />
+          <Route
+            path="sms-and-whatsapp-marketing-services-in-bangalore"
+            element={<SmsPage />}
+          />
 
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route
-          path="/website-designing-services-in-bangalore"
-          element={<WebsitePage />}
-        />
-        <Route path="/seo-services-in-bangalore" element={<SeoPage />} />
-        <Route
-          path="/google-ads-service-in-bangalore"
-          element={<GoogleAdsPage />}
-        />
-        <Route
-          path="/social-media-marketing-services-in-bangalore"
-          element={<SocialMediaPage />}
-        />
-        <Route
-          path="/content-writing-service-in-bangalore"
-          element={<ContentPage />}
-        />
-        <Route
-          path="/payment-gateway-service-in-bangalore"
-          element={<PaymentPage />}
-        />
-        <Route
-          path="/email-marketing-service-in-bangalore"
-          element={<EmailPage />}
-        />
-        <Route
-          path="/sms-and-whatsapp-marketing-services-in-bangalore"
-          element={<SmsPage />}
-        />
-        {/* ------------------------Blog----------------------------------- */}
-        <Route path="/blog" element={<BlogPage />} />
-        <Route
-          path="/explore-seo-strategies-for-optimizing-ecommerce-stores"
-          element={<ExploreSEO />}
-        />
-        <Route
-          path="/exploring-the-top-seo-services-to-boost-tours-and-travel-service-providers-in-bangalore"
-          element={<SeoServiceTours />}
-        />
-        <Route
-          path="/local-seo-secrets-get-ahead-in-your-hometown"
-          element={<LocalSEOSecrets />}
-        />
-        <Route
-          path="/how-seo-services-can-boost-attestation-service-providers-in-bangalore"
-          element={<SeoAttestationBoost />}
-        />
-        <Route
-          path="/importance-of-on-page-seo-optimization-for-website"
-          element={<ImpOfPageSeo />}
-        />
-        <Route
-          path="/the-comprehensive-technical-seo-guide"
-          element={<TechnicalSeoGuide />}
-        />
-        <Route
-          path="/power-of-google-ads-why-its-essential-for-your-business"
-          element={<GoogleAdsPower />}
-        />
-        <Route
-          path="/what-is-on-page-seo-why-it-is-important-for-every-websites"
-          element={<WhatIsSeo />}
-        />
-        <Route
-          path="/transforming-foreign-language-school-of-bangalore"
-          element={<TransformingForeign />}
-        />
-        <Route
-          path="/the-power-of-long-tail-keywords-how-to-find-and-use-them"
-          element={<LongTailKeywords />}
-        />
-        <Route
-          path="/top-10-reasons-why-every-business-needs-an-seo-audit"
-          element={<TopTenReasons />}
-        />
-        <Route
-          path="/google-search-engine-positioning-understanding-it-and-boosting-your-rankings"
-          element={<GooglePositioning />}
-        />
-        <Route path="/:slug" element={<SlugPage />} />
-        <Route path="/category/:category" element={<CategoryPage />} />
-        {/* ------------------------/Blog----------------------------------- */}
+          {/* Blog routes */}
+          <Route path="blog" element={<BlogPage />} />
+          <Route
+            path="explore-seo-strategies-for-optimizing-ecommerce-stores"
+            element={<ExploreSEO />}
+          />
+          <Route
+            path="exploring-the-top-seo-services-to-boost-tours-and-travel-service-providers-in-bangalore"
+            element={<SeoServiceTours />}
+          />
+          <Route
+            path="local-seo-secrets-get-ahead-in-your-hometown"
+            element={<LocalSEOSecrets />}
+          />
+          <Route
+            path="how-seo-services-can-boost-attestation-service-providers-in-bangalore"
+            element={<SeoAttestationBoost />}
+          />
+          <Route
+            path="importance-of-on-page-seo-optimization-for-website"
+            element={<ImpOfPageSeo />}
+          />
+          <Route
+            path="the-comprehensive-technical-seo-guide"
+            element={<TechnicalSeoGuide />}
+          />
+          <Route
+            path="power-of-google-ads-why-its-essential-for-your-business"
+            element={<GoogleAdsPower />}
+          />
+          <Route
+            path="what-is-on-page-seo-why-it-is-important-for-every-websites"
+            element={<WhatIsSeo />}
+          />
+          <Route
+            path="transforming-foreign-language-school-of-bangalore"
+            element={<TransformingForeign />}
+          />
+          <Route
+            path="the-power-of-long-tail-keywords-how-to-find-and-use-them"
+            element={<LongTailKeywords />}
+          />
+          <Route
+            path="top-10-reasons-why-every-business-needs-an-seo-audit"
+            element={<TopTenReasons />}
+          />
+          <Route
+            path="google-search-engine-positioning-understanding-it-and-boosting-your-rankings"
+            element={<GooglePositioning />}
+          />
+
+          {/* Dynamic routes */}
+          <Route path=":slug" element={<SlugPage />} />
+          <Route path="category/:category" element={<CategoryPage />} />
+        </Route>
         <Route path="/lp" element={<LandingPage1 />}>
           <Route path="/lp" element={<SeoAuditPg />} />
           <Route path="/lp/seo-audit" element={<SeoAuditPg />} />
