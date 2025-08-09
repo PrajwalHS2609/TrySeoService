@@ -64,7 +64,7 @@ function MainApp() {
         <Route path="/de" element={<HomePage />} />
         <Route path="/fr" element={<HomePage />} />
         <Route path="/jp" element={<HomePage />} />
-
+        {/* -------------------------------------------------------------------------------------------------------------- */}
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="in/contact-us" element={<ContactUs />} />
         <Route path="us/contact-us" element={<ContactUs />} />
@@ -72,8 +72,12 @@ function MainApp() {
         <Route path="au/contact-us" element={<ContactUs />} />
         <Route path="fr/contact-us" element={<ContactUs />} />
         <Route path="de/contact-us" element={<ContactUs />} />
-
-       <Route
+        {/* -------------------------------------------------------------------------------------------------------------- */}
+        <Route
+          path="/website-designing-services-in-bangalore"
+          element={<WebsitePage />}
+        />
+        <Route
           path="in/website-designing-services-in-bangalore"
           element={<WebsitePage />}
         />
@@ -81,40 +85,194 @@ function MainApp() {
           path="us/website-designing-services-in-bangalore"
           element={<WebsitePage />}
         />
-         <Route
+        <Route
           path="ca/website-designing-services-in-bangalore"
           element={<WebsitePage />}
-        /> <Route
+        />{" "}
+        <Route
           path="au/website-designing-services-in-bangalore"
           element={<WebsitePage />}
-        /> <Route
+        />{" "}
+        <Route
           path="de/website-designing-services-in-bangalore"
           element={<WebsitePage />}
         />
-
+        {/* -------------------------------------------------------------------------------------------------------------- */}
         <Route path="/seo-services-in-bangalore" element={<SeoPage />} />
+        <Route path="in/seo-services-in-bangalore" element={<SeoPage />} />
+        <Route path="us/seo-services-in-bangalore" element={<SeoPage />} />
+        <Route path="de/seo-services-in-bangalore" element={<SeoPage />} />
+        <Route path="au/seo-services-in-bangalore" element={<SeoPage />} />
+        <Route path="fr/seo-services-in-bangalore" element={<SeoPage />} />
+        <Route path="ca/seo-services-in-bangalore" element={<SeoPage />} />
+        {/* -------------------------------------------------------------------------------------------------------------- */}
         <Route
           path="/google-ads-service-in-bangalore"
           element={<GoogleAdsPage />}
         />
         <Route
+          path="in/google-ads-service-in-bangalore"
+          element={<GoogleAdsPage />}
+        />
+        <Route
+          path="us/google-ads-service-in-bangalore"
+          element={<GoogleAdsPage />}
+        />
+        <Route
+          path="de/google-ads-service-in-bangalore"
+          element={<GoogleAdsPage />}
+        />
+        <Route
+          path="ca/google-ads-service-in-bangalore"
+          element={<GoogleAdsPage />}
+        />
+        <Route
+          path="au/google-ads-service-in-bangalore"
+          element={<GoogleAdsPage />}
+        />
+        <Route
+          path="fr/google-ads-service-in-bangalore"
+          element={<GoogleAdsPage />}
+        />
+        {/* -------------------------------------------------------------------------------------------------------------- */}
+        <Route
           path="/social-media-marketing-services-in-bangalore"
           element={<SocialMediaPage />}
         />
+        <Route
+          path="us/social-media-marketing-services-in-bangalore"
+          element={<SocialMediaPage />}
+        />
+        <Route
+          path="ca/social-media-marketing-services-in-bangalore"
+          element={<SocialMediaPage />}
+        />
+        <Route
+          path="in/social-media-marketing-services-in-bangalore"
+          element={<SocialMediaPage />}
+        />
+        <Route
+          path="fr/social-media-marketing-services-in-bangalore"
+          element={<SocialMediaPage />}
+        />
+        <Route
+          path="de/social-media-marketing-services-in-bangalore"
+          element={<SocialMediaPage />}
+        />
+        {/* -------------------------------------------------------------------------------------------------------------- */}
         <Route
           path="/content-writing-service-in-bangalore"
           element={<ContentPage />}
         />
         <Route
+          path="in/content-writing-service-in-bangalore"
+          element={<ContentPage />}
+        />
+        <Route
+          path="fr/content-writing-service-in-bangalore"
+          element={<ContentPage />}
+        />
+        <Route
+          path="de/content-writing-service-in-bangalore"
+          element={<ContentPage />}
+        />
+        <Route
+          path="us/content-writing-service-in-bangalore"
+          element={<ContentPage />}
+        />
+        <Route
+          path="uk/content-writing-service-in-bangalore"
+          element={<ContentPage />}
+        />
+        <Route
+          path="au/content-writing-service-in-bangalore"
+          element={<ContentPage />}
+        />
+        {/* -------------------------------------------------------------------------------------------------------------- */}
+        <Route
           path="/payment-gateway-service-in-bangalore"
           element={<PaymentPage />}
         />
+        <Route
+          path="in/payment-gateway-service-in-bangalore"
+          element={<PaymentPage />}
+        />
+        <Route
+          path="us/payment-gateway-service-in-bangalore"
+          element={<PaymentPage />}
+        />
+        <Route
+          path="uk/payment-gateway-service-in-bangalore"
+          element={<PaymentPage />}
+        />
+        <Route
+          path="de/payment-gateway-service-in-bangalore"
+          element={<PaymentPage />}
+        />
+        <Route
+          path="fr/payment-gateway-service-in-bangalore"
+          element={<PaymentPage />}
+        />
+        <Route
+          path="au/payment-gateway-service-in-bangalore"
+          element={<PaymentPage />}
+        />
+        {/* -------------------------------------------------------------------------------------------------------------- */}
         <Route
           path="/email-marketing-service-in-bangalore"
           element={<EmailPage />}
         />
         <Route
+          path="in/email-marketing-service-in-bangalore"
+          element={<EmailPage />}
+        />
+        <Route
+          path="us/email-marketing-service-in-bangalore"
+          element={<EmailPage />}
+        />
+        <Route
+          path="uk/email-marketing-service-in-bangalore"
+          element={<EmailPage />}
+        />
+        <Route
+          path="au/email-marketing-service-in-bangalore"
+          element={<EmailPage />}
+        />{" "}
+        <Route
+          path="de/email-marketing-service-in-bangalore"
+          element={<EmailPage />}
+        />
+        <Route
+          path="fr/email-marketing-service-in-bangalore"
+          element={<EmailPage />}
+        />
+        {/* -------------------------------------------------------------------------------------------------------------- */}
+        <Route
           path="/sms-and-whatsapp-marketing-services-in-bangalore"
+          element={<SmsPage />}
+        />
+        <Route
+          path="in/sms-and-whatsapp-marketing-services-in-bangalore"
+          element={<SmsPage />}
+        />
+        <Route
+          path="us/sms-and-whatsapp-marketing-services-in-bangalore"
+          element={<SmsPage />}
+        />
+        <Route
+          path="au/sms-and-whatsapp-marketing-services-in-bangalore"
+          element={<SmsPage />}
+        />
+        <Route
+          path="uk/sms-and-whatsapp-marketing-services-in-bangalore"
+          element={<SmsPage />}
+        />
+        <Route
+          path="de/sms-and-whatsapp-marketing-services-in-bangalore"
+          element={<SmsPage />}
+        />
+        <Route
+          path="fr/sms-and-whatsapp-marketing-services-in-bangalore"
           element={<SmsPage />}
         />
         {/* ------------------------Blog----------------------------------- */}
