@@ -67,7 +67,7 @@ const Menu = () => {
         </li>
         <li>
           <NavLink
-            to="/seo-services-in-bangalore"
+            to={`/${countryCode}/seo-services-in-bangalore`}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             SEO
@@ -75,7 +75,7 @@ const Menu = () => {
         </li>
         <li>
           <NavLink
-            to="/google-ads-service-in-bangalore"
+            to={`/${countryCode}/google-ads-service-in-bangalore`}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Google Ads
@@ -83,7 +83,7 @@ const Menu = () => {
         </li>
         <li>
           <NavLink
-            to="/social-media-marketing-services-in-bangalore"
+            to={`/${countryCode}/social-media-marketing-services-in-bangalore`}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Social Media Marketing
