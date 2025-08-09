@@ -66,10 +66,32 @@ function MainApp() {
         <Route path="/jp" element={<HomePage />} />
 
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route
-          path="/website-designing-services-in-bangalore"
+        <Route path="in/contact-us" element={<ContactUs />} />
+        <Route path="us/contact-us" element={<ContactUs />} />
+        <Route path="ca/contact-us" element={<ContactUs />} />
+        <Route path="au/contact-us" element={<ContactUs />} />
+        <Route path="fr/contact-us" element={<ContactUs />} />
+        <Route path="de/contact-us" element={<ContactUs />} />
+
+       <Route
+          path="in/website-designing-services-in-bangalore"
           element={<WebsitePage />}
         />
+        <Route
+          path="us/website-designing-services-in-bangalore"
+          element={<WebsitePage />}
+        />
+         <Route
+          path="ca/website-designing-services-in-bangalore"
+          element={<WebsitePage />}
+        /> <Route
+          path="au/website-designing-services-in-bangalore"
+          element={<WebsitePage />}
+        /> <Route
+          path="de/website-designing-services-in-bangalore"
+          element={<WebsitePage />}
+        />
+
         <Route path="/seo-services-in-bangalore" element={<SeoPage />} />
         <Route
           path="/google-ads-service-in-bangalore"

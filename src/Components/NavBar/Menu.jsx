@@ -59,7 +59,7 @@ const Menu = () => {
         </li>
         <li>
           <NavLink
-            to="/website-designing-services-in-bangalore"
+            to={`/${countryCode}/website-designing-services-in-bangalore`}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Website
@@ -135,7 +135,7 @@ const Menu = () => {
         </li>
         <li>
           <NavLink
-            to="/contact-us"
+            to={`/${countryCode}/contact-us`}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Contact Us
@@ -174,7 +174,7 @@ const Menu = () => {
               <NavLink
                 id="menuNavLink"
                 onClick={hideSideBar}
-                to={"/website-designing-services-in-bangalore"}
+                to={`/${countryCode}/website-designing-services-in-bangalore`} 
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Website{" "}
@@ -303,7 +303,7 @@ const Menu = () => {
               {" "}
               <NavLink
                 id="menuNavLink"
-                to={"/contact-us"}
+                to={`/${countryCode}/contact-us`}
                 onClick={hideSideBar}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
