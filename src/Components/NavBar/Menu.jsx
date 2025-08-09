@@ -91,7 +91,7 @@ const Menu = () => {
         </li>
         <li>
           <NavLink
-            to="/content-writing-service-in-bangalore"
+            to={`/${countryCode}/content-writing-service-in-bangalore`}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             Content Writing
@@ -108,7 +108,7 @@ const Menu = () => {
           <div className="dropDown" ref={dropRef}>
             <li>
               <NavLink
-                to={"/payment-gateway-service-in-bangalore"}
+                to={`/${countryCode}/payment-gateway-service-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Payment Gateway
@@ -116,7 +116,7 @@ const Menu = () => {
             </li>
             <li>
               <NavLink
-                to={"/email-marketing-service-in-bangalore"}
+                to={`/${countryCode}/email-marketing-service-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Email Marketing
@@ -125,7 +125,7 @@ const Menu = () => {
             <li>
               {" "}
               <NavLink
-                to={"/sms-and-whatsapp-marketing-services-in-bangalore"}
+                to={`/${countryCode}/sms-and-whatsapp-marketing-services-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 SMS & WhatsApp Marketing
@@ -174,7 +174,7 @@ const Menu = () => {
               <NavLink
                 id="menuNavLink"
                 onClick={hideSideBar}
-                to={`/${countryCode}/website-designing-services-in-bangalore`} 
+                to={`/${countryCode}/website-designing-services-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Website{" "}
@@ -189,7 +189,7 @@ const Menu = () => {
               <NavLink
                 id="menuNavLink"
                 onClick={hideSideBar}
-                to={"/seo-services-in-bangalore"}
+                to={`/${countryCode}/seo-services-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 SEO{" "}
@@ -204,7 +204,7 @@ const Menu = () => {
               <NavLink
                 id="menuNavLink"
                 onClick={hideSideBar}
-                to={"/google-ads-service-in-bangalore"}
+                to={`/${countryCode}/google-ads-service-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Google Ads{" "}
@@ -219,7 +219,7 @@ const Menu = () => {
               <NavLink
                 id="menuNavLink"
                 onClick={hideSideBar}
-                to={"/social-media-marketing-services-in-bangalore"}
+                to={`/${countryCode}/social-media-marketing-services-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Social Media Marketing{" "}
@@ -234,7 +234,7 @@ const Menu = () => {
               <NavLink
                 id="menuNavLink"
                 onClick={hideSideBar}
-                to={"/content-writing-service-in-bangalore"}
+                to={`/${countryCode}/content-writing-service-in-bangalore`}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Content Writing{" "}
@@ -259,7 +259,7 @@ const Menu = () => {
                   <NavLink
                     id="menuNavLink"
                     onClick={hideSideBar}
-                    to={"/payment-gateway-service-in-bangalore"}
+                    to={`/${countryCode}/payment-gateway-service-in-bangalore`}
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     Payment Gateway{" "}
@@ -273,7 +273,7 @@ const Menu = () => {
                   <NavLink
                     id="menuNavLink"
                     onClick={hideSideBar}
-                    to={"/email-marketing-service-in-bangalore"}
+                    to={`${countryCode}/email-marketing-service-in-bangalore`}
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     Email Marketing{" "}
@@ -287,7 +287,7 @@ const Menu = () => {
                   <NavLink
                     id="menuNavLink"
                     onClick={hideSideBar}
-                    to={"/sms-and-whatsapp-marketing-services-in-bangalore"}
+                    to={`${countryCode}/sms-and-whatsapp-marketing-services-in-bangalore`}
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     SMS Marketing{" "}
