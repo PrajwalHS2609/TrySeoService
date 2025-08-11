@@ -9,10 +9,12 @@ import HomeWhatWe from "./HomeWhatWe/HomeWhatWe";
 import HomeFaq from "./HomeFaq/HomeFaq";
 import HomeFocused from "./HomeFocused/HomeFocused";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 const HomeHeader = React.lazy(() => import("./HomeHeader/HomeHeader"));
 
 const HomePage = () => {
-  
+  const location = useLocation();
+  const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
   return (
     <div className="homePageContainer">
       <Helmet>
@@ -23,7 +25,7 @@ const HomePage = () => {
           name="description"
           content="Digital Marketing Services in Bangalore for Small Business. For High Quality Traffic, Qualified Leads, Online Sales, Maximum Reach, & Search Ranking."
         />
-        <link rel="canonical" href="https://tryseoservices.com/" />
+        <link rel="canonical" href={canonicalUrl} />{" "}
       </Helmet>
       <Suspense fallback={<p>Loading....</p>}>
         <HomeHeader />

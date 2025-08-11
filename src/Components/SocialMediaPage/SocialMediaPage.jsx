@@ -9,9 +9,12 @@ import SocialMediaFaq from "./SocialMediaFaq/SocialMediaFaq";
 import HomeMarquee from "./../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+import { useLocation } from "react-router-dom";
 const SocialMediaHeader = React.lazy(() => import("./SocialMediaHeader"));
 
 const SocialMediaPage = () => {
+  const location = useLocation();
+  const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
   return (
     <div className="socialMediaPage">
       <Helmet>
@@ -22,10 +25,7 @@ const SocialMediaPage = () => {
           name="description"
           content="Social Media Marketing Services in Bangalore For High Quality Traffic, Qualified Leads, Online Sales, Maximum Reach, & Search Ranking."
         />
-        <link
-          rel="canonical"
-          href="https://tryseoservices.com/social-media-marketing-services-in-bangalore"
-        />
+        <link rel="canonical" href={canonicalUrl} />{" "}
       </Helmet>
       <Suspense fallback={<p>Loading....</p>}>
         <SocialMediaHeader />

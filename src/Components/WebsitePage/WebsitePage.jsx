@@ -9,9 +9,12 @@ import WebsiteWhy from "./WebsiteWhy/WebsiteWhy";
 import WebsiteFaq from "./WebsiteFaq/WebsiteFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+import { useLocation } from "react-router-dom";
 const WebsiteHeader = React.lazy(() => import("./WebsiteHeader/WebsiteHeader"));
 
 const WebsitePage = () => {
+    const location = useLocation();
+    const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
   return (
     <div className="websitePage">
       <Helmet>
@@ -22,10 +25,8 @@ const WebsitePage = () => {
           name="description"
           content="Website Designing Services in Bangalore for Small Business. High Quality Traffic, Qualified Leads, Online Sales, Maximum Reach, & Search Ranking."
         />
-        <link
-          rel="canonical"
-          href="https://tryseoservices.com/website-designing-services-in-bangalore"
-        />
+        <link rel="canonical" href={canonicalUrl} />{" "}
+
       </Helmet>
       <Suspense fallback={<p>Loading....</p>}>
         <WebsiteHeader />

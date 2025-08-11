@@ -8,9 +8,12 @@ import PaymentFactor from "./PaymentFactor/PaymentFactor";
 import PaymentFaq from "./PaymentFaq/PaymentFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
+import { useLocation } from "react-router-dom";
 const PaymentHeader = React.lazy(() => import("./PaymentHeader"));
 
 const PaymentPage = () => {
+  const location = useLocation();
+  const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
   return (
     <div className="homePageContainer">
       <Helmet>
@@ -21,10 +24,7 @@ const PaymentPage = () => {
           name="description"
           content="Payment Gateway Services in Bangalore for Small Business & Ecommerce. Our solutions are tailored to meet your business needs, ensuring secure and seamless transactions."
         />
-        <link
-          rel="canonical"
-          href="https://tryseoservices.com/payment-gateway-service-in-bangalore"
-        />
+        <link rel="canonical" href={canonicalUrl} />{" "}
       </Helmet>
       <Suspense fallback={<p>Loading....</p>}>
         <PaymentHeader />
