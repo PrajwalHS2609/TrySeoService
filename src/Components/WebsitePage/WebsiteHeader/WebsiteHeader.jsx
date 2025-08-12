@@ -8,6 +8,9 @@ import websiteVid from "./../../../Img/Vid/SEOWebsiteDesign.mp4";
 import { Link } from "react-router-dom";
 
 const WebsiteHeader = () => {
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="homeContainer" id="websiteHeader">
       <div className="blob">
@@ -32,7 +35,7 @@ const WebsiteHeader = () => {
                   ></FontAwesomeIcon>
                 </button>
               </NavHashLink>
-              <Link to={"/contact-us"}>
+              <Link to={`/${countryCode}/contact-us`}>
                 <button>
                   <h4> Contact Us</h4>
                   <FontAwesomeIcon

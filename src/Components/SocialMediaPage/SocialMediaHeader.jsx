@@ -7,6 +7,9 @@ import socialVid from "./../../Img/Vid/SEOSocialMedia.mp4";
 import "./../HomePage/HomeHeader/HomeHeader.css";
 
 const SocialMediaHeader = () => {
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="homeContainer" id="socialMediaHeader">
       <div className="blob">
@@ -36,7 +39,7 @@ const SocialMediaHeader = () => {
                   ></FontAwesomeIcon>
                 </button>
               </NavHashLink>
-              <Link to={"/contact-us"}>
+              <Link to={`/${countryCode}/contact-us`}>
                 <button>
                   <h4> Contact Us</h4>
                   <FontAwesomeIcon

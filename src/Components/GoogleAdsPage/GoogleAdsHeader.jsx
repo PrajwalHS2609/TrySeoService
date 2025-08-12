@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import "./../HomePage/HomeHeader/HomeHeader.css";
 
 const GoogleAdsHeader = () => {
+    const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
@@ -34,7 +37,7 @@ const GoogleAdsHeader = () => {
                   ></FontAwesomeIcon>
                 </button>
               </NavHashLink>
-              <Link to={"/contact-us"}>
+              <Link to={`/${countryCode}/contact-us`}>
                 <button>
                   <h4> Contact Us</h4>
                   <FontAwesomeIcon

@@ -6,6 +6,9 @@ import whatsAppVid from "./../../Img/Vid/SEOwhatsapp.mp4";
 import "./../HomePage/HomeHeader/HomeHeader.css";
 
 const SmsHeader = () => {
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
@@ -24,7 +27,7 @@ const SmsHeader = () => {
               are transforming the way businesses engage, inform, and drive
               growth in this vibrant tech hub.
             </p>
-            <Link to={"/contact-us"}>
+            <Link to={`/${countryCode}/contact-us`}>
               <button>
                 <h4> Contact Us</h4>
                 <FontAwesomeIcon

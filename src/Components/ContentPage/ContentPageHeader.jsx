@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import "./../HomePage/HomeHeader/HomeHeader.css";
 
 const ContentPageHeader = () => {
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="homeContainer" id="contentHeader">
       <div className="blob">
@@ -32,7 +35,7 @@ const ContentPageHeader = () => {
                   ></FontAwesomeIcon>
                 </button>
               </NavHashLink>
-              <Link to={"/contact-us"}>
+              <Link to={`/${countryCode}/contact-us`}>
                 <button>
                   <h4> Contact Us</h4>
                   <FontAwesomeIcon

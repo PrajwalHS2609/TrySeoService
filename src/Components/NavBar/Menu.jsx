@@ -273,7 +273,7 @@ const Menu = () => {
                   <NavLink
                     id="menuNavLink"
                     onClick={hideSideBar}
-                    to={`${countryCode}/email-marketing-service-in-bangalore`}
+                    to={`/${countryCode}/email-marketing-service-in-bangalore`}
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     Email Marketing{" "}
@@ -287,7 +287,7 @@ const Menu = () => {
                   <NavLink
                     id="menuNavLink"
                     onClick={hideSideBar}
-                    to={`${countryCode}/sms-and-whatsapp-marketing-services-in-bangalore`}
+                    to={`/${countryCode}/sms-and-whatsapp-marketing-services-in-bangalore`}
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     SMS Marketing{" "}

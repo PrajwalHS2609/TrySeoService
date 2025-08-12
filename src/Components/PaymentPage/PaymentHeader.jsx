@@ -6,6 +6,9 @@ import paymentVid from "./../../Img/Vid/SEOPaymentGateway.mp4";
 import "./../HomePage/HomeHeader/HomeHeader.css";
 
 const PaymentHeader = () => {
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
@@ -20,7 +23,7 @@ const PaymentHeader = () => {
               meet your business needs, ensuring secure and seamless
               transactions. Trust us for a smooth payment experience.
             </p>
-            <Link to={"/contact-us"}>
+            <Link to={`/${countryCode}/contact-us`}>
               <button>
                 <h4> Contact Us</h4>
                 <FontAwesomeIcon

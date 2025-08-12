@@ -6,6 +6,9 @@ import emailVid from "./../../Img/Vid/SEOEmailMarketing.mp4";
 import "./../HomePage/HomeHeader/HomeHeader.css";
 
 const EmailPageHeader = () => {
+    const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="homeContainer" id="seoHeader">
       <div className="blob">
@@ -24,7 +27,7 @@ const EmailPageHeader = () => {
               these goals. Let’s explore the significance and impact of email
               marketing services in the vibrant city of Bangalore.
             </p>
-            <Link to={"/contact-us"}>
+            <Link to={`/${countryCode}/contact-us`}>
               <button>
                 <h4> Contact Us</h4>
                 <FontAwesomeIcon
