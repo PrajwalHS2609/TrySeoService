@@ -58,7 +58,7 @@ function MainApp() {
 
       <Routes>
         {/* Without country code */}
-        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/" element={<HomePage />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="website-designing-services-in-bangalore" element={<WebsitePage />} />
         <Route path="seo-services-in-bangalore" element={<SeoPage />} />
@@ -67,7 +67,7 @@ function MainApp() {
         <Route path="content-writing-service-in-bangalore" element={<ContentPage />} />
         <Route path="payment-gateway-service-in-bangalore" element={<PaymentPage />} />
         <Route path="email-marketing-service-in-bangalore" element={<EmailPage />} />
-        <Route path="sms-and-whatsapp-marketing-services-in-bangalore" element={<SmsPage />} />
+        <Route path="sms-and-whatsapp-marketing-services-in-bangalore" element={<SmsPage />} /> */}
 
         {/* Blog routes */}
         <Route path="blog" element={<BlogPage />} />
