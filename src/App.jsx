@@ -88,6 +88,7 @@ function MainApp() {
 
         {/* Landing page routes */}
         <Route path=":country/lp" element={<LandingPage1 />}>
+          <Route index element={<SeoAuditPg />} />
           <Route path="seo-audit" element={<SeoAuditPg />} />
           <Route path="keyword-research" element={<KeywordResearch />} />
           <Route path="content-marketing" element={<ContentMarketing />} />
@@ -96,7 +97,7 @@ function MainApp() {
         </Route>
 
         {/* With dynamic country code */}
-        <Route path=":countryCode"/>
+        <Route path=":countryCode">
           <Route index element={<HomePage />} />
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="website-designing-services-in-bangalore" element={<WebsitePage />} />
@@ -107,6 +108,7 @@ function MainApp() {
           <Route path="payment-gateway-service-in-bangalore" element={<PaymentPage />} />
           <Route path="email-marketing-service-in-bangalore" element={<EmailPage />} />
           <Route path="sms-and-whatsapp-marketing-services-in-bangalore" element={<SmsPage />} />
+        </Route>
       </Routes>
 
       <PopUp />
