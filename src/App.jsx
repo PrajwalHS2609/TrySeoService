@@ -87,7 +87,7 @@ function MainApp() {
         <Route path="category/:category" element={<CategoryPage />} />
 
         {/* Landing page routes */}
-        <Route path="lp" element={<LandingPage1 />}>
+        <Route path=":countryCode/lp" element={<LandingPage1 />}>
           <Route index element={<SeoAuditPg />} />
           <Route path="seo-audit" element={<SeoAuditPg />} />
           <Route path="keyword-research" element={<KeywordResearch />} />
