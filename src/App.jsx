@@ -89,11 +89,7 @@ function MainApp() {
         {/* Landing page routes */}
         <Route path=":countryCode/lp" element={<LandingPage1 />}>
           <Route index element={<SeoAuditPg />} />
-          <Route path="seo-audit" element={<SeoAuditPg />} />
-          <Route path="keyword-research" element={<KeywordResearch />} />
-          <Route path="content-marketing" element={<ContentMarketing />} />
-          <Route path="competitor-analysis" element={<CompetitorAnalysis />} />
-          <Route path="seo-reporting" element={<SeoReporting />} />
+
         </Route>
 
         {/* With dynamic country code */}
