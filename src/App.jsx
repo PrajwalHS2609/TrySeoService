@@ -87,13 +87,16 @@ function MainApp() {
         <Route path="category/:category" element={<CategoryPage />} />
 
         {/* Landing page routes */}
-        <Route path=":countryCode/lp" element={<LandingPage1 />}>
-          <Route index element={<SeoAuditPg />} />
-
+        <Route path="lp" element={<LandingPage1 />}>
+          <Route path="seo-audit" element={<SeoAuditPg />} />
+          <Route path="keyword-research" element={<KeywordResearch />} />
+          <Route path="content-marketing" element={<ContentMarketing />} />
+          <Route path="competitor-analysis" element={<CompetitorAnalysis />} />
+          <Route path="seo-reporting" element={<SeoReporting />} />
         </Route>
 
         {/* With dynamic country code */}
-        <Route path=":countryCode">
+        <Route path=":countryCode"/>
           <Route index element={<HomePage />} />
           <Route path="contact-us" element={<ContactUs />} />
           <Route path="website-designing-services-in-bangalore" element={<WebsitePage />} />
@@ -104,7 +107,6 @@ function MainApp() {
           <Route path="payment-gateway-service-in-bangalore" element={<PaymentPage />} />
           <Route path="email-marketing-service-in-bangalore" element={<EmailPage />} />
           <Route path="sms-and-whatsapp-marketing-services-in-bangalore" element={<SmsPage />} />
-        </Route>
       </Routes>
 
       <PopUp />
