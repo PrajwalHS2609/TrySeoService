@@ -29,6 +29,9 @@
     <!-- 🌍 Country-based redirect script -->
     <script>
       (async function () {
+        // Skip redirect in local development
+        if (window.location.hostname === "localhost") return;
+
         const params = new URLSearchParams(window.location.search);
         const mockCountry = params.get("country")?.toUpperCase();
 
@@ -53,11 +56,12 @@
             AE: "https://tryseoservices.com/ae",
           };
 
-          // Save for later use
+          // Save preferred country for later use
           localStorage.setItem("preferredCountry", countryCode);
 
           const target = redirectMap[countryCode];
 
+          // Redirect only if on the homepage
           if (
             target &&
             (window.location.pathname === "/" ||
