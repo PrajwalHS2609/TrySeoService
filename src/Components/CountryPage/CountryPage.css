@@ -1,0 +1,49 @@
+.countryHeader-container {
+  border: solid red;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.countryHeader-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.countryHeader-cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.381);
+}
+.countryHeader-cover > h2 {
+  width: 60%;
+  font-size: 3rem;
+  color: var(--customColor);
+  text-align: center;
+}
+.countryPage-content {
+  padding: 20px;
+}
+.countryPage-content > h1 {
+  text-align: center;
+  width: 100%;
+  color: var(--customColor);
+}
+.countryPage-content > h2 {
+  text-align: center;
+  width: 100%;
+}
+.countryPage-content > h3 {
+  color: var(--customColor);
+}
+.countryPage-content > h4 {
+  color: var(--customColor);
+}
+.countryPage-content > ol > li > strong {
+  color: var(--customColor);
+}

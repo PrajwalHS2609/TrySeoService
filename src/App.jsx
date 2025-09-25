@@ -120,8 +120,10 @@ function MainApp() {
           path="google-search-engine-positioning-understanding-it-and-boosting-your-rankings"
           element={<GooglePositioning />}
         />
-        <Route path=":slug" element={<SlugPage />} />
-        <Route path="category/:category" element={<CategoryPage />} />
+        <Route path=":countryCode">
+          <Route path=":slug" element={<SlugPage />} />
+          <Route path="category/:category" element={<CategoryPage />} />
+        </Route>  
 
         {/* Landing page routes */}
         <Route path=":country/lp" element={<LandingPage1 />}>
