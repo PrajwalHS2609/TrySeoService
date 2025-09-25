@@ -39,7 +39,7 @@ import SeoAttestationBoost from "./Components/BlogPage/BlogInnerPages/SeoAttesta
 import SlugPage from "./Components/SlugPage/SlugPage";
 import CategoryPage from "./Components/BlogPage/Category";
 import CountryRoute from "./Components/CountryRoute";
-
+import CountryPage from "./Components/CountryPage/CountryPage";
 function MainApp() {
   const location = useLocation();
 
@@ -167,12 +167,11 @@ function MainApp() {
             element={<SmsPage />}
           />
         </Route>
-
         <Route
-          path=":countryCode/french-service"
+          path=":countryCode/:slug"
           element={
-            <CountryRoute allowedCountries={["fr"]}>
-              <h1>Hello French</h1>
+            <CountryRoute allowedCountries={["fr", "de", "in", "us"]}>
+              <CountryPage />
             </CountryRoute>
           }
         />
