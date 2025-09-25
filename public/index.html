@@ -28,48 +28,49 @@
 
     <!-- 🌍 Country-based redirect script -->
     <script>
-      (async function () {
-        const params = new URLSearchParams(window.location.search);
-        const mockCountry = params.get("country")?.toUpperCase();
+  (async function () {
+    // Skip redirect in local development
+    if (window.location.hostname === "localhost") return;
 
-        try {
-          const res = await fetch("https://ipapi.co/json/");
-          const data = await res.json();
+    const params = new URLSearchParams(window.location.search);
+    const mockCountry = params.get("country")?.toUpperCase();
 
-          let countryCode = mockCountry || data.country_code;
+    try {
+      const res = await fetch("https://ipapi.co/json/");
+      const data = await res.json();
 
-          // Normalize GB to UK
-          if (countryCode === "GB") countryCode = "UK";
+      let countryCode = mockCountry || data.country_code;
 
-          const redirectMap = {
-            IN: "https://tryseoservices.com/in",
-            US: "https://tryseoservices.com/us",
-            CA: "https://tryseoservices.com/ca",
-            UK: "https://tryseoservices.com/uk",
-            AU: "https://tryseoservices.com/au",
-            DE: "https://tryseoservices.com/de",
-            FR: "https://tryseoservices.com/fr",
-            JP: "https://tryseoservices.com/jp",
-            AE: "https://tryseoservices.com/ae",
-          };
+      // Normalize GB to UK
+      if (countryCode === "GB") countryCode = "UK";
 
-          // Save for later use
-          localStorage.setItem("preferredCountry", countryCode);
+      const redirectMap = {
+        IN: "/in",
+        US: "/us",
+        CA: "/ca",
+        UK: "/uk",
+        AU: "/au",
+        DE: "/de",
+        FR: "/fr",
+        JP: "/jp",
+        AE: "/ae",
+      };
 
-          const target = redirectMap[countryCode];
+      // Save preferred country
+      localStorage.setItem("preferredCountry", countryCode);
 
-          if (
-            target &&
-            (window.location.pathname === "/" ||
-              window.location.pathname === "/index.html")
-          ) {
-            window.location.replace(target);
-          }
-        } catch (err) {
-          console.error("Geo redirect failed:", err);
-        }
-      })();
-    </script>
+      const target = redirectMap[countryCode];
+
+      // 🚨 Always redirect "/" → "/country"
+      if (target && (window.location.pathname === "/" || window.location.pathname === "/index.html")) {
+        window.location.replace(target);
+      }
+    } catch (err) {
+      console.error("Geo redirect failed:", err);
+    }
+  })();
+</script>
+
 
     <link rel="icon" href="./images/faviconPerfect.png" />
     <title>TrySeoService</title>
