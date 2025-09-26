@@ -71,59 +71,62 @@ function MainApp() {
         <Route path="sms-and-whatsapp-marketing-services-in-bangalore" element={<SmsPage />} /> */}
 
         {/* Blog routes */}
-        <Route path="blog" element={<BlogPage />} />
-        <Route
-          path="explore-seo-strategies-for-optimizing-ecommerce-stores"
-          element={<ExploreSEO />}
-        />
-        <Route
-          path="exploring-the-top-seo-services-to-boost-tours-and-travel-service-providers-in-bangalore"
-          element={<SeoServiceTours />}
-        />
-        <Route
-          path="local-seo-secrets-get-ahead-in-your-hometown"
-          element={<LocalSEOSecrets />}
-        />
-        <Route
-          path="how-seo-services-can-boost-attestation-service-providers-in-bangalore"
-          element={<SeoAttestationBoost />}
-        />
-        <Route
-          path="importance-of-on-page-seo-optimization-for-website"
-          element={<ImpOfPageSeo />}
-        />
-        <Route
-          path="the-comprehensive-technical-seo-guide"
-          element={<TechnicalSeoGuide />}
-        />
-        <Route
-          path="power-of-google-ads-why-its-essential-for-your-business"
-          element={<GoogleAdsPower />}
-        />
-        <Route
-          path="what-is-on-page-seo-why-it-is-important-for-every-websites"
-          element={<WhatIsSeo />}
-        />
-        <Route
-          path="transforming-foreign-language-school-of-bangalore"
-          element={<TransformingForeign />}
-        />
-        <Route
-          path="the-power-of-long-tail-keywords-how-to-find-and-use-them"
-          element={<LongTailKeywords />}
-        />
-        <Route
-          path="top-10-reasons-why-every-business-needs-an-seo-audit"
-          element={<TopTenReasons />}
-        />
-        <Route
-          path="google-search-engine-positioning-understanding-it-and-boosting-your-rankings"
-          element={<GooglePositioning />}
-        />
+        <Route path=":countryCode">
+          <Route path="blog" element={<BlogPage />} />
+          <Route
+            path="explore-seo-strategies-for-optimizing-ecommerce-stores"
+            element={<ExploreSEO />}
+          />
+          <Route
+            path="exploring-the-top-seo-services-to-boost-tours-and-travel-service-providers-in-bangalore"
+            element={<SeoServiceTours />}
+          />
+          <Route
+            path="local-seo-secrets-get-ahead-in-your-hometown"
+            element={<LocalSEOSecrets />}
+          />
+          <Route
+            path="how-seo-services-can-boost-attestation-service-providers-in-bangalore"
+            element={<SeoAttestationBoost />}
+          />
+          <Route
+            path="importance-of-on-page-seo-optimization-for-website"
+            element={<ImpOfPageSeo />}
+          />
+          <Route
+            path="the-comprehensive-technical-seo-guide"
+            element={<TechnicalSeoGuide />}
+          />
+          <Route
+            path="power-of-google-ads-why-its-essential-for-your-business"
+            element={<GoogleAdsPower />}
+          />
+          <Route
+            path="what-is-on-page-seo-why-it-is-important-for-every-websites"
+            element={<WhatIsSeo />}
+          />
+          <Route
+            path="transforming-foreign-language-school-of-bangalore"
+            element={<TransformingForeign />}
+          />
+          <Route
+            path="the-power-of-long-tail-keywords-how-to-find-and-use-them"
+            element={<LongTailKeywords />}
+          />
+          <Route
+            path="top-10-reasons-why-every-business-needs-an-seo-audit"
+            element={<TopTenReasons />}
+          />
+          <Route
+            path="google-search-engine-positioning-understanding-it-and-boosting-your-rankings"
+            element={<GooglePositioning />}
+          />
+        </Route>
+
         <Route path=":countryCode">
           <Route path=":slug" element={<SlugPage />} />
           <Route path="category/:category" element={<CategoryPage />} />
-        </Route>  
+        </Route>
 
         {/* Landing page routes */}
         <Route path=":country/lp" element={<LandingPage1 />}>

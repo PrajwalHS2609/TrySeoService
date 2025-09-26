@@ -6,29 +6,20 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'image',
-      title: 'Main Image',
-      type: 'image',
-      options: {hotspot: true},
-      fields: [
-        defineField({
-          name: 'alt',
-          title: 'Alt text',
-          type: 'string',
-          description: 'Important for SEO and accessibility',
-        }),
-      ],
-    }),
-    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
-      options: {source: 'title', maxLength: 96},
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'country',
@@ -47,6 +38,21 @@ export default defineType({
           {title: 'UAE', value: 'AE'},
         ],
       },
+      validation: Rule => Rule.required(),
+    }),
+    defineField({
+      name: 'image',
+      title: 'Main Image',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        defineField({
+          name: 'alt',
+          title: 'Alt text',
+          type: 'string',
+          description: 'Important for SEO and accessibility',
+        }),
+      ],
     }),
     defineField({
       name: 'content',
