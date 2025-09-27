@@ -93,7 +93,7 @@ export default function SlugPage() {
   }, [slug]);
 
   if (isLoading) return <h1>Loading...</h1>;
-  if (!blogPost && !servicePage) return <h1>No content found.</h1>;
+  if (!blogPost && !servicePage) return <h1>No content found.hello</h1>;
 
   return (
     <div className="slug-container">

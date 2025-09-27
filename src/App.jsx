@@ -36,10 +36,9 @@ import TransformingForeign from "./Components/BlogPage/BlogInnerPages/Transformi
 import TopTenReasons from "./Components/BlogPage/BlogInnerPages/TopTenReasons/TopTenReasons";
 import SeoServiceTours from "./Components/BlogPage/BlogInnerPages/SeoServiceTours/SeoServiceTours";
 import SeoAttestationBoost from "./Components/BlogPage/BlogInnerPages/SeoAttestationBoost/SeoAttestationBoost";
-import SlugPage from "./Components/SlugPage/SlugPage";
 import CategoryPage from "./Components/BlogPage/Category";
 import CountryRoute from "./Components/CountryRoute";
-import CountryPage from "./Components/CountryPage/CountryPage";
+import DynamicCountryOrSlug from "./Components/DynamicCountryOrSlug";
 function MainApp() {
   const location = useLocation();
 
@@ -124,7 +123,7 @@ function MainApp() {
         </Route>
 
         <Route path=":countryCode">
-          <Route path=":slug" element={<SlugPage />} />
+          <Route path=":slug" element={<DynamicCountryOrSlug />} />
           <Route path="category/:category" element={<CategoryPage />} />
         </Route>
 
@@ -172,11 +171,14 @@ function MainApp() {
             element={<SmsPage />}
           />
         </Route>
+
+
+        
         <Route
           path=":countryCode/:slug"
           element={
             <CountryRoute allowedCountries={["fr", "de", "in", "us"]}>
-              <CountryPage />
+              <DynamicCountryOrSlug />
             </CountryRoute>
           }
         />

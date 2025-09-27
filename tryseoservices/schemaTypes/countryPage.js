@@ -1,3 +1,4 @@
+// schemas/countryPage.js
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
@@ -9,7 +10,7 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
@@ -19,7 +20,7 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'country',
@@ -27,24 +28,24 @@ export default defineType({
       type: 'string',
       options: {
         list: [
-          {title: 'India', value: 'IN'},
-          {title: 'France', value: 'FR'},
-          {title: 'Germany', value: 'DE'},
-          {title: 'United States', value: 'US'},
-          {title: 'United Kingdom', value: 'UK'},
-          {title: 'Canada', value: 'CA'},
-          {title: 'Australia', value: 'AU'},
-          {title: 'Japan', value: 'JP'},
-          {title: 'UAE', value: 'AE'},
+          {title: 'India', value: 'in'},
+          {title: 'France', value: 'fr'},
+          {title: 'Germany', value: 'de'},
+          {title: 'United States', value: 'us'},
+          {title: 'United Kingdom', value: 'uk'},
+          {title: 'Canada', value: 'ca'},
+          {title: 'Australia', value: 'au'},
+          {title: 'Japan', value: 'jp'},
+          {title: 'UAE', value: 'ae'},
         ],
       },
-      validation: Rule => Rule.required(),
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'image',
       title: 'Main Image',
       type: 'image',
-      options: { hotspot: true },
+      options: {hotspot: true},
       fields: [
         defineField({
           name: 'alt',
@@ -61,4 +62,17 @@ export default defineType({
       of: [{type: 'block'}],
     }),
   ],
+  // Optional: automatically convert country to uppercase before saving
+  preview: {
+    select: {
+      title: 'title',
+      country: 'country',
+    },
+    prepare(selection) {
+      return {
+        title: selection.title,
+        subtitle: selection.country?.toUpperCase() || '',
+      }
+    },
+  },
 })

@@ -3,11 +3,16 @@ import { useParams, Navigate } from "react-router-dom";
 
 function CountryRoute({ allowedCountries, children }) {
   const { countryCode } = useParams();
-  const normalizedCode = countryCode?.toUpperCase(); // normalize
 
-  // If current country is NOT allowed, redirect to home or fallback
-  if (!allowedCountries.includes(normalizedCode)) {
-    return <Navigate to="/" replace />; // or `/${normalizedCode || ""}`
+  if (!countryCode) return <Navigate to="/" replace />;
+
+  // Compare lowercased values
+  const isAllowed = allowedCountries.some(
+    (c) => c.toLowerCase() === countryCode.toLowerCase()
+  );
+
+  if (!isAllowed) {
+    return <Navigate to="/" replace />;
   }
 
   return children;

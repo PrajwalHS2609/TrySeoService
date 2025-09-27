@@ -2,12 +2,15 @@ import React from "react";
 import "./../Footer.css";
 import { NavLink } from "react-router-dom";
 const FooterService = () => {
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <div className="footerService">
       <h4>Services</h4>
       <li>
         <NavLink
-          to="/seo-services-in-bangalore"
+          to={`/${countryCode}/seo-services-in-bangalore`}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           SEO
@@ -15,7 +18,7 @@ const FooterService = () => {
       </li>
       <li>
         <NavLink
-          to="/google-ads-service-in-bangalore"
+          to={`/${countryCode}/google-ads-service-in-bangalore`}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Google Ads
@@ -23,7 +26,7 @@ const FooterService = () => {
       </li>
       <li>
         <NavLink
-          to="/website-designing-services-in-bangalore"
+          to={`/${countryCode}/website-designing-services-in-bangalore`}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Website Developments
@@ -31,7 +34,7 @@ const FooterService = () => {
       </li>
       <li>
         <NavLink
-          to="/content-writing-service-in-bangalore"
+          to={`/${countryCode}/content-writing-service-in-bangalore`}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Content Writing
@@ -39,7 +42,7 @@ const FooterService = () => {
       </li>
       <li>
         <NavLink
-          to="/social-media-marketing-services-in-bangalore"
+          to={`/${countryCode}/social-media-marketing-services-in-bangalore`}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Social Media Marketing
@@ -47,7 +50,7 @@ const FooterService = () => {
       </li>
       <li>
         <NavLink
-          to="/blog"
+            to={`/${countryCode}/blog`}
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Blog{" "}

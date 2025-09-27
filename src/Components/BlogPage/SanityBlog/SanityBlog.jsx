@@ -4,6 +4,8 @@ import  client  from "../../../client";
 
 export default function Blog() {
     const [posts, setPosts] = useState([]);
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
 
   useEffect(() => {
     client
@@ -46,7 +48,7 @@ export default function Blog() {
           <h4 className="blogCardH4">{post.title}</h4>
           <p>{post.description}</p>
           <div className="blogBtn">
-            <Link to={`/${post.slug.current}`}>
+            <Link to={`/${countryCode}/${post.slug.current}`}>
               <button>Read More </button>
             </Link>
           </div>

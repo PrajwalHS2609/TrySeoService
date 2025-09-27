@@ -103,6 +103,9 @@ const blogPosts = [
 ];
 
 const BlogMain = () => {
+  const countryCode =
+    localStorage.getItem("preferredCountry")?.toLowerCase() || "";
+
   return (
     <>
       <div className="blogMain">
@@ -113,10 +116,10 @@ const BlogMain = () => {
             alt={post.alt}
             head={post.head}
             para={post.para}
-            link={post.link}
+            link={`/${countryCode}${post.link}`}
           />
         ))}
-      </div>
+      </div>  
       <div className="blogWrapper">
         <SanityBlog />
       </div>

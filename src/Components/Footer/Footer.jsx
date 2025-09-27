@@ -6,6 +6,7 @@ import FooterService from "./AboveFooter/FooterService";
 import FooterCopy from "./BelowFooter/FooterCopy";
 import FooterSocial from "./BelowFooter/FooterSocial";
 const Footer = () => {
+
   return (
     <div className="footerContainer">
       <div className="footerWrapper1">
