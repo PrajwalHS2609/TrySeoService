@@ -37,14 +37,45 @@
   background-color: white;
   color: var(--customColor);
   box-shadow: 0 0 0 var(--lpCustomBg);
-  background-color:black;
+  background-color: black;
 }
 .accordion-button.collapsed {
   background-color: white;
   color: var(--customColor);
   box-shadow: 0 0 0 var(--lpCustomBg);
-  background-color:black;
+  background-color: black;
 }
-.accordion-body{
-    background-color: var(--customColor);
+.accordion-body {
+  background-color: var(--customColor);
+}
+@media screen and (max-width: 768px) {
+  .lpPetsProcess-container {
+    /* border: solid red; */
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    flex-direction: column;
+  }
+  .lpPetsProcess-content:nth-child(1) {
+    /* border: solid yellow; */
+    width: 100%;
+    height: 100%;
+  }
+  .lpPetsProcess-content > h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .lpPetsProcess-content > p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .lpPetsProcess-acc {
+    /* border: solid red; */
+    width: 100%;
+  }
+.lpPetsProcess-content:nth-child(2) {
+  /* border: solid yellow; */
+  width: 100%;
+  height: 100%;
+}
 }

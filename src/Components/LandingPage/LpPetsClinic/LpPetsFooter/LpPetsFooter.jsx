@@ -4,7 +4,7 @@ import logo from "./../../../../Img/TSS.png";
 const LpPetsFooter = () => {
   return (
     <div className="lpPetsFooter-container">
-      <div className="line"></div>
+      <div className="footerLine"></div>
       <div className="lpPetsFooter-wrapper">
         <div className="lpPetsFooter-content">
           <img src={logo} alt="logo" />

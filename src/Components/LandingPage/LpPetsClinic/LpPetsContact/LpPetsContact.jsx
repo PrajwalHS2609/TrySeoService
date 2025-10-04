@@ -13,7 +13,7 @@ import arrow from "./../../../../Img/curveArrow.png";
 
 const LpPetsContact = () => {
   return (
-    <div className="lpPetsContact-container">
+    <div className="lpPetsContact-container" id="contact-us">
       <div className="lpPetsContact-wrapper">
         <div className="lpPetsContact-content">
           <h2>Let's start a project together</h2>

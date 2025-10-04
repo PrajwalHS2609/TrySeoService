@@ -37,7 +37,7 @@ const LpPetsTestimonial = () => {
     },
   ];
   return (
-    <div className="lpPetTest-container">
+    <div className="lpPetTest-container" id="testimonial">
       <div className="line"></div>
       <h2>Clients are always satisfied with us</h2>
       <div className="lpPetTest-content">

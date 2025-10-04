@@ -99,3 +99,42 @@
   height: 100%;
   object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .lpPetsBusiness-container {
+    /* border: solid red; */
+
+    padding: 20px;
+  }
+  .lpPetsBusiness-content {
+    /* border: solid green; */
+    flex-direction: column;
+  }
+  .lpPetsBusiness-heading:nth-child(1) {
+    width: 100%;
+  }
+  .lpPetsBusiness-heading:nth-child(2) {
+    width: 100%;
+  }
+  .lpPetsBusiness-heading > h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .lpPetsBusiness-heading > p {
+    text-align: justify;
+  }
+  .lpPetsBusiness-vidContainer {
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .lpPetsBusiness-keyContainer {
+  /* border: solid blue; */
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: black;
+  padding: 20px;
+}
+}

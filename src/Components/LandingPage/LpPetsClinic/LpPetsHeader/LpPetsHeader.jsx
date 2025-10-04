@@ -2,9 +2,10 @@ import React from "react";
 import "./LpPetsHeader.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import arrow from "./../../../../Img/curveArrow.png";
+import  headerImg from "./../../../../Img/headerImg.png"
 const LpPetsHeader = () => {
   return (
-    <div className="lpPetsHeader-container">
+    <div className="lpPetsHeader-container" id="home">
       <div className="lpPetsHeader-wrapper">
         <div className="lpPetsHeader-content">
           <h2>Let Pet Owners Find YOU First on Google!</h2>
@@ -55,7 +56,7 @@ const LpPetsHeader = () => {
       <div className="lpPetsHeader-wrapper">
         <div className="lpPetsHeader-imgContainer">
           <img
-            src="https://html.favdevs.com/aximo/assets/images/v1/hero-thumb.png"
+            src={headerImg}
             alt="headerImg"
           />
         </div>

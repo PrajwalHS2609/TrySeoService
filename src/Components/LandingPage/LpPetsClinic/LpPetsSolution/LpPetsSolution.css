@@ -46,6 +46,7 @@
 }
 .lpPetSol-cardContent > h3 {
   font-family: "Syne", sans-serif;
+  font-weight: bold;
 }
 .lpPetSol-cardContent > p {
   font-size: 20px;
@@ -58,4 +59,23 @@
 }
 .lpPetSol-cardContent > a {
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .lpPetSol-container {
+    /* border: solid red; */
+    padding: 20px 10px;
+  }
+  .lpPetSol-container > h2 {
+    font-size: 35px;
+    width: 100%;
+  }
+  .lpPetSol-content {
+    /* border: solid blue; */
+    padding: 0px;
+  }
+  .lpPetSol-cardContainer {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
 }

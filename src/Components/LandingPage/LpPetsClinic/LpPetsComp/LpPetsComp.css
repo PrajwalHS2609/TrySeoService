@@ -53,9 +53,40 @@
 }
 .lpPetsComp-cover > h3 {
   color: var(--lpCustomBg);
-    font-family: "Syne", sans-serif;
-
+  font-family: "Syne", sans-serif;
 }
 .lpPetsComp-cover > p {
-  color: var(--lpCustomBg);font-size: 20px;
+  color: var(--lpCustomBg);
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .lpPetsComp-container {
+    /* border: solid red; */
+    padding: 20px 10px;
+    background-color: black;
+  }
+  .lpPetsComp-container > h2 {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .lpPetsComp-content {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .lpPetsComp-item {
+    border: 5px solid var(--lpCustomBg);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .lpPetsComp-cover > p {
+    color: var(--lpCustomBg);
+    font-size: 18px;
+    text-align: justify;
+  }
 }

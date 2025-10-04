@@ -40,7 +40,7 @@ const LpPetsSolution = () => {
     },
   ];
   return (
-    <div className="lpPetSol-container">
+    <div className="lpPetSol-container" id="services">
       <h2>We provide effective digital solutions</h2>
       <div className="lpPetSol-content">
         {card.map((x) => (
