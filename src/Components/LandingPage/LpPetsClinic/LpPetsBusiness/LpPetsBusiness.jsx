@@ -17,7 +17,7 @@ const LpPetsBusiness = () => {
       </div>
       <div className="lpPetsBusiness-content">
         <div className="lpPetsBusiness-vidContainer">
-            <img src="https://html.favdevs.com/aximo/assets/images/v1/video-bg.png" alt="" />
+            <img src="https://html.favdevs.com/aximo/assets/images/v1/video-bg.png" alt="" loading="lazy"/>
         </div>
         <div className="lpPetsBusiness-keyContainer">
           <ul>

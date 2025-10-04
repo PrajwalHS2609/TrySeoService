@@ -49,7 +49,7 @@ const LpPetsHeader = () => {
             </button>
           </div>
           <div className="lpPetsHeader-item">
-            <img src={arrow} alt="arrow" />
+            <img src={arrow} alt="arrow" loading="lazy"/>
           </div>
         </div>
       </div>
@@ -58,6 +58,7 @@ const LpPetsHeader = () => {
           <img
             src={headerImg}
             alt="headerImg"
+            loading="lazy"
           />
         </div>
       </div>

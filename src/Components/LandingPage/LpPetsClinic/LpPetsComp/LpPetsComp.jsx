@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
+import homeVisits from "./../../../../Img/PetServiceImages/Vets Home Visit.png";
+import petGrooming from "./../../../../Img/PetServiceImages/pet grooming.png";
+import petKennel from "./../../../../Img/PetServiceImages/pet Kennel.png";
+import petShop from "./../../../../Img/PetServiceImages/pet Shop.png";
+import petSurgery from "./../../../../Img/PetServiceImages/pet Surgery.png";
 
 import "./LpPetsComp.css";
 const LpPetsComp = () => {
@@ -58,11 +63,7 @@ const LpPetsComp = () => {
         >
           <div>
             <div className="lpPetsComp-item">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/project4.png"
-                alt=""
-                loading="lazy"
-              />
+              <img src={homeVisits} alt="homeVisits" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Vet Home Visit</h3>
                 <p>
@@ -74,11 +75,7 @@ const LpPetsComp = () => {
           </div>
           <div>
             <div className="lpPetsComp-item">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/project4.png"
-                alt=""
-                loading="lazy"
-              />
+              <img src={petGrooming} alt="petGrooming" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Pet Grooming</h3>
                 <p>
@@ -90,11 +87,7 @@ const LpPetsComp = () => {
           </div>
           <div>
             <div className="lpPetsComp-item">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/project4.png"
-                alt=""
-                loading="lazy"
-              />
+              <img src={petKennel} alt="petKennel" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Pet Shop</h3>
                 <p>
@@ -106,11 +99,7 @@ const LpPetsComp = () => {
           </div>
           <div>
             <div className="lpPetsComp-item">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/project4.png"
-                alt=""
-                loading="lazy"
-              />
+              <img src={petShop} alt="petShop" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Pet Surgery</h3>
                 <p>
@@ -122,11 +111,7 @@ const LpPetsComp = () => {
           </div>
           <div>
             <div className="lpPetsComp-item">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/project4.png"
-                alt=""
-                loading="lazy"
-              />
+              <img src={petSurgery} alt="petSurgery" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Pet Kennel</h3>
                 <p>

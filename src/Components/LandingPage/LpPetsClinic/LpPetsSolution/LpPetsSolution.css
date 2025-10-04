@@ -56,6 +56,7 @@
 }
 .lpPetSol-cardIco {
   font-size: 30px;
+  cursor: pointer;
 }
 .lpPetSol-cardContent > a {
   color: black;

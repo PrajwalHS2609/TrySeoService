@@ -6,36 +6,42 @@ import { LuSearchCheck } from "react-icons/lu";
 import { FaGoogle } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 
-import { Link } from "react-router-dom";
-
 const LpPetsSolution = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   const card = [
     {
       id: 1,
-      icon: <MdOutlineDesignServices/>,
+      icon: <MdOutlineDesignServices />,
       title: "Website Design",
-      description: "Create a professional, pet-friendly website that builds trust, showcases your clinic’s services, and helps pet owners book appointments with ease. Tailored designs to attract more visitors and increase footfalls.",
+      description:
+        "Create a professional, pet-friendly website that builds trust, showcases your clinic’s services, and helps pet owners book appointments with ease. Tailored designs to attract more visitors and increase footfalls.",
       link: "/",
     },
     {
       id: 2,
-      icon: <LuSearchCheck/>,
+      icon: <LuSearchCheck />,
       title: "SEO",
-      description: "Boost your pet clinic’s visibility in local searches with expert Local SEO. Help pet owners nearby find you first on Google and increase walk-ins with targeted, result-driven optimization.",
+      description:
+        "Boost your pet clinic’s visibility in local searches with expert Local SEO. Help pet owners nearby find you first on Google and increase walk-ins with targeted, result-driven optimization.",
       link: "/",
     },
     {
       id: 3,
-      icon: <FaGoogle/>,
+      icon: <FaGoogle />,
       title: "Google My Business",
-      description: "Optimize your Google My Business profile to attract more local pet owners. Showcase your services, reviews, and location perfectly to drive more visits and calls to your clinic.",
+      description:
+        "Optimize your Google My Business profile to attract more local pet owners. Showcase your services, reviews, and location perfectly to drive more visits and calls to your clinic.",
       link: "/",
     },
     {
       id: 4,
-      icon: <IoShareSocialOutline/>,
+      icon: <IoShareSocialOutline />,
       title: "Social Media",
-      description: "Engage with pet owners where they spend most of their time! Our social media strategies build trust, showcase your clinic’s care, and attract more furry friends to your doors.",
+      description:
+        "Engage with pet owners where they spend most of their time! Our social media strategies build trust, showcase your clinic’s care, and attract more furry friends to your doors.",
       link: "/",
     },
   ];
@@ -52,15 +58,14 @@ const LpPetsSolution = () => {
               <h3>{x.title}</h3>
             </div>
             <div className="lpPetSol-cardContent">
-              <p>
-            {x.description}
-              </p>
+              <p>{x.description}</p>
             </div>
             <div className="lpPetSol-cardContent">
-              <Link to={x.link}>
-                {" "}
-                <FaArrowRight className="lpPetSol-cardIco" />
-              </Link>
+              {" "}
+              <FaArrowRight
+                className="lpPetSol-cardIco"
+                onClick={handlePopUp}
+              />
             </div>
           </div>
         ))}

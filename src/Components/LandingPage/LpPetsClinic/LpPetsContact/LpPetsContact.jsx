@@ -1,5 +1,6 @@
 import React from "react";
 import "./LpPetsContact.css";
+import Swal from "sweetalert2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -12,6 +13,40 @@ import { FaArrowRight } from "react-icons/fa";
 import arrow from "./../../../../Img/curveArrow.png";
 
 const LpPetsContact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "7a49c951-139a-412a-b3a5-6d69beb45d96");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Mail Sent successfully",
+        icon: "success",
+      });
+      form.reset(); // Clear the form after successful submission
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Failed to send message. Please try again later.",
+        icon: "error",
+      });
+    }
+  };
   return (
     <div className="lpPetsContact-container" id="contact-us">
       <div className="lpPetsContact-wrapper">
@@ -91,7 +126,7 @@ const LpPetsContact = () => {
       <div className="lpPetsContact-wrapper">
         <div className="contact-form">
           <h2>Send us a message</h2>
-          <form>
+          <form action="" onSubmit={onSubmit}>
             <input type="text" placeholder="Your name" />
             <input type="email" placeholder="Your email address" />
             <input type="tel" placeholder="+088-234-6849" />
