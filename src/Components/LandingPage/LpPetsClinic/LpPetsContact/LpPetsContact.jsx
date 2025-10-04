@@ -18,9 +18,9 @@ const LpPetsContact = () => {
         <div className="lpPetsContact-content">
           <h2>Let's start a project together</h2>
           <p>
-            We work closely with our clients to understand their objectives,
-            target audience, and unique needs. We use our creative skills to
-            translate these requirements and practical design solutions.
+            We collaborate with pet clinics to understand their goals, target
+            audience, and unique needs, crafting creative digital strategies and
+            practical solutions that bring measurable results.
           </p>
         </div>
         <div className="lpPetsContact-content">

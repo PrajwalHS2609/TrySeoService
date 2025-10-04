@@ -1,39 +1,41 @@
 import React from "react";
 import "./LpPetsTestimonial.css";
 import rating from "./../../../../Img/rating.png";
+
+
 const LpPetsTestimonial = () => {
   const card = [
     {
       id: 1,
       title: "Super customer service",
       description:
-        "Excellent customer service and I was really impressed and happy with my purchase especially as it was a last minute order which got to me in time, and when it arrived I was very happy with the design and size and so was the recipient.",
-      name: "William Jack",
-      designation: "",
+        "Partnering with TrySEOServices.Com was a game-changer for Activ4Pets. In just 8 months, they boosted our visibility, leads, and engagement—making them a trusted partner for real online growth.",
+      name: "Ashwin",
+      designation: "CEO of Activ4Pets",
     },
     {
       id: 2,
       title: "Exceptional creativity and vision",
       description:
-        "Working Mthemeus was a game-changer for our brand. Their exceptional creativity & vision breathed new life into our visual. The logo they perfectly captures our essence & has become instantly recognizable. We couldn't be happier the results!",
-      name: "Smith Align",
-      designation: "",
+        "Petzz.org’s business performance soared after working with TrySEOServices.Com. From better rankings and quality leads to higher conversions, their SEO and Google Ads expertise drove sustainable growth. Truly a reliable partner for online visibility.",
+      name: "Swetang Sharma",
+      designation: "Founder of Petzz.Org",
     },
     {
       id: 3,
       title: "Innovative and professional",
       description:
-        "I can't say enough good things about them. Their team is not only incredibly talented but also highly professional. They listened to our ideas and brought to life in ways we couldn't have imagined. Their innovative approach and dedication to our project.",
-      name: "Milano Joe ",
-      designation: "",
+        "Thanks to their expert SEO strategies, our website’s organic traffic grew to 13,000+ visitors in just one year. Their focused approach, consistent optimization, and result-driven techniques have significantly boosted our online visibility. We’re extremely happy with the results and highly recommend their services!",
+      name: "Dr.Srinivas Prasad R.H ",
+      designation: "Founder of Nisarga Diagnostics",
     },
     {
       id: 4,
       title: "Transformed our brand",
       description:
-        "Our partnership with Mthemeus transformed our brand from ordinary to extraordinary. Their branding expertise and design work elevated our marketing materials to a whole new level. Our customers have taken notice, and boost in brand recognition.",
-      name: "Danial Mark",
-      designation: "",
+        "They gave our website a fresh, premium makeover and ran targeted ad campaigns that greatly boosted our online visibility. We’ve seen increased footfall across all 6 salon centers in Bangalore, and their digital marketing expertise has truly elevated our brand. Highly recommended!",
+      name: "Vijay Lobo",
+      designation: ", Director of SCENT",
     },
   ];
   return (
@@ -49,14 +51,14 @@ const LpPetsTestimonial = () => {
               </span>
             </div>
             <div className="lpPetTest-cardContent">
-              <h3>{x.title}</h3>
-            </div>
-            <div className="lpPetTest-cardContent">
               <p>{x.description}</p>
             </div>
             <div className="lpPetTest-cardContent">
-              <h4>{x.name}</h4>
-              <p>{x.designation}</p>
+              {/* <img src={x.img} alt="" /> */}
+              <div className="lpPetTest-cardItem">
+               <h4>{x.name}</h4>
+                <p>{x.designation}</p>
+              </div>
             </div>
           </div>
         ))}

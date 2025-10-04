@@ -30,26 +30,28 @@ const LpPetsMenu = () => {
       <div className="lpPetsMenu-content">
         <ul>
           <li>
-             <NavHashLink to="#home">Home</NavHashLink>
+            <NavHashLink to="#home">Home</NavHashLink>
           </li>
           <li>
-             <NavHashLink to="#services">Services</NavHashLink>
+            <NavHashLink to="#services">Services</NavHashLink>
           </li>
           <li>
-             <NavHashLink to="#about-us">About Us</NavHashLink>
+            <NavHashLink to="#about-us">About Us</NavHashLink>
           </li>
           <li>
-             <NavHashLink to="#testimonial">Testimonials</NavHashLink>
+            <NavHashLink to="#testimonial">Testimonials</NavHashLink>
           </li>
           <li>
-             <NavHashLink to="#contact-us">Contact Us</NavHashLink>
+            <NavHashLink to="#contact-us">Contact Us</NavHashLink>
           </li>
         </ul>
         <div className="navBtn-container">
-          <button>
-            <FaWhatsapp className="navBtn-icon" />
-            Message Us
-          </button>
+          <a href="https://api.whatsapp.com/send?phone=916360226773">
+            <button>
+              <FaWhatsapp className="navBtn-icon" />
+              Message Us
+            </button>
+          </a>
         </div>
       </div>
       <div className="respMenuBar">
@@ -136,10 +138,12 @@ const LpPetsMenu = () => {
               </NavHashLink>{" "}
             </li>
             <div className="respBtn-container">
-              <button>
-                <FaWhatsapp className="respBtn-icon" />
-                Message Us
-              </button>
+              <a href="https://api.whatsapp.com/send?phone=916360226773">
+                <button>
+                  <FaWhatsapp className="respBtn-icon" />
+                  Message Us
+                </button>
+              </a>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./LpPetsBusiness.css";
 const LpPetsBusiness = () => {
   return (
-    <div className="lpPetsBusiness-container">
+    <div className="lpPetsBusiness-container" id="about-us">
       <div className="line"></div>
       <div className="lpPetsBusiness-content">
         <div className="lpPetsBusiness-heading">
