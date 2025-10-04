@@ -1,0 +1,61 @@
+.lpPetsComp-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPetsComp-container > h2 {
+  font-size: 60px;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+  width: 70%;
+  text-align: center;
+  color: var(--lpCustomBg);
+}
+.lpPetsComp-content {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.lpPetsComp-item {
+  border: 5px solid var(--lpCustomBg);
+  border-radius: 20px;
+  width: 650px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.lpPetsComp-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lpPetsComp-cover {
+  /* border: solid yellowgreen; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px;
+  background: linear-gradient(to bottom, transparent, black);
+}
+.lpPetsComp-cover > h3 {
+  color: var(--lpCustomBg);
+    font-family: "Syne", sans-serif;
+
+}
+.lpPetsComp-cover > p {
+  color: var(--lpCustomBg);font-size: 20px;
+}

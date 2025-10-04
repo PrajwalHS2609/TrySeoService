@@ -7,6 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 .LpPetsLogo-logo {
   /* border: solid green; */
@@ -21,12 +24,12 @@
   transform: scale(2);
 }
 .lpPetsMenu-container {
-  border: solid blue;
+  /* border: solid blue; */
   width: 80%;
   height: 100%;
 }
 .lpPetsMenu-content {
-  border: solid green;
+  /* border: solid green; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -39,7 +42,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  width: 80%;
+  width: 70%;
   gap: 40px;
 }
 .lpPetsMenu-content > ul > li {
@@ -49,9 +52,11 @@
   color: black;
   font-size: 18px;
   text-decoration: none;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
 }
 .navBtn-container {
-  border: solid teal;
+  /* border: solid teal; */
   width: 20%;
   display: flex;
   justify-content: center;
@@ -59,13 +64,22 @@
 }
 .navBtn-container > button {
   padding: 10px 20px;
-  background-color: var(--customColor);
+  background-color: #25d366;
   border-radius: 30px;
   font-size: 20px;
   box-shadow: 0 5px 0px black;
   border: none;
   transition: 100ms ease;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: white;
+
   &:hover {
     box-shadow: 0 0px 0px black;
   }
+}
+.navBtn-icon {
+  color: white;
+  font-size: 25px;
+  margin-right: 10px;
 }

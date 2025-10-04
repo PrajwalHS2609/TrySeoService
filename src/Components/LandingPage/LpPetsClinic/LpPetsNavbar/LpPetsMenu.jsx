@@ -1,6 +1,7 @@
 import React from "react";
 import "./LpPetsNavbar.css";
 import { Link } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
 
 const LpPetsMenu = () => {
   return (
@@ -24,7 +25,10 @@ const LpPetsMenu = () => {
           </li>
         </ul>
         <div className="navBtn-container">
-          <button>Contact Us</button>
+          <button>
+            <FaWhatsapp className="navBtn-icon" />
+            Message Us
+          </button>
         </div>
       </div>
     </div>

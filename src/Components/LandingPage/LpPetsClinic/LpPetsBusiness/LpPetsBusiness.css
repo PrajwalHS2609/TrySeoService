@@ -1,0 +1,101 @@
+.lpPetsBusiness-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: var(--lpCustomBg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.lpPetsBusiness-content {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lpPetsBusiness-heading:nth-child(1) {
+  width: 60%;
+}
+.lpPetsBusiness-heading:nth-child(2) {
+  width: 30%;
+}
+.lpPetsBusiness-heading > h2 {
+  font-size: 60px;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+  text-align: start;
+}
+.lpPetsBusiness-heading > p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.line {
+  top: 0;
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  background-color: rgb(182, 182, 182);
+}
+.lpPetsBusiness-content:nth-child(3) {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.lpPetsBusiness-vidContainer {
+  border: 5px solid black;
+  width: 60%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.lpPetsBusiness-keyContainer {
+  /* border: solid blue; */
+  height: 500px;
+  width: 25%;
+  border-radius: 20px;
+  background-color: black;
+  padding: 20px;
+}
+.lpPetsBusiness-keyContainer > ul {
+  /* border: solid green; */
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPetsBusiness-keyContainer > ul > li {
+  border-bottom: 1px solid rgb(78, 78, 78);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.lpPetsBusiness-keyContainer > ul > li > h3 {
+  font-size: 60px;
+  color: var(--customColor);
+  font-family: "Syne", sans-serif;
+}
+.lpPetsBusiness-keyContainer > ul > li > p {
+  color: var(--lpCustomBg);
+  font-weight: bold;
+}
+.lpPetsBusiness-keyContainer > ul > li:last-child {
+  border: none;
+}
+.lpPetsBusiness-vidContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
