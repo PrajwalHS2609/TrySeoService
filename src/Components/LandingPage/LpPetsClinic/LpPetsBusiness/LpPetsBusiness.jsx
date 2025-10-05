@@ -1,5 +1,6 @@
 import React from "react";
 import "./LpPetsBusiness.css";
+import petBusinessImg from "./../../../../Img/petBusinessImg.png";
 const LpPetsBusiness = () => {
   return (
     <div className="lpPetsBusiness-container" id="about-us">
@@ -17,7 +18,7 @@ const LpPetsBusiness = () => {
       </div>
       <div className="lpPetsBusiness-content">
         <div className="lpPetsBusiness-vidContainer">
-            <img src="https://html.favdevs.com/aximo/assets/images/v1/video-bg.png" alt="" loading="lazy"/>
+          <img src={petBusinessImg} alt="pet Business Img" loading="lazy" />
         </div>
         <div className="lpPetsBusiness-keyContainer">
           <ul>

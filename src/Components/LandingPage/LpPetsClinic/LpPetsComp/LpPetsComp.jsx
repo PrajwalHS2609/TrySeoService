@@ -87,7 +87,7 @@ const LpPetsComp = () => {
           </div>
           <div>
             <div className="lpPetsComp-item">
-              <img src={petKennel} alt="petKennel" loading="lazy" />
+              <img src={petShop} alt="petShop" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Pet Shop</h3>
                 <p>
@@ -99,7 +99,7 @@ const LpPetsComp = () => {
           </div>
           <div>
             <div className="lpPetsComp-item">
-              <img src={petShop} alt="petShop" loading="lazy" />
+              <img src={petSurgery} alt="petSurgery" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Pet Surgery</h3>
                 <p>
@@ -111,7 +111,7 @@ const LpPetsComp = () => {
           </div>
           <div>
             <div className="lpPetsComp-item">
-              <img src={petSurgery} alt="petSurgery" loading="lazy" />
+              <img src={petKennel} alt="petKennel" loading="lazy" />
               <div className="lpPetsComp-cover">
                 <h3>Pet Kennel</h3>
                 <p>

@@ -1,13 +1,17 @@
 import React from "react";
 import "./LpPetsHeader.css";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import arrow from "./../../../../Img/curveArrow.png";
 import headerImg from "./../../../../Img/headerImg.png";
 import prizma from "./../../../../Img/clients/Prizma-Academy.png";
 import goodway from "./../../../../Img/clients/Goodway-Attestation.png";
-import kings from "./../../../../Img/clients/Kings-Club.png";
+import active from "./../../../../Img/clients/Activ4Pets.png";
 
 const LpPetsHeader = () => {
+  const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+  };
   return (
     <div className="lpPetsHeader-container" id="home">
       <div className="lpPetsHeader-wrapper">
@@ -29,7 +33,7 @@ const LpPetsHeader = () => {
               <img src={goodway} alt="goodway" />
             </div>
             <div className="lpPetsHeader-logo">
-              <img src={kings} alt="kings" />
+              <img src={active} alt="active 4 pets" />
             </div>
           </div>
           <p>Believed by small business owners</p>
@@ -38,10 +42,10 @@ const LpPetsHeader = () => {
           <div className="lpPetsHeader-item">
             <a href="tel:6360226773">
               {" "}
-              <button>
+              <button onClick={handlePopUp}>
                 Book a free consultation
                 <span>
-                  <FaPhoneAlt className="lpPetsHeader-icon" />
+                  <FaEnvelope className="lpPetsHeader-icon" />
                 </span>
               </button>
             </a>
