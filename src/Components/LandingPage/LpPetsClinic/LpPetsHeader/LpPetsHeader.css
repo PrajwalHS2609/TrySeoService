@@ -99,7 +99,10 @@
   color: var(--lpCustomBg);
   height: 100%;
 }
-.lpPetsHeader-item > button {
+.lpPetsHeader-item > a {
+  text-decoration: none;
+}
+.lpPetsHeader-item > a > button {
   border: none;
   width: 350px;
   padding: 5px 15px;
@@ -119,7 +122,7 @@
     box-shadow: 0 0px 0px black;
   }
 }
-.lpPetsHeader-item > button > span {
+.lpPetsHeader-item > a > button > span {
   background-color: black;
   padding: 5px;
   border-radius: 100%;
@@ -201,6 +204,6 @@
     text-align: center;
   }
   .lpPetsHeader-item:nth-child(2) {
-  display: none;
-}
+    display: none;
+  }
 }

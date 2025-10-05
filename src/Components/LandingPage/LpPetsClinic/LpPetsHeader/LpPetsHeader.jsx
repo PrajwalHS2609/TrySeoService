@@ -2,7 +2,11 @@ import React from "react";
 import "./LpPetsHeader.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import arrow from "./../../../../Img/curveArrow.png";
-import  headerImg from "./../../../../Img/headerImg.png"
+import headerImg from "./../../../../Img/headerImg.png";
+import prizma from "./../../../../Img/clients/Prizma-Academy.png";
+import goodway from "./../../../../Img/clients/Goodway-Attestation.png";
+import kings from "./../../../../Img/clients/Kings-Club.png";
+
 const LpPetsHeader = () => {
   return (
     <div className="lpPetsHeader-container" id="home">
@@ -19,47 +23,37 @@ const LpPetsHeader = () => {
         <div className="lpPetsHeader-content">
           <div className="lpPetsHeader-logoContainer">
             <div className="lpPetsHeader-logo">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/user1.png"
-                alt=""
-              />
+              <img src={prizma} alt="prizma" loading="lazy" />
             </div>
             <div className="lpPetsHeader-logo">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/user1.png"
-                alt=""
-              />
+              <img src={goodway} alt="goodway" />
             </div>
             <div className="lpPetsHeader-logo">
-              <img
-                src="https://html.favdevs.com/aximo/assets/images/v1/user1.png"
-                alt=""
-              />
+              <img src={kings} alt="kings" />
             </div>
           </div>
-          <p>Believed by more than a thousand people</p>
+          <p>Believed by small business owners</p>
         </div>
         <div className="lpPetsHeader-content">
           <div className="lpPetsHeader-item">
-            <button>
-              Book a free consultation
-              <span>
-                <FaPhoneAlt className="lpPetsHeader-icon" />
-              </span>
-            </button>
+            <a href="tel:6360226773">
+              {" "}
+              <button>
+                Book a free consultation
+                <span>
+                  <FaPhoneAlt className="lpPetsHeader-icon" />
+                </span>
+              </button>
+            </a>
           </div>
           <div className="lpPetsHeader-item">
-            <img src={arrow} alt="arrow" loading="lazy"/>
+            <img src={arrow} alt="arrow" loading="lazy" />
           </div>
         </div>
       </div>
       <div className="lpPetsHeader-wrapper">
         <div className="lpPetsHeader-imgContainer">
-          <img
-            src={headerImg}
-            alt="headerImg"
-            loading="lazy"
-          />
+          <img src={headerImg} alt="headerImg" loading="lazy" />
         </div>
       </div>
     </div>
