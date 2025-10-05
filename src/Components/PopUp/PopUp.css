@@ -41,6 +41,7 @@
   color: var(--customColor);
   background-color: var(--customColor2);
   border-radius: 100%;
+  z-index:9 ;
 }
 .popUpForm {
   /* border: solid blue; */
