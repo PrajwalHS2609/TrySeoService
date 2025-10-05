@@ -127,12 +127,26 @@ const LpPetsContact = () => {
         <div className="contact-form">
           <h2>Send us a message</h2>
           <form action="" onSubmit={onSubmit}>
-            <input type="text" placeholder="Your name" />
-            <input type="email" placeholder="Your email address" />
-            <input type="tel" placeholder="+088-234-6849" />
-            <textarea placeholder="Write your message here..."></textarea>
+            <input type="text" name="name" placeholder="Your name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <input
+              type="phone"
+              name="phone"
+              placeholder="+088-234-6849"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
             <button type="submit">
-              Send message{" "}
+              Send Message{" "}
               <span>
                 <FaArrowRight className="lpPetsContact-formIco" />
               </span>
