@@ -53,7 +53,7 @@ import LpPetsClinic from './Components/LandingPage/LpPetsClinic/LpPetsClinic';
     ":countryCode/lp/content-marketing",
     ":countryCode/lp/competitor-analysis",
     ":countryCode/lp/seo-reporting",
-    ":countryCode/lp/petClinic"
+    ":countryCode/lp-petClinic"
   ];
 function MainApp() {
   const location = useLocation();
@@ -192,7 +192,7 @@ function MainApp() {
             </CountryRoute>
           }
         />
-                <Route path=":countryCode/lp/petClinic" element={<LpPetsClinic />}/>
+                <Route path=":countryCode/lp-petClinic" element={<LpPetsClinic />}/>
 
       </Routes>
 
