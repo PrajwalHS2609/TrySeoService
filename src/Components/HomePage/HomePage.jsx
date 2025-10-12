@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet-async";
 import { useLocation, useParams } from "react-router-dom";
 import FranceWhat from "../France/FranceWhat/FranceWhat";
 import FranceAboutUs from "../France/FranceAboutUs/FranceAboutUs";
+import FranceService from "../France/FranceService/FranceService";
 const HomeHeader = React.lazy(() => import("./HomeHeader/HomeHeader"));
 
 const HomePage = () => {
@@ -20,6 +21,14 @@ const HomePage = () => {
   const location = useLocation();
   const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
 
+    const renderHomeService = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceService />;
+      default:
+        return <HomeService />; // default version (India)
+    }
+  };
   const renderHomeWhatWe = () => {
     switch (countryCode?.toLowerCase()) {
       case "fr":
@@ -52,7 +61,7 @@ const HomePage = () => {
       <Suspense fallback={<p>Loading....</p>}>
         <HomeHeader />
       </Suspense>
-      <HomeService />
+      {renderHomeService()}
       {renderHomeAboutUs()}
       <HomeMarquee />
       <HomeWorking />
