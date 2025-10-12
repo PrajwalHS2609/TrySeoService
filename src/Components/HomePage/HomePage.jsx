@@ -9,12 +9,27 @@ import HomeWhatWe from "./HomeWhatWe/HomeWhatWe";
 import HomeFaq from "./HomeFaq/HomeFaq";
 import HomeFocused from "./HomeFocused/HomeFocused";
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import GermanyWhatWeDo from "../Germany/GeamanyHomePage/GermanyWhatWeDo";
 const HomeHeader = React.lazy(() => import("./HomeHeader/HomeHeader"));
 
 const HomePage = () => {
+    const { countryCode } = useParams();  // get 'de', 'fr', 'in', etc.
+
   const location = useLocation();
   const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
+
+  const renderHomeWhatWe = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "de":
+        return <GermanyWhatWeDo />;
+      // case "fr":
+      //   return <HomeWhatWeFR />;
+      default:
+        return <HomeWhatWe />; // default version (India)
+    }
+  };
+
   return (
     <div className="homePageContainer">
       <Helmet>
@@ -34,7 +49,9 @@ const HomePage = () => {
       <HomeAboutUs />
       <HomeMarquee />
       <HomeWorking />
-      <HomeWhatWe />
+      {renderHomeWhatWe()}
+
+      {/* <HomeWhatWe /> */}
       <HomeFocused />
       <HomeTestimonial />
       <HomeFaq />
