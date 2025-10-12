@@ -45,22 +45,21 @@ import SeoAttestationBoost from "./Components/BlogPage/BlogInnerPages/SeoAttesta
 import CategoryPage from "./Components/BlogPage/Category";
 import CountryRoute from "./Components/CountryRoute";
 import DynamicCountryOrSlug from "./Components/DynamicCountryOrSlug";
-import LpPetsClinic from './Components/LandingPage/LpPetsClinic/LpPetsClinic';
-  const hideNavbarPaths = [
-    ":countryCode/lp",
-    ":countryCode/lp/seo-audit",
-    ":countryCode/lp/keyword-research",
-    ":countryCode/lp/content-marketing",
-    ":countryCode/lp/competitor-analysis",
-    ":countryCode/lp/seo-reporting",
-    ":countryCode/lp-petClinic"
-  ];
+import LpPetsClinic from "./Components/LandingPage/LpPetsClinic/LpPetsClinic";
+const hideNavbarPaths = [
+  ":countryCode/lp",
+  ":countryCode/lp/seo-audit",
+  ":countryCode/lp/keyword-research",
+  ":countryCode/lp/content-marketing",
+  ":countryCode/lp/competitor-analysis",
+  ":countryCode/lp/seo-reporting",
+  ":countryCode/lp-petClinic",
+];
 function MainApp() {
   const location = useLocation();
   const shouldHide = hideNavbarPaths.some((pattern) =>
     matchPath({ path: pattern, end: false }, location.pathname)
   );
-
 
   return (
     <div className="App">
@@ -114,7 +113,6 @@ function MainApp() {
           <Route
             path="what-is-on-page-seo-why-it-is-important-for-every-websites"
             element={<WhatIsSeo />}
-
           />
           <Route
             path="transforming-foreign-language-school-of-bangalore"
@@ -187,13 +185,25 @@ function MainApp() {
         <Route
           path=":countryCode/:slug"
           element={
-            <CountryRoute allowedCountries={["fr", "de", "in", "us"]}>
+            <CountryRoute
+              allowedCountries={[
+                "fr",
+                "de",
+                "in",
+                "us",
+                "ca",
+                "uk",
+                "au",
+                "fr",
+                "jp",
+                "ae",
+              ]}
+            >
               <DynamicCountryOrSlug />
             </CountryRoute>
           }
         />
-                <Route path=":countryCode/lp-petClinic" element={<LpPetsClinic />}/>
-
+        <Route path=":countryCode/lp-petClinic" element={<LpPetsClinic />} />
       </Routes>
 
       <PopUp />
