@@ -1,5 +1,5 @@
-import React from 'react'
-import BlobAnim from '../../HomePage/BlobAnim'
+import React from "react";
+import BlobAnim from "../../HomePage/BlobAnim";
 import { NavHashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -10,44 +10,56 @@ const GermanyWhatWeDo = () => {
     <div className="homeWhatWeContainer">
       <div className="homeWhatWeContent1">
         <div className="homeWhatWeHeader">
-             <h6>WHAT WE DO</h6>
-             <h2>SEO Analytics & Strategy Skill</h2>
-             <p>
-               <span> TrySeoServices.Com </span>is a one-stop platform for all your web
-               related requirements. We consider that customized site development is a
-               life-changing activity and we do everything we can to help companies to
-               establish a space that puts them on par with their competition and
-               offers them a much-needed worldwide edge through Digital marketing in
-               Germany.
-             </p>
-             <p>
-               Our Digital marketing service in Germany includes everything you
-               require and more to bolster your business and make the most of the
-               growing market with our specific and custom designers, and a team that
-               compiles all the relevant information over time, in a manner that can
-               greatly accentuate your business.
-             </p>
-             <p>
-               Our expertise in Search Engine Optimization and App Development will
-               make it incredibly simple for you to achieve exactly what you want,
-               beginning a new era of absolute creation that can be used to
-               differentiate your company. We are always on top of it all, creating
-               websites that fully reflect your requirements, whether it’s Digital
-               Marketing or Search Engine Optimization, App Development, or even
-               Software Creations.
-             </p>
-             <div className="homeWhatWeBtn">
-               <NavHashLink to="#Services">
-                 <button>
-                   Explore Our Services{" "}
-                   <FontAwesomeIcon
-                     icon={faArrowRight}
-                     className="homeArrow"
-                   ></FontAwesomeIcon>
-                 </button>
-               </NavHashLink>
-             </div>
-           </div>
+          <h6>WHAT WE DO</h6>
+          <h2>SEO Analytics & Strategy Skill</h2>
+          <p>
+            <span> TrySeoServices.Com </span>is your all-in-one digital partner
+            for everything related to web presence and online growth. We believe
+            that personalized website development is not just a service—it’s a
+            transformative journey. Our goal is to help French businesses build
+            a strong digital identity that positions them ahead of competitors
+            and gives them a global advantage through high-impact digital
+            marketing in Bangalore.
+          </p>
+          <p>
+            Our digital marketing services in Bangalore are designed to meet
+            every need of your growing business. From strategic planning to
+            creative execution, our dedicated designers and marketing
+            professionals work hand in hand to craft solutions that elevate your
+            brand visibility, attract qualified leads, and drive measurable
+            growth. We take the time to understand your market, analyze
+            performance data, and adapt strategies that deliver long-term
+            results.
+          </p>
+          <p>
+            With deep expertise in Search Engine Optimization (SEO) and App
+            Development, we make it effortless for you to achieve your digital
+            goals. Whether you aim to boost your website’s visibility, build a
+            mobile app, or create powerful digital campaigns, we bring
+            innovation and precision to every step. At TrySeoServices.com, we
+            ensure every project reflects your brand’s essence—modern, engaging,
+            and built for success.
+          </p>
+          <p>
+            Our team stays at the forefront of digital trends, providing
+            end-to-end solutions—from Digital Marketing and SEO to App and
+            Software Development—that help your business thrive in today’s
+            competitive landscape. With us, you don’t just get a service; you
+            gain a strategic digital partner committed to your online success,
+            both in France and beyond.
+          </p>
+          <div className="homeWhatWeBtn">
+            <NavHashLink to="#Services">
+              <button>
+                Explore Our Services{" "}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className="homeArrow"
+                ></FontAwesomeIcon>
+              </button>
+            </NavHashLink>
+          </div>
+        </div>
       </div>
       <div className="homeWhatWeContent2">
         <div className="blobContain">
@@ -56,7 +68,7 @@ const GermanyWhatWeDo = () => {
         <img src={homeWhatWe} alt="homeWhatWe" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default GermanyWhatWeDo
+export default GermanyWhatWeDo;

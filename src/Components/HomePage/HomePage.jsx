@@ -10,23 +10,30 @@ import HomeFaq from "./HomeFaq/HomeFaq";
 import HomeFocused from "./HomeFocused/HomeFocused";
 import { Helmet } from "react-helmet-async";
 import { useLocation, useParams } from "react-router-dom";
-import GermanyWhatWeDo from "../Germany/GeamanyHomePage/GermanyWhatWeDo";
+import FranceWhat from "../France/FranceWhat/FranceWhat";
+import FranceAboutUs from "../France/FranceAboutUs/FranceAboutUs";
 const HomeHeader = React.lazy(() => import("./HomeHeader/HomeHeader"));
 
 const HomePage = () => {
-    const { countryCode } = useParams();  // get 'de', 'fr', 'in', etc.
+  const { countryCode } = useParams(); // get 'de', 'fr', 'in', etc.
 
   const location = useLocation();
   const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
 
   const renderHomeWhatWe = () => {
     switch (countryCode?.toLowerCase()) {
-      case "de":
-        return <GermanyWhatWeDo />;
-      // case "fr":
-      //   return <HomeWhatWeFR />;
+      case "fr":
+        return <FranceWhat />;
       default:
         return <HomeWhatWe />; // default version (India)
+    }
+  };
+    const renderHomeAboutUs = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceAboutUs />;
+      default:
+        return <HomeAboutUs />; // default version (India)
     }
   };
 
@@ -46,11 +53,10 @@ const HomePage = () => {
         <HomeHeader />
       </Suspense>
       <HomeService />
-      <HomeAboutUs />
+      {renderHomeAboutUs()}
       <HomeMarquee />
       <HomeWorking />
       {renderHomeWhatWe()}
-
       {/* <HomeWhatWe /> */}
       <HomeFocused />
       <HomeTestimonial />
