@@ -9,12 +9,61 @@ import WebsiteWhy from "./WebsiteWhy/WebsiteWhy";
 import WebsiteFaq from "./WebsiteFaq/WebsiteFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import FranceHowItWorks from "../France/FranceWebsitePage/FranceHowItWorks/FranceHowItWorks";
+import FranceBenefits from "../France/FranceWebsitePage/FranceBenefits/FranceBenefits";
+import FranceWebsiteWhy from "../France/FranceWebsitePage/FranceWebsiteWhy/FranceWebsiteWhy";
+import FranceWebsiteFaq from "../France/FranceWebsitePage/FranceWebsiteFaq/FranceWebsiteFaq";
+import FranceWebsiteIntro from "../France/FranceWebsitePage/FranceWebsiteIntro/FranceWebsiteIntro";
 const WebsiteHeader = React.lazy(() => import("./WebsiteHeader/WebsiteHeader"));
 
 const WebsitePage = () => {
-    const location = useLocation();
-    const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
+  const { countryCode } = useParams(); // get 'de', 'fr', 'in', etc.
+
+  const location = useLocation();
+  const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
+
+  // const renderFranceIntro = () => {
+  //   switch (countryCode?.toLowerCase()) {
+  //     case "fr":
+  //       return <FranceWebsiteIntro />;
+  //     default:
+  //       return; 
+  //   }
+  // };
+
+  const renderFranceHow = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceHowItWorks />;
+      default:
+        return <WebsiteHowIt />; // default version (India)
+    }
+  };
+  const renderFranceBenefits = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceBenefits />;
+      default:
+        return <WebsiteBenefits />; // default version (India)
+    }
+  };
+  const renderFranceWebsiteWhy = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceWebsiteWhy />;
+      default:
+        return <WebsiteWhy />; // default version (India)
+    }
+  };
+  const renderFranceWebsiteFaq = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceWebsiteFaq />;
+      default:
+        return <WebsiteFaq />; // default version (India)
+    }
+  };
   return (
     <div className="websitePage">
       <Helmet>
@@ -26,20 +75,20 @@ const WebsitePage = () => {
           content="Website Designing Services in Bangalore for Small Business. High Quality Traffic, Qualified Leads, Online Sales, Maximum Reach, & Search Ranking."
         />
         <link rel="canonical" href={canonicalUrl} />{" "}
-
       </Helmet>
       <Suspense fallback={<p>Loading....</p>}>
         <WebsiteHeader />
       </Suspense>
 
       <BreadCrumb txt="Website" />
-      <WebsiteHowIt />
+      {/* {renderFranceIntro()} */}
+      {renderFranceHow()}
       <HomeMarquee />
-      <WebsiteBenefits />
-      <WebsiteWhy />
+      {renderFranceBenefits()}
+      {renderFranceWebsiteWhy()}
       <HomePricing />
       <HomeTestimonial />
-      <WebsiteFaq />
+      {renderFranceWebsiteFaq()}
     </div>
   );
 };

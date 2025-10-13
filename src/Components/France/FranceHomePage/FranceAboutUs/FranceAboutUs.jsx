@@ -4,8 +4,8 @@ import FranceAboutUsWrapper from "./FranceAboutUsWrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import homeAboutUs from "./../../../Img/homePgImgs/homeAboutUs.jpg";
-import BlobAnim from "../../HomePage/BlobAnim";
+import homeAboutUs from "./../../../../Img/homePgImgs/homeAboutUs.jpg";
+import BlobAnim from "../../../HomePage/BlobAnim";
 const FranceAboutUs = () => {
   return (
     <div className="homeAboutUs">

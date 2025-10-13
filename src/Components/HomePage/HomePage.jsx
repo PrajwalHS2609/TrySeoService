@@ -10,9 +10,9 @@ import HomeFaq from "./HomeFaq/HomeFaq";
 import HomeFocused from "./HomeFocused/HomeFocused";
 import { Helmet } from "react-helmet-async";
 import { useLocation, useParams } from "react-router-dom";
-import FranceWhat from "../France/FranceWhat/FranceWhat";
-import FranceAboutUs from "../France/FranceAboutUs/FranceAboutUs";
-import FranceService from "../France/FranceService/FranceService";
+import FranceWhat from "../France/FranceHomePage/FranceWhat/FranceWhat";
+import FranceAboutUs from "../France/FranceHomePage/FranceAboutUs/FranceAboutUs";
+import FranceService from "../France/FranceHomePage/FranceService/FranceService";
 const HomeHeader = React.lazy(() => import("./HomeHeader/HomeHeader"));
 
 const HomePage = () => {

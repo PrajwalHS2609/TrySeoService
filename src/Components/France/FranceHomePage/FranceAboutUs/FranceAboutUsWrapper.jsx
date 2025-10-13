@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeAboutUsCard from '../../HomePage/HomeAboutUs/HomeAboutUsCard'
+import HomeAboutUsCard from '../../../HomePage/HomeAboutUs/HomeAboutUsCard'
 
 const FranceAboutUsWrapper = () => {
   return (

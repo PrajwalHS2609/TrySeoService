@@ -59,7 +59,7 @@
 }
 /* Default style when the accordion is collapsed */
 .accordion-button.collapsed {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa !important;
   color: var(--customColor);
   border: none;
   outline: none;

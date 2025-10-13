@@ -1,0 +1,15 @@
+.franceWebsiteIntro-container > p {
+  /* border: solid red; */
+  text-align: justify;
+  color: grey;
+  padding: 20px;
+  width: 90%;
+  font-size: 20px;
+}
+.franceWebsiteIntro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}

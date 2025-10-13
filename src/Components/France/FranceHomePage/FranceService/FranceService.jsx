@@ -1,11 +1,11 @@
 import React from 'react'
 
-import seoMag from "./../../../Img/HomeService/SEOMag.png";
-import adsServ from "./../../../Img/HomeService/adsService.png";
-import webDesign from "./../../../Img/HomeService/WebsiteDesign.png";
-import content from "./../../../Img/HomeService/Content.png";
+import seoMag from "./../../../../Img/HomeService/SEOMag.png";
+import adsServ from "./../../../../Img/HomeService/adsService.png";
+import webDesign from "./../../../../Img/HomeService/WebsiteDesign.png";
+import content from "./../../../../Img/HomeService/Content.png";
 import FranceServiceHeader from './FranceServiceHeader';
-import HomeServiceCard from '../../HomePage/HomeService/HomeServiceCard';
+import HomeServiceCard from '../../../HomePage/HomeService/HomeServiceCard';
 const FranceService = () => {
       const countryCode =
     localStorage.getItem("preferredCountry")?.toLowerCase() || "";

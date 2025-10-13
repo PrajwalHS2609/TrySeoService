@@ -1,7 +1,7 @@
 import React from "react";
-import BlobAnim from "../../HomePage/BlobAnim";
+import BlobAnim from "../../../HomePage/BlobAnim";
 import FranceWhatHeader from "./FranceWhatHeader";
-import homeWhatWe from "./../../../Img/homePgImgs/homeWhatWeDo.jpg";
+import homeWhatWe from "./../../../../Img/homePgImgs/homeWhatWeDo.jpg";
 
 const FranceWhat = () => {
   return (
