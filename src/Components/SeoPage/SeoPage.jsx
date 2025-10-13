@@ -9,13 +9,52 @@ import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import HomeTestimonial from "../HomePage/HomeTestimonial/HomeTestimonial";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import FranceSeoPageService from "../France/FranceSeoPage/FranceSeoPageService/FranceSeoPageService";
+import FranceSeoPageBenefits from "../France/FranceSeoPage/FranceSeoPageBenefits/FranceSeoPageBenefits";
+import FranceSeoPageReason from "../France/FranceSeoPage/FranceSeoPageReason/FranceSeoPageReason";
+import FranceSeoPageFaq from "../France/FranceSeoPage/FranceSeoPageFaq/FranceSeoPageFaq";
 const SeoHeader = React.lazy(() => import("./SeoHeader"));
 
 // import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
 const SeoPage = () => {
+  const { countryCode } = useParams(); // get 'de', 'fr', 'in', etc.
+
   const location = useLocation();
   const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
+
+  const renderFranceSeoService = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceSeoPageService />;
+      default:
+        return <SeoService />; // default version (India)
+    }
+  };
+  const renderFranceSeoBenefits = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceSeoPageBenefits />;
+      default:
+        return <SeoBenefits />; // default version (India)
+    }
+  };
+  const renderFranceSeoReasons = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceSeoPageReason />;
+      default:
+        return <SeoReasons />; // default version (India)
+    }
+  };
+  const renderFranceSeoFaq = () => {
+    switch (countryCode?.toLowerCase()) {
+      case "fr":
+        return <FranceSeoPageFaq />;
+      default:
+        return <WebsiteFaq />; // default version (India)
+    }
+  };
   return (
     <div className="seoPage">
       <Helmet>
@@ -30,13 +69,13 @@ const SeoPage = () => {
         <SeoHeader />
       </Suspense>
       <BreadCrumb txt="SEO" />
-      <SeoService />
+      {renderFranceSeoService()}
       <HomeMarquee />
-      <SeoBenefits />
-      <SeoReasons />
+      {renderFranceSeoBenefits()}
+      {renderFranceSeoReasons()}
       <HomeTestimonial />
       <SeoPricing />
-      <WebsiteFaq />
+      {renderFranceSeoFaq()}
     </div>
   );
 };

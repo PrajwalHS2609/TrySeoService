@@ -14,7 +14,6 @@ import FranceHowItWorks from "../France/FranceWebsitePage/FranceHowItWorks/Franc
 import FranceBenefits from "../France/FranceWebsitePage/FranceBenefits/FranceBenefits";
 import FranceWebsiteWhy from "../France/FranceWebsitePage/FranceWebsiteWhy/FranceWebsiteWhy";
 import FranceWebsiteFaq from "../France/FranceWebsitePage/FranceWebsiteFaq/FranceWebsiteFaq";
-import FranceWebsiteIntro from "../France/FranceWebsitePage/FranceWebsiteIntro/FranceWebsiteIntro";
 const WebsiteHeader = React.lazy(() => import("./WebsiteHeader/WebsiteHeader"));
 
 const WebsitePage = () => {
