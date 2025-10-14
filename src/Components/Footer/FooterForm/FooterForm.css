@@ -1,0 +1,87 @@
+.footer-form {
+  /* border: solid red; */
+  width: 30%;
+  height: 100%;
+  /* margin: 50px auto; */
+  color: var(--lpCustomBg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--customColor);
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid var(--lpCustomBg);
+  border-radius: 30px;
+  background: transparent;
+  color: var(--lpCustomBg);
+  font-size: 18px;
+  outline: none;
+}
+.footer-form input::placeholder {
+  color: var(--lpCustomBg);
+  font-size: 18px;
+}
+.footer-form textarea {
+  border-radius: 15px;
+  min-height: 120px;
+  resize: none;
+}
+.footer-form textarea::placeholder {
+  color: var(--lpCustomBg);
+  font-size: 18px;
+}
+
+.footer-form > form > button {
+  border: none;
+  width: 350px;
+  padding: 5px 15px;
+  background-color: var(--customColor);
+  box-shadow: 0 5px 0px var(--lpCustomBg);
+  transition: 300ms ease-in-out;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
+
+  &:hover {
+    box-shadow: 0 0px 0px black;
+  }
+}
+.footer-form > form > button > span {
+  background-color: black;
+  padding: 5px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  right: 10px;
+}
+.footer-formIco {
+  color: var(--lpCustomBg);
+}
+@media screen and (max-width:768px) {
+  .footer-form {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+}
+}

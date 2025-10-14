@@ -46,77 +46,76 @@
   font-size: 50px;
 }
 /* ----------------/homeTestimonialHeader--------------------- */
-
-.sqAnimContainer {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: transparent;
-  position: absolute;
-}
-.testimonialContainer {
-  /* border: solid brown; */
-  height: 500px;
-  width: 650px;
-  position: static;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.379);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  box-shadow: 0 0 10px;
-  /* background-color: red; */
-}
-.homeTestimonialCarousel {
-  /* border: solid; */
+.homeTestimonial-CarouselContainer {
+  /* border: solid red; */
+  width: 750px;
   height: 450px;
-  width: 600px;
-  border-radius: 20px;
+  padding: 20px;
+  position: relative;
 }
-.carouselContainer {
-  /* border: solid blue; */
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.carousel-item {
+.homeTestimonial-content {
   /* border: solid green; */
-  height: 450px;
-  width: 600px;
-  border-radius: 20px;
+  width: 100%;
+  height: 430px;
+  border-radius: 20px 20px 100px 20px;
+  background-color: var(--customColor);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  position: relative;
+}
+
+.homeTestimonial-quote {
+  /* border: solid blue; */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.carousel-caption p {
-  /* border: solid; */
-  color: black;
-  font-size: 20px;
-  width: 100%;
+.homeTestimonial-quote > img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+.homeTestimonial-item2 > p {
+  color: white;
+  font-size: 18px;
   text-align: justify;
 }
-.carousel-caption h3 {
-  color: black;
+.homeTestimonial-item1 {
+  /* border: solid blue; */
+  padding: 20px;
+  height: 80px;
 }
-.carousel-caption span {
-  color: var(--customColor);
+.homeTestimonial-item2 {
+  /* border: solid yellow; */
+  padding: 10px;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
 }
-.carousel-control-next-icon {
-  background-color: var(--customColor);
-  border-radius: 100%;
-  background-size: 20px;
+.homeTestimonial-item1 > img {
+  width: 150px;
 }
-.carousel-control-prev-icon {
-  background-color: var(--customColor);
-  border-radius: 100%;
-  background-size: 20px;
+.homeTestimonial-item2 > h3 {
+  color: white;
+}
+.homeTestimonial-item2 > span {
+  color: white;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -127,34 +126,22 @@
   .homeTestimonialHeader > h2 {
     font-size: 40px;
   }
-  .testimonialContainer {
-    /* border: solid brown; */
-    height: 100%;
-    width: 100%;
-    /* background-color: red; */
-  }
-  .homeTestimonialCarousel {
-    /* border: solid; */
-    height: 100%;
-    width: 100%;
-    border-radius: 20px;
-  }
-  .carousel-item {
-    /* border: solid green; */
-    height: 600px;
-    width: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .carousel-caption p {
-    /* border: solid; */
-    color: black;
-    font-size: 18px;
-    width: 100%;
-    text-align: justify;
-  }
+.homeTestimonial-CarouselContainer {
+  /* border: solid red; */
+  width: 100%;
+  max-width: 750px;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+.homeTestimonial-content {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+  padding: 30px 10px;
+  position: relative;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .homeTestimonialHeader {
@@ -176,16 +163,16 @@
     width: 100%;
     border-radius: 20px;
   }
-    .carousel-item {
-      /* border: solid green; */
-      height: 450px;
-      width: 600px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
+  .carousel-item {
+    /* border: solid green; */
+    height: 450px;
+    width: 600px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .carousel-caption p {
     /* border: solid; */
     color: black;

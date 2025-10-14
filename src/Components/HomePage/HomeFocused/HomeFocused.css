@@ -6,6 +6,8 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+padding: 30px;
+  background-color: var(--customBg);
 }
 .homeFocusedMain {
   /* border: solid blue; */
@@ -29,13 +31,15 @@
   width: 250px;
   /* border-radius: 20px; */
 }
-.homeFocusCardIco{
+.homeFocusCardIco {
   color: white;
   font-size: 40px;
 }
-.homeFocusedCard>h6{
+.homeFocusedCard > h6 {
   color: white;
 }
-@media screen and (min-width:320px) and (max-width:768px) {
-  
+.homeServiceHead>h2{
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
 }

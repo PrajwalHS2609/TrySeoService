@@ -10,10 +10,10 @@ const HomeTestimonial = () => {
     <>
       <div className="homeTestimonial">
         <HomeTestimonialHeader />
-        <div className="sqAnimContainer">
+        {/* <div className="sqAnimContainer">
           <HomeSqAnim />
-        </div>
-        <WebsiteClientMain />
+        </div> */}
+        {/* <WebsiteClientMain /> */}
         <div className="testimonialContainer">
           <HomeTestimonialCarousel />
         </div>

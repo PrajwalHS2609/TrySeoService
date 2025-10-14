@@ -21,7 +21,7 @@ const HomePage = () => {
   const location = useLocation();
   const canonicalUrl = `https://tryseoservices.com${location.pathname}`;
 
-    const renderHomeService = () => {
+  const renderHomeService = () => {
     switch (countryCode?.toLowerCase()) {
       case "fr":
         return <FranceService />;
@@ -37,7 +37,7 @@ const HomePage = () => {
         return <HomeWhatWe />; // default version (India)
     }
   };
-    const renderHomeAboutUs = () => {
+  const renderHomeAboutUs = () => {
     switch (countryCode?.toLowerCase()) {
       case "fr":
         return <FranceAboutUs />;
@@ -65,9 +65,8 @@ const HomePage = () => {
       {renderHomeAboutUs()}
       <HomeMarquee />
       <HomeWorking />
-      {renderHomeWhatWe()}
-      {/* <HomeWhatWe /> */}
       <HomeFocused />
+      {/* {renderHomeWhatWe()} */}
       <HomeTestimonial />
       <HomeFaq />
     </div>
