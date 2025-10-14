@@ -13,7 +13,7 @@ const HomeTestimonial = () => {
         {/* <div className="sqAnimContainer">
           <HomeSqAnim />
         </div> */}
-        {/* <WebsiteClientMain /> */}
+        <WebsiteClientMain />
         <div className="testimonialContainer">
           <HomeTestimonialCarousel />
         </div>
