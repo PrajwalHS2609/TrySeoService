@@ -101,6 +101,7 @@ const WebsitePage = () => {
       </div>
       <WebsitePackage/>
       <HomeTestimonial />
+      <WebsiteFaq/>
     </div>
   );
 };
