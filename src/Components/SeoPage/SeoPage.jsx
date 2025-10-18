@@ -19,6 +19,7 @@ import SeoServiceBenefits from "./SeoService/SeoServiceBenefits";
 import SeoServiceBook from "./SeoService/SeoServiceBook";
 import SeoServiceBrochure from "./SeoService/SeoServiceBrochure";
 import SeoPackage from "./SeoPackage/SeoPackage";
+import SeoSideBarLinks from "./SeoService/SeoSideBarLinks";
 const SeoHeader = React.lazy(() => import("./SeoHeader"));
 
 // import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
@@ -86,6 +87,7 @@ const SeoPage = () => {
         </div>
         <div className="component-sidebar">
           <SeoServiceBrochure />
+          <SeoSideBarLinks/>
         </div>
       </div>
       <HomeTestimonial />
