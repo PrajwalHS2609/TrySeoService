@@ -4,7 +4,9 @@ const SocialMediaServiceHead = () => {
   return (
     <div className="seoServiceHead">
       {/* <h6>SERVICE</h6> */}
-      <h2>Why Social Media Marketing Matters in Bangalore?</h2>
+      <h2>
+        Why <span>Social Media Marketing</span> Matters in Bangalore?
+      </h2>
       <p>
         In this digital era, it is essential to your target audience, their
         demands, & geographical location before you establish the website of

@@ -13,7 +13,7 @@ const WebsiteServiceBrochure = () => {
         />
       </div>
       <div className="websiteServiceBrochure-content">
-        <a href="">
+        <a href="/TrySEOServices.pdf" download>
           <div className="websiteServiceBrochure-item">
             <p>Download Brochure</p>{" "}
             <IoDownloadOutline className="websiteServiceBrochure-icon" />

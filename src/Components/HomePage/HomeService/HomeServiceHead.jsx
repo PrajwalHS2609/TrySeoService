@@ -6,7 +6,8 @@ const HomeServiceHead = () => {
     <div className="homeServiceHead" id="Services">
       <h6> OUR SERVICES </h6>
       <h2>
-        <span>Digital Marketing</span> Services in Bangalore
+        Transform Clicks into Customers with <br /> Powerful{" "}
+        <span>Digital Marketing</span>{" "}
       </h2>
       <p>More Traffic = More Leads = More Sales with Digital Marketing !!</p>
     </div>

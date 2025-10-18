@@ -27,6 +27,9 @@
   font-size: 50px;
   text-align: start;
 }
+.websiteServiceHead > h2 > span {
+  color: var(--customColor);
+}
 .websiteServiceHead > p {
   color: rgb(102, 102, 102);
   text-align: justify;

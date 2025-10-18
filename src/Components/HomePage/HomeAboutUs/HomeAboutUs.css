@@ -51,8 +51,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
 }
+
 /* -------------------------aboutUsHeader---------------- */
 .homeAboutUsHeader > h6 {
   color: var(--customColor);
@@ -76,9 +77,12 @@
 .homeAboutUsHeader > h2 {
   font-size: 50px;
 }
+.homeAboutUsHeader > h2 > span {
+  color: var(--customColor);
+}
 .homeAboutUsHeader > p {
   color: rgb(102, 102, 102);
-  font-weight: bold;
+  font-size: 18px;
 }
 /* -------------------------/aboutUsHeader---------------- */
 .homeAboutUsContent2 > a {
@@ -118,14 +122,21 @@
 /* ----------------aboutUsCard------------------- */
 .homeAboutUsCard {
   /* border: solid blue; */
-  width: 45%;
-  border-radius: 30px;
+  width: 250px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: white;
+  background-color: var(--customBg);
+  padding: 10px 15px;
+  gap: 10px;
 }
 .homeAboutUsCard > img {
+  width: 30px;
+  height: 30px;
+}
+.homeAboutUsCard-icon {
+  color: var(--customColor);
   width: 30px;
   height: 30px;
 }

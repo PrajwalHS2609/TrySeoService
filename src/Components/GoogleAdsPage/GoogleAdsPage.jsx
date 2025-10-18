@@ -14,6 +14,7 @@ import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
 import GoogleAdsServiceBenefits from "./GoogleAdsService/GoogleAdsServiceBenefits";
 import SeoServiceBrochure from "../SeoPage/SeoService/SeoServiceBrochure";
 import SeoServiceSubHead from "../SeoPage/SeoService/SeoServiceSubHead";
+import GoogleAdsServiceSubHead from "./GoogleAdsService/GoogleAdsServiceSubHead";
 const GoogleAdsHeader = React.lazy(() => import("./GoogleAdsHeader"));
 
 const GoogleAdsPage = () => {
@@ -37,7 +38,7 @@ const GoogleAdsPage = () => {
         <div className="component-main">
           <GoogleAdsServiceHead />
           <div className="component-mainContent">
-            <SeoServiceSubHead />
+            <GoogleAdsServiceSubHead />
             <GoogleAdsService />
             <GoogleAdsServiceBenefits />
             <SeoServiceBook />

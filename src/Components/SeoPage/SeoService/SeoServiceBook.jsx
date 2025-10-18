@@ -11,9 +11,8 @@ const SeoServiceBook = () => {
       <div className="seoServiceBook-content">
         <h3>Book an Appointment</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere
-          dolorem unde ducimus ut quod vel numquam quidem nam sit, officiis
-          doloribus a mollitia deleniti.
+          Ready to elevate your business? Partner with TrySEOServices.Com and
+          kickstart your journey to digital success!
         </p>
         <button onClick={handlePopUp}>Book Now</button>
       </div>

@@ -15,14 +15,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 70%;
 }
 .homeWorkingHead > h2 {
   font-size: 50px;
+  text-align: center;
   color: white;
+}
+.homeWorkingHead > h2 > span {
+  color: var(--customColor);
 }
 .homeWorkingHead > p {
   font-size: 18px;
   color: var(--customColor);
+  text-align: center;
 }
 /* --------------------------homeWorkingMain------------------- */
 .homeWorkingMain {

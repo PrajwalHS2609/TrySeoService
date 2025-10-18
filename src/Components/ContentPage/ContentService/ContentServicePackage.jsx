@@ -7,7 +7,7 @@ const ContentServicePackage = () => {
     document.querySelector(".popup").style.display = "flex";
   };
   return (
-    <div className="seoPackageTable-container">
+    <div className="seoPackageTable-container" id="pricing">
       <div className="seoPackageTable-Head">
         <h2>Our SEO Content Packages</h2>
         {/* <p>

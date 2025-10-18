@@ -12,7 +12,7 @@ const SeoServiceBrochure = () => {
         />
       </div>
       <div className="seoServiceBrochure-content">
-        <a href="">
+        <a href="/TrySEOServices.pdf" download>
           <div className="seoServiceBrochure-item">
             <p>Download Brochure</p>{" "}
             <IoDownloadOutline className="seoServiceBrochure-icon" />

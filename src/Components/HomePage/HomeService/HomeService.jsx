@@ -20,7 +20,7 @@ const HomeService = () => {
           link={`/${countryCode}/seo-services-in-bangalore`}
           head1="Google & Bing"
           head2="SEO"
-          para="In today's digital environment, SEO ensures increased conversions and aids in the growth of your company. Your company can rank on the first page of the SERP if you use the appropriate SEO tactics."
+          para="Transform your online presence into a growth engine! Smart SEO strategies boost your visibility, increase conversions, and take your brand straight to the top of search results — where real success begins."
         />
         <HomeServiceCard
           img={adsServ}
@@ -28,7 +28,7 @@ const HomeService = () => {
           link={`/${countryCode}/google-ads-service-in-bangalore`}
           head1="Search, Display & Video"
           head2="Google Ads"
-          para="We ensure that your budget is managed and that your paid marketing Google Ad campaigns are boosted. A good keyword strategy combined with in-depth keyword research will help you get more customers."
+          para="Your ad budget deserves results, not guesses! We fine-tune every Google Ads campaign with laser-focused keyword strategies that attract real buyers and deliver measurable growth for your business."
         />
         <HomeServiceCard
           img={webDesign}
@@ -36,7 +36,7 @@ const HomeService = () => {
           link={`/${countryCode}/website-designing-services-in-bangalore`}
           head1="Product & Services"
           head2="Website Design"
-          para="A responsive and mobile-friendly web design ensures that your website and applications are easy to use and adjust to different screen sizes and displays."
+          para="From smartphones to desktops, we make your brand look stunning everywhere! Our responsive web design ensures effortless browsing, smooth navigation, and pixel-perfect performance across every screen size."
         />
         <HomeServiceCard
           img={content}
@@ -44,7 +44,7 @@ const HomeService = () => {
           link={`/${countryCode}/content-writing-service-in-bangalore`}
           head1="SEO & Promotion"
           head2="Content Writing"
-          para="Content is rightly regarded as the king of the marketing industry, as it is the only factor that contributes to the development of a strong online persona on search engines."
+          para="Content isn’t just king — it’s the heartbeat of your digital empire. Powerful words and strategic storytelling build the strong online presence your brand deserves, ruling the search results with authority."
         />
       </div>
     </div>

@@ -186,11 +186,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 3px;
   background-color: white;
   color: black;
   position: static;
   z-index: 1;
+  width: 20px;
+  height: 20px;
 }
 .blob {
   /* border: solid red; */
@@ -205,147 +207,62 @@
   object-fit: cover;
   object-position: 0;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .blob > video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
+@media screen and (max-width: 768px) {
   .homeContainer {
     /* border: solid red; */
-    height: 800px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .homeCoverContent1 {
-    /* border: solid red; */
-    width: 100%;
-  }
-  .homeCover {
-    /* border: solid green; */
     width: 100%;
     height: 100%;
-    gap: 10px;
-    flex-direction: column-reverse;
-    background-color: rgba(255, 255, 255, 0.197);
-    position: static;
   }
-  .homeCoverContent1 > h6 {
-    border: 1px solid black;
-    color: black;
+
+  .homeCover {
+    /* border: solid green; */
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 10px;
+  }
+  .homeCoverContent1 {
+    /* border: solid blue; */
+    width: 100%;
+    margin-top: 0px;
   }
   .homeCoverContent1 > h1 {
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     color: black;
   }
-  .homeCoverContent1 > h1 > span {
-    font-size: 35px;
-  }
   .homeCoverContent1 > p {
-    color: grey;
+    color: black;
     font-size: 18px;
-  }
-  .homeCoverBtnCover {
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 10px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 989px) {
-  .blob > video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .homeContainer {
-    /* border: solid red; */
-    height: 800px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .homeCoverContent1 {
-    /* border: solid red; */
-    width: 100%;
-  }
-  .homeCover {
-    /* border: solid green; */
-    width: 100%;
-    height: 100%;
-    gap: 10px;
-    flex-direction: column-reverse;
-    background-color: rgba(255, 255, 255, 0.197);
-    position: static;
+    text-align: justify;
   }
   .homeCoverContent1 > h6 {
-    border: 1px solid black;
-    color: black;
-  }
-  .homeCoverContent1 > h1 {
-    font-size: 35px;
-    text-align: center;
-    color: black;
-  }
-  .homeCoverContent1 > h1 > span {
-    font-size: 35px;
-  }
-  .homeCoverContent1 > p {
-    color: grey;
-    font-size: 18px;
+    display: none;
   }
   .homeCoverBtnCover {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
     gap: 10px;
     padding-top: 10px;
   }
-}
-@media screen and (min-width: 990px) and (max-width: 1200px) {
-  .blob > video {
-    width: 100%;
-    height: 900px;
-    object-fit: cover;
-    display: block;
-  }
-  .homeContainer {
-    /* border: solid red; */
-    height: 900px;
-    width: 100%;
-  }
-  .homeCoverContent1 {
-    /* border: solid red; */
-    width: 40%;
-  }
-  .homeCover {
+  .homeArrow {
     /* border: solid green; */
-    width: 100%;
-    height: 100%;
-    gap: 10px;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.412);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-color: white;
+    color: black;
+    position: static;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
   }
-  .homeCoverContent1 > h6 {
-    border: 1px solid white;
-    color: white;
-  }
-  .homeCoverContent1 > h1 {
-    font-size: 60px;
-    text-align: center;
-    color: white;
-  }
-  .homeCoverContent1 > p {
-    color: white;
-    font-size: 18px;
-  }
-  .homeCoverBtnCover {
-    flex-direction: row;
-    gap: 10px;
-    padding-top: 10px;
+  .blob {
+    /* border: solid red; */
+    position: static;
   }
 }

@@ -1,13 +1,14 @@
-import React from 'react'
-import "./HomeAboutUs.css"
-import checked from "./../../../Img/checked.png"
-const HomeAboutUsCard = (props) => {
-  return (
-    <div className='homeAboutUsCard'>
-      <img src={checked} alt="" />
-      <h5>{props.txt}</h5>
-    </div>
-  )
-}
+import React from "react";
+import "./HomeAboutUs.css";
 
-export default HomeAboutUsCard
+const HomeAboutUsCard = ({ icon: Icon, txt }) => {
+  return (
+    <div className="homeAboutUsCard">
+      {Icon && <Icon className="homeAboutUsCard-icon" />}{" "}
+      {/* ✅ render icon component */}
+      <h5>{txt}</h5>
+    </div>
+  );
+};
+
+export default HomeAboutUsCard;

@@ -5,7 +5,7 @@ const SeoServiceHead = () => {
     <div className="seoServiceHead">
       {/* <h6>SERVICE</h6> */}
       <h2>
-        <span>SEO Services in Bangalore</span> for Small Business
+        <span>SEO Services</span> in Bangalore for Small Business
       </h2>
       <p>
         In this digital era, it is essential to your target audience, their

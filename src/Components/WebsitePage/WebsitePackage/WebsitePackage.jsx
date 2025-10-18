@@ -7,7 +7,7 @@ const WebsitePackage = () => {
     document.querySelector(".popup").style.display = "flex";
   };
   return (
-    <div className="seoPackageTable-container">
+    <div className="seoPackageTable-container" id="pricing">
       <div className="seoPackageTable-Head">
         <h2>Unbeatable Pricing Find Your Perfect Plan Now</h2>
         {/* <p>

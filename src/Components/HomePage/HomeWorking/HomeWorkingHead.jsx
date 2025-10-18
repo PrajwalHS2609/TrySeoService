@@ -3,10 +3,14 @@ import "./HomeWorking.css";
 const HomeWorkingHead = () => {
   return (
     <div className="homeWorkingHead">
-      <h2>Working Module for Every Business</h2>
+      <h2>
+        <span> Smart, Scalable, and Ready</span> – The Working Module Built for
+        Every Business Need!
+      </h2>
       <p>
-        We build effective strategies to help you reach customers and prospects
-        across the entire web.
+        Unlock seamless growth with a smart, scalable working module designed to
+        adapt to every business. Streamline operations, boost efficiency, and
+        achieve results—no matter your industry or size.
       </p>
     </div>
   );

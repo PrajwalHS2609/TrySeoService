@@ -3,14 +3,16 @@ import React from "react";
 const WebsiteServiceSubHead = () => {
   return (
     <div className="websiteServicesSubHead-container">
-      <h2>How to build Leads Generating websites?</h2>
+      <h2><span>Websites Designed</span> to Capture Leads and Drive Growth</h2>
       <p>
-        In this digital era, it is essential to your target audience, their
-        demands, & geographical location before you establish the website of
-        your company. Your website aims to receive a large number of visitors
-        and to appear on the first page of a Google search. SEO services aid in
-        the generation of high-quality traffic, which contributes to the
-        expansion of your company.
+        Transform your online presence with websites designed to capture leads
+        and drive growth. At TrySEOServices.Com, we create high-converting,
+        responsive, and SEO-optimized websites tailored to your business needs.
+        Every design focuses on engaging visitors, generating qualified leads,
+        and boosting revenue, ensuring your website works as a powerful growth
+        engine. Combine smart design with strategic functionality and watch your
+        business expand digitally. Turn traffic into customers with our expert
+        website solutions!
       </p>
     </div>
   );
