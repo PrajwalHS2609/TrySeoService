@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import "./SeoPage.css";
 import SeoService from "./SeoService/SeoService";
 import SeoBenefits from "./SeoBenefits/SeoBenefits";
-import SeoPricing from "./SeoPricing/SeoPricing";
 import SeoReasons from "./SeoReasons/SeoReasons";
 import WebsiteFaq from "../WebsitePage/WebsiteFaq/WebsiteFaq";
 import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
@@ -14,6 +13,12 @@ import FranceSeoPageService from "../France/FranceSeoPage/FranceSeoPageService/F
 import FranceSeoPageBenefits from "../France/FranceSeoPage/FranceSeoPageBenefits/FranceSeoPageBenefits";
 import FranceSeoPageReason from "../France/FranceSeoPage/FranceSeoPageReason/FranceSeoPageReason";
 import FranceSeoPageFaq from "../France/FranceSeoPage/FranceSeoPageFaq/FranceSeoPageFaq";
+import SeoServiceHead from "./SeoService/SeoServiceHead";
+import SeoServiceSubHead from "./SeoService/SeoServiceSubHead";
+import SeoServiceBenefits from "./SeoService/SeoServiceBenefits";
+import SeoServiceBook from "./SeoService/SeoServiceBook";
+import SeoServiceBrochure from "./SeoService/SeoServiceBrochure";
+import SeoPackage from "./SeoPackage/SeoPackage";
 const SeoHeader = React.lazy(() => import("./SeoHeader"));
 
 // import HomeHeader from "../HomePage/HomeHeader/HomeHeader";
@@ -69,12 +74,22 @@ const SeoPage = () => {
         <SeoHeader />
       </Suspense>
       <BreadCrumb txt="SEO" />
-      {renderFranceSeoService()}
-      <HomeMarquee />
-      {renderFranceSeoBenefits()}
-      {renderFranceSeoReasons()}
+      <div className="component-container">
+        <div className="component-main">
+          <SeoServiceHead />
+          <div className="component-mainContent">
+            <SeoServiceSubHead />
+            <SeoService />
+            <SeoServiceBenefits />
+            <SeoServiceBook />
+          </div>
+        </div>
+        <div className="component-sidebar">
+          <SeoServiceBrochure />
+        </div>
+      </div>
       <HomeTestimonial />
-      <SeoPricing />
+      <SeoPackage/>
       {renderFranceSeoFaq()}
     </div>
   );

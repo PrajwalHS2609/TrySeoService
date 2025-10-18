@@ -6,6 +6,8 @@
   flex-direction: column;
   gap: 30px;
   width: 100%;
+  background-color: var(--customBg);
+  padding: 30px;
 }
 .websiteHowItHeader {
   display: flex;

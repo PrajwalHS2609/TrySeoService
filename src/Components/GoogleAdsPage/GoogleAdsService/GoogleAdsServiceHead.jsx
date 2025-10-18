@@ -5,7 +5,7 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 const GoogleAdsServiceHead = () => {
   return (
     <div className="googleAdsServiceHead">
-      <h6>SERVICE</h6>
+      {/* <h6>SERVICE</h6> */}
       <h2>
         <span>Google Ads Service</span> For Small Business
       </h2>
@@ -28,7 +28,7 @@ const GoogleAdsServiceHead = () => {
         improving your sales as well as developing the appropriate strategy for
         your company.
       </p>
-      <p>
+      {/* <p>
         You have complete control over your budget in real-time with Google Ads,
         and you only pay for proven sales prospects (clicks). This enables you
         to continually optimize your budget’s use to maximize your return on
@@ -134,7 +134,7 @@ const GoogleAdsServiceHead = () => {
           Returns on Investments are simple to calculate, and you may adjust
           your budget accordingly.
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

@@ -7,44 +7,27 @@ import {
   faHandshake,
   faLineChart,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const SeoService = () => {
+  const card = [
+    { id: 1, icon: faBinoculars, title: "Visibility & Rankings" },
+    { id: 2, icon: faTrafficLight, title: "Web Traffic" },
+    { id: 3, icon: faHandshake, title: "Trustworthy" },
+    { id: 4, icon: faLineChart, title: "Growth" },
+  ];
   return (
-    <div>
-      <SeoServiceHead />
-      <div className="websiteHowItWrapper">
-        <WebsiteHowItCard
-          icon={faBinoculars}
-          head="Visibility & Rankings"
-          classNameIco="howItWorksIco"
-          no="01"
-          num="howItWorksNo1"
-          para="Users are more likely to choose one of the top five choices available by a search engine while looking for a service or product online. SEO services in Bangalore help you rank higher in search results and gain greater online visibility, increasing the chances that potential customers will visit your site and convert."
-        />
-        <WebsiteHowItCard
-          icon={faTrafficLight}
-          head="Web Traffic"
-          idIco="howItWorksIcoColor"
-          no="02"
-          num="howItWorksNo2"
-          para="SEO enhances organic search engine traffic, which boosts the number of daily visits to your page. Because the more relevant people that visit your site, the more probable you are to offer to them, you will see an increase in sales immediately."
-        />
-        <WebsiteHowItCard
-          icon={faHandshake}
-          head="Trustworthy"
-          classNameIco="howItWorksIco"
-          no="03"
-          num="howItWorksNo1"
-          para="The higher you rank on search engines like Google, the better your SEO score is. The improved visibility from higher Google ranks is great to each brand, the trust you develop with potential clients is a secondary advantages."
-        />
-        <WebsiteHowItCard
-          icon={faLineChart}
-          head="Growth"
-          idIco="howItWorksIcoColor"
-          no="04"
-          num="howItWorksNo2"
-          para="The importance of SEO in the development of your brand cannot be overstated. A well-optimized website has a higher chance of attracting new visitors and increasing sales. Our SEO services in Bangalore share your brand across other social platforms like Facebook or Instagram."
-        />
-      </div>
+    <div className="seoService-container">
+      {card.map((x) => (
+        <div className="seoService-card" key={x.id}>
+          <FontAwesomeIcon
+            icon={x.icon}
+            className="seoService-cardIcon"
+          ></FontAwesomeIcon>{" "}
+          <div className="seoService-cardContent">
+            <h3>{x.title}</h3>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

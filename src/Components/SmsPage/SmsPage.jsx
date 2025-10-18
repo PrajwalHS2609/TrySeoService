@@ -7,6 +7,10 @@ import SmsFaq from "./SmsFaq/SmsFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { useLocation } from "react-router-dom";
+import SmsServiceHead from "./SmsService/SmsServiceHead";
+import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
+import SeoServiceBrochure from "../SeoPage/SeoService/SeoServiceBrochure";
+import SmsServiceSubHead from "./SmsService/SmsServiceSubHead";
 const SmsHeader = React.lazy(() => import("./SmsHeader"));
 
 const SmsPage = () => {
@@ -28,9 +32,19 @@ const SmsPage = () => {
         <SmsHeader />
       </Suspense>{" "}
       <BreadCrumb txt="SMS & WhatsApp" />
-      <SmsWhy />
-      <SmsService />
-      <SmsChoose />
+      <div className="component-container">
+        <div className="component-main">
+          <SmsServiceHead />
+          <div className="component-mainContent">
+            <SmsServiceSubHead />
+            <SmsService />
+            <SeoServiceBook />
+          </div>
+        </div>
+        <div className="component-sidebar">
+          <SeoServiceBrochure />
+        </div>
+      </div>
       <HomeTestimonial />
       <SmsFaq />{" "}
     </div>

@@ -8,6 +8,12 @@ import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { useLocation } from "react-router-dom";
+import GoogleAdsPackage from "./GoogleAdsPackage/GoogleAdsPackage";
+import GoogleAdsServiceHead from "./GoogleAdsService/GoogleAdsServiceHead";
+import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
+import GoogleAdsServiceBenefits from "./GoogleAdsService/GoogleAdsServiceBenefits";
+import SeoServiceBrochure from "../SeoPage/SeoService/SeoServiceBrochure";
+import SeoServiceSubHead from "../SeoPage/SeoService/SeoServiceSubHead";
 const GoogleAdsHeader = React.lazy(() => import("./GoogleAdsHeader"));
 
 const GoogleAdsPage = () => {
@@ -27,11 +33,22 @@ const GoogleAdsPage = () => {
         <GoogleAdsHeader />
       </Suspense>
       <BreadCrumb txt="Google Ads" />
-      <GoogleAdsService />
-      <HomeMarquee />
-      <GoogleAdsBenefits />
+      <div className="component-container">
+        <div className="component-main">
+          <GoogleAdsServiceHead />
+          <div className="component-mainContent">
+            <SeoServiceSubHead />
+            <GoogleAdsService />
+            <GoogleAdsServiceBenefits />
+            <SeoServiceBook />
+          </div>
+        </div>
+        <div className="component-sidebar">
+          <SeoServiceBrochure />
+        </div>
+      </div>
       <HomeTestimonial />
-      <GoogleAdsPricing />
+      <GoogleAdsPackage />
       <GoogleAdsFaq />
     </div>
   );

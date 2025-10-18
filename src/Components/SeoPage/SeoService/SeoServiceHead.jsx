@@ -3,7 +3,7 @@ import "./SeoService.css";
 const SeoServiceHead = () => {
   return (
     <div className="seoServiceHead">
-      <h6>SERVICE</h6>
+      {/* <h6>SERVICE</h6> */}
       <h2>
         <span>SEO Services in Bangalore</span> for Small Business
       </h2>

@@ -10,6 +10,12 @@ import HomeMarquee from "./../HomePage/HomeMarquee/HomeMarquee";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { useLocation } from "react-router-dom";
+import SocialMediaServiceHead from "./SocialMediaService/SocialMediaServiceHead";
+import SocialMediaServiceSubHead from "./SocialMediaService/SocialMediaServiceSubHead";
+import SocialMediaServiceBenefits from "./SocialMediaService/SocialMediaServiceBenefits";
+import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
+import WebsiteServiceBrochure from "../WebsitePage/WebsiteService/WebsiteServiceBrochure";
+import SocialMediaPackage from "./SocialMediaService/SocialMediaPackage";
 const SocialMediaHeader = React.lazy(() => import("./SocialMediaHeader"));
 
 const SocialMediaPage = () => {
@@ -31,12 +37,21 @@ const SocialMediaPage = () => {
         <SocialMediaHeader />
       </Suspense>{" "}
       <BreadCrumb txt="Social Media " />
-      <SocialMediaWhyHead />
-      <HomeMarquee />
-      <SocialMediaBenefits />
-      <SocialMediaChoose />
+      <div className="component-container">
+        <div className="component-main">
+          <SocialMediaServiceHead />
+          <div className="component-mainContent">
+            <SocialMediaServiceSubHead />
+            <SocialMediaServiceBenefits />
+            <SeoServiceBook />
+          </div>
+        </div>
+        <div className="component-sidebar">
+          <WebsiteServiceBrochure />
+        </div>
+      </div>
       <HomeTestimonial />
-      <SocialMediaPricing />
+      <SocialMediaPackage />
       <SocialMediaFaq />
     </div>
   );

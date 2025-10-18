@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
 .websiteClientHead > h6 {
   color: var(--customColor);
@@ -38,36 +38,44 @@
 .websiteClientMain {
   /* border: solid red; */
   width: 100%;
-  height: 100%; 
-  padding: 10px;
+  height: 100%;
+  padding: 0px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 .websiteClientMainContent {
   /* border: solid blue; */
-  width: 70%;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-content: center;
   flex-direction: row;
-  padding: 20px;
+  padding: 0px;
 }
 .websiteClientMainContent > div {
   width: 100%;
 }
 .item {
   /* border: solid green; */
-  width: 150px;
-  height: 150px;
+  width: 240px;
+  height: 200px;
   overflow: hidden;
-  margin-left: 20%;
+  background-color: var(--customBg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transition: 1s ease;
+  &:hover{
+    background-color: white
+
+  }
 }
 .item > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

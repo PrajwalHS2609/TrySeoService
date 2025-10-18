@@ -1,9 +1,9 @@
 import React from "react";
 
-const PaymentService = () => {
+const PaymentServiceHead = () => {
   return (
-    <div className="socialMediaWhyHead">
-      <h6>SERVICE</h6>
+    <div className="seoServiceHead">
+      {/* <h6>SERVICE</h6> */}
       <h2>
         <span>Payment Gateway </span>Services in Bangalore for Business &
         eCommerce Websites
@@ -36,4 +36,4 @@ const PaymentService = () => {
   );
 };
 
-export default PaymentService;
+export default PaymentServiceHead;

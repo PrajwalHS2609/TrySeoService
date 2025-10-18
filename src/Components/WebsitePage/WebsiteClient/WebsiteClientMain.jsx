@@ -15,18 +15,18 @@ import arra from "./../../../Img/clients/Arrasuites.png";
 import mm from "./../../../Img/clients/MM.png";
 import scent from "./../../../Img/clients/Scent.png";
 import buildurspace from "./../../../Img/clients/BuildUrSpace.png";
-import twirl from "./../../../Img/clients/twirl.jpg";
+import twirl from "./../../../Img/clients/twirl.png";
 
 const WebsiteClientMain = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 6,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 6,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -57,7 +57,7 @@ const WebsiteClientMain = () => {
           responsive={responsive}
           swipeable={true}
           draggable={true}
-          showDots={showDots}
+          showDots={false}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
@@ -135,7 +135,7 @@ const WebsiteClientMain = () => {
               <img src={buildurspace} alt="buildurspace" loading="lazy" />
             </div>
           </div>
-           <div>
+          <div>
             <div className="item">
               <img src={twirl} alt="twirl" loading="lazy" />
             </div>

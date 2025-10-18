@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import PaymentService from "./PaymentService";
 import PaymentWhy from "./PaymentWhy";
 import PaymentKey from "./PaymentKey";
 import PaymentReason from "./PaymentReason/PaymentReason";
@@ -9,6 +8,11 @@ import PaymentFaq from "./PaymentFaq/PaymentFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { useLocation } from "react-router-dom";
+import PaymentServiceHead from "./PaymentService/PaymentServiceHead";
+import PaymentServiceSubHead from "./PaymentService/PaymentServiceSubHead";
+import PaymentServiceFactors from "./PaymentService/PaymentServiceFactors";
+import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
+import WebsiteServiceBrochure from "../WebsitePage/WebsiteService/WebsiteServiceBrochure";
 const PaymentHeader = React.lazy(() => import("./PaymentHeader"));
 
 const PaymentPage = () => {
@@ -30,11 +34,19 @@ const PaymentPage = () => {
         <PaymentHeader />
       </Suspense>
       <BreadCrumb txt="Payment Gateway" />
-      <PaymentService />
-      <PaymentWhy />
-      <PaymentKey />
-      <PaymentFactor />
-      <PaymentReason />
+      <div className="component-container">
+        <div className="component-main">
+          <PaymentServiceHead />
+          <div className="component-mainContent">
+            <PaymentServiceSubHead />
+            <PaymentServiceFactors />
+            <SeoServiceBook />
+          </div>
+        </div>
+        <div className="component-sidebar">
+          <WebsiteServiceBrochure />
+        </div>
+      </div>
       <HomeTestimonial />
       <PaymentFaq />
     </div>

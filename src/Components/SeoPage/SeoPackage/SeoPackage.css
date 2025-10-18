@@ -1,0 +1,98 @@
+.seoPackageTable-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.seoPackageTable-Head > h2 {
+  font-size: 50px;
+  text-align: center;
+}
+.seoPackageTable-Head > p {
+  color: rgb(102, 102, 102);
+  text-align: justify;
+  width: 100%;
+  font-size: 20px;
+}
+.seoPackageTable-content {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--customColor);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: solid white 1px;
+
+  /* ✅ Add these */
+  border-collapse: collapse;
+  /* border: 1px solid red; */
+}
+.seoPackageTable-content > thead > tr > th {
+  border: solid gray 1px;
+  width: calc(100% / 8);
+  height: 60px;
+  background-color: var(--customColor);
+  color: white;
+}
+.seoPackageTable-content > thead > tr > th:nth-child(1) {
+  background-color: white;
+  color: var(--customColor);
+  font-size: 25px;
+}
+.seoPackageTable-content > tbody > tr > td {
+  border: 1px solid grey;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.seoPackageTable-content > tbody > tr > td > button {
+  border:1px solid var(--customColor);
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: 300ms ease;
+  color: var(--customColor);&:hover{
+    background-color: var(--customColor);
+    color: white;
+  }
+}
+.seoPackageTable-content > tbody > tr > th {
+  border: 1px solid grey;
+  background-color: var(--customColor);
+  color: white;
+  padding: 10px;
+}
+.seoPackageTable-checkIco {
+  color: green;
+  font-size: 30px;
+}
+.seoPackageTable-crossIco {
+  color: red;
+  font-size: 30px;
+}
+.seoPackageTable-exIco {
+  color: gold;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .seoPackageTable-container {
+    width: 100%;
+    overflow-x: auto;
+
+    align-items: flex-start;
+  }
+  .seoPackageTable-content > thead > tr > th:nth-child(1) {
+    background-color: white;
+    color: var(--customColor);
+    font-size: 20px;
+  }
+  .seoPackageTable-content > tbody > tr > td {
+    padding: 10px;
+  }
+}

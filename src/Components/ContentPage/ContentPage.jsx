@@ -9,6 +9,13 @@ import ContentFaq from "./ContentFaq/ContentFaq";
 import { Helmet } from "react-helmet-async";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { useLocation } from "react-router-dom";
+import ContentServicePackage from "./ContentService/ContentServicePackage";
+import ContentServiceWhy from "./ContentService/ContentServiceWhy";
+import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
+import ContentServiceBenefits from "./ContentService/ContentServiceBenefits";
+import WebsiteServiceBrochure from "../WebsitePage/WebsiteService/WebsiteServiceBrochure";
+import ContentServiceSubHead from "./ContentService/ContentServiceSubHead";
+import ContentServiceHead from "./ContentService/ContentServiceHead";
 const ContentPageHeader = React.lazy(() => import("./ContentPageHeader"));
 
 const ContentPage = () => {
@@ -28,11 +35,22 @@ const ContentPage = () => {
         <ContentPageHeader />
       </Suspense>
       <BreadCrumb txt="Content Writing" />
-      <ContentPageWhy />
-      <ContentBenefits />
-      <ContentReason />
+      <div className="component-container">
+        <div className="component-main">
+          <ContentServiceHead />
+          <div className="component-mainContent">
+            <ContentServiceSubHead />
+            <ContentServiceWhy />
+            <ContentServiceBenefits />
+            <SeoServiceBook />
+          </div>
+        </div>
+        <div className="component-sidebar">
+          <WebsiteServiceBrochure />
+        </div>
+      </div>
       <HomeTestimonial />
-      <ContentPricing />
+      <ContentServicePackage />
       <ContentFaq />
     </div>
   );

@@ -10,15 +10,15 @@
 
 :root {
   --customColor: #fd8643;
-  --customWhite: rgb(243, 243, 243);
-    --customBg:#ffe5d668;
+  --customWhite: rgb(255, 255, 255);
+  --customBg: #ffe5d668;
 
   --customGradient: linear-gradient(
     91.9deg,
     rgb(75, 207, 250) 6.3%,
     rgb(25, 159, 249) 98.9%
   );
-  --lpCustomBg:#FFFFF5
+  --lpCustomBg: #fffff5;
 }
 
 .App {

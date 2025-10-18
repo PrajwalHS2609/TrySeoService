@@ -1,9 +1,7 @@
 import React, { Suspense } from "react";
 import "./WebsitePage.css";
 import HomeTestimonial from "./../HomePage/HomeTestimonial/HomeTestimonial";
-import HomePricing from "./../HomePage/HomePricing/HomePricing";
 import WebsiteHowIt from "./WebsiteHowIt/WebsiteHowIt";
-import HomeMarquee from "../HomePage/HomeMarquee/HomeMarquee";
 import WebsiteBenefits from "./WebsiteBenefits/WebsiteBenefits";
 import WebsiteWhy from "./WebsiteWhy/WebsiteWhy";
 import WebsiteFaq from "./WebsiteFaq/WebsiteFaq";
@@ -14,6 +12,13 @@ import FranceHowItWorks from "../France/FranceWebsitePage/FranceHowItWorks/Franc
 import FranceBenefits from "../France/FranceWebsitePage/FranceBenefits/FranceBenefits";
 import FranceWebsiteWhy from "../France/FranceWebsitePage/FranceWebsiteWhy/FranceWebsiteWhy";
 import FranceWebsiteFaq from "../France/FranceWebsitePage/FranceWebsiteFaq/FranceWebsiteFaq";
+import WebsiteServiceHow from "./WebsiteService/WebsiteServiceHow";
+import WebsiteServiceHead from "./WebsiteService/WebsiteServiceHead";
+import WebsiteServiceSubHead from "./WebsiteService/WebsiteServiceSubHead";
+import WebsiteServiceBenefits from "./WebsiteService/WebsiteServiceBenefits";
+import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
+import WebsiteServiceBrochure from "./WebsiteService/WebsiteServiceBrochure";
+import WebsitePackage from "./WebsitePackage/WebsitePackage";
 const WebsiteHeader = React.lazy(() => import("./WebsiteHeader/WebsiteHeader"));
 
 const WebsitePage = () => {
@@ -27,7 +32,7 @@ const WebsitePage = () => {
   //     case "fr":
   //       return <FranceWebsiteIntro />;
   //     default:
-  //       return; 
+  //       return;
   //   }
   // };
 
@@ -80,14 +85,22 @@ const WebsitePage = () => {
       </Suspense>
 
       <BreadCrumb txt="Website" />
-      {/* {renderFranceIntro()} */}
-      {renderFranceHow()}
-      <HomeMarquee />
-      {renderFranceBenefits()}
-      {renderFranceWebsiteWhy()}
-      <HomePricing />
+      <div className="component-container">
+        <div className="component-main">
+          <WebsiteServiceHead />
+          <div className="component-mainContent">
+            <WebsiteServiceSubHead />
+            <WebsiteServiceHow />
+            <WebsiteServiceBenefits />
+            <SeoServiceBook />
+          </div>
+        </div>
+        <div className="component-sidebar">
+          <WebsiteServiceBrochure />
+        </div>
+      </div>
+      <WebsitePackage/>
       <HomeTestimonial />
-      {renderFranceWebsiteFaq()}
     </div>
   );
 };

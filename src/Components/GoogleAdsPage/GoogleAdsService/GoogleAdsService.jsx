@@ -1,6 +1,4 @@
 import React from "react";
-import GoogleAdsServiceHead from "./GoogleAdsServiceHead";
-import WebsiteHowItCard from "../../WebsitePage/WebsiteHowIt/WebsiteHowItCard";
 import {
   faMagnifyingGlass,
   faRectangleAd,
@@ -11,68 +9,35 @@ import {
   faShoePrints,
   faRectangleList,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const GoogleAdsService = () => {
+  const card = [
+    { id: 1, icon: faMagnifyingGlass, title: "Keyword Research and Selection" },
+    { id: 2, icon: faRectangleAd, title: "Competitive Research" },
+    { id: 3, icon: faUserSecret, title: "Text and Image Ads Creation" },
+    { id: 4, icon: faBrain, title: "Ideas to Optimize Landing Pages" },
+    { id: 5, icon: faIndianRupee, title: "PPC Cost Management" },
+    {
+      id: 6,
+      icon: faWrench,
+      title: "Ad Campaign Modification and Improvements",
+    },
+    { id: 7, icon: faShoePrints, title: "Conversion Tracking" },
+    { id: 8, icon: faRectangleList, title: "Monthly Performance Report" },
+  ];
   return (
-    <div className="googleAdsService">
-      <GoogleAdsServiceHead />
-      <div className="websiteHowItWrapper">
-        <WebsiteHowItCard
-          icon={faMagnifyingGlass}
-          head="Keyword Research and Selection"
-          classNameIco="howItWorksIco"
-          no="01"
-          num="howItWorksNo1"
-        />
-        <WebsiteHowItCard
-          icon={faRectangleAd}
-          head="Competitive Research"
-          idIco="howItWorksIcoColor"
-          no="02"
-          num="howItWorksNo2"
-        />
-        <WebsiteHowItCard
-          icon={faUserSecret}
-          head="Text and Image Ads Creation"
-          classNameIco="howItWorksIco"
-          no="03"
-          num="howItWorksNo1"
-        />
-        <WebsiteHowItCard
-          icon={faBrain}
-          head="Ideas to Optimize Landing Pages"
-          idIco="howItWorksIcoColor"
-          no="04"
-          num="howItWorksNo2"
-        />
-        <WebsiteHowItCard
-          icon={faIndianRupee}
-          head="PPC Cost Management"
-          classNameIco="howItWorksIco"
-          no="05"
-          num="howItWorksNo1"
-        />
-        <WebsiteHowItCard
-          icon={faWrench}
-          head="Ad Campaign Modification and Improvements"
-          idIco="howItWorksIcoColor"
-          no="06"
-          num="howItWorksNo2"
-        />
-        <WebsiteHowItCard
-          icon={faShoePrints}
-          head="Conversion Tracking"
-          classNameIco="howItWorksIco"
-          no="07"
-          num="howItWorksNo1"
-        />
-        <WebsiteHowItCard
-          icon={faRectangleList}
-          head="Monthly Performance Report"
-          idIco="howItWorksIcoColor"
-          no="08"
-          num="howItWorksNo2"
-        />
-      </div>
+    <div className="seoService-container">
+      {card.map((x) => (
+        <div className="seoService-card" key={x.id}>
+          <FontAwesomeIcon
+            icon={x.icon}
+            className="seoService-cardIcon"
+          ></FontAwesomeIcon>{" "}
+          <div className="seoService-cardContent">
+            <h3>{x.title}</h3>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
