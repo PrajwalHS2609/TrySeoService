@@ -16,6 +16,7 @@ import ContentServiceBenefits from "./ContentService/ContentServiceBenefits";
 import WebsiteServiceBrochure from "../WebsitePage/WebsiteService/WebsiteServiceBrochure";
 import ContentServiceSubHead from "./ContentService/ContentServiceSubHead";
 import ContentServiceHead from "./ContentService/ContentServiceHead";
+import SeoSideBarLinks from "../SeoPage/SeoService/SeoSideBarLinks";
 const ContentPageHeader = React.lazy(() => import("./ContentPageHeader"));
 
 const ContentPage = () => {
@@ -47,6 +48,7 @@ const ContentPage = () => {
         </div>
         <div className="component-sidebar">
           <WebsiteServiceBrochure />
+          <SeoSideBarLinks/>
         </div>
       </div>
       <HomeTestimonial />

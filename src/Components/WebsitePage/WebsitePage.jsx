@@ -19,6 +19,7 @@ import WebsiteServiceBenefits from "./WebsiteService/WebsiteServiceBenefits";
 import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
 import WebsiteServiceBrochure from "./WebsiteService/WebsiteServiceBrochure";
 import WebsitePackage from "./WebsitePackage/WebsitePackage";
+import SeoSideBarLinks from "../SeoPage/SeoService/SeoSideBarLinks";
 const WebsiteHeader = React.lazy(() => import("./WebsiteHeader/WebsiteHeader"));
 
 const WebsitePage = () => {
@@ -97,6 +98,7 @@ const WebsitePage = () => {
         </div>
         <div className="component-sidebar">
           <WebsiteServiceBrochure />
+          <SeoSideBarLinks/>
         </div>
       </div>
       <WebsitePackage/>

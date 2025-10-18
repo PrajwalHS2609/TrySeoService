@@ -11,6 +11,7 @@ import SmsServiceHead from "./SmsService/SmsServiceHead";
 import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
 import SeoServiceBrochure from "../SeoPage/SeoService/SeoServiceBrochure";
 import SmsServiceSubHead from "./SmsService/SmsServiceSubHead";
+import SeoSideBarLinks from "../SeoPage/SeoService/SeoSideBarLinks";
 const SmsHeader = React.lazy(() => import("./SmsHeader"));
 
 const SmsPage = () => {
@@ -43,6 +44,7 @@ const SmsPage = () => {
         </div>
         <div className="component-sidebar">
           <SeoServiceBrochure />
+          <SeoSideBarLinks />
         </div>
       </div>
       <HomeTestimonial />

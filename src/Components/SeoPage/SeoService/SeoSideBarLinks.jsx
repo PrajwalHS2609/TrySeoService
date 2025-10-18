@@ -9,7 +9,7 @@ const SeoSideBarLinks = () => {
     <div className="seoSideBarLinks">
       <li>
         <NavLink
-          to={`/${countryCode}`}
+          to={`/${countryCode}`}end
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Home

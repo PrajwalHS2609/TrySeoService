@@ -11,6 +11,7 @@ import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
 import EmailPageServicesHead from "./EmailPageServices/EmailPageServicesHead";
 import EmailPageServices from "./EmailPageServices/EmailPageServices";
 import SeoServiceSubHead from "../SeoPage/SeoService/SeoServiceSubHead";
+import SeoSideBarLinks from "../SeoPage/SeoService/SeoSideBarLinks";
 const EmailPageHeader = React.lazy(() => import("./EmailPageHeader"));
 
 const EmailPage = () => {
@@ -41,6 +42,7 @@ const EmailPage = () => {
         </div>
         <div className="component-sidebar">
           <SeoServiceBrochure />
+          <SeoSideBarLinks />
         </div>
       </div>
       <HomeTestimonial />

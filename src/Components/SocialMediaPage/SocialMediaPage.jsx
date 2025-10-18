@@ -16,6 +16,7 @@ import SocialMediaServiceBenefits from "./SocialMediaService/SocialMediaServiceB
 import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
 import WebsiteServiceBrochure from "../WebsitePage/WebsiteService/WebsiteServiceBrochure";
 import SocialMediaPackage from "./SocialMediaService/SocialMediaPackage";
+import SeoSideBarLinks from "../SeoPage/SeoService/SeoSideBarLinks";
 const SocialMediaHeader = React.lazy(() => import("./SocialMediaHeader"));
 
 const SocialMediaPage = () => {
@@ -48,6 +49,7 @@ const SocialMediaPage = () => {
         </div>
         <div className="component-sidebar">
           <WebsiteServiceBrochure />
+          <SeoSideBarLinks/>
         </div>
       </div>
       <HomeTestimonial />

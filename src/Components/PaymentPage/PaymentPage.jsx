@@ -13,6 +13,7 @@ import PaymentServiceSubHead from "./PaymentService/PaymentServiceSubHead";
 import PaymentServiceFactors from "./PaymentService/PaymentServiceFactors";
 import SeoServiceBook from "../SeoPage/SeoService/SeoServiceBook";
 import WebsiteServiceBrochure from "../WebsitePage/WebsiteService/WebsiteServiceBrochure";
+import SeoSideBarLinks from "../SeoPage/SeoService/SeoSideBarLinks";
 const PaymentHeader = React.lazy(() => import("./PaymentHeader"));
 
 const PaymentPage = () => {
@@ -45,6 +46,7 @@ const PaymentPage = () => {
         </div>
         <div className="component-sidebar">
           <WebsiteServiceBrochure />
+          <SeoSideBarLinks />
         </div>
       </div>
       <HomeTestimonial />
