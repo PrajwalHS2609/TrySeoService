@@ -183,9 +183,9 @@ const WebsitePackage = () => {
           </tr>
           <tr>
             <th>Price</th>
-            <td>₹15000/monthly</td>
-            <td>₹2500/monthly</td>
-            <td>₹50000/monthly</td>
+            <td>₹15000</td>
+            <td>₹25000</td>
+            <td>₹50000</td>
           </tr>
           <tr>
             <td></td>

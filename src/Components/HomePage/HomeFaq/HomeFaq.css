@@ -113,6 +113,9 @@
   .homeFaqContent2 {
     width: 100%;
   }
+  .homeFaqHead > h2 {
+  font-size: 40px;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 980px) {
   .homeFaq {

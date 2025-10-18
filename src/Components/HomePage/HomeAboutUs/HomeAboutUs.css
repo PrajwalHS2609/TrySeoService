@@ -75,7 +75,7 @@
   color: rgb(0, 174, 255);
 }
 .homeAboutUsHeader > h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .homeAboutUsHeader > h2 > span {
   color: var(--customColor);

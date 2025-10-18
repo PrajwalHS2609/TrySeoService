@@ -157,7 +157,7 @@
   border-radius: 20px;
 }
 .seoServiceBook-content > h3 {
-  color: var(--customColor);
+  color: var(--customColory);
 }
 .seoServiceBook-content:nth-child(1) {
   width: 60%;
@@ -239,6 +239,8 @@
   color: var(--customColor);
   font-size: 40px;
 }
+
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .seoServiceHead > h2 {
     font-size: 40px;
