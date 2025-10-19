@@ -66,7 +66,7 @@ const HomePage = () => {
       <HomeMarquee />
       <HomeWorking />
       <HomeFocused />
-      {/* {renderHomeWhatWe()} */}
+      {renderHomeWhatWe()}
       <HomeTestimonial />
       <HomeFaq />
     </div>

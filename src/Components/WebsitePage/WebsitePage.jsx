@@ -50,7 +50,7 @@ const WebsitePage = () => {
       case "fr":
         return <FranceBenefits />;
       default:
-        return <WebsiteBenefits />; // default version (India)
+        return <WebsiteServiceBenefits />; // default version (India)
     }
   };
   const renderFranceWebsiteWhy = () => {
@@ -92,18 +92,18 @@ const WebsitePage = () => {
           <div className="component-mainContent">
             <WebsiteServiceSubHead />
             <WebsiteServiceHow />
-            <WebsiteServiceBenefits />
+            {renderFranceBenefits()}
             <SeoServiceBook />
           </div>
         </div>
         <div className="component-sidebar">
           <WebsiteServiceBrochure />
-          <SeoSideBarLinks/>
+          <SeoSideBarLinks />
         </div>
       </div>
-      <WebsitePackage/>
+      <WebsitePackage />
       <HomeTestimonial />
-      <WebsiteFaq/>
+      <WebsiteFaq />
     </div>
   );
 };

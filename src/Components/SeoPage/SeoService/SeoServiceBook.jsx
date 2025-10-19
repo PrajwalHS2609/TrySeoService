@@ -1,6 +1,6 @@
 import React from "react";
 import "./SeoService.css";
-
+import bookImg from "./../../../Img/book1.png"
 const SeoServiceBook = () => {
   const handlePopUp = (e) => {
     e.preventDefault();
@@ -34,8 +34,8 @@ const SeoServiceBook = () => {
       </div>
       <div className="seoServiceBook-content">
         <img
-          src="https://svhasvprwe7647ea2604.blob.core.windows.net/blobsvhasvprwe7647ea2604/wp-content/uploads/2023/08/booking.png"
-          alt=""
+          src={bookImg}
+          alt="book Img"
         />
       </div>
     </div>
