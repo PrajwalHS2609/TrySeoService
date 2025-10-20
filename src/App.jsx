@@ -46,6 +46,7 @@ import CategoryPage from "./Components/BlogPage/Category";
 import CountryRoute from "./Components/CountryRoute";
 import DynamicCountryOrSlug from "./Components/DynamicCountryOrSlug";
 import LpPetsClinic from "./Components/LandingPage/LpPetsClinic/LpPetsClinic";
+import LpMedical from "./Components/LandingPage/LpMedical/LpMedical";
 const hideNavbarPaths = [
   ":countryCode/lp",
   ":countryCode/lp/seo-audit",
@@ -54,6 +55,8 @@ const hideNavbarPaths = [
   ":countryCode/lp/competitor-analysis",
   ":countryCode/lp/seo-reporting",
   ":countryCode/lp-petClinic",
+    ":countryCode/lp-medical",
+
 ];
 function MainApp() {
   const location = useLocation();
@@ -209,6 +212,8 @@ function MainApp() {
           }
         />
         <Route path=":countryCode/lp-petClinic" element={<LpPetsClinic />} />
+                <Route path=":countryCode/lp-medical" element={<LpMedical />} />
+
       </Routes>
 
       <PopUp />

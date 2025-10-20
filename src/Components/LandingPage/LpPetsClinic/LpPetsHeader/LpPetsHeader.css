@@ -83,6 +83,7 @@
   height: 80px;
   overflow: hidden;
   border: 5px solid black;
+background-color: white;
 }
 .lpPetsHeader-logo:nth-child(2) {
   margin-left: -20px;
