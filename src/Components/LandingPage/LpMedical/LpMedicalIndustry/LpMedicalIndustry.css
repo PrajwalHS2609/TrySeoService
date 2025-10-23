@@ -1,0 +1,74 @@
+.lpMedicalIndustry-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+.lpMedicalIndustry-content:nth-child(1) {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpMedicalIndustry-content > h2 {
+  font-size: 40px;
+    text-align: center;
+
+}
+.lpMedicalIndustry-content > h2 > span {
+  color: var(--customColor);
+}
+.lpMedicalIndustry-content > p {
+  width: 70%;
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+}
+.lpMedicalIndustry-content > b {
+  color: var(--customColor);
+  font-size: 20px;  text-align: center;
+
+}
+.lpMedicalIndustry-content:nth-child(2) {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px;
+  width: 70%;
+}
+.lpMedicalIndustry-card {
+  /* border: solid green; */
+  width: 200px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--customBg);
+  padding: 10px;
+}
+.lpMedicalIndustry-card > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.lpMedicalIndustry-card > h5 {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+.lpMedicalIndustry-content > p {
+  width: 100%;
+    text-align: justify;
+
+}
+
+
+}

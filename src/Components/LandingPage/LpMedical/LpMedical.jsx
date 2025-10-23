@@ -1,14 +1,32 @@
-import React from 'react'
-import LpMedicalNavbar from './LpMedicalNavbar/LpMedicalNavbar'
-import LpMedicalHeader from './LpMedicalHeader.jsx/LpMedicalHeader'
+import React from "react";
+import LpMedicalNavbar from "./LpMedicalNavbar/LpMedicalNavbar";
+import LpMedicalHeader from "./LpMedicalHeader.jsx/LpMedicalHeader";
+import LpMedicalHow from "./LpMedicalHow/LpMedicalHow";
+import LpMedicalFooter from "./LpMedicalFooter/LpMedicalFooter";
+import LpMedicalWork from "./LpMedicalWork/LpMedicalWork";
+import LpMedicalClient from "./LpMedicalClient/LpMedicalClient";
+import LpMedicalWhy from "./LpMedicalWhy/LpMedicalWhy";
+import LpMedicalIndustry from "./LpMedicalIndustry/LpMedicalIndustry";
+import LpMedicalBook from "./LpMedicalBook/LpMedicalBook";
+import LpMedicalContact from "./LpMedicalContact/LpMedicalContact";
+import LpMedicalAcquisition from "./LpMedicalAcquisition/LpMedicalAcquisition";
 
 const LpMedical = () => {
   return (
     <div>
-      <LpMedicalNavbar/>
-      <LpMedicalHeader/>
+      <LpMedicalNavbar />
+      <LpMedicalHeader />
+      <LpMedicalClient />
+      <LpMedicalHow />
+      <LpMedicalAcquisition/>
+      <LpMedicalWork />
+      <LpMedicalWhy />
+      <LpMedicalIndustry />
+      <LpMedicalBook/>
+      <LpMedicalContact/>
+      <LpMedicalFooter />
     </div>
-  )
-}
+  );
+};
 
-export default LpMedical
+export default LpMedical;

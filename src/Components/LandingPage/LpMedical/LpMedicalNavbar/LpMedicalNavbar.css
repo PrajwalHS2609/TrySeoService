@@ -21,7 +21,7 @@
   align-items: center;
   gap: 50px;
 }
-.logoContainer {
+.lpMedical-logoContainer {
   /* border: solid red; */
   width: 15%;
   height: 100%;
@@ -30,7 +30,7 @@
   align-items: center;
   overflow: hidden;
 }
-.logoContainer > a > img {
+.lpMedical-logoContainer > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -140,16 +140,23 @@
   visibility: visible;
 }
 /* ---------------------respMenuBar--------------------------- */
-.respMenuBar {
+.lpMedical-respMenuBar {
   /* border: solid red; */
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-left: 130px;
   display: none;
 }
-.respMenuBar > img {
+
+.lpMedicalMenuIcon {
   width: 100%;
   height: 100%;
+  color: var(--customColor);
+}
+.lpMedicalMenu-DropIcon {
+  width: 100%;
+  height: 100%;
+  color: var(--customColor);
 }
 .respMenu {
   /* border: solid blue; */
@@ -302,7 +309,7 @@
     border: solid brown;
     border-radius: 0px;
   }
-  .respMenuBar {
+  .lpMedical-respMenuBar {
     /* border: solid red; */
     display: block;
   }
@@ -310,7 +317,7 @@
   .menuContainerWrapper {
     display: none;
   }
-  .logoContainer {
+  .lpMedical-logoContainer {
     /* border: solid red; */
     width: 50%;
     height: 100%;
@@ -318,47 +325,10 @@
     justify-content: center;
     align-items: center;
   }
-  .logoContainer > a > img {
+  .lpMedical-logoContainer > a > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 990px) {
-  .menuContainerList {
-    display: none;
-  }
-
-  .navbarContent {
-    border: solid brown;
-    border-radius: 0px;
-  }
-  .respMenuBar {
-    /* border: solid red; */
-    display: block;
-  }
-
-  .menuContainerWrapper {
-    display: none;
-  }
-  .logoContainer {
-    /* border: solid red; */
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .logoContainer > a > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .respMenuBar {
-    /* border: solid red; */
-    width: 50px;
-    height: 50px;
-    margin-left: 300px;
-    display: flex;
+    object-fit: contain;
+    transform: scale(2);
   }
 }

@@ -59,8 +59,8 @@ const LpMedicalMenu = () => {
           </NavHashLink>
         </li>
       </div>
-      <div className="respMenuBar">
-        <IoMenu onClick={showSideBar} />
+      <div className="lpMedical-respMenuBar">
+        <IoMenu onClick={showSideBar}className="lpMedicalMenuIcon" />
       </div>
       <div className="respMenu">
         <div className="innerRespMenu">

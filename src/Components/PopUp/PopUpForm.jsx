@@ -36,57 +36,83 @@ const PopUpForm = () => {
       });
     }
   };
+  let handleExit = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "none";
+  };
   return (
-    <div className="contactUsForm" id="popUpForm">
-      <h6>GET IN TOUCH</h6>
-      <h3>Drop A Line!</h3>
-      <form action="" onSubmit={onSubmit}>
-        <div className="firstLayer">
-          {" "}
-          <input
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            required
-            autoComplete="off"
-          />
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            required
-            autoComplete="off"
-          />
-          <input
-            type="phone"
-            placeholder="Phone number"
-            required
-            autoComplete="off"
-            name="phone"
-          />
-        </div>
-        <div className="secondLayer">
-          <textarea
-            placeholder="Your Message"
-            required
-            autoComplete="off"
-            name="message"
-          ></textarea>
-        </div>
-        <div className="thirdLayer">
-          {" "}
-          <button type="submit">Send Message</button>
-        </div>
-        <div className="privacy">
-          {" "}
-          <input type="checkbox" name="check" id="check" required checked />I
-          give my consent to TrySEOServices.Com's Digital Marketing team to
-          reach out to me with updates and notifications through Email, SMS,
-          WhatsApp, and Voice Calls, in accordance with their Privacy Policy.
-          This authorization supersedes any registration under
-          DNC/NDNC guidelines.
-        </div>
-      </form>
+    <div className="overlay">
+      <div className="form-container">
+        <button className="close-btn" onClick={handleExit}>
+          ✕
+        </button>
+
+        <h2>Send Us a Message</h2>
+        <p className="subtitle">
+          We'd love to hear from you! Fill out the form below and we'll get in
+          touch soon.
+        </p>
+
+        <form onSubmit={onSubmit}>
+          <div className="input-layer">
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              required
+              autoComplete="off"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              required
+              autoComplete="off"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              name="phone"
+              required
+              autoComplete="off"
+            />
+          </div>
+
+          <div className="second-layer">
+            <textarea
+              placeholder="Your Message"
+              name="message"
+              required
+              autoComplete="off"
+            ></textarea>
+          </div>
+
+          <div className="third-layer">
+            <button className="frutiger-button" id="formButtonPop">
+              <div className="inner">
+                <span className="text">Book Appointment</span>
+              </div>
+            </button>{" "}
+          </div>
+
+          <div className="privacy">
+            <label>
+              <input
+                type="checkbox"
+                name="consent"
+                id="check"
+                required
+                checked
+              />
+              I give my consent to TrySEOServices.Com's Digital Marketing team
+              to reach out to me with updates and notifications through Email,
+              SMS, WhatsApp, and Voice Calls, in accordance with their Privacy
+              Policy. This authorization supersedes any registration under
+              DNC/NDNC guidelines.
+            </label>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

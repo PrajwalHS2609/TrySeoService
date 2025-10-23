@@ -1,20 +1,37 @@
 .lpMedicalHeader-container {
-  border: solid red;
-  height: 600px;
+  /* border: solid red; */
+  height: 610px;
   width: 100%;
-  position: relative;
 }
-.lpMedicalHeader-cover {
-  border: solid green;
+.carousel-container {
+  /* border: solid brown; */
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.422);
+}
+.carousel-item {
+  /* border: solid black; */
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.carousel-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: solid red; */
+}
+
+.lpMedicalHeader-cover {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   left: 0;
 }
 .lpMedicalHeader-content {
-  border: solid yellow;
+  /* border: solid yellow; */
   height: 100%;
   width: 50%;
   padding: 4rem;
@@ -24,20 +41,89 @@
   flex-direction: column;
   gap: 10px;
 }
-.lpMedicalHeader-btn{
-    border: solid blue;
+
+.lpMedicalHeader-content > h6 {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--customColor);
 }
-.lpMedicalHeader-content>h6{
-font-size: 25px;
-font-weight: bold;
-color: white;
+.lpMedicalHeader-content > h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
 }
-.lpMedicalHeader-content>h2{
-    font-size: 50px;
-    font-weight: bold;
+.lpMedicalHeader-content > p {
+  font-size: 20px;
+  color: grey;
+  text-align: justify;
+}
+.lpMedicalHeader-btn {
+  /* border: solid green; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* .carousel-control-next,
+.carousel-control-prev {
+  height: 100px;
+} */
+.lpMedicalHeader-btn > a {
+  border: solid 2px var(--customColor);
+  border-radius: 2px;
+  background-color: transparent;
+  box-shadow: 0px 4px 6px 0px #0008;
+  transition: 300ms ease all;
+  padding: 1em;
+  color: var(--customColor);
+  font-weight: 550;
+  text-decoration: none;
+  &:hover {
+    background-color: black;
     color: white;
+    border: solid 2px transparent;
+  }
 }
-.lpMedicalHeader-content>p{
-    font-size: 20px;
-    color: white;
+@media screen and (max-width: 768px) {
+  .lpMedicalHeader-container {
+    /* border: solid red; */
+    height: 90vh;
+    width: 100%;
+  }
+  .carousel-item {
+    /* border: solid black; */
+    width: 100%;
+    height: 90vh;
+  }
+  .lpMedicalHeader-cover {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+}
+  .lpMedicalHeader-content {
+    /* border: solid yellow; */
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lpMedicalHeader-btn {
+    /* border: solid green; */
+    flex-direction: column;
+  }
+  .lpMedicalHeader-content > h2 {
+    text-align: center;
+  }
+  .carousel-item > img {
+object-position: -900px;
+}
 }

@@ -1,0 +1,45 @@
+.lpMedicalFooter-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--lpCustomBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/* .lpMedicalFooter-container > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--lpCustomBg);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+} */
+
+.lpMedicalFooter-container > span {
+  color: var(--customColor);
+}
+@media screen and (max-width: 768px) {
+  .lpMedicalFooter-container {
+    /* border: solid red; */
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .footerLine {
+    position: absolute;
+    border-top: solid 1px rgb(158, 158, 158);
+    width: 100%;
+  }
+}

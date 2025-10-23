@@ -4,7 +4,7 @@ import "./LpMedicalNavbar.css"
 import logo from "./../../../../Img/TSS.png"
 const LpMedicalLogo = () => {
   return (
-    <div className="logoContainer">
+    <div className="lpMedical-logoContainer">
       <a href="/">
         <img src={logo} alt="logo" />
       </a>

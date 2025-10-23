@@ -45,7 +45,7 @@ const WebsitePage = () => {
         return <WebsiteHowIt />; // default version (India)
     }
   };
-  const renderFranceBenefits = () => {
+  const renderCountryBenefits = () => {
     switch (countryCode?.toLowerCase()) {
       case "fr":
         return <FranceBenefits />;
@@ -61,7 +61,7 @@ const WebsitePage = () => {
         return <WebsiteWhy />; // default version (India)
     }
   };
-  const renderFranceWebsiteFaq = () => {
+  const renderCountryWebsiteFaq = () => {
     switch (countryCode?.toLowerCase()) {
       case "fr":
         return <FranceWebsiteFaq />;
@@ -92,7 +92,7 @@ const WebsitePage = () => {
           <div className="component-mainContent">
             <WebsiteServiceSubHead />
             <WebsiteServiceHow />
-            {renderFranceBenefits()}
+            {renderCountryBenefits()}
             <SeoServiceBook />
           </div>
         </div>
@@ -103,7 +103,7 @@ const WebsitePage = () => {
       </div>
       <WebsitePackage />
       <HomeTestimonial />
-      <WebsiteFaq />
+      {renderCountryWebsiteFaq()}
     </div>
   );
 };

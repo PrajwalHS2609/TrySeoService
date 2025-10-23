@@ -1,0 +1,55 @@
+.lpMedicalBook-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.lpMedicalBook-content {
+  background-image: url("/src/Img/lpMedical/bgBook.jpg");
+  background-size: cover;
+  width: 90%;
+  height: 100%;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.lpMedicalBook-item {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.lpMedicalBook-item > h2 {
+  color: white;
+}
+.lpMedicalBook-item > h2 > span {
+  color: var(--customColor);
+}
+.lpMedicalBook-item > p {
+  color: white;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .lpMedicalBook-content {
+    background-image: url("/src/Img/lpMedical/bgBook.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+  }
+  .lpMedicalBook-item {
+    width: 100%;
+  }
+  .lpMedicalBook-item > h2 {
+    color: white;
+    text-align: justify;
+  }
+}

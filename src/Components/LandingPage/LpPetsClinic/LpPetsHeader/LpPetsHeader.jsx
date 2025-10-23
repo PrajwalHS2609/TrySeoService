@@ -6,6 +6,7 @@ import headerImg from "./../../../../Img/headerImg.png";
 import prizma from "./../../../../Img/clients/Prizma-Academy.png";
 import goodway from "./../../../../Img/clients/Goodway-Attestation.png";
 import active from "./../../../../Img/clients/Activ4Pets.png";
+import { FaCheck } from "react-icons/fa6";
 
 const LpPetsHeader = () => {
   const handlePopUp = (e) => {
@@ -16,12 +17,12 @@ const LpPetsHeader = () => {
     <div className="lpPetsHeader-container" id="home">
       <div className="lpPetsHeader-wrapper">
         <div className="lpPetsHeader-content">
-          <h2>Let Pet Owners Find YOU First on Google!</h2>
+          <h2>30% More Pet Clients</h2>
+          <h2>100% Guaranteed!</h2>
           <p>
-            Turn your pet clinic into the top choice for local pet owners! With
-            powerful SEO and Google My Business optimization, we’ll put your
-            clinic on the map. Attract more walk-ins, increase trust, and see
-            guaranteed results in just 30 days — backed by our 100% ROI promise.
+            Bring more happy paws to your business! Our powerful marketing for
+            pet clinics and groomers drives visibility, leads, and trust —
+            making your brand every pet parent’s favorite choice.
           </p>
         </div>
         <div className="lpPetsHeader-content">
@@ -53,6 +54,11 @@ const LpPetsHeader = () => {
           <div className="lpPetsHeader-item">
             <img src={arrow} alt="arrow" loading="lazy" />
           </div>
+        </div>
+        <div className="lpPetsHeader-smlContent">
+          <p><FaCheck className="lpPetsHeader-smlIco"/>No Risks. No Excuses. Just Results.</p>
+          <p><FaCheck className="lpPetsHeader-smlIco"/>Veterinary Marketing Success!</p>
+          <p><FaCheck className="lpPetsHeader-smlIco"/>Enquire Now for Guaranteed</p>
         </div>
       </div>
       <div className="lpPetsHeader-wrapper">

@@ -54,7 +54,7 @@ const hideNavbarPaths = [
   ":countryCode/lp/content-marketing",
   ":countryCode/lp/competitor-analysis",
   ":countryCode/lp/seo-reporting",
-  ":countryCode/lp-petClinic",
+  ":countryCode/lp-petclinic",
     ":countryCode/lp-medical",
 
 ];

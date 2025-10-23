@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
+
+.LpMedicalContact-container {
+  width: 100%;
+  padding: 80px 10%;
+  background: var(--customBg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+  font-family: "Archivo", sans-serif;
+}
+
+/* ---------- LEFT SIDE CONTENT ---------- */
+.LpMedicalContact-wrapper {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.LpMedicalContact-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--customColor);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.LpMedicalContact-content p {
+  color: grey;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ---------- CONTACT DETAILS ---------- */
+.LpMedicalContact-itemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.LpMedicalContact-item h4 {
+  color: black;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.LpMedicalContact-item a {
+  color: var(--customColor);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.LpMedicalContact-item a:hover {
+  text-decoration: none;
+}
+
+/* ---------- SOCIAL ICONS ---------- */
+
+.LpMedicalContact-social {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.LpMedicalContact-socialIcon {
+  font-size: 22px;
+  color: var(--customColor);
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.LpMedicalContact-socialIcon:hover {
+  background: var(--customColor);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ---------- RIGHT SIDE FORM ---------- */
+.LpMedicalContact-form {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 40px 35px;
+  flex: 1 1 45%;
+}
+
+.LpMedicalContact-form h2 {
+  font-size: 1.8rem;
+  color: var(--customColor);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ---------- FORM ELEMENTS ---------- */
+.LpMedicalContact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.LpMedicalContact-form input,
+.LpMedicalContact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d6dbea;
+  border-radius: 8px;
+  background: #f8faff;
+  font-size: 1rem;
+  transition: 0.3s;
+  outline: none;
+  resize: none;
+}
+
+.LpMedicalContact-form input:focus,
+.LpMedicalContact-form textarea:focus {
+  border-color: var(--customColor);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.473);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .LpMedicalContact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 6%;
+  }
+
+  .LpMedicalContact-wrapper {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .LpMedicalContact-content h2,
+  .contact-form h2 {
+    text-align: center;
+  }
+
+  .LpMedicalContact-itemContainer {
+    align-items: center;
+  }
+
+  .LpMedicalContact-social {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .LpMedicalContact-content h2 {
+    font-size: 1.5rem;
+  }
+  .LpMedicalContact-item > h4 {
+    text-align: center;
+  }
+  .LpMedicalContact-content:nth-child(3) {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
