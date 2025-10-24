@@ -1,7 +1,7 @@
 import React from "react";
 import "./LpMedicalBook.css";
 const LpMedicalBook = () => {
-    const handlePopUp = (e) => {
+  const handlePopUp = (e) => {
     e.preventDefault();
     document.querySelector(".popup").style.display = "flex";
   };
@@ -10,12 +10,13 @@ const LpMedicalBook = () => {
       <div className="lpMedicalBook-content">
         <div className="lpMedicalBook-item">
           <h2>
-            Need help growing your clinic? <span>Book your FREE one-on-One
-            consultation today</span>
+            Our <span>Approach</span>
           </h2>
           <p>
-            Speak with our medical marketing experts and discover how Revolo can
-            help your clinic.
+            We understand the unique challenges of managing a diagnostics
+            center. From reaching the right patients to maintaining ethical
+            advertising, we handle it all so you can focus on delivering
+            exceptional healthcare.
           </p>
         </div>
         <div className="lpMedicalBook-item">

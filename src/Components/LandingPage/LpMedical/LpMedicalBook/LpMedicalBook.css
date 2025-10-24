@@ -28,6 +28,8 @@
 }
 .lpMedicalBook-item > h2 {
   color: white;
+  text-align: start;
+  width: 100%;
 }
 .lpMedicalBook-item > h2 > span {
   color: var(--customColor);
@@ -50,6 +52,12 @@
   }
   .lpMedicalBook-item > h2 {
     color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  .lpMedicalBook-item > p {
+    color: white;
+    font-size: 18px;
     text-align: justify;
   }
 }

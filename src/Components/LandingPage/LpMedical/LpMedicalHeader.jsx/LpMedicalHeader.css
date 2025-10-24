@@ -1,33 +1,39 @@
 .lpMedicalHeader-container {
   /* border: solid red; */
-  height: 610px;
+  height: 100%;
   width: 100%;
+  position: relative;
 }
-.carousel-container {
-  /* border: solid brown; */
+/* .carousel-container {
+  border: solid brown;
   width: 100%;
   height: 100%;
 }
 .carousel-item {
-  /* border: solid black; */
+  border: solid black;
   width: 100%;
   height: 600px;
   position: relative;
-}
-.carousel-item > img {
+} */
+.lpMedicalHeader-container > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   /* border: solid red; */
 }
-
+.lpMedicalHeader-container > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: solid red; */
+}
 .lpMedicalHeader-cover {
   /* border: solid green; */
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.385);
   position: absolute;
-  top: 0;
+  bottom: 1px;
   left: 0;
 }
 .lpMedicalHeader-content {
@@ -45,16 +51,16 @@
 .lpMedicalHeader-content > h6 {
   font-size: 25px;
   font-weight: bold;
-  color: var(--customColor);
+  color: white;
 }
 .lpMedicalHeader-content > h2 {
   font-size: 50px;
   font-weight: bold;
-  color: black;
+  color: var(--customColor);
 }
 .lpMedicalHeader-content > p {
   font-size: 20px;
-  color: grey;
+  color: white;
   text-align: justify;
 }
 .lpMedicalHeader-btn {
@@ -88,24 +94,24 @@
 @media screen and (max-width: 768px) {
   .lpMedicalHeader-container {
     /* border: solid red; */
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-  }
-  .carousel-item {
-    /* border: solid black; */
-    width: 100%;
-    height: 90vh;
   }
   .lpMedicalHeader-cover {
-  /* border: solid green; */
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  backdrop-filter: blur(10px);
-  top: 0;
-  left: 0;
-}
+    /* border: solid green; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+  }
+  .lpMedicalHeader-content > h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--customColor);
+  }
   .lpMedicalHeader-content {
     /* border: solid yellow; */
     height: 100%;
@@ -124,6 +130,9 @@
     text-align: center;
   }
   .carousel-item > img {
-object-position: -900px;
-}
+    object-position: -900px;
+  }
+  .lpMedicalHeader-content > h6 {
+    text-align: center;
+  }
 }

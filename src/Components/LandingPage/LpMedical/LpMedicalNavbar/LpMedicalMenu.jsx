@@ -3,6 +3,7 @@ import "./LpMedicalNavbar.css";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { IoMenu } from "react-icons/io5";
+import { FaWhatsapp } from "react-icons/fa";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -59,8 +60,18 @@ const LpMedicalMenu = () => {
           </NavHashLink>
         </li>
       </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=916360226773"
+        className="whatsappBtnMenu"
+      >
+        <button class="button-29" role="button">
+          <FaWhatsapp className="nav-whatsappIcon" />
+          Message Me
+        </button>
+      </a>
+
       <div className="lpMedical-respMenuBar">
-        <IoMenu onClick={showSideBar}className="lpMedicalMenuIcon" />
+        <IoMenu onClick={showSideBar} className="lpMedicalMenuIcon" />
       </div>
       <div className="respMenu">
         <div className="innerRespMenu">
@@ -71,7 +82,7 @@ const LpMedicalMenu = () => {
             onClick={hideSideBar}
           ></FontAwesomeIcon>
           <div className="innerMenu">
-            <li className="">
+            {/* <li className="">
               <a id="menuLink" href="tel:6362946008" onClick={hideSideBar}>
                 <FontAwesomeIcon
                   icon={faPhoneVolume}
@@ -79,7 +90,7 @@ const LpMedicalMenu = () => {
                 ></FontAwesomeIcon>
                 +91 6362946008{" "}
               </a>{" "}
-            </li>
+            </li> */}
             <li className="">
               {" "}
               <Link id="menuLink" onClick={hideSideBar} to={"/"}>
@@ -94,11 +105,7 @@ const LpMedicalMenu = () => {
             </li>
             <li className="">
               {" "}
-              <NavHashLink
-                id="menuLink"
-                onClick={hideSideBar}
-                to={"#aboutUs"}
-              >
+              <NavHashLink id="menuLink" onClick={hideSideBar} to={"#aboutUs"}>
                 About Us
               </NavHashLink>
             </li>
@@ -121,6 +128,15 @@ const LpMedicalMenu = () => {
               >
                 Contact Us
               </NavHashLink>
+            </li>
+
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=916360226773">
+                <button class="button-29" role="button" id="respWhatsappBtn">
+                  <FaWhatsapp className="nav-whatsappIcon" />
+                  Message Me
+                </button>
+              </a>
             </li>
           </div>
         </div>

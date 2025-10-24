@@ -18,3 +18,10 @@
 .lpMedicalClient-container > h2 > span {
   color: var(--customColor);
 }
+@media screen and (max-width:768px){
+  .lpMedicalClient-container > h2 {
+  font-size: 30px;
+    text-align: center;
+
+}
+}

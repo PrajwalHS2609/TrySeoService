@@ -24,17 +24,17 @@ const LpMedicalIndustry = () => {
     <div className="lpMedicalIndustry-container">
       <div className="lpMedicalIndustry-content">
         <h2>
-          We drive marketing success in the <span>Medical Industry</span>
+          Targeted Campaigns Across <span>Platforms</span>
         </h2>
         <p>
-          At Revolo, we’ve perfected the art of marketing for the medical
-          sector. We understand the unique challenges and opportunities your
-          industry presents and craft strategies tailored to your needs.
+          We launch precision-targeted ads across Google, Facebook, Instagram,
+          and YouTube, ensuring your services reach the right audience and drive
+          meaningful engagement and patient inquiries.
         </p>
-        <b>
+        {/* <b>
           No matter your specialty, we deliver results-driven solutions to help
           your practice thrive. Whether you're in.
-        </b>
+        </b> */}
       </div>
       <div className="lpMedicalIndustry-content">
         {card.map((x) => (

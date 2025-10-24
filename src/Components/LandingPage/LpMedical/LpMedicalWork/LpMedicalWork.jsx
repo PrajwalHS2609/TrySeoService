@@ -17,13 +17,12 @@ const LpMedicalWork = () => {
       <div className="lpMedicalWork-wrapper">
         <div className="lpMedicalWork-content">
           <h2>
-            How we <span>Work</span>
+            Discover Your <span>Diagnostic’s</span> Growth Gaps
           </h2>
           <p>
-            We understand the unique challenges of running a medical practice.
-            From targeting the right patients to ensuring ethical ad practices,
-            we take care of everything while you focus on providing exceptional
-            care.
+            We begin by analyzing your diagnostic’s unique services, challenges,
+            and opportunities, crafting a customized strategy designed
+            specifically to achieve your growth goals.
           </p>
         </div>
         <div className="lpMedicalWork-content">

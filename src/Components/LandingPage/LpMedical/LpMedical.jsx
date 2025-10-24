@@ -6,7 +6,6 @@ import LpMedicalFooter from "./LpMedicalFooter/LpMedicalFooter";
 import LpMedicalWork from "./LpMedicalWork/LpMedicalWork";
 import LpMedicalClient from "./LpMedicalClient/LpMedicalClient";
 import LpMedicalWhy from "./LpMedicalWhy/LpMedicalWhy";
-import LpMedicalIndustry from "./LpMedicalIndustry/LpMedicalIndustry";
 import LpMedicalBook from "./LpMedicalBook/LpMedicalBook";
 import LpMedicalContact from "./LpMedicalContact/LpMedicalContact";
 import LpMedicalAcquisition from "./LpMedicalAcquisition/LpMedicalAcquisition";
@@ -21,7 +20,7 @@ const LpMedical = () => {
       <LpMedicalAcquisition/>
       <LpMedicalWork />
       <LpMedicalWhy />
-      <LpMedicalIndustry />
+      {/* <LpMedicalIndustry /> */}
       <LpMedicalBook/>
       <LpMedicalContact/>
       <LpMedicalFooter />

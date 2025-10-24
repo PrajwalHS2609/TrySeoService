@@ -55,7 +55,7 @@ const LpMedicalHow = () => {
         "If you offer healthcare products or services online, we optimize your product or service pages to rank higher in search results. Our e-commerce SEO strategies increase traffic to your online store, helping you boost conversions and sales.",
     },
   ];
-    const handlePopUp = (e) => {
+  const handlePopUp = (e) => {
     e.preventDefault();
     document.querySelector(".popup").style.display = "flex";
   };
@@ -63,11 +63,13 @@ const LpMedicalHow = () => {
     <div className="lpMedicalHow-container">
       <div className="lpMedicalHow-head">
         <h2>
-          How do we help your clinic <span>attract more patients?</span>
+          How We Build Patient Trust and Drive Growth for{" "}
+          <span>Diagnostics Centers</span>
         </h2>
         <p>
-          We’ve successfully transformed patient acquisition for hundreds of
-          clinics and hospitals. Here’s how we make it simple and effective.
+          We’ve revolutionized patient acquisition for diagnostics centers and
+          clinics — making growth effortless, strategic, and results-driven.
+          Here’s how we simplify the process and deliver measurable success.
         </p>
       </div>
       <div className="lpMedicalHow-content">
@@ -86,7 +88,9 @@ const LpMedicalHow = () => {
       <div className="lpMedicalHow-btnContainer">
         <button class="frutiger-button">
           <div class="inner">
-            <span class="text" onClick={handlePopUp}>BOOK NOW</span>
+            <span class="text" onClick={handlePopUp}>
+              BOOK NOW
+            </span>
           </div>
         </button>
       </div>

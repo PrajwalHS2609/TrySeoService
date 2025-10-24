@@ -4,7 +4,10 @@ import WebsiteClientMain from "../../../WebsitePage/WebsiteClient/WebsiteClientM
 const LpMedicalClient = () => {
   return (
     <div className="lpMedicalClient-container">
-      Fueling Business Success <span>Worldwide</span>
+      <h2>
+        {" "}
+        Fueling Business Success <span>Worldwide</span>
+      </h2>
       <WebsiteClientMain />
     </div>
   );

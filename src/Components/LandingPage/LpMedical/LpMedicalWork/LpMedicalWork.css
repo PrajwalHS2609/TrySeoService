@@ -105,4 +105,17 @@
   .lpMedicalWork-item > b {
   text-align: start;
 }
+.lpMedicalWork-content:nth-child(1) > h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.lpMedicalWork-content > h2 > span {
+  color: var(--customColor);
+}
+.lpMedicalWork-content > p {
+  width: 100%;
+  text-align: justify;
+  color: grey;
+  font-size: 20px;
+}
 }

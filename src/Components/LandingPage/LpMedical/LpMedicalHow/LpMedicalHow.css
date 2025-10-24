@@ -24,6 +24,8 @@
 .lpMedicalHow-head > p {
   color: grey;
   font-size: 20px;
+  text-align: center;
+  width: 70%;
 }
 .lpMedicalHow-content {
   /* border: solid green; */
@@ -94,9 +96,21 @@
     flex-direction: column;
     gap: 20px;
   }
+  .lpMedicalHow-para > p {
+  text-align: justify;
+  font-size: 16px;
+}
+  .lpMedicalHow-head > h2 {
+  font-size: 30px;
+  text-align: center;
+}
   .lpMedicalHow-para {
-  /* border: solid yellow; */
+    /* border: solid yellow; */
+    width: 100%;
+    height: 100%;
+  }
+  .lpMedicalHow-head > p {
+  text-align: center;
   width: 100%;
-  height: 100%;
 }
 }

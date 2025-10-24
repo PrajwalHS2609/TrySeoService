@@ -32,30 +32,30 @@ const LpMedicalAcquisition = () => {
         "We run highly targeted ads on platforms like Google, Instagram, Facebook, and YouTube to ensure you reach the right audience for your treatments.",
     },
 
-    {
-      id: 4,
-      img: nurture,
-      title: "Automated Lead Nurturing Systems",
-      description:
-        "We set up seamless systems that automatically follow up with and nurture your leads, keeping them engaged until they’re ready to book.",
-    },
-    {
-      id: 5,
-      img: training,
-      title: "Training for Handling Patient Enquiries",
-      description:
-        "We provide sales training to you and your team so you can confidently convert enquiries into appointments.",
-    },
+    // {
+    //   id: 4,
+    //   img: nurture,
+    //   title: "Automated Lead Nurturing Systems",
+    //   description:
+    //     "We set up seamless systems that automatically follow up with and nurture your leads, keeping them engaged until they’re ready to book.",
+    // },
+    // {
+    //   id: 5,
+    //   img: training,
+    //   title: "Training for Handling Patient Enquiries",
+    //   description:
+    //     "We provide sales training to you and your team so you can confidently convert enquiries into appointments.",
+    // },
 
-    {
-      id: 6,
-      img: monitor,
-      title: "Ongoing Monitoring and Optimization",
-      description:
-        "We track over 160 parameters to configure your ads with precision and ensure you attract high-quality leads that actually convert.",
-    },
+    // {
+    //   id: 6,
+    //   img: monitor,
+    //   title: "Ongoing Monitoring and Optimization",
+    //   description:
+    //     "We track over 160 parameters to configure your ads with precision and ensure you attract high-quality leads that actually convert.",
+    // },
   ];
-    const handlePopUp = (e) => {
+  const handlePopUp = (e) => {
     e.preventDefault();
     document.querySelector(".popup").style.display = "flex";
   };
@@ -63,13 +63,19 @@ const LpMedicalAcquisition = () => {
     <div className="lpMedicalAcquisition-container">
       <div className="lpMedicalAcquisition-head">
         <h2>
-          How Revolo supercharges <span>your patient acquisition</span>
+          How <span>TrySEOServices.Com</span> Powers 30% More Patient
+          Appointments?
         </h2>
-        <p>Here's how Revolo takes your Clinic to the next level.</p>
-        <b>
+        <p>
+          TrySEOServices.Com drives 30% more patient appointments with smart,
+          data-driven marketing. From SEO to targeted ads and social media
+          campaigns, we boost visibility, attract quality leads, and grow your
+          clinic’s patient base.
+        </p>
+        {/* <b>
           We don’t just run ads—we transform how your clinic attracts and
           converts patients.
-        </b>
+        </b> */}
       </div>
       <div className="lpMedicalAcquisition-content">
         {card.map((x) => (

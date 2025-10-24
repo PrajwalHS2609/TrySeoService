@@ -48,11 +48,12 @@ const LpMedicalWhy = () => {
     <div className="lpMedicalWhy-container">
       <div className="lpMedicalWhy-content">
         <h2>
-          Why choose Revolo for <span>marketing your clinic?</span>
+          Custom Strategies to <span>Boost Your Reach</span>
         </h2>
         <p>
-          Partner with Revolo and unlock your clinic’s true potential with
-          strategies designed specifically for the healthcare industry.
+          We begin by analyzing your diagnostic’s unique services, challenges,
+          and opportunities, crafting a customized strategy designed
+          specifically to achieve your growth goals.
         </p>
       </div>
       <div className="lpMedicalWhy-content">
