@@ -2,46 +2,78 @@ import React from "react";
 import "./LpMedicalWhy.css";
 import medical from "./../../../../Img/lpMedical/Why/bar-chart.png";
 import record from "./../../../../Img/lpMedical/Why/marketing-research.png";
-import transparent from "./../../../../Img/lpMedical/Why/live-chat.png";
+import customize from "./../../../../Img/lpMedical/Why/customized.png";
 import multi from "./../../../../Img/lpMedical/Why/digital-advertising.png";
-import expertise from "./../../../../Img/lpMedical/Why/marketing-research.png";
+import ethical from "./../../../../Img/lpMedical/Why/ethicalCampaign.png";
+import localSeo from "./../../../../Img/lpMedical/Why/local-seo.png";
+import endtoend from "./../../../../Img/lpMedical/Why/endtoend.png";
+import result from "./../../../../Img/lpMedical/Why/result.png";
+import support from "./../../../../Img/lpMedical/Why/support.png";
 
 const LpMedicalWhy = () => {
   const card = [
     {
       id: 1,
       img: medical,
-      title: "Medical-Driven Approach",
+      title: "Data-Driven Strategies",
       description:
-        "We specialize in the medical niche, using data-driven insights  from the industry to deliver measurable and impactful results.",
+        "We use advanced analytics to identify the right patient segments, ensuring your marketing efforts reach those who need your services most.",
     },
     {
       id: 2,
       img: record,
-      title: "Proven Track Record",
+      title: "Boost Patient Footfalls",
       description:
-        "With a history of driving growth for clinics and hospitals worldwide, our strategies are tried, tested, and tailored to your success.",
+        "Through targeted SEO, Google Ads, and social media campaigns, we help increase daily consultations and test bookings for measurable growth.",
     },
     {
       id: 3,
-      img: transparent,
-      title: "Transparent Communication",
+      img: customize,
+      title: "Customized Marketing Plans",
       description:
-        "You’ll never be left in the dark. We provide clear, detailed reports—daily, weekly, and monthly—along with open, ongoing communication.",
+        "Every diagnostics center is unique. We craft strategies tailored to your services, specialties, and goals.",
     },
     {
       id: 4,
       img: multi,
-      title: "Multi-Platform Expertise",
+      title: "Transparent Reporting",
       description:
-        "We market your clinic on the platforms that matter most—Google, YouTube, Facebook, and Instagram—ensuring maximum reach and engagement.",
+        "Stay informed with clear, actionable reports showing how our campaigns are converting clicks into appointments.",
     },
     {
       id: 5,
-      img: expertise,
-      title: "Compliance Expertise",
+      img: ethical,
+      title: "Ethical & Compliant Campaigns",
       description:
-        "Advertising in the medical space is tricky, but we know the rules. Our expertise ensures your campaigns stay compliant with platform policies, avoiding costly bans.",
+        "We adhere to healthcare advertising guidelines, maintaining your center’s credibility and trustworthiness.",
+    },
+    {
+      id: 6,
+      img: localSeo,
+      title: "Local SEO Expertise",
+      description:
+        "We ensure your center ranks higher in local searches, helping patients in your vicinity find you first.",
+    },
+    {
+      id: 7,
+      img: endtoend,
+      title: "End-to-End Marketing Support",
+      description:
+        "From online visibility to patient engagement, we manage every aspect of your digital marketing.",
+    },
+    {
+      id: 8,
+      img: result,
+      title: "Proven Results",
+      description:
+        "Clinics and diagnostics centers partnering with us see consistent growth in patient inquiries, appointments, and brand trust.",
+    },
+    {
+      id: 9,
+      img: support,
+      title: "Dedicated Support",
+      description:
+        "Our expert team works closely with you to optimize strategies and deliver guaranteed outcomes.",
     },
   ];
   return (

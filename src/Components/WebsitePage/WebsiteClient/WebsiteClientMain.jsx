@@ -16,7 +16,7 @@ import mm from "./../../../Img/clients/MM.png";
 import scent from "./../../../Img/clients/Scent.png";
 import buildurspace from "./../../../Img/clients/BuildUrSpace.png";
 import twirl from "./../../../Img/clients/twirl.png";
-
+import nisarga from "./../../../Img/clients/Nisarga.png";
 const WebsiteClientMain = () => {
   const responsive = {
     superLargeDesktop: {
@@ -72,27 +72,32 @@ const WebsiteClientMain = () => {
         >
           <div>
             <div className="item">
-              <img src={newLyf} alt="" loading="lazy" />
+              <img src={newLyf} alt="newLyf" loading="lazy" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src={prizma} alt="" loading="lazy" />
+              <img src={prizma} alt="prizma" loading="lazy" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src={unichrone} alt="" loading="lazy" />
+              <img src={unichrone} alt="unichrone" loading="lazy" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src={goodway} alt="" loading="lazy" />
+              <img src={goodway} alt="goodway" loading="lazy" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src={gvg} alt="" loading="lazy" />
+              <img src={gvg} alt="gvg" loading="lazy" />
+            </div>
+          </div>
+          <div>
+            <div className="item">
+              <img src={nisarga} alt="nisarga" loading="lazy" />
             </div>
           </div>
           <div>
@@ -107,22 +112,22 @@ const WebsiteClientMain = () => {
           </div>
           <div>
             <div className="item">
-              <img src={boutique} alt="" loading="lazy" />
+              <img src={boutique} alt="boutique" loading="lazy" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src={rbc} alt="" loading="lazy" />
+              <img src={rbc} alt="rbc" loading="lazy" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src={arra} alt="" loading="lazy" />
+              <img src={arra} alt="arra" loading="lazy" />
             </div>
           </div>
           <div>
             <div className="item">
-              <img src={mm} alt="" loading="lazy" />
+              <img src={mm} alt="mm" loading="lazy" />
             </div>
           </div>
           <div>

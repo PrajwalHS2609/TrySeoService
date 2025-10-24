@@ -51,12 +51,10 @@ const LpMedicalContact = () => {
     <div className="LpMedicalContact-container" id="contact-us">
       <div className="LpMedicalContact-wrapper">
         <div className="LpMedicalContact-content">
-          <h2>Let's start a project together</h2>
+          <h2>Let’s Turn Your Ideas into Reality</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            adipisci excepturi ab, perspiciatis expedita, minima non dolorum
-            debitis rerum accusantium recusandae corporis rem beatae ea id
-            possimus nemo, sunt autem?
+            Share your vision with us, and we’ll help bring your ideas to life
+            with expert solutions.
           </p>
         </div>
         <div className="LpMedicalContact-content">

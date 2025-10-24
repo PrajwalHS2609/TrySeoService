@@ -10,14 +10,9 @@ const LpMedicalBook = () => {
       <div className="lpMedicalBook-content">
         <div className="lpMedicalBook-item">
           <h2>
-            Our <span>Approach</span>
+            Looking to Grow Your Diagnostics Center?{" "}
+            <span>Schedule Your FREE Consultation Today!</span>
           </h2>
-          <p>
-            We understand the unique challenges of managing a diagnostics
-            center. From reaching the right patients to maintaining ethical
-            advertising, we handle it all so you can focus on delivering
-            exceptional healthcare.
-          </p>
         </div>
         <div className="lpMedicalBook-item">
           <button className="frutiger-button" onClick={handlePopUp}>
