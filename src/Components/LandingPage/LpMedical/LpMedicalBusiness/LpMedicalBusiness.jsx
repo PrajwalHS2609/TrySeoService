@@ -4,7 +4,6 @@ import "./LpMedicalBusiness.css";
 const LpMedicalBusiness = () => {
   return (
     <div className="lpMedical-container" id="about-us">
-      <div className="line"></div>
       <div className="lpMedical-content">
         <div className="lpMedical-heading">
           <h2>
