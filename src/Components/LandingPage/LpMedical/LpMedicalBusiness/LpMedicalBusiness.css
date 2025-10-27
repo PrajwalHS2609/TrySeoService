@@ -1,0 +1,151 @@
+.lpMedical-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.lpMedical-content {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lpMedical-heading {
+  width: 100%;
+}
+
+.lpMedical-heading > h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.lpMedical-heading > h2 > span {
+  color: var(--customColor);
+}
+.lpMedical-heading > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+  width: 100%;
+  text-align: center;
+}
+.line {
+  top: 0;
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  background-color: rgb(182, 182, 182);
+}
+.lpMedical-content:nth-child(3) {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.lpMedical-vidContainer {
+  border: 5px solid black;
+  width: 70%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f0f4f9;
+}
+.lpMedical-keyContainer {
+  /* border: solid blue; */
+  height: 500px;
+  width: 25%;
+  border-radius: 20px;
+  background-color: black;
+  padding: 20px;
+}
+.lpMedical-keyContainer > ul {
+  /* border: solid green; */
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.lpMedical-keyContainer > ul > li {
+  border-bottom: 1px solid rgb(78, 78, 78);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.lpMedical-keyContainer > ul > li > h3 {
+  font-size: 60px;
+  color: var(--customColor);
+  font-family: "Syne", sans-serif;
+}
+.lpMedical-keyContainer > ul > li > p {
+  color: var(--lpCustomBg);
+  font-weight: bold;
+  text-align: center;
+}
+.lpMedical-keyContainer > ul > li:last-child {
+  border: none;
+}
+.lpMedical-vidContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .lpMedical-container {
+    /* border: solid red; */
+
+    padding: 20px;
+  }
+  .lpMedical-content {
+    /* border: solid green; */
+    flex-direction: column;
+  }
+  .lpMedical-heading:nth-child(1) {
+    width: 100%;
+  }
+  .lpMedical-heading:nth-child(2) {
+    width: 100%;
+  }
+  .lpMedical-heading > h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .lpMedical-heading > p {
+    text-align: justify;
+  }
+  .lpMedical-vidContainer {
+    border: 5px solid black;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .lpMedical-vidContainer > img {
+    height: fit-content;
+    width: 500px;
+  }
+  .lpMedical-keyContainer {
+    /* border: solid blue; */
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: black;
+    padding: 20px;
+  }
+}

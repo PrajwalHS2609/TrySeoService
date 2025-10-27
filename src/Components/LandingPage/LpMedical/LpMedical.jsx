@@ -9,6 +9,7 @@ import LpMedicalWhy from "./LpMedicalWhy/LpMedicalWhy";
 import LpMedicalBook from "./LpMedicalBook/LpMedicalBook";
 import LpMedicalContact from "./LpMedicalContact/LpMedicalContact";
 import LpMedicalAcquisition from "./LpMedicalAcquisition/LpMedicalAcquisition";
+import LpMedicalBusiness from "./LpMedicalBusiness/LpMedicalBusiness";
 
 const LpMedical = () => {
   return (
@@ -17,12 +18,13 @@ const LpMedical = () => {
       <LpMedicalHeader />
       <LpMedicalClient />
       <LpMedicalHow />
-      <LpMedicalAcquisition/>
+      <LpMedicalBusiness />
+      <LpMedicalAcquisition />
       <LpMedicalWork />
       <LpMedicalWhy />
       {/* <LpMedicalIndustry /> */}
-      <LpMedicalBook/>
-      <LpMedicalContact/>
+      <LpMedicalBook />
+      <LpMedicalContact />
       <LpMedicalFooter />
     </div>
   );
