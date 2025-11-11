@@ -365,7 +365,7 @@
     display: none;
   }
   .navbarContent {
-    border: solid brown;
+    /* border: solid brown; */
     border-radius: 0px;
   }
   .lpMedical-respMenuBar {
