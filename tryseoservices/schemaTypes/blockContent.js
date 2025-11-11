@@ -59,9 +59,33 @@ export default defineType({
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
-    defineArrayMember({
+       defineArrayMember({
       type: 'image',
       options: {hotspot: true},
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+        },
+        {
+          name: 'link', // <-- Add this
+          type: 'url',
+          title: 'Link URL',
+        },
+      ],
+    }),
+    // ✅ Add table support here
+    defineArrayMember({
+      type: 'customTable', // <-- matches the name in table.ts
+    }),
+
+    // ✅ Accordion Support
+    defineArrayMember({
+      type: 'accordionBlock',
+    }),
+    defineArrayMember({
+      type: 'faq',
     }),
   ],
 })
