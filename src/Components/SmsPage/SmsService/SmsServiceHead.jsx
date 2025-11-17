@@ -3,7 +3,7 @@ import React from "react";
 const SmsServiceHead = () => {
   return (
     <div className="seoServiceHead">
-      <h2>Choose TrySEOServices for SMS & WhatsApp Marketing Success</h2>
+      <h2>Choose <span>TrySEOServices</span> for SMS & WhatsApp Marketing Success</h2>
       <p>
         In a city as dynamic as Bangalore, choosing the right partner for your
         SMS & WhatsApp marketing endeavors is pivotal. TrySEOServices.com has a
