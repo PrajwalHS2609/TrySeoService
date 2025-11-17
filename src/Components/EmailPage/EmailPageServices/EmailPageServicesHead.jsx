@@ -4,7 +4,9 @@ const EmailPageServicesHead = () => {
   return (
     <div className="seoServiceHead">
       {/* <h6>SERVICE</h6> */}
-      <h2>Why <span>Email Marketing</span> Service?</h2>
+      <h2>
+        <span>Email Marketing</span> Service in Bangalore
+      </h2>
       <p>
         Bangalore, known as India’s Silicon Valley, is a bustling metropolis
         filled with tech-savvy professionals and a diverse population. It’s a
